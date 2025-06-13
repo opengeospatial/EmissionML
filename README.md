@@ -12,7 +12,7 @@ The purpose of the **OGC Emission Event Modeling Language (EmissionML) Standard 
 - Build on the EmissionML model to define a **portfolio of open standards** for spatiotemporal emission data sharing and analysis.
   - Example: **MethaneML**, a specialized extension of EmissionML for methane emissions and related observational data.
 - Publish new **OGC Best Practices** describing how existing OGC standards can be applied to:
-  - Estimate the quantity of emission events following existing protocols in accordance with established protocols such as OGMP 2.0, MiQ, and Veritas
+  - Estimate the quantity of emission events following existing protocols in accordance with established protocols such as [OGMP 2.0](https://www.ogmpartnership.org/), [MiQ](https://miq.org/), and [GTI Veritas](https://veritas.gti.energy/).
   - Determine the occurance and duration of the emission events
 
 EmissionML is built on existing OGC and ISO standards, including:
