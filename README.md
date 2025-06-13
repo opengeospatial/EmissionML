@@ -32,22 +32,22 @@ EmissionML enables:
 - **Standardized data sharing** across emission systems and stakeholders
 -  **Aggregation** of emission data from heterogeneous sources
 -  **Reconciliation** of emissions with built-in support for:
-  - Uncertainty modeling
-  - Machine readability
-  - Provenance
-  - Reproducibility
-  - Explainability
+	- Uncertainty modeling
+	- Machine readability
+	- Provenance
+	- Reproducibility
+	- Explainability
 -  **Georeferencing** with explicit location, geometry, and spatial resolution
 -  **Visualization** support with native compatibility for GIS overlays and spatial tools
 -  **Flexible reporting** formats that support internal analytics and regulatory adaptation
 -  **Built-in provenance** for:
-  - Start and end event determination methods
-  - Emission quantity estimation method
-  - Source feature attribution
+	- Start and end event determination methods
+	- Emission quantity estimation method
+	- Source feature attribution
 -  **Uncertainty modeling** following [ISO 19157](https://www.iso.org/standard/78900.html) for:
-  - Event start and end time
-  - Quantity of emissions
-  - Observation results
+	- Event start and end time
+	- Quantity of emissions
+	- Observation results
 
 ---
 
