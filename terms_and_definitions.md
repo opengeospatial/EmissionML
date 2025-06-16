@@ -26,7 +26,7 @@ act carried out by an observer to determine the value of an observable property 
 
 ### Reconciliation
 
-#### Unit of Measure
+### Unit of Measure
 reference quantity chosen from a unit equivalence group (Source: [ISO/OGC 19156:2023](https://docs.ogc.org/as/20-082r4/20-082r4.html#_3_26_unit_of_measure)
 
 ## Abbreviated terms
