@@ -18,7 +18,7 @@ The purpose of the **OGC Emission Event Modeling Language (EmissionML) Standard 
 EmissionML is built on existing OGC and ISO standards, including:
 
 - [ISO/OGC 19156 Observation, Measurement, and Sampling (OMS)](https://docs.ogc.org/as/20-082r4/20-082r4.html)
-- [W3C/OGC SSN](https://www.w3.org/TR/vocab-ssn/)
+- [W3C/OGC Semantic Sensor Networks](https://www.w3.org/TR/vocab-ssn/)
 - [ISO 19157-1:2023](https://www.iso.org/standard/78900.html)
 - [Unified Code for Units of Measure (UCUM)](https://ucum.org/ucum)
 - [OGC Abstract Specifications](https://www.ogc.org/standards/abstract-specification/)
