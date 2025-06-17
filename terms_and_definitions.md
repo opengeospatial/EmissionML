@@ -6,13 +6,14 @@ Note: section 4 of the OGC standard is **Terms, definitions and abbreviated term
 
 ### Emissions
 
-### Emission Event
-
 The release of a substance (usually a gas when referring to the subject of climate change) into the atmosphere. Source: [EPA](https://www.epa.gov/green-power-markets/glossary#E) *Note: this definition seems to be more suitable for our scope.*
 
 [2006 IPCC Guidelines for National Greenhouse Gas Inventories](https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/0_Overview/V0_2_Glossary.pdf) defines emissions as the release of greenhouse gases and/or their precursors into the atmosphere over a specified area and period of time. (UNFCCC Article 1.4) *Note: this definition limits its scope to GHG and our scope is wider than GHG emissions.*
 
 EEA defines air emission as discharge of pollutants into the atmosphere from stationary sources such as smokestacks, and other vents, and from surface areas of commercial or industrial facilities and mobile sources, for example, motor vehicles, locomotives and aircrafts. Source: [EEA](https://www.eea.europa.eu/help/glossary/eea-glossary/air-emission)
+
+### Emission Event
+
 
 ### Emission Inventory
 
