@@ -13,7 +13,9 @@ The release of a substance (usually a gas when referring to the subject of clima
 EEA defines air emission as discharge of pollutants into the atmosphere from stationary sources such as smokestacks, and other vents, and from surface areas of commercial or industrial facilities and mobile sources, for example, motor vehicles, locomotives and aircrafts. Source: [EEA](https://www.eea.europa.eu/help/glossary/eea-glossary/air-emission)
 
 ### Emission Event
+**To be discussed:** An Emission Event is an occurrent representing the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the emission source feature from which the substance originated, and the identity and quantity of the emitted substance.
 
+**Note from Steve: this will be our definition, as the foundation of this work.  This is important.  Let's discuss.**
 
 ### Emission Inventory
 
