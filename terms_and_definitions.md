@@ -16,6 +16,14 @@ EEA defines air emission as discharge of pollutants into the atmosphere from sta
 
 ### Emission Inventory
 
+EPA defines **[a greenhouse gas (GHG) inventory](https://www.epa.gov/climateleadership/scopes-1-2-and-3-emissions-inventorying-and-guidance)** is a list of emission sources and the associated emissions quantified using standardized methods. Organizations develop GHG inventories for a variety of reasons, including: Managing GHG risks and identifying reduction opportunities; Participating in voluntary or mandatory GHG programs; Participating in GHG market; Achieving recognition for early voluntary action.
+
+EEA defines **[emission inventory](https://www.eea.europa.eu/help/glossary/eea-glossary/emission-inventory)** as a listing, by source, of the amount of air pollutants discharged into the atmosphere of a community.
+
+Veritas defines **[Emissions Inventory](https://veritas.gti.energy/protocols)**: A record of all known sources of emissions and the emission rates from those sources. An inventory provides an estimation of emissions over a given period of time.
+
+Veritas further defines **[Bottom-up Inventory](https://veritas.gti.energy/protocols)**: Method based on engineering calculations, manufacturer data, and emissions factors for emissions sources/activities and corresponding activity factors. Emission calculations and factors sometimes including individual source measurements, compiled to develop an account of emissions discharged to the atmosphere from an asset (e.g., compressor station) or a geographic area (e.g., basin, state, region). 
+
 ### Emission Factors
 
 ### Feature
