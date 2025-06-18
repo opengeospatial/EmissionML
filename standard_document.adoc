@@ -1,5 +1,5 @@
 :Title: OGC (add title text)
-:titletext: {Title}
+:titletext: Emission Event Modeling Language (EmissionML)
 :doctype: book
 :encoding: utf-8
 :lang: en
@@ -19,10 +19,10 @@
 |Approval Date:   <yyyy-mm-dd>
 |Publication Date:   <yyyy-mm-dd>
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
-|Internal reference number of this OGC(R) document:    YY-nnnrx
+|Internal reference number of this OGC(R) document:    25-019
 |Version: n.n
-|Category: OGC(R) <Implementation Standard / Abstract Specification / Best Practice>
-|Editor:   <Name(s) of Editor or Editors>
+|Category: OGC(R) Implementation Standar
+|Editor:   Steve Liang
 |===
 
 [cols = "^", frame = "none"]
@@ -48,7 +48,7 @@ Recipients of this document are invited to submit, with their comments, notifica
 
 [width = "50%", grid = "none"]
 |===
-|Document type:   	OGC® <Standard/Abstract Specification/Best Practice>
+|Document type:   	OGC® Standard Specification
 |Document subtype:   	if applicable
 |Document stage:   	Draft
 |Document language: 	English
