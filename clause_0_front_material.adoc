@@ -43,5 +43,6 @@ All questions regarding this submission should be directed to the editor or the 
 
 |===
 |*Name* |*Affiliation*
-| |
+|Steve Liang |University of Calgary / SensorUp
+|Ryan Ahola |Natural Resources Canada
 |===
