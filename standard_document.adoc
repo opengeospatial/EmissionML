@@ -21,7 +21,7 @@
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
 |Internal reference number of this OGC(R) document:    25-019
 |Version: n.n
-|Category: OGC(R) Implementation Standar
+|Category: OGC(R) Implementation Standard
 |Editor:   Steve Liang
 |===
 
