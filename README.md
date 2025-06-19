@@ -70,6 +70,17 @@ EmissionML enables:
 
 ---
 
+## Events
+We will present EmissionML at the following events:
+
+- [Expert Group Meeting on Towards A Big Data Revolution for the Planet: From Uncertainty to Opportunity](https://eo4society.esa.int/event/third-high-level-expert-group-meeting-on-big-data-2025/), July 8~10 2025, Frascati, Italy
+- [The Statistics, Analytics, and GIS for Energy (SAGE) conference](https://www.gti.energy/training-events/events-overview/sage/), August 13~14, 2025, Des Plaines, IL, USA
+- [CH4 Connections 2025](https://www.gti.energy/training-events/ch4-connections/), October 8~9 2025, Fort Collions, CO, USA
+- The 133rd OGC Technical Committee Meeting, Oct 2025, Boulder, CO, USA
+
+
+---
+
 ## Contributing
 
 For technical discussions, issue tracking, and schema definitions, please refer to the [GitHub Issues.](https://github.com/opengeospatial/EmissionML).
