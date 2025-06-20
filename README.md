@@ -79,6 +79,10 @@ EmissionML enables:
 ---
 
 ## Events
+We attened and promoted EmissionML at the following events:
+- [the 132rd OGC Technical Committee meeting](https://www.ogc.org/event/132nd-ogc-member-meeting/), June 11 2025, Merida, Mexico
+- the CSA Scoping Workshop on Evaluating and Selecting Methane Detection, Measurement, and Quantification Technologies, June 20, Calgary, AB, Canada
+
 We will present EmissionML at the following events:
 
 - [Expert Group Meeting on Towards A Big Data Revolution for the Planet: From Uncertainty to Opportunity](https://eo4society.esa.int/event/third-high-level-expert-group-meeting-on-big-data-2025/), July 8~10 2025, Frascati, Italy
