@@ -97,6 +97,8 @@ We will present EmissionML at the following events:
 
 For technical discussions, issue tracking, and schema definitions, please refer to the [GitHub Issues.](https://github.com/opengeospatial/EmissionML).
 
+The Part 1 of the EmissionML is in the [branch of 25-019](https://github.com/opengeospatial/EmissionML/tree/25-019).
+
 We hold bi-weekly online meetings to advance the development of the standard and meet in person three times a year at the [OGC Technical Committee meetings](https://www.ogc.org/events/). If you’re interested in participating, please feel free to contact the SWG Chair, [Dr. Steve Liang](https://profiles.ucalgary.ca/hung-ling-steve-liang).
 
 The contributor understands that any accepted contributions may be incorporated into OGC EmissionML standards documents and that all associated copyright and intellectual property rights shall be assigned to the Open Geospatial Consortium (OGC).
@@ -106,6 +108,6 @@ The EmissionML Standards Working Group (SWG) at OGC is responsible for the stewa
 - [EmissionML Standards Working Group Charter](https://portal.ogc.org/files/108683)
 - [Open issues](https://github.com/opengeospatial/EmissionML/issues)
 
-We welcome Pull Requests from contributors. By submitting a Pull Request or commit to this GitHub repository, you agree to the terms outlined in the Observer Agreement. https://portal.ogc.org/files/?artifact_id=92169
+We welcome Pull Requests from contributors. By submitting a Pull Request or commit to this GitHub repository, you agree to the terms outlined in the [Observer Agreement](https://portal.ogc.org/files/?artifact_id=92169). 
 
 
