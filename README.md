@@ -25,6 +25,14 @@ EmissionML is built on existing OGC and ISO standards, including:
 
 ---
 
+## Latest UML Diagram
+
+UML diagrams are available in the [25-019 branch](https://github.com/opengeospatial/EmissionML/tree/25-019/UML).
+
+![Latest EmissionML UML](https://github.com/opengeospatial/EmissionML/blob/25-019/UML/EmissionML-UML-2025-06-20.png)
+
+---
+
 ## Functional Requirements
 
 EmissionML enables:
