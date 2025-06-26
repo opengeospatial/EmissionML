@@ -10,6 +10,9 @@
     - Document branch 25-019 created
     - Engagement meeting presented
       -  five meetings held in the past two weeks with GTI, Open Footprint Forum, Colorado State University, DoE, and MBrace.
+    -  Open Footprint Forum and EmissionML SWG will work on an MOU
+      - objective is to show these two standards complement each other, and how it can be used together
+      - Greg: OGC's position is that MOU needs to have concrete deliverables
 - Discussion of the todos and priorities
   - the core data model is relatively stable. received positive feedbacks from the engagement meetings that this is the right direction
   - however, from the engagement meetings, it shows the need for educational materials of the use cases of EmissionML
@@ -22,3 +25,4 @@
 ## Decisions/Actions
   - **Decision**: SWG to work on an OGC discussion paper.
   - **Action**: Steve to send a use case template to collect use cases, and then incorporate into the discussion paper.
+  - **Action**: Steve to work on the MOU with AJ from Open Footprint Forum.
