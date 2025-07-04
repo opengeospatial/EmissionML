@@ -2,6 +2,8 @@
 
 **EmissionML** is a free and open [Open Geospatial Consortium](https://ogc.org/) standard ontology and data model for representing and exchanging emission events in a machine-readable, interoperable, and extensible way. It supports multiple emission types, including methane, and aligns with international standards for spatial, temporal, and observational data. EmissionML adheres to the principles of [Findability, Accessibility, Interoperability, and Reusability (FAIR)](https://www.ogc.org/blog-article/how-ogc-contributes-to-fair-geospatial-data/) to ensure long-term utility across scientific, regulatory, and industrial contexts.
 
+Click here to visit the [25-019 branch](https://github.com/opengeospatial/EmissionML/tree/25-019/) where you can find the latest development of the EmissionML.
+
 ---
 
 ## About
