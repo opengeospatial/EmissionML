@@ -1,5 +1,6 @@
 Store UML content in this directory. Feel free to use any organizational scheme that you like.
 ## EmissionML UML 2025-07-04
+Note: Mermaid doesn't fully support UML syntax. This is for visualization and discussion only.
 ```mermaid
 classDiagram
 
