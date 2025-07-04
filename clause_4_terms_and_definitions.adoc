@@ -6,9 +6,7 @@ This document also uses terms defined in the OGC Standard for Modular specificat
 For the purposes of this document, the following additional terms and definitions apply.
 
 Mechanism::
-A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission.
-
-It is a member of a controlled vocabulary and is defined independently of the emitting feature’s identity, structure, or purpose, allowing it to be reused across different types of Emission Source Features.
+A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is a member of a controlled vocabulary and is defined independently of the Source Feature — including its identity, structure, or purpose — allowing Mechanisms to be consistently reused across different types of Source Features.
 
 term name::
 text of the definition
