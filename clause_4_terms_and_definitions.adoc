@@ -5,8 +5,26 @@ This document also uses terms defined in the OGC Standard for Modular specificat
 
 For the purposes of this document, the following additional terms and definitions apply.
 
+Emission Event::
+An Emission Event is an occurrent representing the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
+
+Feature::
+Abstraction of real world phenomena (Source: ISO 19101-1:2014)
+
+Measurement::
+Set of operations having the object of determining the value of a quantity (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
+
 Mechanism::
 A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is a member of a controlled vocabulary and is defined independently of the Source Feature — including its identity, structure, or purpose — allowing Mechanisms to be consistently reused across different types of Source Features.
+
+Observation::
+Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
+
+Source Feature::
+A Source Feature is an ISO 19101 feature whose geometry provides the geospatial reference for one or more Emission Events. A Source Feature is characterised solely by its own identity, geometry, intended function, and lifecycle; it is explicitly agnostic to the Mechanism by which any associated Emission Event occur.
+
+Unit of Measure::
+Reference quantity chosen from a unit equivalence group (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
 
 term name::
 text of the definition
