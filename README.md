@@ -31,7 +31,89 @@ EmissionML is built on existing OGC and ISO standards, including:
 
 UML diagrams are available in the [25-019 branch](https://github.com/opengeospatial/EmissionML/tree/25-019/UML).
 
-![Latest EmissionML UML](https://github.com/opengeospatial/EmissionML/blob/25-019/UML/EmissionML-UML-2025-06-20.png)
+v2025-07-04
+```
+classDiagram
+
+class EmissionEvent {
+  +String name
+  +EmissionIntent intent
+  +URI pollutantType
+}
+
+class SourceFeature {
+  +String name
+  +GM_Object geometry
+  +CodeList attributionGranularity
+}
+
+class StartEvent {
+  +TM_Instant startTime
+  +DeterminationType determinationType
+  +DQ_AccuracyOfATimeMeasurement quality
+}
+
+class EndEvent {
+  +TM_Instant startTime
+  +DeterminationType determinationType
+  +DQ_AccuracyOfATimeMeasurement quality
+}
+
+class EmissionQuantity {
+  +UnitOfMeasure unitOfMeasure
+  +double quantity
+  +DQ_QuantitativeAttributeAccuracy quality
+  +URI quantityDeterminationMethod
+}
+
+class UnitOfMeasure {
+  +String name
+  +String symbol
+  +URI definition
+}
+
+class Observation
+
+class DeterminationMethod {
+  +URI uri
+  +String label
+  +String definition
+}
+
+class EmissionIntent {
+  <<CodeList>>
+  intentional
+  unintentional
+  unknown
+}
+
+class DeterminationType {
+  <<CodeList>>
+  observation
+  inference
+  other
+}
+
+class Mechanism {
+  <<CodeList>>
+}
+
+%% Relationships
+Mechanism <-- EmissionEvent
+SourceFeature "1" --> "0..*" EmissionEvent : emits
+EmissionEvent "0..*" --> "1" SourceFeature : isOriginatedFrom
+EmissionEvent --> "1" StartEvent : hasStartEvent
+EmissionEvent --> "1" EndEvent : hasEndEvent
+EmissionEvent --> "1" EmissionQuantity : isQuantifiedBy
+EmissionEvent --> "0..*" Observation : isObservedBy
+Observation --> "1" SourceFeature : hasUltimateFeatureOfInterest
+SourceFeature --> "0..*" Observation
+StartEvent --> "0..1" Observation : isObservedBy
+EndEvent --> "0..1" Observation : isObservedBy
+EmissionQuantity --> DeterminationMethod : usesMethod
+StartEvent --> DeterminationMethod : usesMethod
+EndEvent --> DeterminationMethod : usesMethod
+
 
 ---
 
