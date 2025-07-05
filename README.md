@@ -32,7 +32,7 @@ EmissionML is built on existing OGC and ISO standards, including:
 UML diagrams are available in the [25-019 branch](https://github.com/opengeospatial/EmissionML/tree/25-019/UML).
 
 v2025-07-04
-```
+```mermaid
 classDiagram
 
 class EmissionEvent {
@@ -113,7 +113,7 @@ EndEvent --> "0..1" Observation : isObservedBy
 EmissionQuantity --> DeterminationMethod : usesMethod
 StartEvent --> DeterminationMethod : usesMethod
 EndEvent --> DeterminationMethod : usesMethod
-
+```
 
 ---
 
