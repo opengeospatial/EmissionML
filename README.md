@@ -62,7 +62,7 @@ class EndEvent {
 class EmissionQuantity {
   +UnitOfMeasure unitOfMeasure
   +double quantity
-  +DQ_QuantitativeAttributeAccuracy quality
+  +DQ_Element quality
   +URI quantityDeterminationMethod
 }
 
