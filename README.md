@@ -1,6 +1,6 @@
-# EmissionML Part 1: Data Model
+# EmissionML Discussion Paper
 
-OGC doc number 25-019
+OGC doc number 25-023
 
 # Standard template
 
