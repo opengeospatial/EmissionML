@@ -9,7 +9,7 @@
   - GitHub updates
   - Outreach updates
     - [Third High Level Expert Meeting on big data revolution for the Planet](https://www.isprambiente.gov.it/en/ispra-events/towards-a-big-data-revolution-for-the-planet-third-high-level-expert-group-meeting)
-    - Steve's blog on [What EmissionML is NOT](https://liangsteve.github.io/WhatIsNotEmissionML/)
+    - Steve's blog on [What EmissionML is NOT - and Why that Matters](https://liangsteve.github.io/WhatIsNotEmissionML/)
 - Use Case Discussions [#3](https://github.com/opengeospatial/EmissionML/issues/3)
   - [Use case catalog GitHub page](https://github.com/opengeospatial/EmissionML/blob/main/use-cases/emissionml-use-case-catalog.md)
 - GitHub Issues [#4~#8](https://github.com/opengeospatial/EmissionML/issues/) [#9](https://github.com/opengeospatial/EmissionML/issues/9)
