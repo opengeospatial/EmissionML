@@ -1,7 +1,7 @@
 ## Date/Time: 2025-07-23 09:00 MT
 
 ## Attendees:
-- 
+- Steve Liang, Ryan Ahola, Josh Anhalt, Julie Doan-Prevost, Zahra Ashena, Erin Li, Sina Kioei, Kan Luo, Jinya Wang
 
 ## Agenda
 - Activities Review
