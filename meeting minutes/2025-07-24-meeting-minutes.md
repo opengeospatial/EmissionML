@@ -15,4 +15,10 @@
 - GitHub Issues [#4~#8](https://github.com/opengeospatial/EmissionML/issues/) [#9](https://github.com/opengeospatial/EmissionML/issues/9)
   
 ## Decisions/Actions
+- reviewed and improved the use cases, and approved all use cases in the catalog.
+  - auditing is an important theme for most use cases
+  - Ryan reminded the danger of developing a standard based on "edge-cases". It might make the standard development process lengthy and not user friendly.
+  - new use cases can be proposed by creating new GitHub issues
+- didn't have time to discuss issue #4~9. can be discussed offline on GitHub
+- next meeting is in two weeks
   
