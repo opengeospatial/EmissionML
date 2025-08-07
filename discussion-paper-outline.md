@@ -21,7 +21,7 @@
   - Difficulty tracing and comparing emissions across sources
   - Emissions estimations, including reconciliation, bottlenecked by poor data integration, consistency, quality, provenance
   - Time consuming and labour intensive to reproduce and audit emissions
-  - Vendor lock-in and custom integrations
+  - Vendor lock-in due to proprietary, non-reusable integrations
   - Incompatible reporting formats and templates
 
 - EmissionML addresses these gaps by introducing an international standard-based, future-proof, extensible, and scalable ontology and data model
