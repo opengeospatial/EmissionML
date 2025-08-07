@@ -51,7 +51,7 @@ Using the Geospatial Web as a successful story of data sharing standards allowin
 
 ---
 
-## 4. Use Cases: Real-World Applications of EmissionML *(~1.5 pages)*
+## 4. Use Cases: Real-World Applications supported by EmissionML *(~1.5 pages)*
 
 | Title | Stakeholders | Problem | EmissionML Solution | Benefits |
 |------------|--------------|---------|----------------------|----------|
