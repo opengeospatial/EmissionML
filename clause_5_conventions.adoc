@@ -1,8 +1,8 @@
 == Conventions
-This section provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
+This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
 
 === Identifiers
-The normative provisions in this Standard are denoted by the URI
+The normative provisions in this document are denoted by the URI
 
 http://www.opengis.net/spec/{standard}/{m.n}
 
