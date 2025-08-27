@@ -93,7 +93,7 @@ To illustrate EmissionML’s potential, we present real-world applications where
 
 == Adoption Pathways & Call to Action
 
-For EmissionML to deliver its full value, adoption must be broad and multi-stakeholder. The following pathways offer practical steps:
+Like the geospatial web, which only became transformative once OGC’s open standards were widely adopted, EmissionML will deliver its full value only through collective action. No single actor can solve the challenge of emissions data fragmentation in isolation. Regulators, operators, technology vendors, researchers, and investors each play a vital role in building a shared, standards-based foundation. The pathways below outline concrete steps that different stakeholder communities can take to drive adoption and unlock the benefits of a seamless “Web of Emissions Information.”
 
 * Regulators: reference EmissionML when designing reporting templates to ensure interoperability from the start.
 * Operators: adopt EmissionML internally to manage emissions data consistently; require providers and consultants to deliver EmissionML-compliant data.
