@@ -11,16 +11,6 @@ Summary — key challenges at a glance:
 * Difficulties linking diverse measurements, such as remote sensing, ground in-situ observations, and inventories, due to inconsistent definitions.
 * Incompatible reporting requirements across regulatory and voluntary programs, creating administrative burden and undermining comparability.
 
-    [mermaid]
-    ----
-    graph TD
-        A[Christmas] -->|Get money| B(Go shopping)
-        B --> C{Let me think}
-        C -->|One| D[Laptop]
-        C -->|Two| E[iPhone]
-        C -->|Three| F[fa:fa-car Car]
-    ----
-
 == What EmissionML Is — and What It’s Not
 
 === What EmissionML Is
@@ -34,6 +24,8 @@ Specifically, EmissionML provides:
 	* A flexible modeling language that can serve as an intermediary data model, enabling a “write once, use many times” approach for outputs across multiple reporting frameworks.
 	* Data structures that are AI-ready, ensuring that automated reasoning and validation can be applied.
 	* Alignment with OGC, ISO, and W3C standards, including Observations and Measurements (ISO 19156:2023) and the SOSA/SSN ontology.
+
+image::figures/figure_1.png[]
 
 === What EmissionML Is Not
 
@@ -112,6 +104,6 @@ For EmissionML to deliver its full value, adoption must be broad and multi-stake
 
 How to Get Involved:
 
-* Explore the OGC EmissionML GitHub.
+* Explore the https://github.com/opengeospatial/EmissionML[OGC EmissionML GitHub].
 * Contribute use cases, implementations, or vocabulary feedback.
-* Join the OGC EmissionML Standards Working Group and shape the future of emissions interoperability.
+* Join the https://www.ogc.org/membership/[OGC EmissionML Standards Working Group] and shape the future of emissions interoperability.
