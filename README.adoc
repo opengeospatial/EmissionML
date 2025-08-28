@@ -2,6 +2,8 @@
 
 OGC doc number 25-023
 
+Draft is available for comments now: https://github.com/opengeospatial/EmissionML/blob/25-023/document.pdf 
+
 This repository contains the content for the OGC EmissionML Discussion Paper.
 
 * `document.adoc` - the main standard document with references to all sections
