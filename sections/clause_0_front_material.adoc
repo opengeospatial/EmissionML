@@ -19,6 +19,16 @@ If the Preface contains subclauses, it needs to be encoded as a full preface cla
 
 ====
 
+== Preface
+
+This Discussion Paper addresses the urgent need for interoperability in emissions data by examining how a shared modeling approach can reduce fragmentation and build trust across regulatory, voluntary, and market-driven frameworks. The paper does not attempt to describe the full technical content of EmissionML — that material is available on the https://github.com/opengeospatial/EmissionML[EmissionML GitHub] — but instead frames the problem of inconsistent vocabularies and incompatible reporting templates, illustrates the benefits of a common foundation through real-world use cases, and identifies adoption pathways for diverse stakeholders.
+
+The purpose of this document is to engage the broader community of regulators, operators, technology providers, researchers, and investors in a discussion on the feasibility and value of harmonizing emissions data. Like many successful OGC efforts, the goal is not to prescribe specific technologies, but to provide a neutral, extensible foundation that enables interoperability across existing and emerging systems.
+
+This work builds on the history of OGC standards, including the Sensor Web Enablement suite, the OGC/ISO Observations and Measurements (O&M) model, and the SOSA/SSN ontology developed in collaboration with W3C. These efforts demonstrated the power of shared information models for environmental and geospatial data. EmissionML extends this lineage by applying the same principles to emissions information, leveraging lessons from geospatial interoperability to address urgent climate and ESG challenges.
+
+Future work will include refinement of the EmissionML conceptual model through open-source software implementations, closer alignment with related OGC and ISO standards, and exploration of applicability beyond emissions to other ESG domains such as wastewater, carbon capture and storage, and nitrogen-use efficiency. Community feedback on this Discussion Paper will guide next steps toward a candidate OGC standard and potential joint standardization with ISO.
+
 ////
 *OGC Declaration*
 ////
@@ -48,7 +58,11 @@ Attention is drawn to the possibility that some of the elements of this document
 [abstract]
 == Abstract
 
-<Insert Abstract Text here>
+Recent advances in sensing, communications, cloud computing, and AI now make it possible to measure, monitor, report, and verify emissions at unprecedented scale. Satellites, aircraft, continuous monitors, and field instruments provide rich data streams, yet the value of these innovations is limited by fragmentation. Inconsistent vocabularies, incompatible reporting formats, and costly bespoke integrations create duplication, delay, and uncertainty.
+
+This Discussion Paper highlights the interoperability challenge and outlines how a shared modeling approach can address it. With common ontologies and data models, emissions data can flow seamlessly across technologies and jurisdictions. Regulators can automate audits, operators can cut reporting costs and accelerate detection-to-repair, vendors can deliver plug-and-play solutions, and investors can gain confidence in transparent, comparable disclosures.
+
+While focused on emissions, the principles extend across ESG domains such as wastewater management, carbon capture and storage, and nitrogen-use efficiency.
 
 [.preface]
 == Security Considerations
@@ -79,8 +93,9 @@ All questions regarding this submission should be directed to the editor or the 
 
 |===
 |Name |Affiliation |OGC member
-
-|Steve Liang | University of Calgary, Canada / SensorUp Inc. | Yes
+|Steve Liang | SensorUp Inc. | Yes
+|Ryan Ahola | Natural Resources Canada | Yes
+|Sara Saeedi | University of Calgary | Yes
 |===
 
 

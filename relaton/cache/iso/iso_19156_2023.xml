@@ -1,0 +1,69 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-08-28</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Observations, measurements and samples</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Observations, measurements and samples</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Observations, mesures et échantillons</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Observations, mesures et échantillons</title>
+  <uri type="src">https://www.iso.org/standard/82463.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:82463:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/08/24/82463.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19156:2023</docidentifier>
+  <docidentifier type="iso-reference">ISO 19156:2023(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19156:stage-60.60</docidentifier>
+  <docnumber>19156</docnumber>
+  <date type="published">
+    <on>2023-04</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">This document defines a conceptual schema for observations, for features involved in the observation process, and for features involved in sampling when making observations. These provide models for the exchange of information describing observation acts and their results, both within and between different scientific and technical communities.
+Observations commonly involve sampling of an ultimate feature-of-interest. This document defines a common set of sample types according to their spatial, material (for ex situ observations) or statistical nature. The schema includes relationships between sample features (sub-sampling, derived samples).
+This document concerns only externally visible interfaces and places no restriction on the underlying implementations other than what is needed to satisfy the interface specifications in the actual situation.</abstract>
+  <abstract format="text/plain" language="fr" script="Latn">Le présent document définit un schéma conceptuel pour les observations, pour les entités impliquées dans le processus d'observation et pour les entités impliquées dans l'échantillonnage des données dans le cadre des observations. Celles-ci fournissent des modèles destinés à l'échange d'informations décrivant les faits observés et leurs résultats, aussi bien entre les différentes communautés scientifiques et techniques qu'en leur sein.
+En général, les observations impliquent l'échantillonnage d'une entité concernée finale. Le présent document définit un ensemble commun de types d'échantillons en fonction de leur nature spatiale matérielle (pour les observations ex-situ) ou statistique. Ce schéma comprend les relations entre les entités d'échantillonnage (sous-échantillonnage, échantillons dérivés).
+Le présent document ne concerne que les interfaces visibles de l'extérieur et ne place aucune restriction quant aux implémentations sous-jacentes, autres que celles nécessaires pour satisfaire aux spécifications relatives aux interfaces dans le contexte actuel.</abstract>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2023</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19156:2011</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19156:2011</docidentifier>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.3">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>82463</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

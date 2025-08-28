@@ -3,6 +3,9 @@ The advancement of sensing technologies, digital communications, cloud computing
 
 This fragmentation is evident across the entire emissions data lifecycle. Each technology vendor, operator, and reporting program tends to define its own vocabulary, formats, and assumptions. Data that should be straightforward to collect becomes difficult to integrate, trace, and compare. A remote sensing detection may not align with ground-level observations — for example, bottom-up inventories — when source features are described inconsistently. Regulators often require the same data to be restated in multiple incompatible templates. Operators face the added challenge of reconciling proprietary vendor outputs with internal enterprise systems, which further drives up cost and complexity. The consequence is predictable: high costs, duplicated effort, and delays in turning detection into actionable emissions reductions.
 
+.Visualization of “write many times” chaos: without EmissionML, every output requires bespoke integrations, creating silos, inefficiencies, and information loss — the high cost of fragmentation.
+image::figures/figure_write_many_times.png[]
+
 Emissions data now stands at a similar crossroads to the early days of digital mapping. Then, geospatial information was locked in proprietary systems, requiring costly, one-off conversions with little assurance of interoperability. The introduction of open OGC standards for features and web services changed everything: today billions of people use online maps on their phones, in vehicles, and across countless applications without ever thinking about the standards that make them work. The standards became invisible, yet indispensable. Emissions data needs the same foundation. Without a shared ontology and data model, stakeholders will continue to face high costs, fragmented workflows, and limited transparency. EmissionML provides that missing layer — a future-proof, standards-aligned ontology that addresses the root causes of fragmentation, ensures consistency and traceability, and unlocks a true “Web of Emissions Information” to support faster response, credible reporting, and more effective emissions reduction.
 
 Summary — key challenges at a glance:
@@ -25,7 +28,8 @@ Specifically, EmissionML provides:
 	* Data structures that are AI-ready, ensuring that automated reasoning and validation can be applied.
 	* Alignment with OGC, ISO, and W3C standards, including Observations and Measurements (ISO 19156:2023) and the SOSA/SSN ontology.
 
-image::figures/figure_1.png[]
+.Illustration of EmissionML in the emissions data value chain, demonstrating the principle of “write once, use many times” for interoperability and reuse.
+image::figures/figure_emissionml_value_chain.png[]
 
 === What EmissionML Is Not
 
@@ -45,6 +49,7 @@ In short: EmissionML’s strength lies in being a neutral, extensible foundation
 === EmissionML Use Cases
 To illustrate EmissionML’s potential, we present real-world applications where the lack of a common ontology creates friction today — and where a shared data model can deliver clear benefits for stakeholders, such as regulators, operators, vendors, researchers and investors.
 
+.EmissionML use case table
 [options="header",cols="1,1,2,2,2"]
 |===
 | Title | Stakeholders | Problem | EmissionML Solution | Benefits

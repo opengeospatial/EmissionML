@@ -6,14 +6,25 @@ Note that the initial notice about terms ("This document uses the terms defined 
 is inserted automatically by Metanorma using the agreed standardised language, and you should not enter it here.
 ////
 
-=== example term
+=== Emission Event
 
-term used for exemplary purposes
+An Emission Event is an occurrent representing the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
+
+=== Feature
+
+Abstraction of real world phenomena (Source: https://www.iso.org/standard/59164.html[ISO 19101-1:2014])
 
 [.source]
 <<ISO19101-1>>
 
-NOTE: An example note.
 
-[example]
-Here's an example of an example term.
+=== Measurement
+
+Set of operations having the object of determining the value of a quantity (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
+
+=== Observation
+
+Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
+
+=== Source Feature
+A Source Feature is an https://www.iso.org/standard/59164.html[ISO 19101] feature whose geometry provides the geospatial reference for one or more Emission Events. A Source Feature is characterised solely by its own identity, geometry, intended function, and lifecycle; it is explicitly agnostic to the Mechanism by which any associated Emission Event occur.

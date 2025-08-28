@@ -1,5 +1,5 @@
 == Scope
-[NOTE]
-====
-Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.
-====
+
+This Discussion Paper aims to highlight the pressing challenge of interoperability in emissions data. Today, regulators, operators, technology vendors, researchers, and investors all struggle with fragmented data models, inconsistent terminology, and incompatible reporting templates. Without a common foundation, emissions data is costly to integrate, difficult to audit, and slow to translate into meaningful action. These barriers increase compliance costs, reduce transparency, and limit the effectiveness of emissions reduction efforts.
+
+At the same time, the benefits of interoperability are clear. With a shared modeling approach, emissions data can flow seamlessly across technologies, organizations, and jurisdictions. Regulators can automate verification, operators can reduce reporting overhead, vendors can deliver plug-and-play solutions, and investors can gain confidence in transparent, comparable disclosures. The development of this paper was led by the OGC EmissionML Standards Working Group, with support from Natural Resources Canada and Emissions Reduction Alberta. While the immediate focus is emissions, the principles extend across ESG domains where observations and events must be consistently represented — including wastewater, carbon capture and storage, nitrogen-use efficiency, and more.
