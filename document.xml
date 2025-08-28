@@ -63,16 +63,15 @@
 <p id="_14ca370b-645b-9438-c1ee-966a98aba4c7">This Discussion Paper highlights the interoperability challenge and outlines how a shared modeling approach can address it. With common ontologies and data models, emissions data can flow seamlessly across technologies and jurisdictions. Regulators can automate audits, operators can cut reporting costs and accelerate detection-to-repair, vendors can deliver plug-and-play solutions, and investors can gain confidence in transparent, comparable disclosures.</p>
 
 <p id="_2702087c-0d6b-d631-df18-d93af0b2836b">While focused on emissions, the principles extend across ESG domains such as wastewater management, carbon capture and storage, and nitrogen-use efficiency.</p>
-</abstract><foreword id="_4698e4db-0fcc-59f6-29bd-0633945942b5" obligation="informative">
+</abstract><foreword id="_bdc67435-5b4f-6c40-8dfd-e5c1a213f396" obligation="informative">
 <title id="_67001cd2-f272-ceff-f849-7a43bc65e67d">Preface</title>
-<note id="_0ba5b9b2-1621-e339-5eb6-8ffcb9bf9ae8"><p id="_36ccafc3-00ed-bcf2-417b-3516155e23ee">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.</p>
+<p id="_c24b4f0f-48f4-ac1c-c418-83aafc3988cf">This Discussion Paper addresses the urgent need for interoperability in emissions data by examining how a shared modeling approach can reduce fragmentation and build trust across regulatory, voluntary, and market-driven frameworks. The paper does not attempt to describe the full technical content of EmissionML — that material is available on the <link target="https://github.com/opengeospatial/EmissionML">EmissionML GitHub</link> — but instead frames the problem of inconsistent vocabularies and incompatible reporting templates, illustrates the benefits of a common foundation through real-world use cases, and identifies adoption pathways for diverse stakeholders.</p>
 
-<p id="_dce2d5df-f281-a276-e795-ecdbbc66fde9">There are two ways to specify the Preface: “simple clause” or “full clasuse”</p>
+<p id="_ede82486-f687-101c-e593-7c2d22393a1a">The purpose of this document is to engage the broader community of regulators, operators, technology providers, researchers, and investors in a discussion on the feasibility and value of harmonizing emissions data. Like many successful OGC efforts, the goal is not to prescribe specific technologies, but to provide a neutral, extensible foundation that enables interoperability across existing and emerging systems.</p>
 
-<p id="_bf0a4cff-b8d4-99ef-f988-ae91c26f4e00">If the Preface does not contain subclauses, it is considered a simple preface clause. This one is entered as text after the <tt>.Preface</tt> label and must be placed between the AsciiDoc document attributes and the first AsciiDoc section title. It should not be give a section title of its own.</p>
+<p id="_342a5c16-49ab-279d-ab7c-81ec9bcdaf77">This work builds on the history of OGC standards, including the Sensor Web Enablement suite, the OGC/ISO Observations and Measurements (O&amp;M) model, and the SOSA/SSN ontology developed in collaboration with W3C. These efforts demonstrated the power of shared information models for environmental and geospatial data. EmissionML extends this lineage by applying the same principles to emissions information, leveraging lessons from geospatial interoperability to address urgent climate and ESG challenges.</p>
 
-<p id="_2de06016-75e5-9b09-a88d-781e9da93acf">If the Preface contains subclauses, it needs to be encoded as a full preface clause. This one is recognized as a full Metanorma AsciiDoc section with te title “Preface”, i.e. <tt>== Preface</tt>. (Simple preface content can also be encoded like full preface.)</p>
-</note>
+<p id="_1f3de2ab-3cf3-014f-c5df-f925438e76c7">Future work will include refinement of the EmissionML conceptual model through open-source software implementations, closer alignment with related OGC and ISO standards, and exploration of applicability beyond emissions to other ESG domains such as wastewater, carbon capture and storage, and nitrogen-use efficiency. Community feedback on this Discussion Paper will guide next steps toward a candidate OGC standard and potential joint standardization with ISO.</p>
 </foreword><clause id="_b99a2bd6-1a97-8f41-0bc0-600ae6df3c97" type="security" obligation="informative">
 <title id="_5dcde964-6a03-436c-5204-bca752130682">Security Considerations</title>
 <p id="_b2512eeb-995a-eabe-4ee2-ae30853fc76e">No security considerations have been made for this Standard.</p>
@@ -94,25 +93,28 @@
 <td id="_70df9e28-bcc5-5368-8430-28e861c90de4" valign="middle" align="left">Yes</td>
 </tr></tbody>
 </table>
-</clause><clause id="_334f80f5-c31c-6d57-31a5-0e4f6639a7ed" type="contributors" obligation="informative">
+</clause><clause id="_22d97e55-b1b2-7028-d6b6-64ef0f5a8f0e" type="contributors" obligation="informative">
 <title id="_0089e286-2fd2-cccd-56fa-0d3ecf40c19c">Contributors</title>
-<p id="_78b14988-4979-b0d8-d987-b5229e533d0d">Additional contributors to this Standard include the following:</p>
+<p id="_55dc0c36-1be3-f7c8-9ef1-a6ee5758e967">Additional contributors to this Standard include the following:</p>
 
-<p id="_8cd6fce2-b3cb-4851-1f2e-c07423db0204">Individual name(s), Organization<note id="_b0d040af-6f6d-3c4d-5904-034802ff7a95"><p id="_5095609e-58d9-1265-f585-9bb1911a69ba">If you need to place any further sections in the preface area use the  <tt>[.preface]</tt> attribute.</p>
-</note></p>
-
-
+<ul id="_fd321aab-7357-c578-134b-1825a9969957"><li><p id="_d03bd57c-f124-f45e-0062-1f633028b454">Josh Anhalt, Mbrace Energy</p>
+</li>
+<li><p id="_280567f5-f62e-5195-cf32-231bbad38c93">Zahra Ashena, SensorUp Inc.</p>
+</li>
+<li><p id="_d9a6b3c7-803e-bd59-fdd7-5ed3a25e9010">Julie Doan-Prevost, Alberta Energy Regulator</p>
+</li>
+<li><p id="_7133db3f-ddb9-a7c0-0679-bf17a90c3dd8">Sina Kiaei, University of Calgary</p>
+</li>
+<li><p id="_8c3621a4-2e8d-0239-6bd3-f0f8b51bb4ce">Erin Li, University of Calgary</p>
+</li>
+<li><p id="_b3adafce-018a-5dc0-3198-7a1e460c8bd0">Kan Luo, University of Calgary</p>
+</li>
+<li><p id="_a94af5de-ac6b-a147-ed90-47f37f0469e2">Jinya Wang, University of Calgary</p>
+</li>
+<li><p id="_282bf0c2-c008-9eea-469a-37b944463232">Zachary Weller, GTI Energy</p>
+</li>
+</ul>
 </clause></preface><sections>
-<foreword id="_f6164815-f88f-e984-91e5-b36f27365236" obligation="informative">
-<title id="_a0fa7e9d-feb7-2e70-8533-d99d932d3524">Preface</title>
-<p id="_9b7a3ba2-11f3-37f5-a77c-ea930b264760">This Discussion Paper addresses the urgent need for interoperability in emissions data by examining how a shared modeling approach can reduce fragmentation and build trust across regulatory, voluntary, and market-driven frameworks. The paper does not attempt to describe the full technical content of EmissionML — that material is available on the <link target="https://github.com/opengeospatial/EmissionML">EmissionML GitHub</link> — but instead frames the problem of inconsistent vocabularies and incompatible reporting templates, illustrates the benefits of a common foundation through real-world use cases, and identifies adoption pathways for diverse stakeholders.</p>
-
-<p id="_c0c06f2c-a3bf-b191-171d-615a0d3b1768">The purpose of this document is to engage the broader community of regulators, operators, technology providers, researchers, and investors in a discussion on the feasibility and value of harmonizing emissions data. Like many successful OGC efforts, the goal is not to prescribe specific technologies, but to provide a neutral, extensible foundation that enables interoperability across existing and emerging systems.</p>
-
-<p id="_c6846e89-d962-24b2-ad9d-b5b41eb9cbf1">This work builds on the history of OGC standards, including the Sensor Web Enablement suite, the OGC/ISO Observations and Measurements (O&amp;M) model, and the SOSA/SSN ontology developed in collaboration with W3C. These efforts demonstrated the power of shared information models for environmental and geospatial data. EmissionML extends this lineage by applying the same principles to emissions information, leveraging lessons from geospatial interoperability to address urgent climate and ESG challenges.</p>
-
-<p id="_52341b94-1836-531d-0d45-65d487229601">Future work will include refinement of the EmissionML conceptual model through open-source software implementations, closer alignment with related OGC and ISO standards, and exploration of applicability beyond emissions to other ESG domains such as wastewater, carbon capture and storage, and nitrogen-use efficiency. Community feedback on this Discussion Paper will guide next steps toward a candidate OGC standard and potential joint standardization with ISO.</p>
-</foreword>
 
 
 

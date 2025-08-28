@@ -6,21 +6,6 @@ Keywords inserted here automatically by Metanorma
 
 
 .Preface
-
-[NOTE]
-====
-Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.
-
-There are two ways to specify the Preface: "simple clause" or "full clasuse"
-
-If the Preface does not contain subclauses, it is considered a simple preface clause. This one is entered as text after the `.Preface` label and must be placed between the AsciiDoc document attributes and the first AsciiDoc section title. It should not be give a section title of its own.
-
-If the Preface contains subclauses, it needs to be encoded as a full preface clause. This one is recognized as a full Metanorma AsciiDoc section with te title "Preface", i.e. `== Preface`. (Simple preface content can also be encoded like full preface.) 
-
-====
-
-== Preface
-
 This Discussion Paper addresses the urgent need for interoperability in emissions data by examining how a shared modeling approach can reduce fragmentation and build trust across regulatory, voluntary, and market-driven frameworks. The paper does not attempt to describe the full technical content of EmissionML — that material is available on the https://github.com/opengeospatial/EmissionML[EmissionML GitHub] — but instead frames the problem of inconsistent vocabularies and incompatible reporting templates, illustrates the benefits of a common foundation through real-world use cases, and identifies adoption pathways for diverse stakeholders.
 
 The purpose of this document is to engage the broader community of regulators, operators, technology providers, researchers, and investors in a discussion on the feasibility and value of harmonizing emissions data. Like many successful OGC efforts, the goal is not to prescribe specific technologies, but to provide a neutral, extensible foundation that enables interoperability across existing and emerging systems.
@@ -106,11 +91,11 @@ All questions regarding this submission should be directed to the editor or the 
 
 Additional contributors to this Standard include the following:
 
-Individual name(s), Organization
-
-[NOTE]
-====
-If you need to place any further sections in the preface area
-use the `[.preface]` attribute.
-====
-
+* Josh Anhalt, Mbrace Energy
+* Zahra Ashena, SensorUp Inc.
+* Julie Doan-Prevost, Alberta Energy Regulator
+* Sina Kiaei, University of Calgary
+* Erin Li, University of Calgary
+* Kan Luo, University of Calgary
+* Jinya Wang, University of Calgary
+* Zachary Weller, GTI Energy
