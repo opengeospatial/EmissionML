@@ -1,8 +1,8 @@
-= Standard template in Metanorma
+# EmissionML Discussion Paper
 
-== Content
+OGC doc number 25-023
 
-This repository contains the content for an OGC standard.
+This repository contains the content for the OGC EmissionML Discussion Paper.
 
 * `document.adoc` - the main standard document with references to all sections
 * remaining ``adoc``s - each section of the standard document is in a separate document: follow directions in each document to populate
@@ -13,6 +13,9 @@ This repository contains the content for an OGC standard.
 * `abstract_tests` - the Abstract Test Suite comprising one test for every requirement, optional
 * `UML` - UML diagrams, if applicable
 
-== Building
+== Building in MacOS
+```bash
+metanorma compile -t ogc document.adoc
+```
 
-Run `make`.
+More about Metanorma: https://www.metanorma.org/author/ogc/
