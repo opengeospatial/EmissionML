@@ -1,0 +1,510 @@
+= OGC (add title text)
+:comment: Change "standard" to "draft-standard" for draft standards
+:comment: The front page notice will update automatically to reflect the document type
+:doctype: standard
+:encoding: utf-8
+:lang: en
+:status: draft
+:committee: technical
+:draft: 3.0
+:external-id: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
+:docnumber: YY-999
+:received-date: 2029-03-30
+:issued-date: 2029-03-30
+:published-date: 2029-03-30
+:fullname: Editor One
+:fullname_2: Editor Two
+:docsubtype: Interface
+:keywords: ogcdoc, OGC document, API, openapi, html
+:submitting-organizations: Organization One; Organization Two
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf
+:local-cache-only:
+:data-uri-image:
+:pdf-uri: ./document.pdf
+:xml-uri: ./document.xml
+:doc-uri: ./document.doc
+:edition: 1.0
+
+////
+Make sure to complete each included document
+////
+////
+== Keywords
+
+Keywords inserted here automatically by Metanorma
+////
+
+
+.Preface
+
+[NOTE]
+====
+Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.
+
+There are two ways to specify the Preface: "simple clause" or "full clasuse"
+
+If the Preface does not contain subclauses, it is considered a simple preface clause. This one is entered as text after the `.Preface` label and must be placed between the AsciiDoc document attributes and the first AsciiDoc section title. It should not be give a section title of its own.
+
+If the Preface contains subclauses, it needs to be encoded as a full preface clause. This one is recognized as a full Metanorma AsciiDoc section with te title "Preface", i.e. `== Preface`. (Simple preface content can also be encoded like full preface.)
+
+====
+
+////
+*OGC Declaration*
+////
+
+////
+[THIS TEXT IS ALREADY ADDED AUTOMATICALLY IN THE FRONTISPIECE OF ALL OGC DOUCMENTS]
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+
+Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
+////
+
+////
+NOTE: Uncomment ISO section if necessary
+
+*ISO Declaration*
+
+ISO (the International Organization for Standardization) is a worldwide federation of national standards bodies (ISO member bodies). The work of preparing International Standards is normally carried out through ISO technical committees. Each member body interested in a subject for which a technical committee has been established has the right to be represented on that committee. International organizations, governmental and non-governmental, in liaison with ISO, also take part in the work. ISO collaborates closely with the International Electrotechnical Commission (IEC) on all matters of electrotechnical standardization.
+
+International Standards are drafted in accordance with the rules given in the ISO/IEC Directives, Part 2.
+
+The main task of technical committees is to prepare International Standards. Draft International Standards adopted by the technical committees are circulated to the member bodies for voting. Publication as an International Standard requires approval by at least 75 % of the member bodies casting a vote.
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. ISO shall not be held responsible for identifying any or all such patent rights.
+////
+
+[abstract]
+== Abstract
+
+<Insert Abstract Text here>
+
+[.preface]
+== Security Considerations
+
+//If no security considerations have been made for this Standard, use the following text.
+
+No security considerations have been made for this Standard.
+
+////
+If security considerations have been made for this Standard, follow the examples found in IANA or IETF documents. Please see the following example.
+
+“VRRP is designed for a range of internetworking environments that may employ different security policies. The protocol includes several authentication methods ranging from no authentication, simple clear text passwords, and strong authentication using IP Authentication with MD5 HMAC. The details on each approach including possible attacks and recommended environments follows.
+
+Independent of any authentication type VRRP includes a mechanism (setting TTL=255, checking on receipt) that protects against VRRP packets being injected from another remote network. This limits most vulnerabilities to local attacks.
+NOTE: The security measures discussed in the following sections only provide various kinds of authentication. No confidentiality is provided at all. This should be explicitly described as outside the scope....”
+////
+
+////
+== Submitting organizations
+
+Submitting organisations added automatically by Metanorma from document attributes
+////
+
+[.preface]
+== Submitters
+All questions regarding this submission should be directed to the editor or the submitters:
+
+
+|===
+|Name |Affiliation |OGC member
+
+|Steve Liang | University of Calgary, Canada / SensorUp Inc. | Yes
+|===
+
+
+[.preface]
+== Contributors
+
+//This clause is optional.
+
+Additional contributors to this Standard include the following:
+
+Individual name(s), Organization
+
+[NOTE]
+====
+If you need to place any further sections in the preface area
+use the `[.preface]` attribute.
+====
+
+
+== Scope
+[NOTE]
+====
+Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.
+====
+
+== Conformance
+This standard defines XXXX.
+
+Requirements for N standardization target types are considered:
+
+* AAAA
+* BBBB
+
+Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.
+
+In order to conform to this OGC® interface standard, a software implementation shall choose to implement:
+
+* Any one of the conformance levels specified in Annex A (normative).
+* Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).
+
+All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.
+
+[bibliography]
+== References
+
+The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
+
+[NOTE]
+====
+Insert References here. If there are no references, leave this section empty.
+
+References are to follow the Springer LNCS style, with the exception that optional information may be appended to references: DOIs are added after the date and web resource references may include an access date at the end of the reference in parentheses. See examples from Springer and OGC below.
+====
+
+* [[[Smith81,Identification of Common Molecular Subsequences]]],
+_Identification of Common Molecular Subsequences_.
+Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195–197 (1981)
+
+* [[[May06,ZIB Structure Prediction Pipeline]]],
+_ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services_.
+May, P., Ehrlich, H.C., Steinke, T. In: Nagel, W.E., Walter,
+W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148–1158. Springer,
+Heidelberg (2006)
+
+* [[[Grid,The Grid]]], _The Grid: Blueprint for a New Computing Infrastructure._,
+Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).
+
+* [[[Czajkowski01,Grid Information Services for Distributed Resource Sharing]]],
+_Grid Information Services for Distributed Resource Sharing._
+Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
+Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)
+
+* [[[Foster02,The Physiology of the Grid]]],
+_The Physiology of the Grid: an Open Grid Services Architecture for Distributed Systems Integration._
+Foster, I., Kesselman, C., Nick, J., Tuecke, S. Technical report, Global Grid Forum (2002)
+
+* [[[NCBI,NCBI]]], _National Center for Biotechnology Information_, link:++http://www.ncbi.nlm.nih.gov++[]
+
+* [[[ISO19101-1,ISO 19101-1:2014]]], Geographic information -- Reference model -- Part 1: Fundamentals
+
+* [[[ISO19115-1,ISO 19115-1:2014]]], _Geographic information -- Metadata -- Part 1: Fundamentals_
+
+* [[[ISO19157,ISO 19157:2013]]], _Geographic information -- Data quality_
+
+* [[[ISO19139,ISO 19139:2007]]], _Geographic information -- Metadata -- XML schema implementation_
+
+* [[[ISO19115-3,ISO 19115-3]]], _Geographic information -- Metadata -- Part 3: XML schemas_ (2016)
+
+* [[[OGC15-097,OGC 15-097]]], _OGC Geospatial User Feedback Standard: Conceptual Model_ (2016)
+
+* [[[OGC12-019,OGC 12-019]]], _OGC City Geography Markup Language (CityGML) Encoding Standard_ (2012)
+
+* [[[OGC14-005r3,OGC 14-005r3]]], _OGC IndoorGML_ (2014)
+
+* [[[OGC06121r9,OGC 06-121r9]]], _OGC Web Service Common Implementation Specification_, April 7, 2010. link:++http://portal.opengeospatial.org/files/?artifact_id=38867++[]
+
+== Terms and definitions
+
+
+////
+Note that the initial notice about terms ("This document uses the terms defined in OGC Policy Directive 49...")
+is inserted automatically by Metanorma using the agreed standardised language, and you should not enter it here.
+////
+
+=== example term
+
+term used for exemplary purposes
+
+[.source]
+<<ISO19101-1>>
+
+NOTE: An example note.
+
+[example]
+Here's an example of an example term.
+
+== Conventions
+
+This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
+
+=== Identifiers
+The normative provisions in this standard are denoted by the URI
+
+`http://www.opengis.net/spec/{standard}/{m.n}`
+
+All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.
+
+== The Problem: Lacking Consistent Ontology and Fragmentation in Emissions Data
+The advancement of sensing technologies, digital communications, cloud computing, and artificial intelligence now enables the measurement, monitoring, reporting, and verification (MMRV) of emissions at unprecedented scale and resolution. Satellites can quantify atmospheric pollutants from orbit, aircraft and drones provide high-resolution overflights, continuous monitoring systems deliver real-time data streams, and handheld instruments remain essential for targeted inspections. These innovations have raised expectations for transparency and rigor in emissions reporting across regulatory and voluntary programs. Yet the data ecosystem has not kept pace: without common models and standards, the value of these new technologies is often constrained by fragmentation, duplication, and costly integrations.
+
+This fragmentation is evident across the entire emissions data lifecycle. Each technology vendor, operator, and reporting program tends to define its own vocabulary, formats, and assumptions. Data that should be straightforward to collect becomes difficult to integrate, trace, and compare. A remote sensing detection may not align with ground-level observations — for example, bottom-up inventories — when source features are described inconsistently. Regulators often require the same data to be restated in multiple incompatible templates. Operators face the added challenge of reconciling proprietary vendor outputs with internal enterprise systems, which further drives up cost and complexity. The consequence is predictable: high costs, duplicated effort, and delays in turning detection into actionable emissions reductions.
+
+Emissions data now stands at a similar crossroads to the early days of digital mapping. Then, geospatial information was locked in proprietary systems, requiring costly, one-off conversions with little assurance of interoperability. The introduction of open OGC standards for features and web services changed everything: today billions of people use online maps on their phones, in vehicles, and across countless applications without ever thinking about the standards that make them work. The standards became invisible, yet indispensable. Emissions data needs the same foundation. Without a shared ontology and data model, stakeholders will continue to face high costs, fragmented workflows, and limited transparency. EmissionML provides that missing layer — a future-proof, standards-aligned ontology that addresses the root causes of fragmentation, ensures consistency and traceability, and unlocks a true “Web of Emissions Information” to support faster response, credible reporting, and more effective emissions reduction.
+
+Summary — key challenges at a glance:
+
+* High costs and duplicated effort from bespoke integrations across vendors and systems.
+* Difficulties linking diverse measurements, such as remote sensing, ground in-situ observations, and inventories, due to inconsistent definitions.
+* Incompatible reporting requirements across regulatory and voluntary programs, creating administrative burden and undermining comparability.
+
+== What EmissionML Is — and What It’s Not
+
+=== What EmissionML Is
+
+If new sensing technologies are expanding what is technically measurable, EmissionML is about ensuring those sensor observations can be understood, trusted, and exchanged without friction and information loss. At its core, EmissionML is a shared ontology and data model for emission events and necessary relevant metadata in order to make the emission data useful. It provides a common language to describe sources, events, and observations, so that data collected by satellites, drones, continuous monitors, or facility reporting systems can be consistently interpreted and combined to estimate the duration, location, and magnitude of an emission event. In this way, EmissionML does not replace existing tools or dictate methods; instead, it enables them to work together, much as open geospatial standards allowed different mapping systems to interoperate seamlessly.
+
+Specifically, EmissionML provides:
+
+	* A semantic foundation for interoperable reporting across multiple frameworks.
+	* A bridge between observations (sensor or estimate), source features (the equipment or site where emissions occur), and emission events (the occurrences themselves).
+	* A flexible modeling language that can serve as an intermediary data model, enabling a “write once, use many times” approach for outputs across multiple reporting frameworks.
+	* Data structures that are AI-ready, ensuring that automated reasoning and validation can be applied.
+	* Alignment with OGC, ISO, and W3C standards, including Observations and Measurements (ISO 19156:2023) and the SOSA/SSN ontology.
+
+image::figures/figure_1.png[]
+
+=== What EmissionML Is Not
+
+Equally important is clarifying what EmissionML does not attempt to be:
+
+	* It is not a methane MMRV protocol such as OGMP 2.0, Veritas, or MiQ. Instead, it can represent the data that those frameworks require.
+	* It is not a fixed reporting format like a CSV schema or PDF template. EmissionML underlies such formats but does not replace them.
+	* It is not an AI or ML model. While designed to be AI-ready, EmissionML itself is a data standard, not an algorithm.
+	* It is not a raw sensor data format. Vendors can continue to use proprietary payloads, but EmissionML provides the normalization layer.
+	* It is not a standalone software package. Instead, it is an ontology that can be implemented in software.
+	* It is not the only modeling language. EmissionML complements and builds upon SOSA, O&M, and related standards.
+
+In short: EmissionML’s strength lies in being a neutral, extensible foundation that enables diverse protocols, frameworks, and tools to interoperate seamlessly—today and as new innovations emerge.
+
+== Use Cases: Real-world EmissionML Applications
+
+=== EmissionML Use Cases
+To illustrate EmissionML’s potential, we present real-world applications where the lack of a common ontology creates friction today — and where a shared data model can deliver clear benefits for stakeholders, such as regulators, operators, vendors, researchers and investors.
+
+[options="header",cols="1,1,2,2,2"]
+|===
+| Title | Stakeholders | Problem | EmissionML Solution | Benefits
+
+| Cross-Vendor Sensor Integration
+| Sensor Vendors, Operators
+| Proprietary payloads and inconsistent data models make it expensive and time-consuming to integrate multiple sensor systems.
+| EmissionML normalizes observation payloads and maps them to a consistent ontology.
+| Enables plug-and-play analytics, reduces integration costs, and avoids vendor lock-in.
+
+| Super-Emitter Event Validation
+| Remote Sensing Data Providers, Regulators
+| It is difficult to link a detected plume with a specific facility or activity due to inconsistent source feature definitions.
+| EmissionML links Observations to Source Features and Emission Events, creating an explainable and auditable validation chain.
+| Reduce response time and resulting emissions, increases confidence in attribution, and builds public trust.
+
+| Streamlined Regulatory and Voluntary Reporting
+| Operators, Regulators
+| Operators must reformat the same emissions data multiple times for different reporting frameworks (e.g., EPA, EU Methane Regulation, OGMP 2.0, MiQ, and others). Proprietary templates and vendor lock-in increase costs and errors.
+| EmissionML enables “emit once” data publication, which can then be automatically transformed into multiple reporting formats.
+| Reduces compliance cost and effort, ensures consistency across frameworks, and improves auditability.
+
+| Real-Time Operational Response
+| Operators, Control Rooms, Emergency Response Centres
+| Control rooms and emergency response centres often receive fragmented event feeds from multiple systems, delaying diagnosis and coordinated action.
+| EmissionML provides a normalized event stream that can be shared and brokered across platforms.
+| Accelerates root-cause analysis, reduces downtime, and shortens detection-to-response cycles.
+
+| Carbon-Market Quantification and Verification
+| Offset Project Developers, Auditors
+| Carbon credits depend on accurate quantification of avoided or reduced emissions, but calculations are often opaque.
+| EmissionML encodes emission quantities together with essential metadata, uncertainties and provenance.
+| Increases integrity of carbon credits, reduces verification cost, and improves market confidence.
+
+| Interoperable Emissions Simulation
+| Engineering Firms, Researchers
+| Simulation tools use incompatible models, limiting comparability and reuse.
+| EmissionML represents simulation inputs and outputs as standardized Emission Events.
+| Makes simulation results comparable and repeatable, enabling cross-study benchmarking.
+
+| Financial Risk and ESG Analysis
+| Banks, Investors, Insurers
+| ESG risk assessments are based on inconsistent, non-comparable emissions disclosures.
+| EmissionML structures emissions data for ingestion into financial risk models.
+| Improves risk-based lending and investment decisions, supports credible ESG scoring.
+|===
+
+=== What the world looks like with EmissionML
+Imagine a world where emissions data flows as seamlessly as financial information or digital maps. A plume detected by satellite is automatically linked to a site, verified against ground-based monitors, and cross-checked with operational data — all within minutes. Regulators receive reports in a consistent, auditable format without manual re-entry. Operators diagnose and repair leaks in hours instead of weeks. Investors and insurers compare emissions performance across companies with the same confidence they place in audited financial statements. Researchers build upon shared datasets instead of recreating them. In such a future, EmissionML is invisible but indispensable: the common foundation that makes emissions information trustworthy, interoperable, and actionable at global scale.
+
+== Adoption Pathways & Call to Action
+
+Turning this vision into reality requires broad adoption. Just as OGC’s open standards unlocked the geospatial web, EmissionML will only deliver its full value through collective action. No single actor can overcome emissions data fragmentation alone. Regulators, operators, technology vendors, researchers, and investors all have a vital role to play in building a shared, standards-based foundation. The pathways below outline concrete steps that each community can take to accelerate adoption and unlock the benefits of a seamless “Web of Emissions Information.”
+
+* *Regulators*: Reference EmissionML when designing reporting templates to cut oversight costs, automate audits, and reduce uncertainties over compliance — while helping build a globally consistent emissions reporting foundation.
+* *Operators*: Adopt EmissionML internally to lower reporting costs, eliminate duplicate integrations, and shorten detection-to-repair cycles — ensuring every integration efforts not only become reusable but also strengthens the connected emissions ecosystem.
+* *Software Vendors*: Implement EmissionML compatibility in platforms to future-proof your products, accelerate customer onboarding, and gain a competitive edge in ESG-driven markets — while enabling customers to be standard compliant and future proof.
+* *Sensor Providers*: Map sensor payloads and uncertainties to EmissionML to make devices plug-and-play, reduce custom integration costs for customers, and expand market reach — contributing measurements that immediately integrate into the broader emissions data ecosystem.
+* *Investors and ESG Analysts*: Request EmissionML-compliant data in due diligence to reduce the risk of incomplete data, increase confidence in ESG portfolios, and improve risk-adjusted returns — while promoting transparency and comparability across global markets.
+* *Researchers and Academia*: Apply EmissionML in models and publications to increase visibility, boost citations, and ensure lasting impact — while making research outputs reusable across studies, accelerating collective progress toward emissions reduction.
+
+Many OGC standards, from web mapping to the Sensor Web and the Internet of Things, have become foundational to our digital world. By building EmissionML on this proven technical and reputational foundation, we're creating a standard that is not only robust and extensible but also poised for similar global adoption. To further this goal and provide the highest level of assurance, we plan to follow the path of many successful OGC standards by pursuing joint standardization with the International Organization for Standardization (ISO). This strategic step will ensure EmissionML meets the rigorous requirements for international endorsement, making it a credible and indispensable tool for regulatory, academic, and commercial applications worldwide.
+
+How to Get Involved:
+
+* Explore the link:++https://github.com/opengeospatial/EmissionML++[OGC EmissionML GitHub].
+* Contribute use cases, implementations, or vocabulary feedback.
+* Join the link:++https://www.ogc.org/membership/++[OGC EmissionML Standards Working Group] and shape the future of emissions interoperability.
+* Develop open-source reference implementations and tutorials to facilitate adoption and community contribution
+
+== Clause containing normative material
+
+Paragraph
+
+=== Requirement Class A or Requirement A Example
+
+Paragraph – intro text for the requirement class.
+
+Use the following table for Requirements Classes.
+
+////
+[cols="1,4",width="90%"]
+|===
+2+|*Requirements Class* {set:cellbgcolor:#CACCCE}
+2+|http://www.opengis.net/spec/ABCD/m.n/req/req-class-a {set:cellbgcolor:#FFFFFF}
+|Target type |Token
+|Dependency |http://www.example.org/req/blah
+|Dependency |urn:iso:ts:iso:19139:clause:6
+|*Requirement 1* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1 +
+requirement description {set:cellbgcolor:#FFFFFF}
+|*Requirement 2* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2 +
+requirement description {set:cellbgcolor:#FFFFFF}
+
+|*Requirement 3* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3 +
+requirement description
+{set:cellbgcolor:#FFFFFF}
+|===
+////
+
+
+[requirement,type="class",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a",obligation="requirement"]
+====
+
+Requirements Class
+
+[dependency]
+--
+* link:++http://www.example.org/req/blah++[]
+* urn:iso:ts:iso:19139:clause:6
+--
+
+[requirement,type="general",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1"]
+======
+requirement description
+======
+
+[requirement,type="general",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2"]
+======
+requirement description
+======
+
+[requirement,type="general",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3"]
+======
+requirement description
+======
+
+====
+
+==== Requirement 1
+
+Paragraph - intro text for the requirement.
+
+Use the following table for Requirements, number sequentially.
+
+[requirement,type="general",id="/req/req-class-a/req-name-1",obligation="requirement"]
+====
+
+Requirement 'shall' statement
+
+====
+
+Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
+
+[width="90%",options="header"]
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|name 1 |definition of name 1 |float |One or more (mandatory)
+|name 2 |definition of name 2 |character string type, not empty |Zero or one (optional)
+|name 3 |definition of name 3 |GML:: Point PropertyType |One (mandatory)
+|===
+
+== Media Types for any data encoding(s)
+
+A section describing the MIME-types to be used is mandatory for any standard involving data encodings. If no suitable MIME type exists in link:++http://www.iana.org/assignments/media-types/index.html++[] then this section may be used to define a new MIME type for registration with IANA.
+
+////
+add or remove annexes after "A" as necessary
+////
+[appendix]
+== Conformance Class Abstract Test Suite (Normative)
+
+[NOTE]
+Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
+
+=== Conformance Class A
+
+==== Requirement 1
+[requirement,type="pseudocode",label="/req/req-class-a/req-name-1"]
+=====
+
+[verification,label="/conf/conf-class-a/req-name-1"]
+======
+Test purpose:: Verify that...
+
+Test method:: Inspect...
+======
+
+=====
+
+==== Requirement 2
+
+[appendix,obligation="informative"]
+== Title
+
+[NOTE]
+Place other Annex material in sequential annexes beginning with "B" and leave final two annexes for the Revision History and Bibliography
+
+////
+Revision History should be the last annex before the Bibliography
+Bibliography should be the last annex
+////
+[appendix]
+== Revision History
+
+[width="90%",options="header"]
+|===
+|Date |Release |Editor | Primary clauses modified |Description
+|2016-04-28 |0.1 |G. Editor |all |initial version
+|===
+
+[bibliography]
+[[Bibliography]]
+== Bibliography
+
+[NOTE]
+.Example Bibliography (Delete this note).
+===============================================
+The TC has approved Springer LNCS as the official document citation type.
+
+Springer LNCS is widely used in technical and computer science journals and other publications
+
+* For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]
+
+– Actual References:
+
+[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)
+
+[n] Web: Author Surname, A.: Title, link:++http://Website-Url++[]
+
+===============================================
+
+* [[[OGC2015,OGCTB12]]], _OGC: OGC Testbed 12 Annex B: Architecture_ (2015).

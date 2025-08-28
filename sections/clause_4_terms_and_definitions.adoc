@@ -1,0 +1,19 @@
+== Terms and definitions
+
+
+////
+Note that the initial notice about terms ("This document uses the terms defined in OGC Policy Directive 49...")
+is inserted automatically by Metanorma using the agreed standardised language, and you should not enter it here.
+////
+
+=== example term
+
+term used for exemplary purposes
+
+[.source]
+<<ISO19101-1>>
+
+NOTE: An example note.
+
+[example]
+Here's an example of an example term.

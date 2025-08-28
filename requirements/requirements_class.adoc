@@ -1,3 +1,4 @@
+////
 [cols="1,4",width="90%"]
 |===
 2+|*Requirements Class* {set:cellbgcolor:#CACCCE}
@@ -14,3 +15,33 @@ requirement description {set:cellbgcolor:#FFFFFF}
 requirement description
 {set:cellbgcolor:#FFFFFF}
 |===
+////
+
+
+[requirement,type="class",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a",obligation="requirement"]
+====
+
+Requirements Class
+
+[dependency]
+--
+* http://www.example.org/req/blah
+* urn:iso:ts:iso:19139:clause:6
+--
+
+[requirement,type="general",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1"]
+======
+requirement description
+======
+
+[requirement,type="general",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2"]
+======
+requirement description
+======
+
+[requirement,type="general",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3"]
+======
+requirement description
+======
+
+====
