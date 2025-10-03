@@ -1,6 +1,6 @@
 ## Date/Time: 2025-10-02 09:00 MT
 
-## Attendees: Steve Liang, .....
+## Attendees: Steve Liang, Josh Anhalt, Ryan Ahola, Jinya Wang, Erin Li, Kan Luo, Sara Saeedi, Zahra Ashena
 
 ## Agenda
 - Activities Review
