@@ -31,88 +31,94 @@ EmissionML is built on existing OGC and ISO standards, including:
 
 UML diagrams are available in the [25-019 branch](https://github.com/opengeospatial/EmissionML/tree/25-019/UML).
 
-v2025-07-04
+v2025-10-29
 ```mermaid
 classDiagram
+ %% title "EmissionML Refined Model (Updated)"
 
-class EmissionEvent {
-  +String name
-  +EmissionIntent intent
-  +URI pollutantType
-}
+  class EmissionEvent {
+    +pollutantType: URI
+  }
+  class EmissionQuantity {
+    +quantity: double
+    +quality: DQ_Element
+  }
+  class UnitOfMeasure {
+    +name: String
+    +symbol: String
+    +definition: URI
+  }
+  class TemporalBound {
+    <<ValueObject>>
+    +time: TM_Instant
+    +quality: DQ_Element
+  }
 
-class SourceFeature {
-  +String name
-  +GM_Object geometry
-  +CodeList attributionGranularity
-}
+  class Observation {
+    <<ISO 19156:2023>>
+    +result: any
+    +time: TM_Instant
+  }
 
-class StartEvent {
-  +TM_Instant startTime
-  +DeterminationType determinationType
-  +DQ_AccuracyOfATimeMeasurement quality
-}
+  class SourceFeature {
+    +name: String
+    +geometry: GM_Object
+  }
+  class SourceFeatureType {
+    +name: String
+    +description: String
+  }
 
-class EndEvent {
-  +TM_Instant startTime
-  +DeterminationType determinationType
-  +DQ_AccuracyOfATimeMeasurement quality
-}
+  class Mechanism {
+    <<CodeList>>
+  }
+  class EmissionIntent {
+    <<CodeList>>
+    +intentional
+    +unintentional
+    +unknown
+  }
+  class AbstractDeterminationMethod {
+    <<abstract>>
+    +label: String
+    +definition: URI
+  }
+  class TemporalDeterminationMethod
+  class QuantityDeterminationMethod
 
-class EmissionQuantity {
-  +UnitOfMeasure unitOfMeasure
-  +double quantity
-  +DQ_Element quality
-  +URI quantityDeterminationMethod
-}
+  %% --- Relationships (Updated) ---
 
-class UnitOfMeasure {
-  +String name
-  +String symbol
-  +URI definition
-}
+  %% --- EmissionEvent is the central assertion ---
+  EmissionEvent "1" *-- "1" EmissionQuantity : hasQuantity
+  EmissionEvent "1" o-- "1" TemporalBound : startTime
+  EmissionEvent "1" o-- "0..1" TemporalBound : endTime
+  EmissionEvent "1" --> "1" SourceFeature : hasSource
+  EmissionEvent "1" --> "1" Mechanism : hasMechanism
 
-class Observation
+  %% --- Provenance: Assertions are based on Evidence (Observations) ---
+  EmissionQuantity "1" --> "0..*" Observation : hasEvidence
+  TemporalBound "1" --> "0..*" Observation : hasEvidence
 
-class DeterminationMethod {
-  +URI uri
-  +String label
-  +String definition
-}
+  %% --- Observation is of a SourceFeature ---
+  Observation "1" --> "1" SourceFeature : featureOfInterest
 
-class EmissionIntent {
-  <<CodeList>>
-  intentional
-  unintentional
-  unknown
-}
+  %% --- Quantities and Times have their own methods ---
+  EmissionQuantity "1" *-- "1" UnitOfMeasure : hasUnit
+  EmissionQuantity "1" --> "1" QuantityDeterminationMethod : hasDeterminationMethod
+  TemporalBound "1" --> "1" TemporalDeterminationMethod : hasDeterminationMethod
 
-class DeterminationType {
-  <<CodeList>>
-  observation
-  inference
-  other
-}
+  %% --- Determination Methods Inheritance ---
+  TemporalDeterminationMethod --|> AbstractDeterminationMethod
+  QuantityDeterminationMethod --|> AbstractDeterminationMethod
 
-class Mechanism {
-  <<CodeList>>
-}
+  %% --- SourceFeatures and their Types ---
+  SourceFeature "1" --> "1" SourceFeatureType : hasType
 
-%% Relationships
-Mechanism <-- EmissionEvent
-SourceFeature "1" --> "0..*" EmissionEvent : emits
-EmissionEvent "0..*" --> "1" SourceFeature : isOriginatedFrom
-EmissionEvent --> "1" StartEvent : hasStartEvent
-EmissionEvent --> "1" EndEvent : hasEndEvent
-EmissionEvent --> "1" EmissionQuantity : isQuantifiedBy
-EmissionEvent --> "0..*" Observation : isObservedBy
-Observation --> "1" SourceFeature : hasUltimateFeatureOfInterest
-SourceFeature --> "0..*" Observation
-StartEvent --> "0..1" Observation : isObservedBy
-EndEvent --> "0..1" Observation : isObservedBy
-EmissionQuantity --> DeterminationMethod : usesMethod
-StartEvent --> DeterminationMethod : usesMethod
-EndEvent --> DeterminationMethod : usesMethod
+  %% --- "Honor System" Constraint ---
+  SourceFeatureType "1" --> "0..*" Mechanism : allowedMechanism
+
+  %% --- Mechanism defines Intent ---
+  Mechanism ..> EmissionIntent : hasIntent
 ```
 
 ---
