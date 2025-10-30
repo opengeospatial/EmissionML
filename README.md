@@ -56,8 +56,6 @@ classDiagram
 
   class Observation {
     <<ISO 19156:2023>>
-    +result: any
-    +time: TM_Instant
   }
 
   class SourceFeature {
