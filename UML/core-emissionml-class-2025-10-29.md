@@ -1,5 +1,7 @@
+```mermaid
+
 classDiagram
-  title "EmissionML Refined Model (Updated)"
+ %% title "EmissionML Refined Model (Updated)"
 
   class EmissionEvent {
     +pollutantType: URI
@@ -51,36 +53,36 @@ classDiagram
   class TemporalDeterminationMethod
   class QuantityDeterminationMethod
 
-  ' --- Relationships (Updated) ---
+  %% --- Relationships (Updated) ---
 
-  ' --- EmissionEvent is the central assertion ---
+  %% --- EmissionEvent is the central assertion ---
   EmissionEvent "1" *-- "1" EmissionQuantity : hasQuantity
   EmissionEvent "1" o-- "1" TemporalBound : startTime
   EmissionEvent "1" o-- "0..1" TemporalBound : endTime
   EmissionEvent "1" --> "1" SourceFeature : hasSource
   EmissionEvent "1" --> "1" Mechanism : hasMechanism
 
-  ' --- Provenance: Assertions are based on Evidence (Observations) ---
+  %% --- Provenance: Assertions are based on Evidence (Observations) ---
   EmissionQuantity "1" --> "0..*" Observation : hasEvidence
   TemporalBound "1" --> "0..*" Observation : hasEvidence
 
-  ' --- Observation is of a SourceFeature ---
+  %% --- Observation is of a SourceFeature ---
   Observation "1" --> "1" SourceFeature : featureOfInterest
 
-  ' --- Quantities and Times have their own methods ---
+  %% --- Quantities and Times have their own methods ---
   EmissionQuantity "1" *-- "1" UnitOfMeasure : hasUnit
   EmissionQuantity "1" --> "1" QuantityDeterminationMethod : hasDeterminationMethod
   TemporalBound "1" --> "1" TemporalDeterminationMethod : hasDeterminationMethod
 
-  ' --- Determination Methods Inheritance ---
+  %% --- Determination Methods Inheritance ---
   TemporalDeterminationMethod --|> AbstractDeterminationMethod
   QuantityDeterminationMethod --|> AbstractDeterminationMethod
 
-  ' --- SourceFeatures and their Types ---
+  %% --- SourceFeatures and their Types ---
   SourceFeature "1" --> "1" SourceFeatureType : hasType
 
-  ' --- "Honor System" Constraint ---
+  %% --- "Honor System" Constraint ---
   SourceFeatureType "1" --> "0..*" Mechanism : allowedMechanism
 
-  ' --- Mechanism defines Intent ---
+  %% --- Mechanism defines Intent ---
   Mechanism ..> EmissionIntent : hasIntent
