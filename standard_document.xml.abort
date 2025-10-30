@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.7.10" schema-version="v2.0.8" flavor="ogc">
+<bibdata type="standard">
+<title language="en" format="text/plain">OGC Emission Event Modeling Language (EmissionML) Discussion Paper</title>
+<uri type="xml">./document.xml</uri><uri type="pdf">./document.pdf</uri><uri type="doc">./document.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}</docidentifier><docidentifier type="ogc-internal" primary="true">25-019</docidentifier><docnumber>25-019</docnumber><date type="published"><on>2025-xx-xx</on></date><date type="issued"><on>2025-xx-xx</on></date><date type="received"><on>2025-xx-xx</on></date><contributor><role type="author"/><organization>
+<name>SensorUp Inc.</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Natural Resources Canada</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>University of Calgary</name>
+</organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Steve Liang</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Ryan Ahola</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><draft>3.0</draft></version><language>en</language><script>Latn</script><status><stage>draft</stage></status><copyright><from>2025</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>emissions</keyword><keyword>climate change</keyword><ext><doctype>draft-standard</doctype><subdoctype>Interface</subdoctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>color-admonition-caution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-editor</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-important</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-note</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-safety-precaution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-tip</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-todo</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-warning</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-background-definition-description</name><value>rgb(242, 251, 255)</value></presentation-metadata><presentation-metadata><name>color-background-definition-term</name><value>rgb(215, 243, 255)</value></presentation-metadata><presentation-metadata><name>color-background-page</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-header</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-even</name><value>rgb(252, 246, 222)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-odd</name><value>rgb(254, 252, 245)</value></presentation-metadata><presentation-metadata><name>color-background-term-admitted-label</name><value>rgb(223, 236, 249)</value></presentation-metadata><presentation-metadata><name>color-background-term-deprecated-label</name><value>rgb(237, 237, 238)</value></presentation-metadata><presentation-metadata><name>color-background-term-preferred-label</name><value>rgb(249, 235, 187)</value></presentation-metadata><presentation-metadata><name>color-background-text-label-legacy</name><value>rgb(33, 60, 107)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-1</name><value>rgb(237, 193, 35)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-2</name><value>rgb(246, 223, 140)</value></presentation-metadata><presentation-metadata><name>color-text</name><value>rgb(88, 89, 91)</value></presentation-metadata><presentation-metadata><name>color-text-title</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_fd0161fc-f62b-a79d-3423-d7bbbd97e7a6" obligation="normative">
+<title id="_19604a82-a482-3c87-1356-705ef7b11f09">Copyright notice</title>
+<p id="_13df91f9-0943-ac24-39c3-d06302298765" align="center">Copyright © 2025 Open Geospatial Consortium<br/> To obtain additional rights of use, visit<link target="https://www.ogc.org/legal"/></p>
+</clause>
+
+<clause id="_6908548e-204b-56e7-9062-6924cccf2315" obligation="normative">
+<title id="_db83e2f6-5841-eaeb-0d35-1277ee9d3f6a">Note</title>
+<p id="_e1d5d5c4-54c3-2761-be2c-22547f01c057" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_02892e94-7b43-630a-129c-d2e0f75ff92b" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</clause>
+</copyright-statement>
+
+<license-statement>
+
+<clause id="_45f6bdf5-80f3-f775-9740-2adafc90b1f7" obligation="normative">
+<title id="_3788828e-41fb-3895-6acc-52071643abed">License Agreement</title>
+<p id="_772872dd-928c-666f-92c5-676f7f5d3071">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
+</clause>
+</license-statement>
+
+<legal-statement>
+
+<clause id="_3ab5f032-cd12-0ecf-f17d-77404d710ada" obligation="normative">
+<title id="_37bc7c72-0d8f-ba1e-c43f-647a0e7edf21">Notice</title>
+<p id="_043770e0-ac1d-3f8b-e986-31e754cfae4b">This document is not an OGC Standard. This document is an OGC Draft Standard and is therefore not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+<p id="_23a0d292-fb12-e47d-749d-c2da490ed875">Further, an OGC Draft Standard should not be referenced as required or mandatory technology in procurements.</p>
+</clause>
+</legal-statement>
+
+<feedback-statement>
+
+</feedback-statement>
+</boilerplate><preface><clause type="security" id="_11f014e9-c98a-c81d-eeb6-de3baa47ebea" obligation="informative">
+  <title id="_4d477b3a-b165-d2d5-db7e-e8925fda06e7">Security considerations</title>
+  <p id="_87632f48-a936-3f14-4cc0-36d21a86a8b8">No security considerations have been made for this document.</p></clause>
+</preface><sections><p id="_1f240a04-03e0-5f0b-8cc6-7b4f09cfda2e">Unresolved directive in &lt;stdin&gt; — include::sections/clause_0_front_material.adoc[]</p>
+
+<p id="_c4f16be3-8ee1-32cc-48ff-97977df0f3c4">Unresolved directive in &lt;stdin&gt; — include::sections/clause_1_scope.adoc[]</p>
+
+<p id="_396f4fae-83ad-5163-ebf2-c148e5212514">Unresolved directive in &lt;stdin&gt; — include::sections/clause_3_references.adoc[]</p>
+
+<p id="_e3c52177-c72e-85d4-1cce-437923ccf934">Unresolved directive in &lt;stdin&gt; — include::sections/clause_4_terms_and_definitions.adoc[]</p>
+
+<p id="_a537e65a-f060-486f-2ae9-aeb1485adabf">Unresolved directive in &lt;stdin&gt; — include::sections/clause_6_informative_text.adoc[]</p>
+
+<p id="_14e17fcf-f489-fe87-6efd-b46258011efd">Unresolved directive in &lt;stdin&gt; — include::sections/annex-bibliography.adoc[]</p>
+</sections>
+</metanorma>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.7.10" schema-version="v2.0.8" flavor="ogc">
+<bibdata type="standard">
+<title language="en" format="text/plain">OGC Emission Event Modeling Language (EmissionML) Discussion Paper</title>
+<uri type="xml">./document.xml</uri><uri type="pdf">./document.pdf</uri><uri type="doc">./document.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}</docidentifier><docidentifier type="ogc-internal" primary="true">25-019</docidentifier><docnumber>25-019</docnumber><date type="published"><on>2025-xx-xx</on></date><date type="issued"><on>2025-xx-xx</on></date><date type="received"><on>2025-xx-xx</on></date><contributor><role type="author"/><organization>
+<name>SensorUp Inc.</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Natural Resources Canada</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>University of Calgary</name>
+</organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Steve Liang</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Ryan Ahola</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><draft>3.0</draft></version><language>en</language><script>Latn</script><status><stage>draft</stage></status><copyright><from>2025</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>emissions</keyword><keyword>climate change</keyword><ext><doctype>draft-standard</doctype><subdoctype>Interface</subdoctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>color-admonition-caution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-editor</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-important</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-note</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-safety-precaution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-tip</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-todo</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-warning</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-background-definition-description</name><value>rgb(242, 251, 255)</value></presentation-metadata><presentation-metadata><name>color-background-definition-term</name><value>rgb(215, 243, 255)</value></presentation-metadata><presentation-metadata><name>color-background-page</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-header</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-even</name><value>rgb(252, 246, 222)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-odd</name><value>rgb(254, 252, 245)</value></presentation-metadata><presentation-metadata><name>color-background-term-admitted-label</name><value>rgb(223, 236, 249)</value></presentation-metadata><presentation-metadata><name>color-background-term-deprecated-label</name><value>rgb(237, 237, 238)</value></presentation-metadata><presentation-metadata><name>color-background-term-preferred-label</name><value>rgb(249, 235, 187)</value></presentation-metadata><presentation-metadata><name>color-background-text-label-legacy</name><value>rgb(33, 60, 107)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-1</name><value>rgb(237, 193, 35)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-2</name><value>rgb(246, 223, 140)</value></presentation-metadata><presentation-metadata><name>color-text</name><value>rgb(88, 89, 91)</value></presentation-metadata><presentation-metadata><name>color-text-title</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_fd0161fc-f62b-a79d-3423-d7bbbd97e7a6" obligation="normative">
+<title id="_19604a82-a482-3c87-1356-705ef7b11f09">Copyright notice</title>
+<p id="_13df91f9-0943-ac24-39c3-d06302298765" align="center">Copyright © 2025 Open Geospatial Consortium<br/> To obtain additional rights of use, visit<link target="https://www.ogc.org/legal"/></p>
+</clause>
+
+<clause id="_6908548e-204b-56e7-9062-6924cccf2315" obligation="normative">
+<title id="_db83e2f6-5841-eaeb-0d35-1277ee9d3f6a">Note</title>
+<p id="_e1d5d5c4-54c3-2761-be2c-22547f01c057" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_02892e94-7b43-630a-129c-d2e0f75ff92b" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</clause>
+</copyright-statement>
+
+<license-statement>
+
+<clause id="_45f6bdf5-80f3-f775-9740-2adafc90b1f7" obligation="normative">
+<title id="_3788828e-41fb-3895-6acc-52071643abed">License Agreement</title>
+<p id="_772872dd-928c-666f-92c5-676f7f5d3071">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
+</clause>
+</license-statement>
+
+<legal-statement>
+
+<clause id="_3ab5f032-cd12-0ecf-f17d-77404d710ada" obligation="normative">
+<title id="_37bc7c72-0d8f-ba1e-c43f-647a0e7edf21">Notice</title>
+<p id="_043770e0-ac1d-3f8b-e986-31e754cfae4b">This document is not an OGC Standard. This document is an OGC Draft Standard and is therefore not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+<p id="_23a0d292-fb12-e47d-749d-c2da490ed875">Further, an OGC Draft Standard should not be referenced as required or mandatory technology in procurements.</p>
+</clause>
+</legal-statement>
+
+<feedback-statement>
+
+</feedback-statement>
+</boilerplate><preface><foreword id="_01532e71-c789-d889-d2de-08a7213a5680" obligation="informative">
+<title id="_67001cd2-f272-ceff-f849-7a43bc65e67d">Preface</title>
+<p id="_fdc7ade3-0338-9a2e-cbaa-52a1327ed7e2"><strong>i.     Abstract</strong></p>
+
+<p id="_ac3e5f14-5b19-4c63-8998-7032d9295e76">&lt;Insert Abstract Text here&gt;</p>
+
+<p id="_46b3c915-484a-4c02-021d-9988a4221f6e"><strong>ii.    Keywords</strong></p>
+
+<p id="_312c8103-a7f5-4e80-748c-55bbea9d5ab2">The following are keywords to be used by search engines and document catalogues.</p>
+
+<p id="_93128da1-d46c-ddd2-f760-c3af2fbd65f7">ogcdoc, OGC document, &lt;tags separated by commas&gt;</p>
+
+<p id="_19822ada-e66c-171f-ab24-d5fc6d38dbf8"><strong>iii.   Preface</strong><note id="_69be0319-6d01-5f38-0502-5b64b88e0c45"><p id="_a24502da-8c5a-9054-9bd2-c93cfae0773d">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work. &gt; Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_f29431a4-5338-021a-7c6f-f1a7b21dae3e">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</note></p>
+
+
+
+<p id="_dcffd1e5-9596-d61f-cd73-4bcc5eb9b1b3"><strong>iv.    Security Considerations</strong></p>
+
+<p id="_7e7d1ff2-49e1-7e12-e6ef-c6796944b364">No security considerations have been made for this Standard.</p>
+
+<p id="_b4cea6e6-182d-e0b6-d61a-783135c8a72f"><strong>v.    Submitting organizations</strong></p>
+
+<p id="_0c8a49dd-2a96-5481-dea2-c9d496a1d80b">The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
+
+<p id="_cb9daa58-a40b-070a-2409-e8a554b71b14">Organization name(s)</p>
+
+<p id="_39176f89-cf8e-7440-921c-d67d5702fb67"><strong>vi.     Submitters</strong></p>
+
+<p id="_8dad9808-7197-d37f-d09c-70ba6a477c25">All questions regarding this submission should be directed to the editor or the submitters:</p>
+
+<table id="_0ea632f2-53eb-4a2f-d427-59636d243d9a"><tbody><tr id="_d25d79aa-f723-76d3-58e2-d5f8935ab0d0"><td id="_3750c06a-388b-ec46-1392-62b0d6e9dacd" valign="middle" align="left"><strong>Name</strong></td>
+<td id="_b90aa445-4a99-2b55-22c6-a6f93e22061f" valign="middle" align="left"><strong>Affiliation</strong></td>
+</tr><tr id="_d74b21e3-7929-b484-86d8-4d1b61e61093"><td id="_f03ac08f-5375-a712-453b-0b7657c20db2" valign="middle" align="left">Steve Liang</td>
+<td id="_a4f1ab72-3ff9-7138-2738-3579d91320b3" valign="middle" align="left">University of Calgary / SensorUp</td>
+</tr><tr id="_a6d65730-b49a-04c0-11f6-e8cc5a446626"><td id="_d1f6b684-aac7-0fe5-785c-9e9fd94df31a" valign="middle" align="left">Ryan Ahola</td>
+<td id="_d1e000c5-afb5-cd9a-2c5d-e2e8a9f39346" valign="middle" align="left">Natural Resources Canada</td>
+</tr></tbody>
+</table>
+</foreword><clause type="security" id="_11f014e9-c98a-c81d-eeb6-de3baa47ebea" obligation="informative">
+  <title id="_4d477b3a-b165-d2d5-db7e-e8925fda06e7">Security considerations</title>
+  <p id="_87632f48-a936-3f14-4cc0-36d21a86a8b8">No security considerations have been made for this document.</p></clause>
+</preface><sections>
+<clause id="_e3d66343-806e-9184-7237-5adb32fcff28" type="scope" obligation="normative">
+<title id="_f70b6ff6-6131-0e24-81e1-850dbe94b63d">Scope</title>
+<note id="_4fa3bf63-56e7-381e-feed-0e4512416751"><p id="_b6a5962c-957d-ad62-8c2c-c296f05a240e">Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.</p>
+</note>
+</clause>
+
+
+
+<terms id="_1bbb27dc-83e2-7fa5-15f2-fa8aabb3d9a6" obligation="normative">
+<title id="_dfb2eab2-f980-6365-3c47-81d0eb272962">Terms and definitions</title><p id="_9608c37a-eaae-1098-3a4b-f705fd512d85">No terms and definitions are listed in this document.</p>
+
+<p id="_6e5ba0bf-4830-2e53-f1c5-07c075342c8f">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+
+<p id="_2bcce6ff-440a-67d4-c0a7-a81fa5b1125e">This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+
+<p id="_3a4cc38f-6614-34f0-6e5b-8831934c33d4">For the purposes of this document, the following additional terms and definitions apply.</p>
+
+<dl id="_c108b639-e6c7-137e-7ab7-b6fbc20a4802"><dt>Emission Event</dt>
+<dd id="_cab2b64e-14ad-7363-529e-bff1703fbbed"><p id="_fe242985-26e9-93d4-f728-68f97f33270e">An Emission Event is an occurrent representing the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.</p>
+</dd>
+<dt>Feature</dt>
+<dd id="_2b2615cf-e98b-4c81-01b1-88539161f705"><p id="_13e93281-ed01-21c9-aacb-32ed92b1d4d6">Abstraction of real world phenomena (Source: ISO 19101-1:2014)</p>
+</dd>
+<dt>Measurement</dt>
+<dd id="_3c48efe6-6cb9-a7e6-f19b-147ac8d4799c"><p id="_e180facf-97bf-abba-0aa7-10fe1a56f68c">Set of operations having the object of determining the value of a quantity (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
+</dd>
+<dt>Mechanism</dt>
+<dd id="_35561659-1819-4f5c-512a-96f1cbaa7f78"><p id="_bd27c278-bb78-ef4b-4575-ebc10c1c438d">A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is a member of a controlled vocabulary and is defined independently of the Source Feature — including its identity, structure, or purpose — allowing Mechanisms to be consistently reused across different types of Source Features.</p>
+</dd>
+<dt>Observation</dt>
+<dd id="_3f0e4213-f91e-62b9-8a7f-3807f757ff64"><p id="_4e502ae4-b0a9-0b5f-3b24-3b461b51628a">Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
+</dd>
+<dt>Source Feature</dt>
+<dd id="_95256905-f1c6-54a8-32fa-77e666d5f1fc"><p id="_70798390-822d-d236-01f5-640b2704703f">A Source Feature is an ISO 19101 feature whose geometry provides the geospatial reference for one or more Emission Events. A Source Feature is characterised solely by its own identity, geometry, intended function, and lifecycle; it is explicitly agnostic to the Mechanism by which any associated Emission Event occur.</p>
+</dd>
+<dt>Unit of Measure</dt>
+<dd id="_29ae9399-9a9e-9a6d-ad2d-724614e5b8f2"><p id="_dc5775c8-b281-09b1-2b57-ad42b3340b07">Reference quantity chosen from a unit equivalence group (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
+</dd>
+<dt>term name</dt>
+<dd id="_c270e50e-21b4-d8d5-a4be-c92a688f4d60"><p id="_f236a91a-f350-2049-11ea-e38b33c60f6e">text of the definition</p>
+</dd>
+</dl>
+</terms>
+
+<clause id="_5420ea23-622b-763e-681e-448816092108" obligation="normative">
+<title id="_825ff772-6eaa-f32c-5988-2166a3c86304">Clauses not Containing Normative Material</title>
+<p id="_ebd5719c-971d-c149-9d99-d50c3334ba45">Paragraph</p>
+
+<clause id="_432487d7-c9c7-3a77-61b8-a8d4d1ebe8fa" obligation="normative">
+<title id="_665597ff-1fb3-bdb0-aff1-169feb198c91">Clauses not containing normative material sub-clause 1</title>
+<p id="_07291f40-0414-192d-2119-c7d71f4aa5c1">Paragraph</p>
+</clause>
+
+<clause id="_c196fce7-c9dc-9584-6161-c3c7810cb2c1" obligation="normative">
+<title id="_455aad23-7f97-f60e-b46a-f29391f74b1d">Clauses not containing normative material sub-clause 2</title>
+</clause>
+</clause>
+
+
+</sections><annex id="_16a9bda5-b03c-84f7-1208-0d4c8404c0c8" obligation="" language="" script=""><references id="_18de8dc9-c00f-d9cc-8c9e-de2e6f9bc715" anchor="Bibliography" normative="false" obligation="informative">
+<title id="_fee9b0fb-8054-a631-0e37-9ad3f9d4ffe5">Bibliography</title>
+<note id="_b7c04aa2-c1a9-1c9f-37f1-41f641910ab3"><p id="_7c4da3b1-200f-d075-126a-dae59ec827d9">The TC has approved Springer LNCS as the official document citation type.</p>
+
+<p id="_6526fe1c-1b09-b27b-9fe8-2a2ce7997bc4">Springer LNCS is widely used in technical and computer science journals and other publications</p>
+
+
+<p id="_c215cc32-ca20-c692-7269-8030fec8bf1a">– Actual References:</p>
+
+<p id="_cf21a9a5-4fb0-1527-bf81-e0fef24a18a3">[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
+<index><primary>Example</primary></index></note>
+
+
+
+<p id="_fb0bbc33-1fd2-d42b-70f1-4405fcd6a14b" anchor="OGC2015">[1] OGC: OGC Testbed 12 Annex B: Architecture. (2015).</p>
+</references></annex><bibliography><references id="_b134be46-23ab-9739-a47a-0333008af45d" normative="true" obligation="informative">
+<title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_363d8575-c7ea-b6ec-d857-0ed0f9e041c8">There are no normative references in this document.</p>
+
+<p id="_16d60b78-0d19-24e8-238b-c8f4e275ef43">The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.<note id="_cec5aaf2-1bff-c606-ffe8-a76b3530cee8"><p id="_39cf9b07-4ba9-496c-c70c-a8625b5a8ead">Insert References here. If there are no references, state “There are no normative references”.</p>
+
+<p id="_413e2b77-3051-6edb-0efb-1a746e79b4eb">References are to follow the Springer LNCS style, with the exception that optional information may be appended to references: DOIs are added after the date and web resource references may include an access date at the end of the reference in parentheses. See examples from Springer and OGC below.</p>
+
+<p id="_248a66ca-e96a-7dd5-35c2-2c0fa9647cf3">Smith, T.F., Waterman, M.S.: Identification of Common Molecular Subsequences. J. Mol. Biol. 147, 195–197 (1981)</p>
+
+<p id="_9c5106a2-8f8e-ad2a-4565-df7e9a460377">May, P., Ehrlich, H.C., Steinke, T.: ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services. In: Nagel, W.E., Walter, W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148–1158. Springer, Heidelberg (2006)</p>
+
+<p id="_73e8ba09-a6d5-640c-997d-1c8b0c5a0998">Foster, I., Kesselman, C.: The Grid: Blueprint for a New Computing Infrastructure. Morgan Kaufmann, San Francisco (1999)</p>
+
+<p id="_7bd8257c-c53c-c793-1ba9-1bdc365a6f0d">Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C.: Grid Information Services for Distributed Resource Sharing. In: 10th IEEE International Symposium on High Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</p>
+
+<p id="_f94dfcdb-c6fe-2351-4b79-e93682ab14b5">Foster, I., Kesselman, C., Nick, J., Tuecke, S.: The Physiology of the Grid: an Open Grid Services Architecture for Distributed Systems Integration. Technical report, Global Grid Forum (2002)</p>
+
+<p id="_bff0773b-84da-b964-f9f8-48c6da298fa8">National Center for Biotechnology Information, <link target="http://www.ncbi.nlm.nih.gov"/></p>
+
+<p id="_71551343-2ee1-43e6-ac1f-f41e6c804f29">ISO / TC 211: ISO 19115-1:2014 Geographic information — Metadata — Part 1: Fundamentals (2014)</p>
+
+<p id="_b7730180-5d18-4cf3-138e-4931a26777c8">ISO / TC 211: ISO 19157:2013 Geographic information — Data quality (2013)</p>
+
+<p id="_f4221a86-0b7b-2940-9987-72a5b875f9c8">ISO / TC 211: ISO 19139:2007 Geographic information — Metadata — XML schema implementation (2007)</p>
+
+<p id="_59016b3f-6dfb-f42a-b160-25e911fe1bc9">ISO / TC 211: ISO 19115-3: Geographic information — Metadata — Part 3: XML schemas (2016)</p>
+
+<p id="_23c1c5ac-62bf-e717-8bd1-2d44ce91d4c1">OGC: OGC 15-097 OGC Geospatial User Feedback Standard. Conceptual Model (2016)</p>
+
+<p id="_72958ac5-b1a9-a52f-f8cb-5490ffb940e9">OGC: OGC 12-019, OGC City Geography Markup Language (CityGML) Encoding Standard (2012)</p>
+
+<p id="_e14f64a0-e9ad-1210-47cf-d1e62ae6a637">OGC: OGC 14-005r3, OGC IndoorGML (2014)</p>
+</note></p>
+
+
+</references></bibliography>
+</metanorma>

@@ -1,8 +1,11 @@
-== Clause containing normative material
+== Conceptual Emission Event schema
 Paragraph
 
-=== Requirement Class A or Requirement A Example
-Paragraph – intro text for the requirement class.
+=== General
+
+==== Conceptual Emission Event model
+The Conceptual Observation schema is described as a class diagram in Figure x. The schema is fully described in x.x.x.
+
 
 Use the following table for Requirements Classes.
 

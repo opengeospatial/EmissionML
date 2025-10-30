@@ -1,0 +1,3174 @@
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="----=_NextPart_fad99e23.10c2.4ebe"
+
+------=_NextPart_fad99e23.10c2.4ebe
+Content-ID: <standard_document.htm>
+Content-Disposition: inline; filename="standard_document.htm"
+Content-Type: text/html; charset="utf-8"
+
+<?xml version="1.0"?>
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
+  <head>
+<xml>
+<w:WordDocument>
+<w:View>Print</w:View>
+<w:Zoom>100</w:Zoom>
+<w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8"/>
+
+  <link rel=File-List href="cid:filelist.xml"/>
+<style><![CDATA[
+<!--
+@charset "UTF-8";
+/* Font Definitions */
+@font-face {
+  font-family: Wingdings;
+  panose-1: 5 0 0 0 0 0 0 0 0 0;
+  mso-font-charset: 2;
+  mso-generic-font-family: decorative;
+  mso-font-pitch: variable;
+  mso-font-signature: 0 268435456 0 0 -2147483648 0;
+}
+@font-face {
+  font-family: "MS Mincho";
+  panose-1: 2 2 6 9 4 2 5 8 3 4;
+  mso-font-alt: "ＭＳ 明朝";
+  mso-font-charset: 128;
+  mso-generic-font-family: modern;
+  mso-font-pitch: fixed;
+  mso-font-signature: -536870145 1791491579 134217746 0 131231 0;
+}
+@font-face {
+  font-family: "Cambria Math";
+  panose-1: 2 4 5 3 5 4 6 3 2 4;
+  mso-font-charset: 0;
+  mso-generic-font-family: roman;
+  mso-font-pitch: variable;
+  mso-font-signature: -536870145 1107305727 0 0 415 0;
+}
+@font-face {
+  font-family: "Arial Narrow";
+  panose-1: 2 11 5 6 2 2 2 3 2 4;
+  mso-font-charset: 0;
+  mso-generic-font-family: swiss;
+  mso-font-pitch: variable;
+  mso-font-signature: 3 0 0 0 1 0;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  panose-1: 2 11 5 3 3 4 3 2 2 4;
+  mso-font-alt: Arial;
+  mso-font-charset: 77;
+  mso-generic-font-family: swiss;
+  mso-font-pitch: variable;
+  mso-font-signature: 536870919 1 0 0 403 0;
+}
+@font-face {
+  font-family: Tahoma;
+  panose-1: 2 11 6 4 3 5 4 4 2 4;
+  mso-font-charset: 0;
+  mso-generic-font-family: swiss;
+  mso-font-pitch: variable;
+  mso-font-signature: -520081665 -1073717157 41 0 66047 0;
+}
+@font-face {
+  font-family: Times;
+  panose-1: 2 0 5 0 0 0 0 0 0 0;
+  mso-font-charset: 0;
+  mso-generic-font-family: auto;
+  mso-font-pitch: variable;
+  mso-font-signature: -536870145 1342185562 0 0 415 0;
+}
+@font-face {
+  font-family: "Wingdings 2";
+  panose-1: 5 2 1 2 1 5 7 7 7 7;
+  mso-font-charset: 2;
+  mso-generic-font-family: decorative;
+  mso-font-pitch: variable;
+  mso-font-signature: 0 268435456 0 0 -2147483648 0;
+}
+@font-face {
+  font-family: "@MS Mincho";
+  panose-1: 2 2 6 9 4 2 5 8 3 4;
+  mso-font-charset: 128;
+  mso-generic-font-family: modern;
+  mso-font-pitch: fixed;
+  mso-font-signature: -536870145 1791491579 134217746 0 131231 0;
+}
+p.MsoNormal, li.MsoNormal, div.MsoNormal {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin: 0cm;
+  margin-bottom: 12pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+  mso-style-priority: 34;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  /* do not put in margin-left, it is specific to list level */
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-AU;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst {
+  mso-style-priority: 34;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-type: export-only;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  /* do not put in margin-left, it is specific to list level */
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-AU;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle {
+  mso-style-priority: 34;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-type: export-only;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  /* do not put in margin-left, it is specific to list level */
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-AU;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+  mso-style-priority: 34;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-type: export-only;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  /* do not put in margin-left, it is specific to list level */
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-AU;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText {
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-name: "Comment Text";
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoHeader, li.MsoHeader, div.MsoHeader {
+  mso-style-unhide: no;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  tab-stops: center 216pt right 482pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoHeaderLandscape, li.MsoHeaderLandscape, div.MsoHeaderLandscape {
+  mso-style-unhide: no;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  tab-stops: center 367pt right 734pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoFooter, li.MsoFooter, div.MsoFooter {
+  mso-style-unhide: no;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  tab-stops: right 482pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoFooterLandscape, li.MsoFooterLandscape, div.MsoFooterLandscape {
+  mso-style-unhide: no;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  tab-stops: right 734pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+span.MsoCommentReference {
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-parent: "";
+  mso-ansi-font-size: 8pt;
+  mso-bidi-font-size: 8pt;
+}
+
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText {
+  mso-style-unhide: no;
+  margin-top: 9pt;
+  margin-right: 0cm;
+  margin-bottom: 0cm;
+  margin-left: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 12pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-bidi-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoTitle, li.MsoTitle, div.MsoTitle {
+  mso-style-priority: 10;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-link: "Title Char";
+  mso-style-next: Normal;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 28pt;
+  font-family: "Calibri Light", sans-serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-bidi-font-family: "Times New Roman";
+  letter-spacing: -0.5pt;
+  mso-font-kerning: 14pt;
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst {
+  mso-style-priority: 10;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-link: "Title Char";
+  mso-style-next: Normal;
+  mso-style-type: export-only;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 28pt;
+  font-family: "Calibri Light", sans-serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-bidi-font-family: "Times New Roman";
+  letter-spacing: -0.5pt;
+  mso-font-kerning: 14pt;
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle {
+  mso-style-priority: 10;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-link: "Title Char";
+  mso-style-next: Normal;
+  mso-style-type: export-only;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 28pt;
+  font-family: "Calibri Light", sans-serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-bidi-font-family: "Times New Roman";
+  letter-spacing: -0.5pt;
+  mso-font-kerning: 14pt;
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast {
+  mso-style-priority: 10;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-link: "Title Char";
+  mso-style-next: Normal;
+  mso-style-type: export-only;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 28pt;
+  font-family: "Calibri Light", sans-serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-bidi-font-family: "Times New Roman";
+  letter-spacing: -0.5pt;
+  mso-font-kerning: 14pt;
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+a:link, span.MsoHyperlink {
+  mso-style-unhide: no;
+  mso-style-parent: "";
+  color: blue;
+  text-decoration: underline;
+  text-underline: single;
+}
+
+a:visited, span.MsoHyperlinkFollowed {
+  mso-style-unhide: no;
+  mso-style-parent: "";
+  color: purple;
+  text-decoration: underline;
+  text-underline: single;
+}
+
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject {
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-parent: "Comment Text";
+  mso-style-next: "Comment Text";
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+  font-weight: bold;
+}
+
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate {
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 8pt;
+  font-family: "Tahoma", sans-serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+span.blackgraphtxsidebar {
+  mso-style-name: blackgraphtxsidebar;
+  mso-style-unhide: no;
+  mso-style-parent: "";
+}
+
+span.blackgraphtx {
+  mso-style-name: blackgraphtx;
+  mso-style-unhide: no;
+  mso-style-parent: "";
+}
+
+.MsoChpDefault {
+  mso-style-type: export-only;
+  mso-default-props: yes;
+}
+
+div.figure, p.figure {
+  text-align: center;
+}
+
+h1, .h1 {
+  mso-style-priority: 1;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 1";
+  mso-style-link: "Heading 1 Char";
+  mso-style-next: Normal;
+  margin-top: 13.5pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 13.5pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 0.7cm;
+  font-size: 13pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-font-kerning: 0pt;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h1 {
+  mso-outline-level: 1;
+  mso-list: l1 level1 lfo6;
+}
+
+h1.Annex {
+  mso-style-priority: 1;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-link: "Heading 1 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12.5pt;
+  text-align: center;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  font-weight: normal;
+  mso-outline-level: 1;
+  mso-list: l1 level1 lfo6;
+  mso-hyphenate: none;
+  tab-stops: 1cm;
+  font-size: 12pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-font-kerning: 0pt;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+.h2Annex {
+  mso-style-priority: 2;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "Heading 1";
+  mso-style-link: "Heading 2 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12.5pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-outline-level: 2;
+  mso-hyphenate: none;
+  tab-stops: 1cm;
+  font-size: 12pt;
+  font-weight: bold;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h2, .h2 {
+  mso-style-priority: 2;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 2";
+  mso-style-parent: "Heading 1";
+  mso-style-link: "Heading 2 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12.5pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 1cm;
+  font-size: 12pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h2 {
+  mso-outline-level: 2;
+  mso-list: l1 level2 lfo6;
+}
+
+h3, .h3 {
+  mso-style-priority: 3;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 3";
+  mso-style-parent: "Heading 2";
+  mso-style-link: "Heading 3 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 1.3cm;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h3 {
+  mso-outline-level: 3;
+  mso-list: l1 level3 lfo6;
+}
+
+h4, .h4 {
+  mso-style-priority: 4;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 4";
+  mso-style-parent: "Heading 3";
+  mso-style-link: "Heading 4 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 1.6cm;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h4 {
+  mso-outline-level: 4;
+  mso-list: l1 level4 lfo6;
+}
+
+h5, .h5 {
+  mso-style-priority: 5;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 5";
+  mso-style-parent: "Heading 4";
+  mso-style-link: "Heading 5 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 1.9cm;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h5 {
+  mso-outline-level: 5;
+  mso-list: l1 level5 lfo6;
+}
+
+h6, .h6 {
+  mso-style-priority: 6;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 6";
+  mso-style-parent: "Heading 5";
+  mso-style-link: "Heading 6 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 2.2cm;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h6 {
+  mso-outline-level: 6;
+  mso-list: l1 level6 lfo6;
+}
+
+p.MsoToc1, li.MsoToc1, div.MsoToc1 {
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 1";
+  mso-style-next: Normal;
+  margin-top: 6pt;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 36pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc2, li.MsoToc2, div.MsoToc2 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 2";
+  mso-style-parent: "TOC 1";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 36pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc3, li.MsoToc3, div.MsoToc3 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 3";
+  mso-style-parent: "TOC 2";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 36pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc4, li.MsoToc4, div.MsoToc4 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 4";
+  mso-style-parent: "TOC 3";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 47.9pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc5, li.MsoToc5, div.MsoToc5 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 5";
+  mso-style-parent: "TOC 4";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 47.9pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc6, li.MsoToc6, div.MsoToc6 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 6";
+  mso-style-parent: "TOC 5";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 55pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc7, li.MsoToc7, div.MsoToc7 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 7";
+  mso-style-parent: "TOC 6";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 62.7pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc8, li.MsoToc8, div.MsoToc8 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 8";
+  mso-style-parent: "TOC 7";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 70.3pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc9, li.MsoToc9, div.MsoToc9 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 9";
+  mso-style-parent: "TOC 8";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 78pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.MsoFootnoteReference {
+  mso-style-priority: 99;
+  mso-style-name: "Footnote Reference";
+  vertical-align: super;
+}
+
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText {
+  mso-style-noshow: yes;
+  mso-style-priority: 99;
+  mso-style-link: "Footnote Text Char";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText {
+  mso-style-noshow: yes;
+  mso-style-priority: 99;
+  mso-style-unhide: no;
+  mso-style-link: "Body Text Char";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+span.Heading1Char {
+  mso-style-name: "Heading 1 Char";
+  mso-style-priority: 1;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 1";
+  mso-ansi-font-size: 13pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: Cambria;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.Heading2Char {
+  mso-style-name: "Heading 2 Char";
+  mso-style-priority: 2;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 2";
+  mso-ansi-font-size: 12pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: Cambria;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.Heading3Char {
+  mso-style-name: "Heading 3 Char";
+  mso-style-priority: 3;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 3";
+  mso-ansi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.Heading4Char {
+  mso-style-name: "Heading 4 Char";
+  mso-style-priority: 4;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 4";
+  mso-ansi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.Heading5Char {
+  mso-style-name: "Heading 5 Char";
+  mso-style-priority: 5;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 5";
+  mso-ansi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.Heading6Char {
+  mso-style-name: "Heading 6 Char";
+  mso-style-priority: 6;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 6";
+  mso-ansi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.Tablebody, li.Tablebody, div.Tablebody {
+  mso-style-name: "Table body";
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 3pt;
+  margin-left: 0cm;
+  line-height: 10.5pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.0pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+/* Page Definitions */
+@page {
+  size: 612pt 792pt;
+  margin: 36pt 53.85pt 21.55pt 53.85pt;
+  mso-header-margin: 42.55pt;
+  mso-footer-margin: 43.1pt;
+  mso-footnote-separator: url(cid:header.html) fs;
+  mso-footnote-continuation-separator: url(cid:header.html) fcs;
+  mso-endnote-separator: url(cid:header.html) es;
+  mso-endnote-continuation-separator: url(cid:header.html) ecs;
+}
+/* List Definitions */
+@list l0 {
+  mso-list-id: 145051656;
+  mso-list-template-ids: 2112159680;
+}
+@list l0:level1 {
+  mso-level-number-format: alpha-upper;
+  mso-level-style-link: ANNEX;
+  mso-level-suffix: none;
+  mso-level-text: "Annex %1";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-ansi-font-size: 14pt;
+  mso-bidi-font-size: 14pt;
+  font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level2 {
+  mso-level-style-link: a2;
+  mso-level-text: "%1.%2";
+  mso-level-tab-stop: 18pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level3 {
+  mso-level-style-link: a3;
+  mso-level-text: "%1.%2.%3";
+  mso-level-tab-stop: 36pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level4 {
+  mso-level-style-link: a4;
+  mso-level-text: "%1.%2.%3.%4";
+  mso-level-tab-stop: 54pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level5 {
+  mso-level-style-link: a5;
+  mso-level-text: "%1.%2.%3.%4.%5";
+  mso-level-tab-stop: 54pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level6 {
+  mso-level-style-link: a6;
+  mso-level-text: "%1.%2.%3.%4.%5.%6";
+  mso-level-tab-stop: 72pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level7 {
+  mso-level-reset-level: level2;
+  mso-level-suffix: space;
+  mso-level-text: "Figure %1.%7 —";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+@list l0:level8 {
+  mso-level-reset-level: level2;
+  mso-level-suffix: space;
+  mso-level-text: "Table %1.%8 —";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+@list l0:level9 {
+  mso-level-number-format: roman-lower;
+  mso-level-text: "(%9)";
+  mso-level-tab-stop: 306pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+@list l1 {
+  mso-list-id: 866942648;
+  mso-list-template-ids: -1756330000;
+}
+@list l1:level1 {
+  mso-level-style-link: "Heading 1";
+  mso-level-text: "%1";
+  mso-level-tab-stop: 21.6pt;
+  mso-level-number-position: left;
+  margin-left: 21.6pt;
+  text-indent: -21.6pt;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level2 {
+  mso-level-style-link: "Heading 2";
+  mso-level-text: "%1.%2";
+  mso-level-tab-stop: 18pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level3 {
+  mso-level-style-link: "Heading 3";
+  mso-level-text: "%1.%2.%3";
+  mso-level-tab-stop: 36pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level4 {
+  mso-level-style-link: "Heading 4";
+  mso-level-text: "%1.%2.%3.%4";
+  mso-level-tab-stop: 54pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level5 {
+  mso-level-style-link: "Heading 5";
+  mso-level-text: "%1.%2.%3.%4.%5";
+  mso-level-tab-stop: 54pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level6 {
+  mso-level-style-link: "Heading 6";
+  mso-level-text: "%1.%2.%3.%4.%5.%6";
+  mso-level-tab-stop: 72pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level7 {
+  mso-level-text: "%1.%2.%3.%4.%5.%6.%7";
+  mso-level-tab-stop: 72pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+@list l1:level8 {
+  mso-level-text: "%1.%2.%3.%4.%5.%6.%7.%8";
+  mso-level-tab-stop: 90pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+@list l1:level9 {
+  mso-level-text: "%1.%2.%3.%4.%5.%6.%7.%8.%9";
+  mso-level-tab-stop: 90pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+/* ordered list */
+@list l2 {
+  mso-list-id: 525294607;
+  mso-list-template-ids: 67633181;
+}
+@list l2:level1 {
+  mso-level-number-format: alpha-lower;
+  mso-level-text: "%1)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 18pt;
+  text-indent: -18pt;
+}
+@list l2:level2 {
+  mso-level-text: "%2)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 36pt;
+  text-indent: -18pt;
+}
+@list l2:level3 {
+  mso-level-number-format: roman-lower;
+  mso-level-text: "%3)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 54pt;
+  text-indent: -18pt;
+}
+@list l2:level4 {
+  mso-level-number-format: alpha-upper;
+  mso-level-text: "%4)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 72pt;
+  text-indent: -18pt;
+}
+@list l2:level5 {
+  mso-level-number-format: roman-upper;
+  mso-level-text: "%5)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 90pt;
+  text-indent: -18pt;
+}
+@list l2:level6 {
+  mso-level-number-format: alpha-lower;
+  mso-level-text: "%6)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 108pt;
+  text-indent: -18pt;
+}
+@list l2:level7 {
+  mso-level-tab-stop: none;
+  mso-level-text: "%7)";
+  mso-level-number-position: left;
+  margin-left: 126pt;
+  text-indent: -18pt;
+}
+@list l2:level8 {
+  mso-level-number-format: roman-lower;
+  mso-level-text: "%8)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 144pt;
+  text-indent: -18pt;
+}
+@list l2:level9 {
+  mso-level-number-format: alpha-upper;
+  mso-level-text: "%9)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 162pt;
+  text-indent: -18pt;
+}
+/* Unordered list */
+@list l3 {
+  mso-list-id: 1308196397;
+  mso-list-type: hybrid;
+  mso-list-template-ids: -277327948 -457018030 67633155 67633157 67633153 67633155 67633157 67633153 67633155 67633157;
+}
+@list l3:level1 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 18pt;
+  text-indent: -18pt;
+}
+@list l3:level2 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 36pt;
+  text-indent: -18pt;
+}
+@list l3:level3 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 54pt;
+  text-indent: -18pt;
+}
+@list l3:level4 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 72pt;
+  text-indent: -18pt;
+}
+@list l3:level5 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 90pt;
+  text-indent: -18pt;
+}
+@list l3:level6 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 108pt;
+  text-indent: -18pt;
+}
+@list l3:level7 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 126pt;
+  text-indent: -18pt;
+}
+@list l3:level8 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 144pt;
+  text-indent: -18pt;
+}
+@list l3:level9 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 162pt;
+  text-indent: -18pt;
+}
+/* steps ordered list: all numbers */
+@list l4 {
+  mso-list-id: 525294608;
+  mso-list-template-ids: 676331812;
+}
+@list l4:level1 {
+  mso-level-text: "%1.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 18pt;
+  text-indent: -18pt;
+}
+@list l4:level2 {
+  mso-level-text: "%2.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 36pt;
+  text-indent: -18pt;
+}
+@list l4:level3 {
+  mso-level-text: "%3.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 54pt;
+  text-indent: -18pt;
+}
+@list l4:level4 {
+  mso-level-text: "%4.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 72pt;
+  text-indent: -18pt;
+}
+@list l4:level5 {
+  mso-level-text: "%5.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 90pt;
+  text-indent: -18pt;
+}
+@list l4:level6 {
+  mso-level-text: "%6.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 108pt;
+  text-indent: -18pt;
+}
+@list l4:level7 {
+  mso-level-tab-stop: none;
+  mso-level-text: "%7.";
+  mso-level-number-position: left;
+  margin-left: 126pt;
+  text-indent: -18pt;
+}
+@list l4:level8 {
+  mso-level-text: "%8.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 144pt;
+  text-indent: -18pt;
+}
+@list l4:level9 {
+  mso-level-text: "%9.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 162pt;
+  text-indent: -18pt;
+}
+div.ListContLevel1 {
+  mso-style-priority: 34;
+  margin-left: 18pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel2 {
+  mso-style-priority: 34;
+  margin-top: 0cm;
+  margin-left: 36pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel3 {
+  mso-style-priority: 34;
+  margin-left: 54pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel4 {
+  mso-style-priority: 34;
+  margin-left: 72pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel5 {
+  mso-style-priority: 34;
+  margin-left: 90pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel6 {
+  mso-style-priority: 34;
+  margin-left: 108pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel7 {
+  mso-style-priority: 34;
+  margin-left: 126pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel8 {
+  mso-style-priority: 34;
+  margin-left: 144pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel9 {
+  mso-style-priority: 34;
+  margin-left: 162pt;
+  margin-right: 0cm;
+}
+
+table.MsoNormalTable {
+  mso-style-name: "Table Normal";
+  mso-tstyle-rowband-size: 0;
+  mso-tstyle-colband-size: 0;
+  mso-style-noshow: yes;
+  mso-style-priority: 99;
+  mso-style-parent: "";
+  mso-padding-alt: 0cm 5.4pt 0cm 5.4pt;
+  mso-para-margin: 0cm;
+  mso-para-margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+ol {
+  margin-bottom: 0cm;
+  margin-left: 18pt;
+}
+
+ul {
+  margin-bottom: 0cm;
+  margin-left: 18pt;
+}
+p.Sourcecode table td { padding: 5px; }
+p.Sourcecode table pre { margin: 0; }
+p.Sourcecode, p.Sourcecode .w {
+  color: #444444;
+}
+p.Sourcecode .cp {
+  color: #CC00A3;
+}
+p.Sourcecode .cs {
+  color: #CC00A3;
+}
+p.Sourcecode .c, p.Sourcecode .ch, p.Sourcecode .cd, p.Sourcecode .cm, p.Sourcecode .cpf, p.Sourcecode .c1 {
+  color: #1E90FF;
+}
+p.Sourcecode .kc {
+  color: #C34E00;
+}
+p.Sourcecode .kd {
+  color: #0000FF;
+}
+p.Sourcecode .kr {
+  color: #007575;
+}
+p.Sourcecode .k, p.Sourcecode .kn, p.Sourcecode .kp, p.Sourcecode .kt, p.Sourcecode .kv {
+  color: #0000FF;
+}
+p.Sourcecode .s, p.Sourcecode .sb, p.Sourcecode .sc, p.Sourcecode .ld, p.Sourcecode .sd, p.Sourcecode .s2, p.Sourcecode .se, p.Sourcecode .sh, p.Sourcecode .si, p.Sourcecode .sx, p.Sourcecode .sr, p.Sourcecode .s1, p.Sourcecode .ss {
+  color: #009C00;
+}
+p.Sourcecode .sa {
+  color: #0000FF;
+}
+p.Sourcecode .nb, p.Sourcecode .bp {
+  color: #C34E00;
+}
+p.Sourcecode .nt {
+  color: #0000FF;
+}
+
+
+-->
+]]></style><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/><style>
+  <!--
+
+
+ol
+        {margin-bottom:0cm;}
+ul
+        {margin-bottom:0cm;}
+
+table.MsoISOTable tr
+    {page-break-inside:avoid;}
+
+td { page-break-inside:avoid; }
+tr { page-break-after:avoid; }
+
+table.MsoISOTableBig tr
+    {page-break-inside:auto;}
+
+table.MsoISOTableBig td
+    {page-break-inside:auto;}
+
+span.stem
+    {font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";
+    font-style:italic;}
+
+dt
+    {page-break-inside:avoid;
+    page-break-after:avoid}
+
+br.section
+    {page-break-before:always;
+    mso-break-type:section-break;}
+br.pagebreak
+    {page-break-before:always;
+    mso-special-character:line-break;}
+
+span.addition {
+        color: blue;
+}
+span.deletion {
+        color: red;
+        text-decoration: line-through;
+}
+
+table.rouge-line-table {
+  border:none;
+  mso-border-alt:none;
+  mso-border-insideh:none;
+  mso-border-insidev:none;
+}
+
+td.rouge-code p.Sourcecode {
+  margin: 0px;
+}
+
+div.table_container {
+  margin-bottom: 14pt;
+}
+
+-->
+</style><style>
+  <!--
+p.Sourcecode, li.Sourcecode, div.Sourcecode, pre.Sourcecode, pre {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 6pt;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: left;
+  mso-pagination: widow-orphan;
+  tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229pt 274.8pt 320.6pt 366.4pt 412.2pt 458pt 503.8pt 549.6pt 595.4pt 641.2pt 687pt 732.8pt;
+  font-size: 10.0pt;
+  font-family: "Courier Prime",monospace;
+  mso-fareast-font-family: Calibri;
+  mso-bidi-font-family: "Courier New";
+  mso-ansi-language: EN-GB;
+}
+
+p.pseudocode, li.pseudocode, div.pseudocode {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 6pt;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: left;
+  mso-pagination: widow-orphan;
+  tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229pt 274.8pt 320.6pt 366.4pt 412.2pt 458pt 503.8pt 549.6pt 595.4pt 641.2pt 687pt 732.8pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: Calibri;
+  mso-bidi-font-family: "Courier New";
+  mso-ansi-language: EN-GB;
+}
+
+p.Biblio, li.Biblio, div.Biblio, p.NormRef, li.NormRef, div.NormRef {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 33.15pt;
+  text-indent: -33.15pt;
+  tab-stops: 33.15pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-weight: normal;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.FigureTitle {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: center;
+  line-height: 12pt;
+  page-break-before: avoid;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-weight: bold;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.SourceTitle {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: center;
+  line-height: 12pt;
+  page-break-before: avoid;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-weight: bold;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.AdmonitionTitle, p.RecommendationTitle, p.RecommendationTestTitle {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: center;
+  line-height: 12pt;
+  page-break-after: avoid;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-weight: bold;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.TableTitle, p.ListTitle {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: center;
+  page-break-after: avoid;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.Note, div.Note, li.Note, p.TableFootnote, div.TableFootnote, li.TableFootnote {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 2cm;
+  mso-bidi-font-size: 11pt;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.Note, li.Note, p.TableFootnote, div.TableFootnote, li.TableFootnote {
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+p.ANNEX, li.ANNEX, div.ANNEX {
+  mso-style-name: ANNEX;
+  mso-style-priority: 10;
+  mso-style-unhide: no;
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 24pt;
+  margin-left: 0cm;
+  text-align: center;
+  text-indent: 0cm;
+  line-height: 15.5pt;
+  mso-line-height-rule: exactly;
+  page-break-before: always;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-outline-level: 1;
+  mso-list: l0 level1 lfo12;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.BiblioTitle, li.BiblioTitle, div.BiblioTitle {
+  mso-style-name: "Biblio Title";
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 15.5pt;
+  margin-left: 0cm;
+  text-align: center;
+  line-height: 15.5pt;
+  mso-pagination: widow-orphan;
+  mso-outline-level: 1;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.Definition, li.Definition, div.Definition {
+  mso-style-name: Definition;
+  mso-style-priority: 9;
+  mso-style-unhide: no;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.ForewordTitle, li.ForewordTitle, div.ForewordTitle {
+  mso-style-name: "Foreword Title";
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 15.5pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 15.5pt;
+  page-break-before: always;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-outline-level: 1;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.IntroTitle, li.IntroTitle, div.IntroTitle {
+  mso-style-name: "Intro Title";
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-parent: "Foreword Title";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 15.5pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 15.5pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-outline-level: 1;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  page-break-before: always;
+  mso-bidi-font-weight: normal;
+}
+
+p.TitlePageSubhead, li.TitlePageSubhead, div.TitlePageSubhead {
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-parent: "Foreword Title";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 0pt;
+  margin-left: 0cm;
+  text-align: center;
+  line-height: 15.5pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 10.5pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.Terms, li.Terms, div.Terms {
+  mso-style-name: "Term(s)";
+  mso-style-priority: 8;
+  mso-style-unhide: no;
+  mso-style-next: Definition;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-bidi-font-weight: normal;
+}
+
+p.AltTerms, li.AltTerms, div.AltTerms {
+  mso-style-name: "AltTerm(s)";
+  mso-style-priority: 8;
+  mso-style-unhide: no;
+  mso-style-next: Definition;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-bidi-font-weight: normal;
+}
+
+p.DeprecatedTerms, li.DeprecatedTerms, div.DeprecatedTerms {
+  mso-style-name: "DeprecatedTerm(s)";
+  mso-style-priority: 8;
+  mso-style-unhide: no;
+  mso-style-next: Definition;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-bidi-font-weight: normal;
+}
+
+p.TermNum, li.TermNum, div.TermNum {
+  mso-style-name: TermNum;
+  mso-style-priority: 7;
+  mso-style-unhide: no;
+  mso-style-next: "Term(s)";
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.zzContents, li.zzContents, div.zzContents {
+  mso-style-name: zzContents;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-next: "TOC 1";
+  margin-top: 48pt;
+  margin-right: 0cm;
+  margin-bottom: 15.5pt;
+  margin-left: 0cm;
+  line-height: 15.5pt;
+  mso-line-height-rule: exactly;
+  page-break-before: always;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.TOCTitle, li.TOCTitle, div.TOCTitle {
+  mso-style-name: zzContents;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-next: "TOC 1";
+  margin-top: 48pt;
+  margin-right: 0cm;
+  margin-bottom: 15.5pt;
+  margin-left: 0cm;
+  line-height: 15.5pt;
+  mso-line-height-rule: exactly;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.zzCopyright, li.zzCopyright {
+  mso-style-name: zzCopyright;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 14.2pt;
+  margin-bottom: 12pt;
+  margin-left: 14.2pt;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt 25.7pt 481.15pt;
+  padding: 0cm;
+  mso-padding-alt: 1pt 4pt 1pt 4pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+div.zzCopyright {
+  mso-element: para-border-div;
+  border: solid windowtext 1pt;
+  mso-border-top-alt: solid windowtext 0.5pt;
+  mso-border-left-alt: solid windowtext 0.5pt;
+  mso-border-right-alt: solid windowtext 0.5pt;
+  mso-border-bottom-alt: solid windowtext 0.5pt;
+  padding: 1pt 4pt 0cm 4pt;
+  margin-left: 5.1pt;
+  margin-right: 5.1pt;
+}
+
+p.zzCopyright_address {
+  margin-top: 0cm;
+  margin-right: 14.2pt;
+  margin-bottom: 0pt;
+  margin-left: 14.2pt;
+  mso-layout-grid-align: none;
+  text-autospace: none;
+  padding-left: 20pt;
+  mso-padding-alt-left: 20pt;
+  font-size: 10pt;
+  text-align: left;
+  mso-bidi-font-size: 11pt;
+}
+
+p.zzSTDTitle, li.zzSTDTitle, div.zzSTDTitle {
+  mso-style-name: zzSTDTitle;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-next: Normal;
+  margin-top: 20pt;
+  margin-right: 0cm;
+  margin-bottom: 38pt;
+  margin-left: 0cm;
+  line-height: 17.5pt;
+  mso-line-height-rule: exactly;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 16pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.zzSTDTitle1, li.zzSTDTitle1, div.zzSTDTitle1 {
+  mso-style-name: zzSTDTitle;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-next: Normal;
+  margin-top: 0pt;
+  margin-right: 0cm;
+  margin-bottom: 18pt;
+  margin-left: 0cm;
+  line-height: 17.5pt;
+  mso-line-height-rule: exactly;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 16pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.Quote, li.Quote, div.Quote {
+  mso-style-priority: 99;
+  margin-top: 0cm;
+  margin-right: 36pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.Quote, li.Quote {
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+}
+
+p.QuoteAttribution {
+  text-align: right;
+  mso-style-priority: 99;
+  margin-top: 0cm;
+  margin-right: 36pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.Admonition, li.Admonition, div.Admonition {
+  mso-style-priority: 99;
+  margin-top: 0cm;
+  margin-right: 57.6pt;
+  margin-bottom: 0cm;
+  margin-left: 57.6pt;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  border: none;
+  mso-border-alt: solid #4472C4 0.25pt;
+  mso-border-themecolor: accent1;
+  padding: 0cm;
+  mso-padding-alt: 10pt 10pt 10pt 10pt;
+  mso-ascii-font-family: "EB Garamond",serif;
+  mso-ascii-theme-font: minor-latin;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-fareast-theme-font: minor-fareast;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-hansi-theme-font: minor-latin;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-bidi-theme-font: minor-bidi;
+  color: #4472C4;
+  mso-themecolor: accent1;
+  mso-ansi-language: EN-AU;
+}
+
+p.Admonition, li.Admonition {
+  font-size: 12pt;
+  font-family: "EB Garamond",serif;
+  font-style: italic;
+}
+
+p.Code, li.Code, div.Code {
+  mso-style-name: Code;
+  mso-style-priority: 16;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  line-height: 10pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 9pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "Courier Prime",monospace;
+  mso-fareast-font-family: Calibri;
+  mso-bidi-font-family: "Source Sans Pro";
+  mso-ansi-language: EN-GB;
+}
+
+p.Formula, li.Formula, div.Formula {
+  mso-style-name: Formula;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 11pt;
+  margin-left: 20.15pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: right 487.45pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+@page {
+  mso-facing-pages: yes;
+}
+@page WordSection1 {
+  size: 595.3pt 841.9pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-even-header: url(cid:header.html) eh1;
+  mso-header: url(cid:header.html) h1;
+  mso-even-footer: url(cid:header.html) ef1;
+  mso-paper-source: 0;
+}
+div.WordSection1 {
+  page: WordSection1;
+}
+
+@page WordSection2 {
+  size: 595.3pt 841.9pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-page-numbers: roman-lower;
+  mso-even-header: url(cid:header.html) eh2;
+  mso-header: url(cid:header.html) h2;
+  mso-even-footer: url(cid:header.html) ef2;
+  mso-footer: url(cid:header.html) f2;
+  mso-paper-source: 0;
+}
+@page WordSection2L {
+  size: 841.9pt 595.3pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-even-header: url(cid:header.html) eh2l;
+  mso-header: url(cid:header.html) h2l;
+  mso-even-footer: url(cid:header.html) ef2l;
+  mso-footer: url(cid:header.html) f2l;
+  mso-paper-source: 0;
+}
+@page WordSection2P {
+  size: 595.3pt 841.9pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-even-header: url(cid:header.html) eh2;
+  mso-header: url(cid:header.html) h2;
+  mso-even-footer: url(cid:header.html) ef2;
+  mso-footer: url(cid:header.html) f2;
+  mso-paper-source: 0;
+}
+div.WordSection2 {
+  page: WordSection2;
+}
+
+@page WordSection3 {
+  size: 595.3pt 841.9pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-page-numbers: 1;
+  mso-even-header: url(cid:header.html) eh2;
+  mso-header: url(cid:header.html) h2;
+  mso-even-footer: url(cid:header.html) ef3;
+  mso-footer: url(cid:header.html) f3;
+  mso-paper-source: 0;
+}
+@page WordSection3L {
+  size: 841.9pt 595.3pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-even-header: url(cid:header.html) eh2l;
+  mso-header: url(cid:header.html) h2l;
+  mso-even-footer: url(cid:header.html) ef3l;
+  mso-footer: url(cid:header.html) f3l;
+  mso-paper-source: 0;
+}
+@page WordSection3P {
+  size: 595.3pt 841.9pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-even-header: url(cid:header.html) eh2;
+  mso-header: url(cid:header.html) h2;
+  mso-even-footer: url(cid:header.html) ef3;
+  mso-footer: url(cid:header.html) f3;
+  mso-paper-source: 0;
+}
+div.WordSection3 {
+  page: WordSection3;
+}
+
+table.MsoISOTable, table.MsoISOTableBig {
+  mso-style-name: "Table ISO";
+  mso-tstyle-rowband-size: 0;
+  mso-tstyle-colband-size: 0;
+  mso-style-noshow: yes;
+  mso-style-priority: 99;
+  mso-style-parent: "";
+  mso-padding-alt: 0cm 2.85pt 0cm 2.85pt;
+  mso-para-margin: 0cm;
+  mso-para-margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  border-collapse: collapse;
+  mso-table-layout-alt: fixed;
+  border: solid windowtext 2pt;
+  mso-border-alt: solid windowtext 2pt;
+  mso-yfti-tbllook: 480;
+  mso-border-insideh: 0.75pt solid windowtext;
+  mso-border-insidev: 0.75pt solid windowtext;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+table.MsoISOTable th, table.MsoISOTableBig th {
+  border: solid windowtext 1pt;
+  mso-border-alt: solid windowtext 1pt;
+  padding: 0cm 2.85pt 0cm 2.85pt;
+}
+
+table.MsoISOTable td, table.MsoISOTableBig td {
+  border: solid windowtext 1pt;
+  mso-border-alt: solid windowtext 1pt;
+  padding: 0cm 2.85pt 0cm 2.85pt;
+}
+
+table.MsoISOTable p, table.MsoISOTableBig p {
+  font-size: 10.0pt;
+}
+
+table.recommendclass, table.recommendclass p {
+  font-size: 10.0pt;
+}
+
+table.MsoTableGrid {
+  mso-style-name: "Table Grid";
+  mso-tstyle-rowband-size: 0;
+  mso-tstyle-colband-size: 0;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  border: solid windowtext 1pt;
+  mso-border-alt: solid windowtext 0.5pt;
+  mso-padding-alt: 0cm 5.4pt 0cm 5.4pt;
+  mso-border-insideh: 0.5pt solid windowtext;
+  mso-border-insidev: 0.5pt solid windowtext;
+  mso-para-margin: 0cm;
+  mso-para-margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+div.formula {
+  tab-stops: right 487.45pt;
+}
+
+body {
+  tab-interval: 36pt;
+}
+
+.coverpage_docnumber {
+  text-align: center;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.coverpage_techcommittee {
+  text-align: center;
+  font-size: 12pt;
+}
+
+.coverpage_docstage {
+  text-align: center;
+  font-size: 30pt;
+  color: #2e81c2;
+}
+
+div.coverpage_warning {
+  mso-element: para-border-div;
+  border: solid windowtext 1pt #2e81c2;
+  mso-border-alt: solid windowtext 0.5pt;
+  padding: 1pt 4pt 1pt 4pt #2e81c2;
+  font-size: 10pt;
+  margin-left: 4.25pt;
+  margin-right: 4.25pt;
+}
+
+.coverpage_warning {
+  color: #2e81c2;
+  font-size: 10pt;
+}
+
+a.TableFootnoteRef, span.TableFootnoteRef {
+  mso-style-priority: 99;
+  mso-style-parent: "Footnote Reference";
+  vertical-align: super;
+}
+
+aside {
+  font-size: 10.0pt;
+}
+
+.example-title {
+  font-weight: bold;
+  margin-left: -36pt;
+}
+
+p.example, li.example, td.example {
+  margin-right: 0pt;
+  margin-left: 0pt;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+div.example {
+  margin-right: 36pt;
+  margin-left: 36pt;
+  margin-top: 0cm;
+  margin-bottom: 0cm;
+}
+
+p.example, li.example, div.example, td.example {
+  mso-pagination: none;
+}
+
+td.example p.MsoListParagraph {
+  font-size: 10.0pt;
+}
+
+div.example p.MsoListParagraph {
+  font-size: 10.0pt;
+}
+
+div.Note p.MsoListParagraph {
+  font-size: 10.0pt;
+}
+
+div.Note span.stem {
+  font-size: 10.0pt;
+}
+
+div.Note p.Sourcecode, div.Note pre.Sourcecode {
+  font-size: 8pt;
+  margin-left: 1cm;
+}
+
+div.Note table.dl {
+  font-size: 10.0pt;
+  margin-left: 1cm;
+}
+
+span.note_label, span.example_label, td.example_label, td.note_label {
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+table.dl {
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 11pt;
+  margin-left: 20.15pt;
+}
+
+div.license, p.license {
+  font-size: 8pt;
+  font-family: "EB Garamond",serif;
+}
+
+div.warning p {
+  margin-bottom: 6pt;
+  border: none;
+  mso-border-alt: solid windowtext 0.5pt;
+  padding: 0cm;
+  mso-padding-alt: 1pt 4pt 1pt 4pt;
+}
+
+span.fmt-hi {
+  background-color: yellow;
+}
+
+span.AdmittedLabel, span.DeprecatedLabel {
+  color: #00335b;
+  background-color: #CFE2F3;
+}
+
+-->
+</style></head>
+  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US">
+    <div class="WordSection1"><p class="MsoNormal" align="right" style="text-align:right">
+  <b style="mso-bidi-font-weight: normal">
+    <span lang="EN-GB" style="font-size:18.0pt;mso-no-proof:yes" xml:lang="EN-GB">Open Geospatial Consortium</span>
+  </b>
+  <b style="mso-bidi-font-weight:normal">
+    <span lang="EN-GB" style="font-size:14.0pt" xml:lang="EN-GB">
+      <o:p class="MsoNormal"></o:p>
+    </span>
+  </b>
+</p>
+
+<p class="MsoNormal" align="right" style="text-align:right">
+  <span lang="EN-GB" style="mso-no-proof:yes;font-size:10.0pt" xml:lang="EN-GB">Submission Date: 2025-xx-xx</span>
+</p><p class="MsoNormal">&#xA0;</p></div>
+    <p class="MsoNormal">
+      <br clear="all" class="section"/>
+    </p>
+    <div class="WordSection2"><div class="license">
+  <div class="boilerplate-license">
+
+<div><a name="_45f6bdf5-80f3-f775-9740-2adafc90b1f7" id="_45f6bdf5-80f3-f775-9740-2adafc90b1f7"></a><p class="TitlePageSubhead">License Agreement</p>
+
+<p class="license"><a name="_772872dd-928c-666f-92c5-676f7f5d3071" id="_772872dd-928c-666f-92c5-676f7f5d3071"></a>Use of this document is subject to the license agreement at <a href="https://www.ogc.org/license">https://www.ogc.org/license</a></p>
+</div>
+</div>
+
+
+</div>
+
+<span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language: EN-US;mso-bidi-language:AR-SA" xml:lang="EN-US"><br clear="all" style="mso-special-character:line-break;page-break-before:always">
+</br>
+
+</span><div class="authority"><div class="boilerplate-copyright">
+
+<div><a name="_fd0161fc-f62b-a79d-3423-d7bbbd97e7a6" id="_fd0161fc-f62b-a79d-3423-d7bbbd97e7a6"></a><p class="TitlePageSubhead">Copyright notice</p>
+
+<p style="text-align:center;" align="center" class="MsoNormal"><a name="_13df91f9-0943-ac24-39c3-d06302298765" id="_13df91f9-0943-ac24-39c3-d06302298765"></a>Copyright &#xA9; 2025 Open Geospatial Consortium<br/> To obtain additional rights of use, visit<a href="https://www.ogc.org/legal">https://www.ogc.org/legal</a></p>
+</div>
+
+<div><a name="_6908548e-204b-56e7-9062-6924cccf2315" id="_6908548e-204b-56e7-9062-6924cccf2315"></a><p class="TitlePageSubhead">Note</p>
+
+<p style="text-align:left;" align="left" class="MsoNormal"><a name="_e1d5d5c4-54c3-2761-be2c-22547f01c057" id="_e1d5d5c4-54c3-2761-be2c-22547f01c057"></a>Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p style="text-align:left;" align="left" class="MsoNormal"><a name="_02892e94-7b43-630a-129c-d2e0f75ff92b" id="_02892e94-7b43-630a-129c-d2e0f75ff92b"></a>Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</div>
+</div>
+
+
+
+<div class="boilerplate-legal">
+
+<div><a name="_3ab5f032-cd12-0ecf-f17d-77404d710ada" id="_3ab5f032-cd12-0ecf-f17d-77404d710ada"></a><p class="TitlePageSubhead">Notice</p>
+
+<p class="MsoNormal"><a name="_043770e0-ac1d-3f8b-e986-31e754cfae4b" id="_043770e0-ac1d-3f8b-e986-31e754cfae4b"></a>This document is not an OGC Standard. This document is an OGC Draft Standard and is therefore not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+<p class="MsoNormal"><a name="_23a0d292-fb12-e47d-749d-c2da490ed875" id="_23a0d292-fb12-e47d-749d-c2da490ed875"></a>Further, an OGC Draft Standard should not be referenced as required or mandatory technology in procurements.</p>
+</div>
+</div>
+
+<div class="boilerplate-feedback">
+
+</div>
+</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_13d7055e-30fc-845a-c60e-8972faf092d9" id="_13d7055e-30fc-845a-c60e-8972faf092d9"></a><p class="zzContents">Contents</p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
+<span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc281332197">Copyright notice<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc281332197 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc746693127">Note<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc746693127 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc455144797">License Agreement<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc455144797 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc409311900">Notice<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc409311900 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc116181153">I. Keywords<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc116181153 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc189256621">II. Preface<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc189256621 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc766747643">III. Security considerations<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc766747643 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc740598124">IV. Submitting Organizations<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc740598124 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc629287694">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc629287694 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc964621166">2. Normative references<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc964621166 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc467941663">3. Terms and definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc467941663 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc592024596">4. Clauses not Containing Normative Material<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc592024596 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc476914192">4.1. Clauses not containing normative material sub-clause 1<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc476914192 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc925220068">4.2. Clauses not containing normative material sub-clause 2<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc925220068 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc860735557">Annex A (informative) Bibliography<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc860735557 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></p>
+</div><div class="Section3"><a name="_928dbe0a-14ce-b92f-c58a-c23700a08443" id="_928dbe0a-14ce-b92f-c58a-c23700a08443"></a><h1 class="IntroTitle">I.<span style="mso-tab-count:1">&#xA0; </span>Keywords</h1><p class="MsoNormal">The following are keywords to be used by search engines and document catalogues.</p><p class="MsoNormal">ogcdoc, OGC document, emissions, climate change</p></div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div><a name="_01532e71-c789-d889-d2de-08a7213a5680" id="_01532e71-c789-d889-d2de-08a7213a5680"></a><h1 class="ForewordTitle">II.<span style="mso-tab-count:1">&#xA0; </span>Preface</h1><p class="MsoNormal"><a name="_fdc7ade3-0338-9a2e-cbaa-52a1327ed7e2" id="_fdc7ade3-0338-9a2e-cbaa-52a1327ed7e2"></a><b>i.     Abstract</b></p><p class="MsoNormal"><a name="_ac3e5f14-5b19-4c63-8998-7032d9295e76" id="_ac3e5f14-5b19-4c63-8998-7032d9295e76"></a>&lt;Insert Abstract Text here&gt;</p><p class="MsoNormal"><a name="_46b3c915-484a-4c02-021d-9988a4221f6e" id="_46b3c915-484a-4c02-021d-9988a4221f6e"></a><b>ii.    Keywords</b></p><p class="MsoNormal"><a name="_312c8103-a7f5-4e80-748c-55bbea9d5ab2" id="_312c8103-a7f5-4e80-748c-55bbea9d5ab2"></a>The following are keywords to be used by search engines and document catalogues.</p><p class="MsoNormal"><a name="_93128da1-d46c-ddd2-f760-c3af2fbd65f7" id="_93128da1-d46c-ddd2-f760-c3af2fbd65f7"></a>ogcdoc, OGC document, &lt;tags separated by commas&gt;</p><p class="MsoNormal"><a name="_19822ada-e66c-171f-ab24-d5fc6d38dbf8" id="_19822ada-e66c-171f-ab24-d5fc6d38dbf8"></a><b>iii.   Preface</b></p><div class="Note"><a name="_69be0319-6d01-5f38-0502-5b64b88e0c45" id="_69be0319-6d01-5f38-0502-5b64b88e0c45"></a><p class="Note"><span class="note_label">NOTE:<span style="mso-tab-count:1">&#xA0; </span></span>Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work. &gt; Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p><p class="Note"><a name="_f29431a4-5338-021a-7c6f-f1a7b21dae3e" id="_f29431a4-5338-021a-7c6f-f1a7b21dae3e"></a>Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p></div><p class="MsoNormal"><a name="_dcffd1e5-9596-d61f-cd73-4bcc5eb9b1b3" id="_dcffd1e5-9596-d61f-cd73-4bcc5eb9b1b3"></a><b>iv.    Security Considerations</b></p><p class="MsoNormal"><a name="_7e7d1ff2-49e1-7e12-e6ef-c6796944b364" id="_7e7d1ff2-49e1-7e12-e6ef-c6796944b364"></a>No security considerations have been made for this Standard.</p><p class="MsoNormal"><a name="_b4cea6e6-182d-e0b6-d61a-783135c8a72f" id="_b4cea6e6-182d-e0b6-d61a-783135c8a72f"></a><b>v.    Submitting organizations</b></p><p class="MsoNormal"><a name="_0c8a49dd-2a96-5481-dea2-c9d496a1d80b" id="_0c8a49dd-2a96-5481-dea2-c9d496a1d80b"></a>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p><p class="MsoNormal"><a name="_cb9daa58-a40b-070a-2409-e8a554b71b14" id="_cb9daa58-a40b-070a-2409-e8a554b71b14"></a>Organization name(s)</p><p class="MsoNormal"><a name="_39176f89-cf8e-7440-921c-d67d5702fb67" id="_39176f89-cf8e-7440-921c-d67d5702fb67"></a><b>vi.     Submitters</b></p><p class="MsoNormal"><a name="_8dad9808-7197-d37f-d09c-70ba6a477c25" id="_8dad9808-7197-d37f-d09c-70ba6a477c25"></a>All questions regarding this submission should be directed to the editor or the submitters:</p><p class="TableTitle" style="text-align:center;">Table 1</p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_0ea632f2-53eb-4a2f-d427-59636d243d9a" id="_0ea632f2-53eb-4a2f-d427-59636d243d9a"></a><tbody><tr><td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><b>Name</b></td><td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;"><b>Affiliation</b></td></tr><tr><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Steve Liang</td><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">University of Calgary / SensorUp</td></tr><tr><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Ryan Ahola</td><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">Natural Resources Canada</td></tr></tbody></table></div></div><div class="Section3"><a name="_11f014e9-c98a-c81d-eeb6-de3baa47ebea" id="_11f014e9-c98a-c81d-eeb6-de3baa47ebea"></a><h1 class="IntroTitle">III.<span style="mso-tab-count:1">&#xA0; </span>Security considerations</h1><p class="MsoNormal"><a name="_87632f48-a936-3f14-4cc0-36d21a86a8b8" id="_87632f48-a936-3f14-4cc0-36d21a86a8b8"></a>No security considerations have been made for this document.</p></div><div class="Section3"><a name="_1a4da274-d74f-9c20-d2a5-6999698ba863" id="_1a4da274-d74f-9c20-d2a5-6999698ba863"></a><h1 class="IntroTitle">IV.<span style="mso-tab-count:1">&#xA0; </span>Submitting Organizations</h1><p class="MsoNormal">The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p><div class="ul_wrap"><p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpFirst"><a name="_f11cf091-9195-3211-4611-07719f19e321" id="_f11cf091-9195-3211-4611-07719f19e321"></a>SensorUp Inc.</p>
+<p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpMiddle"><a name="_df89eec7-0dc2-0cad-68bf-beae071bf257" id="_df89eec7-0dc2-0cad-68bf-beae071bf257"></a>Natural Resources Canada</p>
+<p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpLast"><a name="_68718acc-a631-83f9-2737-590afe2a9341" id="_68718acc-a631-83f9-2737-590afe2a9341"></a>University of Calgary</p></div></div><p class="MsoNormal">&#xA0;</p></div>
+    <p class="MsoNormal">
+      <br clear="all" class="section"/>
+    </p>
+    <div class="WordSection3">
+      <div>
+        <a name="_e3d66343-806e-9184-7237-5adb32fcff28" id="_e3d66343-806e-9184-7237-5adb32fcff28"></a>
+        <h1>1.<span style="mso-tab-count:1">&#xA0; </span>Scope</h1>
+        <div class="Note">
+          <a name="_4fa3bf63-56e7-381e-feed-0e4512416751" id="_4fa3bf63-56e7-381e-feed-0e4512416751"></a>
+          <p class="Note"><span class="note_label">NOTE:<span style="mso-tab-count:1">&#xA0; </span></span>Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.</p>
+        </div>
+      </div>
+      <div><h1>2.<span style="mso-tab-count:1">&#xA0; </span>Normative references</h1>
+<p class="MsoNormal"><a name="_363d8575-c7ea-b6ec-d857-0ed0f9e041c8" id="_363d8575-c7ea-b6ec-d857-0ed0f9e041c8"></a>There are no normative references in this document.</p>
+
+<p class="MsoNormal"><a name="_16d60b78-0d19-24e8-238b-c8f4e275ef43" id="_16d60b78-0d19-24e8-238b-c8f4e275ef43"></a>The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.</p><div class="Note"><a name="_cec5aaf2-1bff-c606-ffe8-a76b3530cee8" id="_cec5aaf2-1bff-c606-ffe8-a76b3530cee8"></a><p class="Note"><span class="note_label">NOTE:<span style="mso-tab-count:1">&#xA0; </span></span>Insert References here. If there are no references, state &#x201C;There are no normative references&#x201D;.</p><p class="Note"><a name="_413e2b77-3051-6edb-0efb-1a746e79b4eb" id="_413e2b77-3051-6edb-0efb-1a746e79b4eb"></a>References are to follow the Springer LNCS style, with the exception that optional information may be appended to references: DOIs are added after the date and web resource references may include an access date at the end of the reference in parentheses. See examples from Springer and OGC below.</p><p class="Note"><a name="_248a66ca-e96a-7dd5-35c2-2c0fa9647cf3" id="_248a66ca-e96a-7dd5-35c2-2c0fa9647cf3"></a>Smith, T.F., Waterman, M.S.: Identification of Common Molecular Subsequences. J. Mol. Biol. 147, 195&#x2013;197 (1981)</p><p class="Note"><a name="_9c5106a2-8f8e-ad2a-4565-df7e9a460377" id="_9c5106a2-8f8e-ad2a-4565-df7e9a460377"></a>May, P., Ehrlich, H.C., Steinke, T.: ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services. In: Nagel, W.E., Walter, W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148&#x2013;1158. Springer, Heidelberg (2006)</p><p class="Note"><a name="_73e8ba09-a6d5-640c-997d-1c8b0c5a0998" id="_73e8ba09-a6d5-640c-997d-1c8b0c5a0998"></a>Foster, I., Kesselman, C.: The Grid: Blueprint for a New Computing Infrastructure. Morgan Kaufmann, San Francisco (1999)</p><p class="Note"><a name="_7bd8257c-c53c-c793-1ba9-1bdc365a6f0d" id="_7bd8257c-c53c-c793-1ba9-1bdc365a6f0d"></a>Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C.: Grid Information Services for Distributed Resource Sharing. In: 10th IEEE International Symposium on High Performance Distributed Computing, pp. 181&#x2013;184. IEEE Press, New York (2001)</p><p class="Note"><a name="_f94dfcdb-c6fe-2351-4b79-e93682ab14b5" id="_f94dfcdb-c6fe-2351-4b79-e93682ab14b5"></a>Foster, I., Kesselman, C., Nick, J., Tuecke, S.: The Physiology of the Grid: an Open Grid Services Architecture for Distributed Systems Integration. Technical report, Global Grid Forum (2002)</p><p class="Note"><a name="_bff0773b-84da-b964-f9f8-48c6da298fa8" id="_bff0773b-84da-b964-f9f8-48c6da298fa8"></a>National Center for Biotechnology Information, <a href="http://www.ncbi.nlm.nih.gov">http://www.ncbi.nlm.nih.gov</a></p><p class="Note"><a name="_71551343-2ee1-43e6-ac1f-f41e6c804f29" id="_71551343-2ee1-43e6-ac1f-f41e6c804f29"></a>ISO / TC 211: ISO 19115-1:2014 Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;Part 1: Fundamentals (2014)</p><p class="Note"><a name="_b7730180-5d18-4cf3-138e-4931a26777c8" id="_b7730180-5d18-4cf3-138e-4931a26777c8"></a>ISO / TC 211: ISO 19157:2013 Geographic information&#x2009;&#x2014;&#x2009;Data quality (2013)</p><p class="Note"><a name="_f4221a86-0b7b-2940-9987-72a5b875f9c8" id="_f4221a86-0b7b-2940-9987-72a5b875f9c8"></a>ISO / TC 211: ISO 19139:2007 Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;XML schema implementation (2007)</p><p class="Note"><a name="_59016b3f-6dfb-f42a-b160-25e911fe1bc9" id="_59016b3f-6dfb-f42a-b160-25e911fe1bc9"></a>ISO / TC 211: ISO 19115-3: Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;Part 3: XML schemas (2016)</p><p class="Note"><a name="_23c1c5ac-62bf-e717-8bd1-2d44ce91d4c1" id="_23c1c5ac-62bf-e717-8bd1-2d44ce91d4c1"></a>OGC: OGC 15-097 OGC Geospatial User Feedback Standard. Conceptual Model (2016)</p><p class="Note"><a name="_72958ac5-b1a9-a52f-f8cb-5490ffb940e9" id="_72958ac5-b1a9-a52f-f8cb-5490ffb940e9"></a>OGC: OGC 12-019, OGC City Geography Markup Language (CityGML) Encoding Standard (2012)</p><p class="Note"><a name="_e14f64a0-e9ad-1210-47cf-d1e62ae6a637" id="_e14f64a0-e9ad-1210-47cf-d1e62ae6a637"></a>OGC: OGC 14-005r3, OGC IndoorGML (2014)</p></div>
+
+
+</div>
+      <div><a name="_1bbb27dc-83e2-7fa5-15f2-fa8aabb3d9a6" id="_1bbb27dc-83e2-7fa5-15f2-fa8aabb3d9a6"></a><h1>3.<span style="mso-tab-count:1">&#xA0; </span>Terms and definitions</h1>
+<p class="MsoNormal"><a name="_9608c37a-eaae-1098-3a4b-f705fd512d85" id="_9608c37a-eaae-1098-3a4b-f705fd512d85"></a>No terms and definitions are listed in this document.</p>
+
+<p class="MsoNormal"><a name="_6e5ba0bf-4830-2e53-f1c5-07c075342c8f" id="_6e5ba0bf-4830-2e53-f1c5-07c075342c8f"></a>This document uses the terms defined in <a href="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</a>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word &#x201C;shall&#x201D; (not &#x201C;must&#x201D;) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+
+<p class="MsoNormal"><a name="_2bcce6ff-440a-67d4-c0a7-a81fa5b1125e" id="_2bcce6ff-440a-67d4-c0a7-a81fa5b1125e"></a>This document also uses terms defined in the OGC Standard for Modular specifications (<a href="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</a>), also known as the &#x2018;ModSpec&#x2019;. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+
+<p class="MsoNormal"><a name="_3a4cc38f-6614-34f0-6e5b-8831934c33d4" id="_3a4cc38f-6614-34f0-6e5b-8831934c33d4"></a>For the purposes of this document, the following additional terms and definitions apply.</p>
+
+<table class="dl"><a name="_c108b639-e6c7-137e-7ab7-b6fbc20a4802" id="_c108b639-e6c7-137e-7ab7-b6fbc20a4802"></a><tr><td valign="top" align="left"><p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">Emission Event</p></td><td valign="top"><p class="MsoNormal"><a name="_fe242985-26e9-93d4-f728-68f97f33270e" id="_fe242985-26e9-93d4-f728-68f97f33270e"></a>An Emission Event is an occurrent representing the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.</p>
+</td></tr><tr><td valign="top" align="left"><p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">Feature</p></td><td valign="top"><p class="MsoNormal"><a name="_13e93281-ed01-21c9-aacb-32ed92b1d4d6" id="_13e93281-ed01-21c9-aacb-32ed92b1d4d6"></a>Abstraction of real world phenomena (Source: ISO 19101-1:2014)</p>
+</td></tr><tr><td valign="top" align="left"><p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">Measurement</p></td><td valign="top"><p class="MsoNormal"><a name="_e180facf-97bf-abba-0aa7-10fe1a56f68c" id="_e180facf-97bf-abba-0aa7-10fe1a56f68c"></a>Set of operations having the object of determining the value of a quantity (Source: <a href="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</a>)</p>
+</td></tr><tr><td valign="top" align="left"><p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">Mechanism</p></td><td valign="top"><p class="MsoNormal"><a name="_bd27c278-bb78-ef4b-4575-ebc10c1c438d" id="_bd27c278-bb78-ef4b-4575-ebc10c1c438d"></a>A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is a member of a controlled vocabulary and is defined independently of the Source Feature &#x2014; including its identity, structure, or purpose &#x2014; allowing Mechanisms to be consistently reused across different types of Source Features.</p>
+</td></tr><tr><td valign="top" align="left"><p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">Observation</p></td><td valign="top"><p class="MsoNormal"><a name="_4e502ae4-b0a9-0b5f-3b24-3b461b51628a" id="_4e502ae4-b0a9-0b5f-3b24-3b461b51628a"></a>Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: <a href="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</a>)</p>
+</td></tr><tr><td valign="top" align="left"><p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">Source Feature</p></td><td valign="top"><p class="MsoNormal"><a name="_70798390-822d-d236-01f5-640b2704703f" id="_70798390-822d-d236-01f5-640b2704703f"></a>A Source Feature is an ISO 19101 feature whose geometry provides the geospatial reference for one or more Emission Events. A Source Feature is characterised solely by its own identity, geometry, intended function, and lifecycle; it is explicitly agnostic to the Mechanism by which any associated Emission Event occur.</p>
+</td></tr><tr><td valign="top" align="left"><p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">Unit of Measure</p></td><td valign="top"><p class="MsoNormal"><a name="_dc5775c8-b281-09b1-2b57-ad42b3340b07" id="_dc5775c8-b281-09b1-2b57-ad42b3340b07"></a>Reference quantity chosen from a unit equivalence group (Source: <a href="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</a>)</p>
+</td></tr><tr><td valign="top" align="left"><p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">term name</p></td><td valign="top"><p class="MsoNormal"><a name="_f236a91a-f350-2049-11ea-e38b33c60f6e" id="_f236a91a-f350-2049-11ea-e38b33c60f6e"></a>text of the definition</p>
+</td></tr></table>
+</div>
+      <div>
+        <a name="_5420ea23-622b-763e-681e-448816092108" id="_5420ea23-622b-763e-681e-448816092108"></a>
+        <h1>4.<span style="mso-tab-count:1">&#xA0; </span>Clauses not Containing Normative Material</h1>
+        <p class="MsoNormal"><a name="_ebd5719c-971d-c149-9d99-d50c3334ba45" id="_ebd5719c-971d-c149-9d99-d50c3334ba45"></a>Paragraph</p>
+        <div><a name="_432487d7-c9c7-3a77-61b8-a8d4d1ebe8fa" id="_432487d7-c9c7-3a77-61b8-a8d4d1ebe8fa"></a><h2>4.1.<span style="mso-tab-count:1">&#xA0; </span>Clauses not containing normative material sub-clause 1</h2>
+
+<p class="MsoNormal"><a name="_07291f40-0414-192d-2119-c7d71f4aa5c1" id="_07291f40-0414-192d-2119-c7d71f4aa5c1"></a>Paragraph</p>
+</div>
+        <div><a name="_c196fce7-c9dc-9584-6161-c3c7810cb2c1" id="_c196fce7-c9dc-9584-6161-c3c7810cb2c1"></a><h2>4.2.<span style="mso-tab-count:1">&#xA0; </span>Clauses not containing normative material sub-clause 2</h2>
+
+</div>
+      </div>
+      <p class="MsoNormal">
+        <br clear="all" style="mso-special-character:line-break;page-break-before:always"/>
+      </p>
+      <div class="Section3">
+        <a name="_16a9bda5-b03c-84f7-1208-0d4c8404c0c8" id="_16a9bda5-b03c-84f7-1208-0d4c8404c0c8"></a>
+        <h1 class="Annex"><b>Annex A</b><br/>(informative)<br/><b>Bibliography</b></h1>
+        <div>
+
+<div class="Note"><a name="_b7c04aa2-c1a9-1c9f-37f1-41f641910ab3" id="_b7c04aa2-c1a9-1c9f-37f1-41f641910ab3"></a><p class="Note"><span class="note_label">NOTE:<span style="mso-tab-count:1">&#xA0; </span></span>The TC has approved Springer LNCS as the official document citation type.</p><p class="Note"><a name="_6526fe1c-1b09-b27b-9fe8-2a2ce7997bc4" id="_6526fe1c-1b09-b27b-9fe8-2a2ce7997bc4"></a>Springer LNCS is widely used in technical and computer science journals and other publications</p><p class="Note"><a name="_c215cc32-ca20-c692-7269-8030fec8bf1a" id="_c215cc32-ca20-c692-7269-8030fec8bf1a"></a>&#x2013; Actual References:</p><p class="Note"><a name="_cf21a9a5-4fb0-1527-bf81-e0fef24a18a3" id="_cf21a9a5-4fb0-1527-bf81-e0fef24a18a3"></a>[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p></div>
+
+
+
+<p class="MsoNormal"><a name="OGC2015" id="OGC2015"></a>[1] OGC: OGC Testbed 12 Annex B: Architecture. (2015).</p>
+</div>
+      </div>
+    </div>
+    <div style="mso-element:footnote-list"/>
+  </body>
+</html>
+
+
+------=_NextPart_fad99e23.10c2.4ebe
+Content-ID: <filelist.xml>
+Content-Disposition: inline; filename="filelist.xml"
+Content-Transfer-Encoding: base64
+Content-Type: application/xml
+
+PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPgog
+ICAgICAgIDxvOk1haW5GaWxlIEhSZWY9Ii4uLy9Vc2Vycy9zdGV2ZWxpYW5nL0RvY3VtZW50cy9H
+aXRIdWIvRW1pc3Npb25NTC9zdGFuZGFyZF9kb2N1bWVudC5odG0iLz4gIDxvOkZpbGUgSFJlZj0i
+ZmlsZWxpc3QueG1sIi8+CiAgPG86RmlsZSBIUmVmPSJoZWFkZXIuaHRtbCIvPgo8L3htbD4K
+
+------=_NextPart_fad99e23.10c2.4ebe
+Content-ID: <header.html>
+Content-Disposition: inline; filename="header.html"
+Content-Transfer-Encoding: base64
+Content-Type: text/html charset="utf-8"
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiDQp4bWxuczpvPSJ1
+cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiDQp4bWxuczp3PSJ1cm46c2No
+ZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTp3b3JkIg0KeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMu
+bWljcm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIg0KeG1sbnM6bXY9Imh0dHA6Ly9tYWNW
+bWxTY2hlbWFVcmkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwIj4NCg0K
+PGhlYWQ+DQo8bWV0YSBuYW1lPVRpdGxlIGNvbnRlbnQ9IiI+DQo8bWV0YSBuYW1lPUtleXdvcmRz
+IGNvbnRlbnQ9IiI+DQo8bWV0YSBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZSBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9dXRmLTgiPg0KPG1ldGEgbmFtZT1Qcm9nSWQgY29udGVudD1Xb3JkLkRv
+Y3VtZW50Pg0KPG1ldGEgbmFtZT1HZW5lcmF0b3IgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUi
+Pg0KPG1ldGEgbmFtZT1PcmlnaW5hdG9yIGNvbnRlbnQ9Ik1pY3Jvc29mdCBXb3JkIDE1Ij4NCjxs
+aW5rIGlkPU1haW4tRmlsZSByZWw9TWFpbi1GaWxlIGhyZWY9Ii4uLy9Vc2Vycy9zdGV2ZWxpYW5n
+L0RvY3VtZW50cy9HaXRIdWIvRW1pc3Npb25NTC9zdGFuZGFyZF9kb2N1bWVudC5odG1sIj4NCjwh
+LS1baWYgZ3RlIG1zbyA5XT48eG1sPg0KIDxvOnNoYXBlZGVmYXVsdHMgdjpleHQ9ImVkaXQiIHNw
+aWRtYXg9IjIwNDkiLz4NCjwveG1sPjwhW2VuZGlmXS0tPg0KPC9oZWFkPg0KDQo8Ym9keSBsYW5n
+PUVOIGxpbms9Ymx1ZSB2bGluaz0iIzk1NEY3MiI+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50
+OmZvb3Rub3RlLXNlcGFyYXRvcicgaWQ9ZnM+DQoNCjxwIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0n
+bWFyZ2luLWJvdHRvbTowY207bWFyZ2luLWJvdHRvbTouMDAwMXB0O2xpbmUtaGVpZ2h0Og0Kbm9y
+bWFsJz48c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tc3BlY2lhbC1jaGFyYWN0ZXI6
+Zm9vdG5vdGUtc2VwYXJhdG9yJz48IVtpZiAhc3VwcG9ydEZvb3Rub3Rlc10+DQoNCjxociBhbGln
+bj1sZWZ0IHNpemU9MSB3aWR0aD0iMzMlIj4NCg0KPCFbZW5kaWZdPjwvc3Bhbj48L3NwYW4+PC9w
+Pg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdG5vdGUtY29udGludWF0
+aW9uLXNlcGFyYXRvcicgaWQ9ZmNzPg0KDQo8cCBjbGFzcz1Nc29Ob3JtYWwgc3R5bGU9J21hcmdp
+bi1ib3R0b206MGNtO21hcmdpbi1ib3R0b206LjAwMDFwdDtsaW5lLWhlaWdodDoNCm5vcm1hbCc+
+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXNwZWNpYWwtY2hhcmFjdGVyOmZvb3Ru
+b3RlLWNvbnRpbnVhdGlvbi1zZXBhcmF0b3InPjwhW2lmICFzdXBwb3J0Rm9vdG5vdGVzXT4NCg0K
+PGhyIGFsaWduPWxlZnQgc2l6ZT0xPg0KDQo8IVtlbmRpZl0+PC9zcGFuPjwvc3Bhbj48L3A+DQoN
+CjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDplbmRub3RlLXNlcGFyYXRvcicgaWQ9
+ZXM+DQoNCjxwIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0nbWFyZ2luLWJvdHRvbTowY207bWFyZ2lu
+LWJvdHRvbTouMDAwMXB0O2xpbmUtaGVpZ2h0Og0Kbm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCPjxz
+cGFuIHN0eWxlPSdtc28tc3BlY2lhbC1jaGFyYWN0ZXI6Zm9vdG5vdGUtc2VwYXJhdG9yJz48IVtp
+ZiAhc3VwcG9ydEZvb3Rub3Rlc10+DQoNCjxociBhbGlnbj1sZWZ0IHNpemU9MSB3aWR0aD0iMzMl
+Ij4NCg0KPCFbZW5kaWZdPjwvc3Bhbj48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHls
+ZT0nbXNvLWVsZW1lbnQ6ZW5kbm90ZS1jb250aW51YXRpb24tc2VwYXJhdG9yJyBpZD1lY3M+DQoN
+CjxwIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0nbWFyZ2luLWJvdHRvbTowY207bWFyZ2luLWJvdHRv
+bTouMDAwMXB0O2xpbmUtaGVpZ2h0Og0Kbm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0
+eWxlPSdtc28tc3BlY2lhbC1jaGFyYWN0ZXI6Zm9vdG5vdGUtY29udGludWF0aW9uLXNlcGFyYXRv
+cic+PCFbaWYgIXN1cHBvcnRGb290bm90ZXNdPg0KDQo8aHIgYWxpZ249bGVmdCBzaXplPTE+DQoN
+CjwhW2VuZGlmXT48L3NwYW4+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21z
+by1lbGVtZW50OmhlYWRlcicgaWQ9ZWgxPg0KDQo8cCBjbGFzcz1Nc29IZWFkZXIgYWxpZ249bGVm
+dCBzdHlsZT0ndGV4dC1hbGlnbjpsZWZ0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1saW5lLWhl
+aWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+T3BlbiBHZW9zcGF0aWFsIENvbnNv
+cnRpdW0mbmJzcDsyNS0wMTk8L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNv
+LWVsZW1lbnQ6aGVhZGVyJyBpZD1oMT4NCg0KPHAgY2xhc3M9TXNvSGVhZGVyIHN0eWxlPSdtYXJn
+aW4tYm90dG9tOjE4LjBwdCc+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtc2l6ZToxMC4w
+cHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdDtmb250LXdlaWdodDpub3JtYWwnPg0KT3BlbiBH
+ZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyNS0wMTk8L3NwYW4+PHNwYW4gbGFuZz1FTi1HQg0K
+c3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PG86cD48L286cD48L3NwYW4+PC9wPg0KDQo8L2Rp
+dj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjE+DQoNCjxwIGNsYXNz
+PU1zb0Zvb3RlciBzdHlsZT0nbWFyZ2luLXRvcDoxMi4wcHQ7bGluZS1oZWlnaHQ6MTIuMHB0O21z
+by1saW5lLWhlaWdodC1ydWxlOg0KZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48YiBz
+dHlsZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0KbGFuZz1FTi1HQiBzdHls
+ZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5
+bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+PHNwYW4NCnN0eWxlPSdtc28tc3Bh
+Y2VydW46eWVzJz7CoDwvc3Bhbj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKg
+wqANCjwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQt
+c2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48Yg0Kc3R5bGU9J21zby1i
+aWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXpl
+OjEwLjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuIHN0eWxlPSdtc28tbm8t
+cHJvb2Y6eWVzJz4yPC9zcGFuPjwvc3Bhbj48L2I+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48Yg0K
+c3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQiBzdHls
+ZT0nZm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuIHN0
+eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PC9iPjwhW2VuZGlmXS0t
+PjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQt
+c2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj7CqSBPcGVu
+IEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIwMjUg4oCTIEFsbCByaWdodHMgcmVzZXJ2ZWQ8
+bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVu
+dDpoZWFkZXInIGlkPWVoMj4NCjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1sZWZ0IHN0eWxlPSd0
+ZXh0LWFsaWduOmxlZnQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6
+ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj5PcGVuIEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNw
+OzI1LTAxOTwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6aGVh
+ZGVyJyBpZD1laDJsPg0KPHAgY2xhc3M9TXNvSGVhZGVyTGFuZHNjYXBlIGFsaWduPWxlZnQgc3R5
+bGU9J3RleHQtYWxpZ246bGVmdDtsaW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGluZS1oZWlnaHQt
+cnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPk9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVt
+Jm5ic3A7MjUtMDE5PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVu
+dDpoZWFkZXInIGlkPWgyPg0KPHAgY2xhc3M9TXNvSGVhZGVyIGFsaWduPXJpZ2h0IHN0eWxlPSd0
+ZXh0LWFsaWduOnJpZ2h0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1saW5lLWhlaWdodC1ydWxl
+OmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+T3BlbiBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJz
+cDsyNS0wMTk8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50Omhl
+YWRlcicgaWQ9aDJsPg0KPHAgY2xhc3M9TXNvSGVhZGVyTGFuZHNjYXBlIGFsaWduPXJpZ2h0IHN0
+eWxlPSd0ZXh0LWFsaWduOnJpZ2h0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1saW5lLWhlaWdo
+dC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+T3BlbiBHZW9zcGF0aWFsIENvbnNvcnRp
+dW0mbmJzcDsyNS0wMTk8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVt
+ZW50OmZvb3RlcicgaWQ9ZWYyPg0KPHAgY2xhc3M9TXNvRm9vdGVyIHN0eWxlPSdsaW5lLWhlaWdo
+dDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0Rmll
+bGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1m
+b250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48
+L3NwYW4+PHNwYW4NCnN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoDwvc3Bhbj5QQUdFPHNwYW4g
+c3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgwqANCjwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3Bh
+biBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2Vu
+ZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRp
+LWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+aWk8L3Nw
+YW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9
+J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxl
+PSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4g
+bGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjEx
+LjBwdCc+PHNwYW4gDQpzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj7CqSBPcGVuIEdlb3Nw
+YXRpYWwgQ29uc29ydGl1bSZuYnNwOzIwMjUmbmJzcDvigJMgQWxsIHJpZ2h0cyByZXNlcnZlZDxv
+OnA+PC9vOnA+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50
+OmZvb3RlcicgaWQ9ZWYybD4NCjxwIGNsYXNzPU1zb0Zvb3RlckxhbmRzY2FwZSBzdHlsZT0nbGlu
+ZS1oZWlnaHQ6MTIuMHB0O21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjwhLS1baWYgc3Vw
+cG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNv
+LWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1i
+ZWdpbic+PC9zcGFuPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqA8L3NwYW4+UEFH
+RTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoMKgDQo8L3NwYW4+XCogTUVSR0VGT1JN
+QVQgPHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bh
+bj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDtt
+c28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1uby1wcm9vZjp5ZXMn
+PmlpPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdC
+IHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFu
+DQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0t
+PjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQt
+c2l6ZToxMS4wcHQnPjxzcGFuIA0Kc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+wqkgT3Bl
+biBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMDI1Jm5ic3A74oCTIEFsbCByaWdodHMgcmVz
+ZXJ2ZWQ8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28t
+ZWxlbWVudDpmb290ZXInIGlkPWYyPg0KPHAgY2xhc3M9TXNvRm9vdGVyIHN0eWxlPSdsaW5lLWhl
+aWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6MTAuMHB0O21z
+by1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5i
+c3A7MjAyNSZuYnNwO+KAkyBBbGwNCnJpZ2h0cyByZXNlcnZlZDxzcGFuIHN0eWxlPSdtc28tdGFi
+LWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1F
+Ti1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48
+c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+IFBBR0U8c3BhbiBz
+dHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqDCoA0KPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFu
+IHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5k
+aWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGkt
+Zm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz5paWk8L3Nw
+YW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9
+J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxl
+PSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4g
+bGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjEx
+LjBwdCc+PG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1l
+bGVtZW50OmZvb3RlcicgaWQ9ZjJsPg0KPHAgY2xhc3M9TXNvRm9vdGVyTGFuZHNjYXBlIHN0eWxl
+PSdsaW5lLWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6
+MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25z
+b3J0aXVtJm5ic3A7MjAyNSZuYnNwO+KAkyBBbGwNCnJpZ2h0cyByZXNlcnZlZDxzcGFuIHN0eWxl
+PSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bh
+bg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6
+MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+IFBB
+R0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqDCoA0KPC9zcGFuPlwqIE1FUkdFRk9S
+TUFUIDxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3Nw
+YW4+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7
+bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28tbm8tcHJvb2Y6eWVz
+Jz5paWk8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4t
+R0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNw
+YW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZd
+LS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9u
+dC1zaXplOjExLjBwdCc+PG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5
+bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYzPg0KPHAgY2xhc3M9TXNvRm9vdGVyIHN0eWxl
+PSdtYXJnaW4tdG9wOjEyLjBwdDtsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1
+bGU6DQpleGFjdGx5Jz48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxiIHN0eWxlPSdtc28tYmlkaS1m
+b250LXdlaWdodDpub3JtYWwnPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAu
+MHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6
+ZmllbGQtYmVnaW4nPjwvc3Bhbj48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9z
+cGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqDCoA0KPC9zcGFuPlwqIE1F
+UkdFRk9STUFUIDxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bh
+bj48L3NwYW4+PC9iPjwhW2VuZGlmXS0tPjxiDQpzdHlsZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6
+bm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0Ow0KbXNvLWJp
+ZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI8L3Nw
+YW4+PC9zcGFuPjwvYj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxiDQpzdHlsZT0nbXNvLWJpZGkt
+Zm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAu
+MHB0Ow0KbXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50
+OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48L2I+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4t
+R0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNw
+YW4NCnN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25z
+b3J0aXVtJm5ic3A7MjAyNSZuYnNwO+KAkyBBbGwgcmlnaHRzIHJlc2VydmVkPG86cD48L286cD48
+L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBp
+ZD1lZjNsPg0KPHAgY2xhc3M9TXNvRm9vdGVyTGFuZHNjYXBlIHN0eWxlPSdtYXJnaW4tdG9wOjEy
+LjBwdDtsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6DQpleGFjdGx5Jz48
+IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxiIHN0eWxlPSdtc28tYmlkaS1mb250LXdlaWdodDpub3Jt
+YWwnPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZv
+bnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwv
+c3Bhbj48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBz
+dHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqDCoA0KPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFu
+IHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PC9iPjwh
+W2VuZGlmXS0tPjxiDQpzdHlsZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBs
+YW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0Ow0KbXNvLWJpZGktZm9udC1zaXplOjEx
+LjBwdCc+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI8L3NwYW4+PC9zcGFuPjwvYj48
+IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxiDQpzdHlsZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6bm9y
+bWFsJz48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0Ow0KbXNvLWJpZGkt
+Zm9udC1zaXplOjExLjBwdCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9z
+cGFuPjwvc3Bhbj48L2I+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQt
+c2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28t
+dGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqAgPC9zcGFuPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7MjAy
+NSZuYnNwO+KAkyBBbGwgcmlnaHRzIHJlc2VydmVkPG86cD48L286cD48L3NwYW4+PC9wPg0KDQo8
+L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1mMz4NCjxwIGNsYXNz
+PU1zb0Zvb3RlciBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0Jz48c3BhbiBsYW5nPUVOLUdCDQpz
+dHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz7CqSBPcGVu
+IEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIwMjUmbmJzcDvigJMgQWxsDQpyaWdodHMgcmVz
+ZXJ2ZWQ8c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBz
+dXBwb3J0RmllbGRzXT48Yg0Kc3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNw
+YW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6
+ZToxMS4wcHQnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPg0K
+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoMKgIDwvc3Bhbj5cKiBNRVJHRUZP
+Uk1BVCA8c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwv
+c3Bhbj48L2I+PCFbZW5kaWZdLS0+PGINCnN0eWxlPSdtc28tYmlkaS1mb250LXdlaWdodDpub3Jt
+YWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7DQptc28tYmlkaS1m
+b250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+Mzwvc3Bhbj48
+L3NwYW4+PC9iPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PGINCnN0eWxlPSdtc28tYmlkaS1mb250
+LXdlaWdodDpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7
+DQptc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zmll
+bGQtZW5kJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBz
+dHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48bzpwPjwv
+bzpwPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVy
+JyBpZD1mM2w+DQo8cCBjbGFzcz1Nc29Gb290ZXJMYW5kc2NhcGUgc3R5bGU9J2xpbmUtaGVpZ2h0
+OjEyLjBwdCc+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJp
+ZGktZm9udC1zaXplOjExLjBwdCc+wqkgT3BlbiBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsy
+MDI1Jm5ic3A74oCTIEFsbA0KcmlnaHRzIHJlc2VydmVkPHNwYW4gc3R5bGU9J21zby10YWItY291
+bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoCA8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PGINCnN0eWxlPSdtc28t
+YmlkaS1mb250LXdlaWdodDpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6
+ZToxMC4wcHQ7DQptc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLWVs
+ZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj4NClBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVu
+Onllcyc+wqDCoCA8L3NwYW4+XCogTUVSR0VGT1JNQVQgPHNwYW4NCnN0eWxlPSdtc28tZWxlbWVu
+dDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PC9iPjwhW2VuZGlmXS0tPjxiDQpzdHls
+ZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdm
+b250LXNpemU6MTAuMHB0Ow0KbXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4gc3R5bGU9
+J21zby1uby1wcm9vZjp5ZXMnPjM8L3NwYW4+PC9zcGFuPjwvYj48IS0tW2lmIHN1cHBvcnRGaWVs
+ZHNdPjxiDQpzdHlsZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBsYW5nPUVO
+LUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0Ow0KbXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+
+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48L2I+PCFb
+ZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJp
+ZGktZm9udC1zaXplOjExLjBwdCc+PG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjwv
+Ym9keT4NCg0KPC9odG1sPg0K
+
+------=_NextPart_fad99e23.10c2.4ebe--
