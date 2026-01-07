@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.7.10" schema-version="v2.0.8" flavor="ogc">
 <bibdata type="standard">
-<title language="en" format="text/plain">OGC Emission Event Modeling Language (EmissionML) Discussion Paper</title>
+<title language="en" format="text/plain">Introduction to OGC EmissionML: Why the World Needs a Standard Ontology for Emissions</title>
 <uri type="xml">./document.xml</uri><uri type="pdf">./document.pdf</uri><uri type="doc">./document.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}</docidentifier><docidentifier type="ogc-internal" primary="true">25-023</docidentifier><docnumber>25-023</docnumber><date type="published"><on>2025-xx-xx</on></date><date type="issued"><on>2025-xx-xx</on></date><date type="received"><on>2025-xx-xx</on></date><contributor><role type="author"/><organization>
 <name>SensorUp Inc.</name>
 </organization></contributor><contributor><role type="author"/><organization>

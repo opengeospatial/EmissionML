@@ -1,4 +1,4 @@
-= OGC Emission Event Modeling Language (EmissionML) Discussion Paper
+= Introduction to OGC EmissionML: Why the World Needs a Standard Ontology for Emissions
 :comment: Change "standard" to "draft-standard" for draft standards
 :comment: The front page notice will update automatically to reflect the document type
 :doctype: discussion-paper
