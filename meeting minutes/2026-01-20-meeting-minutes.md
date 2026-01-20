@@ -1,6 +1,6 @@
 ## Date/Time: 2026-01-20 08:30 MT
 
-## Attendees: Steve, Julie, Hylke, Zahra, Sina, Jinya, Kan
+## Attendees: Steve, Ryan, Hylke, Erin, Jinya, Kan, Zahra, Sina.
 
 ## Agenda
 - GitHub Issues and Document Development
