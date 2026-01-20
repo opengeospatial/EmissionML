@@ -27,7 +27,7 @@ classDiagram
     +time: TM_Instant
   }
 
-  class <<Feature>>Source {
+  class Source {
     +name: String
     +geometry: GM_Object
   }
