@@ -28,6 +28,7 @@ classDiagram
   }
 
   class Source {
+    <<Feature>>
     +name: String
     +geometry: GM_Object
   }
