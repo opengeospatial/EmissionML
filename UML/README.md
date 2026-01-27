@@ -83,6 +83,7 @@ classDiagram
 
   %% --- Mechanism defines Intent ---
   Mechanism ..> EmissionIntent : hasIntent
+```
 
 ## EmissionML UML 2025-07-16
 ```mermaid
