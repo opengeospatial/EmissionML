@@ -78,7 +78,4 @@ classDiagram
 
   %% --- SourceFeatures and their Types ---
   Source "0..*" --> "0..1" SourceType : hasType
-
-  %% --- Mechanism defines Intent ---
-  Mechanism ..> EmissionIntent : hasIntent
 ```
