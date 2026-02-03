@@ -1,16 +1,27 @@
 [cols="1,4",width="90%"]
 |===
-2+|*Requirements Class* {set:cellbgcolor:#CACCCE}
-2+|http://www.opengis.net/spec/ABCD/m.n/req/req-class-a {set:cellbgcolor:#FFFFFF}
-|Target type |Token
-|Dependency |http://www.example.org/req/blah
-|Dependency |urn:iso:ts:iso:19139:clause:6
-|*Requirement 1* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1 +
-requirement description {set:cellbgcolor:#FFFFFF}
-|*Requirement 2* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2 +
-requirement description {set:cellbgcolor:#FFFFFF}
-
-|*Requirement 3* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3 +
-requirement description
-{set:cellbgcolor:#FFFFFF}
+2+|*Emission Event Conceptual Data Model Core* {set:cellbgcolor:#CACCCE}
+2+|http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core {set:cellbgcolor:#FFFFFF}
+|Target type |Data Model
+|Dependency |http://www.opengis.net/doc/as/om/3.0/req/obs-basic
+|*Requirement 1* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-event +
+This requirement defines the Emission Event as a time-bounded occurrence of pollutant release, linking source, mechanism, quantity, and temporal bounds. {set:cellbgcolor:#FFFFFF}
+|*Requirement 2* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/source +
+This requirement defines the Source as a persistent geospatial feature from which one or more emission events originate. {set:cellbgcolor:#FFFFFF}
+|*Requirement 3* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/mechanism +
+This requirement defines the Mechanism as the causal process or pathway by which an emission occurs, independent of source identity. {set:cellbgcolor:#FFFFFF}
+|*Requirement 4* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-quantity +
+This requirement defines the Emission Quantity as the asserted amount of pollutant released, including unit, determination method, and supporting evidence. {set:cellbgcolor:#FFFFFF}
+|*Requirement 5* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/start-time +
+This requirement defines the start time of an emission event as a determined temporal bound supported by a determination method and optional evidence. {set:cellbgcolor:#FFFFFF}
+|*Requirement 6* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/end-time +
+This requirement defines the end time of an emission event as an optional determined temporal bound indicating cessation or reporting boundary. {set:cellbgcolor:#FFFFFF}
+|*Requirement 7* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/unit-of-measure +
+This requirement defines the Unit of Measure used to express emission quantities through externally referenced, authoritative unit definitions. {set:cellbgcolor:#FFFFFF}
+|*Requirement 8* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/observation +
+This requirement defines the Observation as evidence supporting emission quantity or temporal bound determinations, potentially referencing features of interest at varying spatial scales. {set:cellbgcolor:#FFFFFF}
+|*Requirement 9* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/temporal-bound +
+This requirement defines the Temporal Bound as a determined temporal instant associated with an emission event, optionally supported by quality metadata and evidence. {set:cellbgcolor:#FFFFFF}
+|*Requirement 10* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/determination-method +
+This requirement defines the Determination Method as the method used to derive emission quantities or temporal bounds. {set:cellbgcolor:#FFFFFF}
 |===
