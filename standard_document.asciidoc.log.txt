@@ -1,4 +1,4 @@
-= OGC Emission Event Modeling Language (EmissionML) Discussion Paper
+= OGC Emission Event Modeling Language (EmissionML) Part I: Data Model
 :comment: Change "standard" to "draft-standard" for draft standards
 :comment: The front page notice will update automatically to reflect the document type
 :doctype: draft-standard
@@ -140,7 +140,10 @@ This document also uses terms defined in the OGC Standard for Modular specificat
 For the purposes of this document, the following additional terms and definitions apply.
 
 Emission Event::
-An Emission Event is an occurrent representing the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
+An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
+
+Note: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
+Note: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
 
 Feature::
 Abstraction of real world phenomena (Source: ISO 19101-1:2014)
@@ -149,13 +152,15 @@ Measurement::
 Set of operations having the object of determining the value of a quantity (Source: link:++https://docs.ogc.org/as/20-082r4/20-082r4.html++[ISO/OGC 19156:2023])
 
 Mechanism::
-A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is a member of a controlled vocabulary and is defined independently of the Source Feature — including its identity, structure, or purpose — allowing Mechanisms to be consistently reused across different types of Source Features.
+A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is defined independently of the Source—including its identity, structure, or purpose—allowing Mechanisms to be consistently reused across different types of Source.
 
 Observation::
 Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: link:++https://docs.ogc.org/as/20-082r4/20-082r4.html++[ISO/OGC 19156:2023])
 
-Source Feature::
-A Source Feature is an ISO 19101 feature whose geometry provides the geospatial reference for one or more Emission Events. A Source Feature is characterised solely by its own identity, geometry, intended function, and lifecycle; it is explicitly agnostic to the Mechanism by which any associated Emission Event occur.
+Source::
+A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
+
+Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
 
 Unit of Measure::
 Reference quantity chosen from a unit equivalence group (Source: link:++https://docs.ogc.org/as/20-082r4/20-082r4.html++[ISO/OGC 19156:2023])
@@ -175,7 +180,309 @@ Paragraph
 
 === Clauses not containing normative material sub-clause 2
 
-//include::sections/clause_7_normative_text.adoc[]
+== Emission Event Data Model
+The EmissionML conceptual model is described as a class diagram in Figure x. The schema is fully described in x.x.x.
+
+Use the following table for Requirements Classes.
+
+[cols="1,4",width="90%"]
+|===
+2+|*Emission Event Conceptual Data Model Core* {set:cellbgcolor:#CACCCE}
+2+|http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core {set:cellbgcolor:#FFFFFF}
+|Target type |Data Model
+|Dependency |http://www.opengis.net/doc/as/om/3.0/req/obs-basic
+|*Requirement 1* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-event +
+This requirement defines the Emission Event as a time-bounded occurrence of pollutant release, linking source, mechanism, quantity, and temporal bounds. {set:cellbgcolor:#FFFFFF}
+|*Requirement 2* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/source +
+This requirement defines the Source as a persistent geospatial feature from which one or more emission events originate. {set:cellbgcolor:#FFFFFF}
+|*Requirement 3* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/mechanism +
+This requirement defines the Mechanism as the causal process or pathway by which an emission occurs, independent of source identity. {set:cellbgcolor:#FFFFFF}
+|*Requirement 4* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-quantity +
+This requirement defines the Emission Quantity as the asserted amount of pollutant released, including unit, determination method, and supporting evidence. {set:cellbgcolor:#FFFFFF}
+|*Requirement 5* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/start-time +
+This requirement defines the start time of an emission event as a determined temporal bound supported by a determination method and optional evidence. {set:cellbgcolor:#FFFFFF}
+|*Requirement 6* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/end-time +
+This requirement defines the end time of an emission event as an optional determined temporal bound indicating cessation or reporting boundary. {set:cellbgcolor:#FFFFFF}
+|*Requirement 7* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/unit-of-measure +
+This requirement defines the Unit of Measure used to express emission quantities through externally referenced, authoritative unit definitions. {set:cellbgcolor:#FFFFFF}
+|*Requirement 8* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/observation +
+This requirement defines the Observation as evidence supporting emission quantity or temporal bound determinations, potentially referencing features of interest at varying spatial scales. {set:cellbgcolor:#FFFFFF}
+|*Requirement 9* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/temporal-bound +
+This requirement defines the Temporal Bound as a determined temporal instant associated with an emission event, optionally supported by quality metadata and evidence. {set:cellbgcolor:#FFFFFF}
+|*Requirement 10* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/determination-method +
+This requirement defines the Determination Method as the method used to derive emission quantities or temporal bounds. {set:cellbgcolor:#FFFFFF}
+|===
+
+=== Emission Event Class
+
+An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
+
+Note: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
+Note: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
+
+[width="90%",cols="2,6"]
+|===
+|*Requirement 1: Emission Event Class* {set:cellbgcolor:#CACCCE}|/req/datamodel/core/emission-event +
+ +
+Each Emission Event class shall have the mandatory attributes listed in <<emission-event-attributes>>.
+Each Emission Event class shall have the direct relation between an Emission Event class and other classes listed in <<emission-event-relations>>.
+|===
+
+
+[#emission-event-attributes,reftext='{table-caption} {counter:table-num}', width="90%",options="header"]
+.Attributes of an Emission Event class
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|pollutantType | The URI linking to an external definition of the pollutantType of the Emission Event. |URI |1 (mandatory)
+|===
+
+[#emission-event-relations,reftext='{table-caption} {counter:table-num}', width="90%",options="header"]
+.Direct relation between an Emission Event class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|hasMechanism | The mechanism by which the emission occurred. | Mechanism |1 (mandatory)
+|hasSource | The source from which the emission originated. | Source |1 (mandatory)
+|startTime | The start time of the emission event. | TemporalBound |1 (mandatory)
+|endTime | The end time of the emission event. | TemporalBound |0..1 (optional)
+|hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
+|===
+
+=== Source Class
+
+A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
+
+Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 2: Source Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/source +
++
+Each Source class shall have the mandatory attributes listed in <<source-attributes>>.
+Each Source class shall have the direct relation between a Source class and other classes listed in <<source-relations>>.
+|===
+
+[#source-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Source class
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|name |A human-readable name for the source. |String |0..1 (optional)
+|geometry |The spatial geometry of the source. |GM_Object |1 (mandatory)
+|===
+
+[#source-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Direct relation between a Source class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|hasType |The type classification of the source. |SourceType |0..1 (optional)
+|===
+
+'''
+
+=== Source Type Class
+
+A Source Type provides a classification for Sources, describing the type or category of the Source.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 3: Source Type Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/source-type +
++
+Each Source Type class shall have the mandatory attributes listed in <<source-type-attributes>>.
+|===
+
+[#source-type-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Source Type class
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|name |A human-readable name for the source type. |String |1 (mandatory)
+|description |A detailed description of the source type. |String |1 (mandatory)
+|definition |The URI linking to an external definition of the source type. |URI |1 (mandatory)
+|===
+
+[#source-type-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Direct relation between a Source Type class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|- |No direct relations are defined for SourceType in the core model (it is referenced by Source). |- |-
+|===
+
+'''
+
+=== Mechanism Class
+
+A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is defined independently of the Source—including its identity, structure, or purpose—allowing Mechanisms to be consistently reused across different types of Source.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 4: Mechanism Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/mechanism +
++
+Each Mechanism class shall have the mandatory attributes listed in <<mechanism-attributes>>.
+Each Mechanism class shall have the direct relation listed in <<mechanism-relations>>.
+|===
+
+[#mechanism-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Mechanism class
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|label |A human-readable label for the mechanism. |String |1 (mandatory)
+|description |A detailed description of the mechanism. |String |0..1 (optional)
+|===
+
+[#mechanism-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Direct relation between a Mechanism class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|hasIntent |The emission intent associated with the mechanism. |EmissionIntent |1 (mandatory)
+|===
+
+'''
+
+=== Emission Quantity Class
+
+An Emission Quantity represents the asserted quantity of pollutant released as part of an Emission Event.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 5: Emission Quantity Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/emission-quantity +
++
+Each Emission Quantity class shall have the mandatory attributes listed in <<emission-quantity-attributes>>.
+Each Emission Quantity class shall have the direct relation between an Emission Quantity class and other classes listed in <<emission-quantity-relations>>.
+|===
+
+[#emission-quantity-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of an Emission Quantity class
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|quantity |The numeric value of the emission quantity. |double |1 (mandatory)
+|quality |A data quality element describing the quality of the emission quantity value. |DQ_Element |0..* (optional)
+|===
+
+[#emission-quantity-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Direct relation between an Emission Quantity class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|hasUnit |The unit of measure associated with the emission quantity. |UnitOfMeasure |1 (mandatory)
+|hasDeterminationMethod |The method used to determine or derive the emission quantity. |DeterminationMethod |1 (mandatory)
+|hasEvidence |Observations that provide evidence supporting the emission quantity assertion. |Observation |0..* (optional)
+|===
+
+'''
+
+=== Unit of Measure Class
+
+A Unit of Measure is a reference quantity chosen from a unit equivalence group (Source: ISO/OGC 19156:2023)
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 6: Unit of Measure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/unit-of-measure +
++
+Each Unit of Measure class shall have the mandatory attributes listed in <<unit-of-measure-attributes>>.
+|===
+
+[#unit-of-measure-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Unit of Measure class
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|name |A human-readable name for the unit of measure. |String |1 (mandatory)
+|symbol |A short symbol representing the unit of measure. |String |1 (mandatory)
+|definition |The URI linking to an external definition of the unit of measure. |URI |1 (mandatory)
+|===
+
+[#unit-of-measure-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Direct relation between a Unit of Measure class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|- |No direct relations are defined for UnitOfMeasure in the core model. |- |-
+|===
+
+'''
+
+=== Temporal Bound Class
+
+A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) with optional data quality metadata. Temporal Bounds may be supported by evidence Observations and are associated with a Determination Method.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 7: Temporal Bound Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/temporal-bound +
++
+Each Temporal Bound class shall have the mandatory attributes listed in <<temporal-bound-attributes>>.
+Each Temporal Bound class shall have the direct relation between a Temporal Bound class and other classes listed in <<temporal-bound-relations>>.
+|===
+
+[#temporal-bound-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Temporal Bound class
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|time |The time instant value of this Temporal Bound. |TM_Instant |1 (mandatory)
+|quality |A data quality element describing the quality of the temporal bound. |DQ_Element |0..* (optional)
+|===
+
+[#temporal-bound-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Direct relation between a Temporal Bound class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|hasDeterminationMethod |The method used to determine or derive the temporal bound. |DeterminationMethod |1 (mandatory)
+|hasEvidence |Observations that provide evidence supporting the temporal bound assertion. |Observation |0..* (optional)
+|===
+
+'''
+
+=== Observation Class
+
+In EmissionML, an Observation is evidence that may support an Emission Quantity or Temporal Bound determination.
+
+Note: The Ultimate Feature of Interest of an Observation assists in identifying the Source of the associated Emission Event, without requiring the Feature of Interest to coincide exactly with the Source. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a site), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific component of an item of equipment from which pollutants are released.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 8: Observation Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/observation +
++
+Each Observation class shall be a ISO/OGC 19156:2023 Observation.
+|===
+
+'''
+
+=== Emission Intent Enumeration
+
+Emission Intent is an enumeration describing whether an emission is intentional, unintentional, or unknown.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 9: Emission Intent Enumeration {set:cellbgcolor:#CACCCE}|/req/datamodel/core/emission-intent +
++
+The Emission Intent enumeration shall support the enumeration values listed in <<emission-intent-values>>.
+|===
+
+[#emission-intent-values,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Enumeration values of Emission Intent
+|===
+|Name |Definition
+|INTENTIONAL |The emission occurred intentionally.
+|UNINTENTIONAL |The emission occurred unintentionally.
+|UNKNOWN |The intent of the emission is unknown.
+|===
+
+'''
+
+=== Determination Method Class
+
+A Determination Method describes how a value (e.g., an emission quantity or temporal bound) was determined.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 10: Determination Method Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/determination-method +
++
+Each Determination Method class shall have the mandatory attributes listed in <<determination-method-attributes>>.
+|===
+
+[#determination-method-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Determination Method class
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|label |A human-readable label for the determination method. |String |1 (mandatory)
+|description |A detailed description of the determination method. |String |0..1 (optional)
+|definition |The URI linking to an external definition of the determination method. |URI |0..1 (optional)
+|===
+
 
 //include::sections/clause_8_media_types.adoc[]
 

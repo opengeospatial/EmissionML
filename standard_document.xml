@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.7.10" schema-version="v2.0.8" flavor="ogc">
 <bibdata type="standard">
-<title language="en" format="text/plain">OGC Emission Event Modeling Language (EmissionML) Discussion Paper</title>
+<title language="en" format="text/plain">OGC Emission Event Modeling Language (EmissionML) Part I: Data Model</title>
 <uri type="xml">./document.xml</uri><uri type="pdf">./document.pdf</uri><uri type="doc">./document.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}</docidentifier><docidentifier type="ogc-internal" primary="true">25-019</docidentifier><docnumber>25-019</docnumber><date type="published"><on>2025-xx-xx</on></date><date type="issued"><on>2025-xx-xx</on></date><date type="received"><on>2025-xx-xx</on></date><contributor><role type="author"/><organization>
 <name>SensorUp Inc.</name>
 </organization></contributor><contributor><role type="author"/><organization>
@@ -14,14 +14,14 @@
 <name><completename>Ryan Ahola</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><draft>3.0</draft></version><language>en</language><script>Latn</script><status><stage>draft</stage></status><copyright><from>2025</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><draft>3.0</draft></version><language>en</language><script>Latn</script><status><stage>draft</stage></status><copyright><from>2026</from><owner><organization>
 <name>Open Geospatial Consortium</name>
 <abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>emissions</keyword><keyword>climate change</keyword><ext><doctype>draft-standard</doctype><subdoctype>Interface</subdoctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>color-admonition-caution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-editor</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-important</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-note</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-safety-precaution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-tip</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-todo</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-warning</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-background-definition-description</name><value>rgb(242, 251, 255)</value></presentation-metadata><presentation-metadata><name>color-background-definition-term</name><value>rgb(215, 243, 255)</value></presentation-metadata><presentation-metadata><name>color-background-page</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-header</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-even</name><value>rgb(252, 246, 222)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-odd</name><value>rgb(254, 252, 245)</value></presentation-metadata><presentation-metadata><name>color-background-term-admitted-label</name><value>rgb(223, 236, 249)</value></presentation-metadata><presentation-metadata><name>color-background-term-deprecated-label</name><value>rgb(237, 237, 238)</value></presentation-metadata><presentation-metadata><name>color-background-term-preferred-label</name><value>rgb(249, 235, 187)</value></presentation-metadata><presentation-metadata><name>color-background-text-label-legacy</name><value>rgb(33, 60, 107)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-1</name><value>rgb(237, 193, 35)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-2</name><value>rgb(246, 223, 140)</value></presentation-metadata><presentation-metadata><name>color-text</name><value>rgb(88, 89, 91)</value></presentation-metadata><presentation-metadata><name>color-text-title</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
-<clause id="_fd0161fc-f62b-a79d-3423-d7bbbd97e7a6" obligation="normative">
+<clause id="_e63a44fa-a301-00ff-d2aa-6801901f4ef4" obligation="normative">
 <title id="_19604a82-a482-3c87-1356-705ef7b11f09">Copyright notice</title>
-<p id="_13df91f9-0943-ac24-39c3-d06302298765" align="center">Copyright © 2025 Open Geospatial Consortium<br/> To obtain additional rights of use, visit<link target="https://www.ogc.org/legal"/></p>
+<p id="_40768efa-fc98-1961-899c-6813fb6d417b" align="center">Copyright © 2026 Open Geospatial Consortium<br/> To obtain additional rights of use, visit<link target="https://www.ogc.org/legal"/></p>
 </clause>
 
 <clause id="_6908548e-204b-56e7-9062-6924cccf2315" obligation="normative">
@@ -106,7 +106,7 @@
 
 
 
-<terms id="_1bbb27dc-83e2-7fa5-15f2-fa8aabb3d9a6" obligation="normative">
+<terms id="_d7c7ea41-776d-04ed-fd27-1e0303465c8b" obligation="normative">
 <title id="_dfb2eab2-f980-6365-3c47-81d0eb272962">Terms and definitions</title><p id="_9608c37a-eaae-1098-3a4b-f705fd512d85">No terms and definitions are listed in this document.</p>
 
 <p id="_6e5ba0bf-4830-2e53-f1c5-07c075342c8f">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
@@ -115,29 +115,37 @@
 
 <p id="_3a4cc38f-6614-34f0-6e5b-8831934c33d4">For the purposes of this document, the following additional terms and definitions apply.</p>
 
-<dl id="_c108b639-e6c7-137e-7ab7-b6fbc20a4802"><dt>Emission Event</dt>
-<dd id="_cab2b64e-14ad-7363-529e-bff1703fbbed"><p id="_fe242985-26e9-93d4-f728-68f97f33270e">An Emission Event is an occurrent representing the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.</p>
+<dl id="_1b9a59c7-4f1a-2367-e5c1-3b47c6d205b3"><dt>Emission Event</dt>
+<dd id="_fd8ba53a-e0e2-db62-1525-169232c99c26"><p id="_17eeae69-d4ed-5568-47fe-36a14b018744">An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.</p>
 </dd>
-<dt>Feature</dt>
-<dd id="_2b2615cf-e98b-4c81-01b1-88539161f705"><p id="_13e93281-ed01-21c9-aacb-32ed92b1d4d6">Abstraction of real world phenomena (Source: ISO 19101-1:2014)</p>
+</dl>
+
+<p id="_20e397e9-68c8-1258-cbcb-1c068acf8d32">Note: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts. Note: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.</p>
+
+<dl id="_3ff2d23e-50dc-58a9-80c0-cf59c2f81eca"><dt>Feature</dt>
+<dd id="_02cb640e-ee02-e06b-84f6-40644da81483"><p id="_b715915c-b38b-ebf6-55f2-2d88dad28d42">Abstraction of real world phenomena (Source: ISO 19101-1:2014)</p>
 </dd>
 <dt>Measurement</dt>
-<dd id="_3c48efe6-6cb9-a7e6-f19b-147ac8d4799c"><p id="_e180facf-97bf-abba-0aa7-10fe1a56f68c">Set of operations having the object of determining the value of a quantity (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
+<dd id="_8aa3be59-87d9-a04d-e528-7217cd85b672"><p id="_e5594c44-7cdf-48e9-f1b4-81be09e0e3dd">Set of operations having the object of determining the value of a quantity (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
 </dd>
 <dt>Mechanism</dt>
-<dd id="_35561659-1819-4f5c-512a-96f1cbaa7f78"><p id="_bd27c278-bb78-ef4b-4575-ebc10c1c438d">A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is a member of a controlled vocabulary and is defined independently of the Source Feature — including its identity, structure, or purpose — allowing Mechanisms to be consistently reused across different types of Source Features.</p>
+<dd id="_293d7249-f7b2-eb03-10c8-8df2584f9683"><p id="_02fd6411-3d03-ac47-7c7f-9e76914ccafd">A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is defined independently of the Source—including its identity, structure, or purpose—allowing Mechanisms to be consistently reused across different types of Source.</p>
 </dd>
 <dt>Observation</dt>
-<dd id="_3f0e4213-f91e-62b9-8a7f-3807f757ff64"><p id="_4e502ae4-b0a9-0b5f-3b24-3b461b51628a">Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
+<dd id="_7b19ae89-76e9-1be1-84cf-cdaca0ed8985"><p id="_fad45260-e2ab-eaf7-fa46-783576472b3c">Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
 </dd>
-<dt>Source Feature</dt>
-<dd id="_95256905-f1c6-54a8-32fa-77e666d5f1fc"><p id="_70798390-822d-d236-01f5-640b2704703f">A Source Feature is an ISO 19101 feature whose geometry provides the geospatial reference for one or more Emission Events. A Source Feature is characterised solely by its own identity, geometry, intended function, and lifecycle; it is explicitly agnostic to the Mechanism by which any associated Emission Event occur.</p>
+<dt>Source</dt>
+<dd id="_410771cf-5f6a-4218-5681-ff27196915cf"><p id="_a2daf96b-5f16-ea48-9dfa-e64e63fd5b41">A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.</p>
 </dd>
-<dt>Unit of Measure</dt>
-<dd id="_29ae9399-9a9e-9a6d-ad2d-724614e5b8f2"><p id="_dc5775c8-b281-09b1-2b57-ad42b3340b07">Reference quantity chosen from a unit equivalence group (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
+</dl>
+
+<p id="_6cfb5f97-58fa-a7d5-fa3d-943c5b778abe">Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.</p>
+
+<dl id="_137de1a6-d1b5-dd77-0325-52236b964696"><dt>Unit of Measure</dt>
+<dd id="_2e6cba3f-6649-c1f6-6bdd-750e694fe00c"><p id="_9ea74f6b-7810-d314-7d20-89684a7cfa92">Reference quantity chosen from a unit equivalence group (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
 </dd>
 <dt>term name</dt>
-<dd id="_c270e50e-21b4-d8d5-a4be-c92a688f4d60"><p id="_f236a91a-f350-2049-11ea-e38b33c60f6e">text of the definition</p>
+<dd id="_c05b9114-a1ef-6e6f-3cf9-79027ca2ab6e"><p id="_beaf43b3-4164-060b-045b-b16b48949e04">text of the definition</p>
 </dd>
 </dl>
 </terms>
@@ -153,6 +161,448 @@
 
 <clause id="_c196fce7-c9dc-9584-6161-c3c7810cb2c1" obligation="normative">
 <title id="_455aad23-7f97-f60e-b46a-f29391f74b1d">Clauses not containing normative material sub-clause 2</title>
+</clause>
+</clause>
+
+<clause id="_a4937e2a-1fd3-90dd-d8cf-abb947fd0bf3" obligation="normative">
+<title id="_6d8471a4-4cec-51ea-e51f-b5324f21b5b3">Emission Event Data Model</title>
+<p id="_d8cd2729-c4c6-8ef3-759c-eb1a92adf4ca">The EmissionML conceptual model is described as a class diagram in Figure x. The schema is fully described in x.x.x.</p>
+
+<p id="_71933ab3-c497-69e0-5e73-dcbad935008b">Use the following table for Requirements Classes.</p>
+
+<table id="_1ba89a47-6d5c-77c2-9dcd-8cb8e4277d06" width="90%"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr id="_ba85d06d-c1cc-ff86-ab7b-ad549dc780db"><td id="_c2567bc3-4e7a-807e-2201-d1c449320cb5" colspan="2" valign="middle" align="left"><strong>Emission Event Conceptual Data Model Core</strong> </td>
+</tr><tr id="_b59cfb88-9464-7ea1-80ee-1b15b47c5445"><td id="_3e64eea5-bd3e-c319-9565-c96bf45730ea" colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core"/> </td>
+</tr><tr id="_231963f7-4418-129c-44fe-62dcf975d461"><td id="_0a69611d-41a9-9773-f576-65c1b16b693a" valign="middle" align="left">Target type</td>
+<td id="_890f0fb8-e01d-f16d-253e-c95add6522b5" valign="middle" align="left">Data Model</td>
+</tr><tr id="_aca30b07-0fff-0cfb-25f8-6d354215fe12"><td id="_ac7f756c-9c84-fe34-fe3c-3d2e68410e7a" valign="middle" align="left">Dependency</td>
+<td id="_bf218e58-54fc-7587-d738-202a92aeb653" valign="middle" align="left"><link target="http://www.opengis.net/doc/as/om/3.0/req/obs-basic"/></td>
+</tr><tr id="_15816f27-82da-c9ed-5032-a784dda8a854"><td id="_d13cd440-69c5-a06c-c54b-b23d7dc056f3" valign="middle" align="left"><strong>Requirement 1</strong> </td>
+<td id="_dfeb2170-2f25-d9f4-d479-9cfd92ee66a3" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-event"/><br/> This requirement defines the Emission Event as a time-bounded occurrence of pollutant release, linking source, mechanism, quantity, and temporal bounds. </td>
+</tr><tr id="_e9f454a3-d2e9-96e1-4ccc-fea068da789d"><td id="_0eab7395-22c4-0cb9-5a40-9657020ecfed" valign="middle" align="left"><strong>Requirement 2</strong> </td>
+<td id="_64958b49-db7d-fffc-a793-3549dff7435f" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/source"/><br/> This requirement defines the Source as a persistent geospatial feature from which one or more emission events originate. </td>
+</tr><tr id="_d1ecfa53-e7e6-aca1-1a47-a3f5ccd18fc4"><td id="_d3fcc427-fbbe-4106-d430-c6cc1bc9a951" valign="middle" align="left"><strong>Requirement 3</strong> </td>
+<td id="_2542953f-3179-cca7-92a7-632b7a6a105c" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/mechanism"/><br/> This requirement defines the Mechanism as the causal process or pathway by which an emission occurs, independent of source identity. </td>
+</tr><tr id="_2f716b47-62f3-5ab7-ed77-06c3519c8e02"><td id="_ee399d07-c79e-e96a-86dd-7b576d28e04b" valign="middle" align="left"><strong>Requirement 4</strong> </td>
+<td id="_74f797cf-40b0-2413-dd72-db962b2a54fc" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-quantity"/><br/> This requirement defines the Emission Quantity as the asserted amount of pollutant released, including unit, determination method, and supporting evidence. </td>
+</tr><tr id="_4aec15dd-a6cf-6c23-245a-71e71fe885a0"><td id="_491342b8-38b4-a700-e182-b7b400d6a470" valign="middle" align="left"><strong>Requirement 5</strong> </td>
+<td id="_075caaae-59ac-4492-336e-c5a6347c5336" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/start-time"/><br/> This requirement defines the start time of an emission event as a determined temporal bound supported by a determination method and optional evidence. </td>
+</tr><tr id="_9abfe1cb-b2d0-3761-503c-3a68fee715b2"><td id="_f6dabb1c-c093-ac03-9676-564569b24d30" valign="middle" align="left"><strong>Requirement 6</strong> </td>
+<td id="_b6a2df81-2e81-d742-de4c-bd6e6a54b418" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/end-time"/><br/> This requirement defines the end time of an emission event as an optional determined temporal bound indicating cessation or reporting boundary. </td>
+</tr><tr id="_b7c1d350-36bb-c358-a833-f84a90e5f981"><td id="_9cef4d07-2c3e-412c-a43f-d920236aa239" valign="middle" align="left"><strong>Requirement 7</strong> </td>
+<td id="_b7ced565-2942-8834-8260-8eb79290c23d" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/unit-of-measure"/><br/> This requirement defines the Unit of Measure used to express emission quantities through externally referenced, authoritative unit definitions. </td>
+</tr><tr id="_545a035a-f922-baae-3530-4a0aa79c0113"><td id="_85990dec-0aea-b54b-fb09-adbd889a02d4" valign="middle" align="left"><strong>Requirement 8</strong> </td>
+<td id="_ea892522-7709-51f9-b765-d512305ff19e" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/observation"/><br/> This requirement defines the Observation as evidence supporting emission quantity or temporal bound determinations, potentially referencing features of interest at varying spatial scales. </td>
+</tr><tr id="_151fe539-bc0b-7284-2bf6-89e77d5f4d02"><td id="_c3aa116e-f2da-f7d2-a9f3-53f0b4a0cecd" valign="middle" align="left"><strong>Requirement 9</strong> </td>
+<td id="_0e1d0def-2d57-764f-7448-5ff9835bcfc9" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/temporal-bound"/><br/> This requirement defines the Temporal Bound as a determined temporal instant associated with an emission event, optionally supported by quality metadata and evidence. </td>
+</tr><tr id="_547de373-9051-b29d-b649-59adbd316c42"><td id="_81028714-bc23-da12-3381-2cb484d91172" valign="middle" align="left"><strong>Requirement 10</strong> </td>
+<td id="_1f76e9e6-1fd0-3939-25c0-5fb4b78fadcd" valign="middle" align="left"><link target="http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/determination-method"/><br/> This requirement defines the Determination Method as the method used to derive emission quantities or temporal bounds. </td>
+</tr></tbody>
+</table>
+
+<clause id="_f16ed94f-53a1-31a6-5d20-8fa9a9287472" obligation="normative">
+<title id="_7b8cf25f-0c24-28b8-2d70-779b6ec7af78">Emission Event Class</title>
+<p id="_7bf07f88-db8d-6561-0454-6d7108450e00">An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.</p>
+
+<p id="_42367121-d51c-de1b-b11a-04544fd54bc6">Note: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts. Note: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.</p>
+
+<table id="_cde5d24e-c8c2-4b47-dd4f-86d157d7c551" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_606abcaa-be9e-520b-ae60-9281923dfb3a"><td id="_f817e055-afa6-8403-85ae-bcfda67c1ce1" valign="middle" align="left"><strong>Requirement 1: Emission Event Class</strong> </td>
+<td id="_a75a24b1-80b2-488e-9ccd-0f81cc6dd809" valign="middle" align="left">/req/datamodel/core/emission-event<br/> <br/> Each Emission Event class shall have the mandatory attributes listed in  <xref target="emission-event-attributes"/>. Each Emission Event class shall have the direct relation between an Emission Event class and other classes listed in  <xref target="emission-event-relations"/>.</td>
+</tr></tbody>
+</table>
+
+<table id="_6e9c2b9b-44d8-b97a-0cd1-ebbc2a34991d" anchor="emission-event-attributes" width="90%">
+<name id="_42105269-5fb4-4b8c-0c7c-cde13da87486">Attributes of an Emission Event class</name>
+<thead><tr id="_d8dd659c-f82f-2ae9-1117-44f88f6888dc"><th id="_c6a891c3-0658-d021-58e5-2229dc6c77df" valign="middle" align="left">Names</th>
+<th id="_5e716aa1-27ba-a135-2362-034511d9490a" valign="middle" align="left">Definition</th>
+<th id="_337e8d3e-9f3f-ae3c-6f1f-38132fab74ad" valign="middle" align="left">Data types and values</th>
+<th id="_ef8639d7-6db6-9fc7-8730-7fb3a01ea447" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_56df8bdf-161e-4159-8db8-70b7ff985811"><td id="_586ea912-42d2-114a-5eb8-d572ad03655a" valign="middle" align="left">pollutantType</td>
+<td id="_f3c66c58-e525-da7a-1291-5a4d7fe83c86" valign="middle" align="left">The URI linking to an external definition of the pollutantType of the Emission Event.</td>
+<td id="_4fa800d2-e5b5-9d07-4237-cb0ae97fa9c4" valign="middle" align="left">URI</td>
+<td id="_f296a83b-955a-c005-540f-10673f9b0d2c" valign="middle" align="left">1 (mandatory)</td>
+</tr></tbody>
+</table>
+
+<table id="_8ea55bfd-7568-98d2-c522-be50a4c43667" anchor="emission-event-relations" width="90%">
+<name id="_3e469ce1-3729-4466-6ff0-d508b8a202c4">Direct relation between an Emission Event class and other class types</name>
+<thead><tr id="_9e95565a-aa93-04d3-b819-2c92f99061bd"><th id="_e5b231b7-ff4d-84a7-7bcc-6f878ff76a5b" valign="middle" align="left">Role</th>
+<th id="_7db1e29c-871f-7ae0-bcc3-72a4b9657712" valign="middle" align="left">Description</th>
+<th id="_6f5dc42c-8e52-ca82-aa0d-de83492edba1" valign="middle" align="left">Target Class Type</th>
+<th id="_078bfe69-a971-f58d-ac5d-51e553d18ee5" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_018d3699-860a-d3d5-890b-9f1fb1c245c0"><td id="_e38bb135-cb12-e6a9-7ab0-a10aa6877d9e" valign="middle" align="left">hasMechanism</td>
+<td id="_f7a0d97a-5f44-2679-bfe8-b5ca17bdb06c" valign="middle" align="left">The mechanism by which the emission occurred.</td>
+<td id="_2233e019-6354-e472-3a98-0845fde1b6af" valign="middle" align="left">Mechanism</td>
+<td id="_e90cb1c5-b22b-e2f6-f5ea-34f85b2fa93d" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_2554feeb-3baa-b330-ae66-492ba1aed7bf"><td id="_0ff99170-4537-6403-d8f2-62c69ab9e1cd" valign="middle" align="left">hasSource</td>
+<td id="_8a38706d-4025-c35a-df13-fd3dcb1170f8" valign="middle" align="left">The source from which the emission originated.</td>
+<td id="_0072a135-3ac2-ab1e-e7a2-f5b157d3227c" valign="middle" align="left">Source</td>
+<td id="_f09e98c7-1fcd-74d7-0778-cb440e115093" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_ece59838-bde2-7573-3f58-53c82af0c87d"><td id="_470f95e7-8c33-5cce-7d69-f0dceefc47d7" valign="middle" align="left">startTime</td>
+<td id="_95350567-8df9-e45b-bc78-d276827a69c7" valign="middle" align="left">The start time of the emission event.</td>
+<td id="_0892cff8-dcd5-ff6b-bc74-cfc9eab254bf" valign="middle" align="left">TemporalBound</td>
+<td id="_4710c6c2-7414-d9da-4e90-3cb4d4f2692a" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_4631dffc-9e21-96c3-727e-f1629488d021"><td id="_3976404e-df8b-14e3-ed61-a8d544c5d9d7" valign="middle" align="left">endTime</td>
+<td id="_23b53194-5905-5f72-9e29-bb237f09a3fa" valign="middle" align="left">The end time of the emission event.</td>
+<td id="_bd96d80e-bd4a-0721-f018-46d8630449a6" valign="middle" align="left">TemporalBound</td>
+<td id="_a45ebf7d-71ea-a19b-1a53-d848be15723f" valign="middle" align="left">0..1 (optional)</td>
+</tr><tr id="_39be33da-ea53-ab4b-09eb-825384be0c4d"><td id="_3f76a21a-c973-6e32-9d2d-97b9b6f5ce24" valign="middle" align="left">hasQuantity</td>
+<td id="_5315637e-709e-c0b4-99e0-dd58ea665b98" valign="middle" align="left">The quantity of the substance emitted.</td>
+<td id="_dae61e95-eaa4-8d9e-e102-d7af6d4e4db9" valign="middle" align="left">EmissionQuantity</td>
+<td id="_0b3e3613-d05f-d912-836c-0401610be694" valign="middle" align="left">1 (mandatory)</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_934e1dce-f660-ff04-34f8-10144efe3e1c" obligation="normative">
+<title id="_ff08b688-274b-5e87-11b5-5afab06ab175">Source Class</title>
+<p id="_51555327-3351-dd82-ed3a-18894a23605d">A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.</p>
+
+<p id="_5571ae9d-0b91-0e81-0024-aa8263025b72">Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.</p>
+
+<table id="_5b26e6b2-1082-0308-d668-5dbf0d6fe416" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_87f118fd-28f8-b3a7-6300-e813abfebdd8"><td id="_19128392-7c88-5e4b-f1a3-ae0e9581998b" valign="middle" align="left">Requirement 2: Source Class </td>
+<td id="_b582f90a-dc20-20b0-c1bd-80358dfe004e" valign="middle" align="left">/req/datamodel/core/source<br/> + Each Source class shall have the mandatory attributes listed in  <xref target="source-attributes"/>. Each Source class shall have the direct relation between a Source class and other classes listed in  <xref target="source-relations"/>.</td>
+</tr></tbody>
+</table>
+
+<table id="_5cc5b1a3-695d-f959-7706-b03d464636a0" anchor="source-attributes" width="90%">
+<name id="_ee5c8f94-37ee-2ff4-99b7-0f1aecb18b49">Attributes of a Source class</name>
+<thead><tr id="_06e0c1b0-ec51-ddfc-d143-03c78cd8db5b"><th id="_bc238114-09b5-b217-14f1-a1e2a878ce8f" valign="middle" align="left">Names</th>
+<th id="_c040b7e5-db5d-80c0-a5cf-c986f763af69" valign="middle" align="left">Definition</th>
+<th id="_9bcbd49e-be68-41d0-81a1-c939960d69c8" valign="middle" align="left">Data types and values</th>
+<th id="_20e214bd-1b36-8855-6e0f-73ed0cf8f1dd" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_fa4d1515-dc92-0eeb-8d22-91e2a0407c3c"><td id="_1c1a011b-c63d-fb39-c370-6dc691839704" valign="middle" align="left">name</td>
+<td id="_7c43e0d0-a073-0bc6-12a9-88c15e797418" valign="middle" align="left">A human-readable name for the source.</td>
+<td id="_fd2f0f01-a113-c5e6-9ae8-63f210a8273b" valign="middle" align="left">String</td>
+<td id="_31c00cca-b059-015a-0290-c27c9227ce8e" valign="middle" align="left">0..1 (optional)</td>
+</tr><tr id="_8e3b56fa-4582-efd4-a5e3-45961a945037"><td id="_78f1e5d3-db6b-75d5-2906-6f0134268370" valign="middle" align="left">geometry</td>
+<td id="_6759391c-d8cd-4e53-61a9-e1c4f132f7af" valign="middle" align="left">The spatial geometry of the source.</td>
+<td id="_af4c4d6b-826e-d8c8-06c7-8bcfcefb0826" valign="middle" align="left">GM_Object</td>
+<td id="_6c8811a8-f67f-9198-7771-795045ac9740" valign="middle" align="left">1 (mandatory)</td>
+</tr></tbody>
+</table>
+
+<table id="_33d1d740-c5db-1ecb-f321-26976bd56fcc" anchor="source-relations" width="90%">
+<name id="_63119fa3-f8b4-fe1f-90a9-786a79b924ad">Direct relation between a Source class and other class types</name>
+<thead><tr id="_c306a71c-9c84-2d6f-00b2-6a4003bfea90"><th id="_5433a4ba-6a66-55fb-9ce4-3504696ec69c" valign="middle" align="left">Role</th>
+<th id="_40869459-b802-35cc-4971-e42701e52425" valign="middle" align="left">Description</th>
+<th id="_10ff8e4c-0656-2771-04c2-340d5302653d" valign="middle" align="left">Target Class Type</th>
+<th id="_824e315d-8b4e-1535-3955-5760cbac05f3" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_909ecea4-6683-6c96-978f-7ee06684e6ca"><td id="_e03507ab-022a-952c-e03e-0232d3f53bc1" valign="middle" align="left">hasType</td>
+<td id="_ccc041f3-302b-2486-cd31-0ea486d1f989" valign="middle" align="left">The type classification of the source.</td>
+<td id="_8d149e3d-7c51-acfa-5b60-a6dbda25d0b9" valign="middle" align="left">SourceType</td>
+<td id="_b390e600-d8b8-65af-c0ea-08e50c5185c7" valign="middle" align="left">0..1 (optional)</td>
+</tr></tbody>
+</table>
+
+<hr/></clause>
+
+<clause id="_f479cf13-04d5-b563-5ad0-474859953d37" obligation="normative">
+<title id="_9d986639-d5ac-f7d7-f2f0-5d74039b245b">Source Type Class</title>
+<p id="_42185a6f-3f0b-1fd6-a3fe-5f7a4c4be772">A Source Type provides a classification for Sources, describing the type or category of the Source.</p>
+
+<table id="_1d0faf00-51f7-ce4b-2b43-d03ce209df0c" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_f33272ee-1777-c3d0-3701-54dead0b54bb"><td id="_cb2b197e-d282-5601-743b-bf197cee6979" valign="middle" align="left">Requirement 3: Source Type Class </td>
+<td id="_32d8bffc-4f0c-5f25-ecd7-c83bab18370c" valign="middle" align="left">/req/datamodel/core/source-type<br/> + Each Source Type class shall have the mandatory attributes listed in  <xref target="source-type-attributes"/>.</td>
+</tr></tbody>
+</table>
+
+<table id="_8b8dfb63-9493-a2dc-0148-9843890b7ea4" anchor="source-type-attributes" width="90%">
+<name id="_4b2945df-26b6-0051-1d5a-c675359882b7">Attributes of a Source Type class</name>
+<thead><tr id="_b269e8ea-6651-1f31-be50-db0a3845d4bd"><th id="_9a1b7ccb-afe0-eb4d-340a-2c31134fef2f" valign="middle" align="left">Names</th>
+<th id="_480a9076-39dc-a3c3-60ac-589fabe64537" valign="middle" align="left">Definition</th>
+<th id="_5b129c80-78b7-ab30-4a4a-d30ddc403090" valign="middle" align="left">Data types and values</th>
+<th id="_f5002334-a849-3ceb-640b-770a67dcb24f" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_cf6a9dee-acdb-736f-c337-afc0846a5676"><td id="_4621bded-7ba5-b9cd-8730-dac9bc432d5e" valign="middle" align="left">name</td>
+<td id="_808690b4-5f61-c079-e8bd-abd9b99a1f62" valign="middle" align="left">A human-readable name for the source type.</td>
+<td id="_a03e6646-aef3-d91f-e818-8b79a3742eaf" valign="middle" align="left">String</td>
+<td id="_d8401e32-dbb0-7d8c-9171-e1b2af7b9df1" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_f4a963ea-0627-8c0b-93d9-9d713150ee86"><td id="_b52a0d53-32c1-8b2a-3cc0-e5305aac0f51" valign="middle" align="left">description</td>
+<td id="_019a9b8a-3d13-60a8-8aa5-c560df158365" valign="middle" align="left">A detailed description of the source type.</td>
+<td id="_a45f00ef-7da6-9783-e207-be1c603a252b" valign="middle" align="left">String</td>
+<td id="_8d21d274-6a97-f620-c52a-35716339ca18" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_cb1cf789-a524-06d9-50f5-59b804244542"><td id="_ce30e134-640c-6e47-ca7c-0bbfa11f06ed" valign="middle" align="left">definition</td>
+<td id="_ce0d6ca5-0002-702b-a50a-6ca7eac70995" valign="middle" align="left">The URI linking to an external definition of the source type.</td>
+<td id="_a99892ea-c4fd-c480-ec7e-8251f1c0111b" valign="middle" align="left">URI</td>
+<td id="_d547b913-cca3-ec55-f5d7-c6d664fe3830" valign="middle" align="left">1 (mandatory)</td>
+</tr></tbody>
+</table>
+
+<table id="_ce6bf9cc-4d02-b8b1-7db9-f0a38371bc43" anchor="source-type-relations" width="90%">
+<name id="_28ab6ed6-26f7-daee-0130-61967b7574e6">Direct relation between a Source Type class and other class types</name>
+<thead><tr id="_eb93a7d5-262f-6902-0e0c-779a0f951107"><th id="_af8cf803-646c-f431-4855-da3989f5c7c9" valign="middle" align="left">Role</th>
+<th id="_1f897107-4e18-6945-1dfe-30a19deab47e" valign="middle" align="left">Description</th>
+<th id="_61521406-240c-10c2-970d-96141b2f7137" valign="middle" align="left">Target Class Type</th>
+<th id="_f3427a79-5733-83d4-6809-4de20e6aef2b" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_5f99b58c-8326-e42e-af3d-c87133c94839"><td id="_46a548ba-c270-2ba2-2dfd-58b9003c3b75" valign="middle" align="left">-</td>
+<td id="_fd129d51-98c9-e3a1-4ca6-3168cc447744" valign="middle" align="left">No direct relations are defined for SourceType in the core model (it is referenced by Source).</td>
+<td id="_82c9a68c-13ac-b589-5a33-7704e64d2d9a" valign="middle" align="left">-</td>
+<td id="_fcde8fc3-5b4a-f5d4-3be6-a1a7b6e7419c" valign="middle" align="left">-</td>
+</tr></tbody>
+</table>
+
+<hr/></clause>
+
+<clause id="_ba347263-d499-e3ff-c7e6-2c0c660aaec0" obligation="normative">
+<title id="_97b4bf52-a398-2083-e118-813d08f026a4">Mechanism Class</title>
+<p id="_dfaa69d9-6d66-936b-ad51-9c86c42c1952">A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is defined independently of the Source—including its identity, structure, or purpose—allowing Mechanisms to be consistently reused across different types of Source.</p>
+
+<table id="_73fd975d-76db-184c-6176-6929e3776bda" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_f8562fe5-633b-0036-1b9d-f2d70e6bae47"><td id="_ebd9a844-5497-8111-c58a-45bf05111d2c" valign="middle" align="left">Requirement 4: Mechanism Class </td>
+<td id="_d1efc328-ca58-9002-e180-c8f3ce147b3a" valign="middle" align="left">/req/datamodel/core/mechanism<br/> + Each Mechanism class shall have the mandatory attributes listed in  <xref target="mechanism-attributes"/>. Each Mechanism class shall have the direct relation listed in  <xref target="mechanism-relations"/>.</td>
+</tr></tbody>
+</table>
+
+<table id="_1e1ffdfb-20b1-8fb2-7026-c59e5be26e1d" anchor="mechanism-attributes" width="90%">
+<name id="_89cda0ac-81aa-06e8-4ddb-7f9c357d2e74">Attributes of a Mechanism class</name>
+<thead><tr id="_b1ded984-f972-e185-9547-477c7348a2b4"><th id="_9ba17597-f2d0-99cd-53bd-1c5d63862915" valign="middle" align="left">Names</th>
+<th id="_a45bf7eb-655f-cc79-a6c9-cf9d6a254bc9" valign="middle" align="left">Definition</th>
+<th id="_700ec9ae-16fc-f670-c3f9-96e98a2c929b" valign="middle" align="left">Data types and values</th>
+<th id="_8a81a8b6-06d1-7f8c-286a-e2ab6f52f6b7" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_5910e6e0-ba68-b508-ca39-e0e9ccc0bec8"><td id="_77dfeb81-677a-fa41-24cb-8cc115bf98a6" valign="middle" align="left">label</td>
+<td id="_020a310e-6854-f836-0ffa-b84e2027d698" valign="middle" align="left">A human-readable label for the mechanism.</td>
+<td id="_eb80f653-fa7f-b49e-093e-407747016d12" valign="middle" align="left">String</td>
+<td id="_88677b56-ff76-4f6f-6358-525ee45f1f28" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_2c1e0d24-b62c-a9e5-d0a4-3e75dd74a50b"><td id="_482025ac-3f8d-2955-7796-fa26bde89a54" valign="middle" align="left">description</td>
+<td id="_4d0504d9-39dc-1e7a-de7d-90127d2948c3" valign="middle" align="left">A detailed description of the mechanism.</td>
+<td id="_e0930a0a-cb7d-6332-d048-3fb0f5a59eae" valign="middle" align="left">String</td>
+<td id="_78577a33-9e36-31a4-8363-171091b48730" valign="middle" align="left">0..1 (optional)</td>
+</tr></tbody>
+</table>
+
+<table id="_5d65b9be-82e0-bd3a-138f-30dbc0b709f9" anchor="mechanism-relations" width="90%">
+<name id="_8b697841-d5d0-8d21-eb5d-cf7009a13336">Direct relation between a Mechanism class and other class types</name>
+<thead><tr id="_9f733358-7f0f-9191-d0cf-8d2d8d7908fa"><th id="_700ba6d3-ddec-61a0-98dc-fa13f402d8f5" valign="middle" align="left">Role</th>
+<th id="_6e9cdd93-bc00-85a0-9170-e301de403c52" valign="middle" align="left">Description</th>
+<th id="_813338be-41ef-c9f5-ed00-61a06ca616ed" valign="middle" align="left">Target Class Type</th>
+<th id="_f7e077dc-32cb-2270-d371-cb7583bd88d1" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_3ff24d8c-3eae-c478-0aa7-3e3c9e650172"><td id="_6c302c3f-c9e0-dacc-df0e-8d147693aad1" valign="middle" align="left">hasIntent</td>
+<td id="_fb61fdbe-a10f-586d-ea6c-b2497abd8cbb" valign="middle" align="left">The emission intent associated with the mechanism.</td>
+<td id="_b105ca50-cc23-f16d-0e78-9690edaabb8a" valign="middle" align="left">EmissionIntent</td>
+<td id="_aae88a92-a6ef-525f-6935-e285a2fb39cf" valign="middle" align="left">1 (mandatory)</td>
+</tr></tbody>
+</table>
+
+<hr/></clause>
+
+<clause id="_0aed6627-c476-5e7f-5635-d1cf6c611935" obligation="normative">
+<title id="_ee8c6bb4-49a2-5d40-cec7-a33b40c3869a">Emission Quantity Class</title>
+<p id="_84ff5c81-bce5-6260-27d7-1106cf34c67d">An Emission Quantity represents the asserted quantity of pollutant released as part of an Emission Event.</p>
+
+<table id="_9563a8cd-9a1d-d2cd-e78a-84d282975267" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_d46fefae-e308-4ff5-6dee-7f0a2dfd8898"><td id="_2dbc12c2-4289-defe-4e95-1eca6280988c" valign="middle" align="left">Requirement 5: Emission Quantity Class </td>
+<td id="_c981fd4e-7353-52ea-a81d-940a27ed642b" valign="middle" align="left">/req/datamodel/core/emission-quantity<br/> + Each Emission Quantity class shall have the mandatory attributes listed in  <xref target="emission-quantity-attributes"/>. Each Emission Quantity class shall have the direct relation between an Emission Quantity class and other classes listed in  <xref target="emission-quantity-relations"/>.</td>
+</tr></tbody>
+</table>
+
+<table id="_5c6f4dab-9007-dd44-f64d-6c01a7b3f42f" anchor="emission-quantity-attributes" width="90%">
+<name id="_df84a61a-3c7d-55d5-46d2-f1964be19042">Attributes of an Emission Quantity class</name>
+<thead><tr id="_5cf14477-73bf-c4fd-8bf4-5defeec3092e"><th id="_047bad1c-5cdb-e87d-f3ab-5dbd7f8c5c4b" valign="middle" align="left">Names</th>
+<th id="_cf13c185-d9b5-a926-47b5-cbfdc31dcfe3" valign="middle" align="left">Definition</th>
+<th id="_2b8087fe-b366-4f3d-fb9c-c85276032ff1" valign="middle" align="left">Data types and values</th>
+<th id="_7ead356b-b392-05f8-5e81-24c2c6c12231" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_a11ea137-b41a-8e7a-9ca8-c543668aa96f"><td id="_3a3a8c68-9f9a-a88f-28c7-ebfa2c2be37c" valign="middle" align="left">quantity</td>
+<td id="_d868ea15-3b91-2d8b-086e-c248fc7458f0" valign="middle" align="left">The numeric value of the emission quantity.</td>
+<td id="_557dfa63-c8bf-52e7-eade-a81b4e6f5bd5" valign="middle" align="left">double</td>
+<td id="_d89d01b0-3606-b521-6420-0de620c90877" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_3fbb9dd0-30ed-78ca-a7af-60607914c86d"><td id="_c700fb95-b33c-79f5-ce59-383a727ea349" valign="middle" align="left">quality</td>
+<td id="_98f635b5-e4ed-0aab-8d37-f57f7b6755f7" valign="middle" align="left">A data quality element describing the quality of the emission quantity value.</td>
+<td id="_175b0daf-7f86-5aba-2c0b-07482d6562f1" valign="middle" align="left">DQ_Element</td>
+<td id="_db5a6bff-c56f-bfcf-0ab9-db3e11c50fdb" valign="middle" align="left">0..* (optional)</td>
+</tr></tbody>
+</table>
+
+<table id="_9003b0c2-775d-b987-b52d-7092b06a32f4" anchor="emission-quantity-relations" width="90%">
+<name id="_5e7131cf-ab4f-b206-4d82-d2e8026612cf">Direct relation between an Emission Quantity class and other class types</name>
+<thead><tr id="_f8f735cb-2ad7-6576-ddec-705e7b721a77"><th id="_3b2a3ff9-8ae6-5756-90bb-6d6025c8ab3d" valign="middle" align="left">Role</th>
+<th id="_8874ce51-4c07-1f26-e3f2-8681ff45fa5d" valign="middle" align="left">Description</th>
+<th id="_2a39c64b-4c43-f624-3ed6-5021add6178c" valign="middle" align="left">Target Class Type</th>
+<th id="_593b129b-dc6f-f62b-bd62-451fd9925519" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_4115c20d-06d8-9829-e9c8-61a63881a681"><td id="_8ed13b55-1ddf-7aa4-afb5-9a60170d2e0e" valign="middle" align="left">hasUnit</td>
+<td id="_6df81dc1-f2cc-3cce-5a4e-b9a2a5d30f24" valign="middle" align="left">The unit of measure associated with the emission quantity.</td>
+<td id="_b24e4b93-0870-3b18-b653-d8c21f54f143" valign="middle" align="left">UnitOfMeasure</td>
+<td id="_be1a2e68-f775-d0d5-374d-8f81cc9c11e3" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_86150f7f-6d3f-e0df-9382-54c4d2845507"><td id="_630e2f02-8650-c477-a7a4-2fb0ca338853" valign="middle" align="left">hasDeterminationMethod</td>
+<td id="_2f92c155-8d0c-6ff8-6baf-3b0fe1a8a17d" valign="middle" align="left">The method used to determine or derive the emission quantity.</td>
+<td id="_510f3b47-e40f-de3e-6d9d-c3497cb3c835" valign="middle" align="left">DeterminationMethod</td>
+<td id="_003f993d-3aef-c5b8-eadb-6282d3f1fd93" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_da652273-7a54-6ba1-7004-e731605010c6"><td id="_7884eb52-c97a-d0e1-39ab-c42deb32d637" valign="middle" align="left">hasEvidence</td>
+<td id="_27a9a213-01b5-a843-7645-cd9e19c07755" valign="middle" align="left">Observations that provide evidence supporting the emission quantity assertion.</td>
+<td id="_c3e415c1-c0a9-a1e8-26c0-72c4d52da21c" valign="middle" align="left">Observation</td>
+<td id="_11047360-8eb6-b7a8-75e5-3e12d4e3ed0d" valign="middle" align="left">0..* (optional)</td>
+</tr></tbody>
+</table>
+
+<hr/></clause>
+
+<clause id="_43d77ae8-e5a8-c1a1-3077-39395ab4789a" obligation="normative">
+<title id="_ed8ca333-551a-f0f8-d7e7-6c7f0bcfc3f8">Unit of Measure Class</title>
+<p id="_7cbf79e2-be79-4da3-2482-780f5e8017dc">A Unit of Measure is a reference quantity chosen from a unit equivalence group (Source: ISO/OGC 19156:2023)</p>
+
+<table id="_c32b1576-7ac6-f4f5-6106-0ea65b8e6ac1" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_f3f33fdd-2a29-6b7d-9ec7-ad81fd956482"><td id="_326cfa97-2e4f-b7bd-1765-bd98928ec9b7" valign="middle" align="left">Requirement 6: Unit of Measure Class </td>
+<td id="_7be21a13-de00-26c8-824e-a6ed5ea81ecc" valign="middle" align="left">/req/datamodel/core/unit-of-measure<br/> + Each Unit of Measure class shall have the mandatory attributes listed in  <xref target="unit-of-measure-attributes"/>.</td>
+</tr></tbody>
+</table>
+
+<table id="_a8d436a3-624b-2b27-c857-c0d2b2d368b1" anchor="unit-of-measure-attributes" width="90%">
+<name id="_791e21b7-a704-0b5e-d03b-942157c23397">Attributes of a Unit of Measure class</name>
+<thead><tr id="_84ca3af0-84f3-fe3e-1ed7-86bd2c55cdb5"><th id="_5c2faaa2-2da6-ec5b-59ee-68cd7b09db90" valign="middle" align="left">Names</th>
+<th id="_e8ce245e-7b06-ddbb-9210-c8a606afbcf1" valign="middle" align="left">Definition</th>
+<th id="_4590cd10-0d77-f94d-e8a5-2c67fb3ff094" valign="middle" align="left">Data types and values</th>
+<th id="_dadb26b6-f7fa-7300-6442-e594d087d4e9" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_e034efeb-f262-6cfd-caba-f3353d6dbceb"><td id="_318e50cb-d037-5aeb-b812-015c2ed62d1a" valign="middle" align="left">name</td>
+<td id="_cdf08b9a-e220-4887-5024-4b7063f42dc0" valign="middle" align="left">A human-readable name for the unit of measure.</td>
+<td id="_925c5bb4-fb4e-3ce0-22cb-f66c496c2639" valign="middle" align="left">String</td>
+<td id="_53b5f0a7-0542-bf50-c01b-aeeb22f2a5b4" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_a37a7b2e-3581-69d7-f23b-f1592737e65c"><td id="_acc62617-14b2-17f9-8197-eeb7dc6f9aa4" valign="middle" align="left">symbol</td>
+<td id="_7c048d4e-ad60-d0ab-b5b8-203934e4bd5e" valign="middle" align="left">A short symbol representing the unit of measure.</td>
+<td id="_97a4a2a5-bf7c-57c8-82ec-eb2f96ae39ef" valign="middle" align="left">String</td>
+<td id="_da73a223-b55d-f2b7-8da1-81839e461140" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_658cee46-af1e-b174-6d64-8eed93e2e869"><td id="_ea05cd4b-cc9a-0666-c4da-3c07ed0562f9" valign="middle" align="left">definition</td>
+<td id="_0bb1fa43-c9ca-e11f-ea21-7f649275673c" valign="middle" align="left">The URI linking to an external definition of the unit of measure.</td>
+<td id="_5b6f8d66-155c-b105-a43c-af63a5a9c8e3" valign="middle" align="left">URI</td>
+<td id="_6d00e45c-77d3-f3f3-8b1d-9f9612755c38" valign="middle" align="left">1 (mandatory)</td>
+</tr></tbody>
+</table>
+
+<table id="_2d4d400f-584c-0ea8-3b00-0b5a7b0fb7ac" anchor="unit-of-measure-relations" width="90%">
+<name id="_dced5a5c-0e11-75d5-6918-e55fd58ba1bd">Direct relation between a Unit of Measure class and other class types</name>
+<thead><tr id="_8ecb5f46-9e3b-a28c-6da3-d413b4ea8124"><th id="_8164573a-3f25-5986-6dd7-467bfe4e3aa0" valign="middle" align="left">Role</th>
+<th id="_6156558a-5e78-60f8-cbf2-1bd95b3d38ee" valign="middle" align="left">Description</th>
+<th id="_e9795aad-e5d8-959e-8a6f-ffadfbd3d463" valign="middle" align="left">Target Class Type</th>
+<th id="_fe5f5f0c-f387-5543-fdb3-6a6d01ad03a1" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_84560a93-9147-59bc-b131-f05db69b6952"><td id="_96977fda-ae3e-1eb4-04c3-1774907a64bd" valign="middle" align="left">-</td>
+<td id="_c9b985b6-6221-901b-f51d-ecb222a2a82d" valign="middle" align="left">No direct relations are defined for UnitOfMeasure in the core model.</td>
+<td id="_7aaef6d1-2395-90fa-0117-907a03dc7fbe" valign="middle" align="left">-</td>
+<td id="_654fd20e-09a2-e92d-daf8-09d71566723a" valign="middle" align="left">-</td>
+</tr></tbody>
+</table>
+
+<hr/></clause>
+
+<clause id="_3f92a0d4-b3b4-7d30-3ad5-574e9e44e555" obligation="normative">
+<title id="_1e31d618-ee25-c7dd-90f6-d994dbfdc7cc">Temporal Bound Class</title>
+<p id="_acbb3245-3803-ed15-54ce-5f75522fadcd">A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) with optional data quality metadata. Temporal Bounds may be supported by evidence Observations and are associated with a Determination Method.</p>
+
+<table id="_7c94aa16-1d9e-d998-407d-a9084c9ba232" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_07fec845-9207-24f0-ab26-80a39ff23d62"><td id="_70db7da2-23b3-c600-285d-d8d432f83f2b" valign="middle" align="left">Requirement 7: Temporal Bound Class </td>
+<td id="_3d537c64-2f67-dcfc-295b-d86501860ec2" valign="middle" align="left">/req/datamodel/core/temporal-bound<br/> + Each Temporal Bound class shall have the mandatory attributes listed in  <xref target="temporal-bound-attributes"/>. Each Temporal Bound class shall have the direct relation between a Temporal Bound class and other classes listed in  <xref target="temporal-bound-relations"/>.</td>
+</tr></tbody>
+</table>
+
+<table id="_7006c0ec-fc35-0968-db02-e5fdf2a71721" anchor="temporal-bound-attributes" width="90%">
+<name id="_29c29464-1f7e-84ee-611c-5991da91ca16">Attributes of a Temporal Bound class</name>
+<thead><tr id="_8939b5e9-c47a-6853-91e2-ef097c50c79e"><th id="_f9fa95a9-45f3-20ed-999c-b3f1789abf26" valign="middle" align="left">Names</th>
+<th id="_ea78f1b3-1fe1-37ec-bf1b-221887f6e755" valign="middle" align="left">Definition</th>
+<th id="_9562c5c3-b1d5-d4e6-a918-cdc5a288f41a" valign="middle" align="left">Data types and values</th>
+<th id="_6aabe94e-f799-7070-845e-ad1e1a2d3c46" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_77c259d0-b85b-2860-042e-532e057c9f7e"><td id="_32921985-9174-5cfe-054b-a8f977d978be" valign="middle" align="left">time</td>
+<td id="_aab0c845-e3ad-dfa6-c735-9d24712d0695" valign="middle" align="left">The time instant value of this Temporal Bound.</td>
+<td id="_bfe09f73-d16f-e624-b9f7-fc8f63b2300b" valign="middle" align="left">TM_Instant</td>
+<td id="_79e5dd12-b658-ecf2-b48a-820696dae7ff" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_2c9dff4e-4b70-ba43-5768-3b71a11f7dda"><td id="_7a88047a-c84c-7ea0-f468-cd1c6ee7d3e3" valign="middle" align="left">quality</td>
+<td id="_17a2c217-8819-3f3a-9fac-f5dbce8fcc9c" valign="middle" align="left">A data quality element describing the quality of the temporal bound.</td>
+<td id="_3909fa9f-bdca-2616-5d1a-7c3c6bf58e7c" valign="middle" align="left">DQ_Element</td>
+<td id="_54f57d94-97dc-edf2-1c7b-653ccf1819e4" valign="middle" align="left">0..* (optional)</td>
+</tr></tbody>
+</table>
+
+<table id="_970c04d7-2c46-de40-c88e-e0d6d375fcae" anchor="temporal-bound-relations" width="90%">
+<name id="_d9682ea4-48a9-bbad-3517-17bcf67961f1">Direct relation between a Temporal Bound class and other class types</name>
+<thead><tr id="_3f73c9fe-9669-30f0-faff-990cce017e4f"><th id="_d6b7a24f-7184-4534-5136-3928c3ee0b27" valign="middle" align="left">Role</th>
+<th id="_5d95fe7a-ad47-e6c8-4bda-9ffe9205b15c" valign="middle" align="left">Description</th>
+<th id="_0368eec8-3086-5fe8-2a2c-a68790a0586e" valign="middle" align="left">Target Class Type</th>
+<th id="_b8d653dc-cdbd-188a-a8fe-cc5ac0704033" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_212b1795-6599-aa6b-68d4-7bb41ac9d6d2"><td id="_b691b8d2-7c18-aaf2-c99b-4499f6433fdf" valign="middle" align="left">hasDeterminationMethod</td>
+<td id="_94ef8cfc-92b4-136e-25c4-64bfb475b03d" valign="middle" align="left">The method used to determine or derive the temporal bound.</td>
+<td id="_89255049-43ee-bc5d-be1f-b35e23bd75ba" valign="middle" align="left">DeterminationMethod</td>
+<td id="_30275c37-c225-1268-af63-bc6e21f191d5" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_1cb9d4fd-6d38-810a-fd1f-792c54018bf5"><td id="_312f6025-99ce-3c48-2196-b0628b0575ec" valign="middle" align="left">hasEvidence</td>
+<td id="_13e6dc62-1e00-cfa4-2715-c380adfd04c2" valign="middle" align="left">Observations that provide evidence supporting the temporal bound assertion.</td>
+<td id="_e434ea28-e3f0-3a34-5d76-a7f0c60564e8" valign="middle" align="left">Observation</td>
+<td id="_4a91cd22-c643-f452-91af-bc5ab93c47cc" valign="middle" align="left">0..* (optional)</td>
+</tr></tbody>
+</table>
+
+<hr/></clause>
+
+<clause id="_3323578c-5304-c6cd-dd7d-a5ede311bd07" obligation="normative">
+<title id="_ae2f9289-67bc-103d-ff5d-6ac4612c48de">Observation Class</title>
+<p id="_be1d4d0a-7be1-dde1-5fbf-e131425f76f4">In EmissionML, an Observation is evidence that may support an Emission Quantity or Temporal Bound determination.</p>
+
+<p id="_833d967f-fe98-125c-7773-90dc0eb0219f">Note: The Ultimate Feature of Interest of an Observation assists in identifying the Source of the associated Emission Event, without requiring the Feature of Interest to coincide exactly with the Source. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a site), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific component of an item of equipment from which pollutants are released.</p>
+
+<table id="_4ef5b53a-03cf-ffea-b1b1-ad265b39ac1b" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_52921f43-f7c5-f8f5-450b-820250338b44"><td id="_4e746b20-e6fe-59b0-33a9-e81d7ed4995e" valign="middle" align="left">Requirement 8: Observation Class </td>
+<td id="_ecc88f56-ee6f-f653-dced-0b89e82912d5" valign="middle" align="left">/req/datamodel/core/observation<br/> + Each Observation class shall be a ISO/OGC 19156:2023 Observation.</td>
+</tr></tbody>
+</table>
+
+<hr/></clause>
+
+<clause id="_3863cd17-c2eb-b110-3393-27ba09c13abd" obligation="normative">
+<title id="_03efe1c7-d61a-094b-9484-3ec931e74a47">Emission Intent Enumeration</title>
+<p id="_f64b18c0-6565-7221-d4c6-d930566fe51e">Emission Intent is an enumeration describing whether an emission is intentional, unintentional, or unknown.</p>
+
+<table id="_30ad17d6-4862-1126-fe4a-768aaff05d02" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_9fe4009d-f5cb-656b-ff9b-bf50e58be921"><td id="_7f558a98-c5bd-ee2f-db62-8f6f825333c1" valign="middle" align="left">Requirement 9: Emission Intent Enumeration </td>
+<td id="_1f72cfd2-9414-8f04-891b-8d6973fa3136" valign="middle" align="left">/req/datamodel/core/emission-intent<br/> + The Emission Intent enumeration shall support the enumeration values listed in  <xref target="emission-intent-values"/>.</td>
+</tr></tbody>
+</table>
+
+<table id="_a5bbcb88-14df-1357-0fe6-69938a199973" anchor="emission-intent-values" width="90%">
+<name id="_d11d5962-4b57-4a54-1a9c-35efdf968928">Enumeration values of Emission Intent</name>
+<thead><tr id="_9eed9dfd-44af-904e-0987-f359789db8d8"><th id="_fde7cdc5-ba8a-dddc-2a10-de5806599df3" valign="middle" align="left">Name</th>
+<th id="_dc6fda75-b73b-2fce-67c8-d2ef1ca4dd5c" valign="middle" align="left">Definition</th>
+</tr></thead>
+<tbody><tr id="_cf44f9d5-8410-89a0-896c-932a40c1cbe0"><td id="_95f120e5-7723-35ca-199f-968b92ffe1e6" valign="middle" align="left">INTENTIONAL</td>
+<td id="_7eadcd0b-e100-e664-3cc8-729703271b32" valign="middle" align="left">The emission occurred intentionally.</td>
+</tr><tr id="_c124b308-b05a-7a3f-2290-ad336151513a"><td id="_8ead3b86-1bb5-3220-716f-192dd60e61a0" valign="middle" align="left">UNINTENTIONAL</td>
+<td id="_312f936c-d30d-9fed-dcbc-b657ea500fdf" valign="middle" align="left">The emission occurred unintentionally.</td>
+</tr><tr id="_3ebaab3f-82a6-d3c0-82c5-9cdcc3f6bf57"><td id="_a0aa95b6-22af-19ae-65a4-fad89928ba83" valign="middle" align="left">UNKNOWN</td>
+<td id="_25644776-f2b6-24f4-df58-d5411e17479b" valign="middle" align="left">The intent of the emission is unknown.</td>
+</tr></tbody>
+</table>
+
+<hr/></clause>
+
+<clause id="_dba1dcab-78e8-dea5-57fc-636db8827e78" obligation="normative">
+<title id="_38c411a7-2637-bc7c-0f4f-8de9e661b9f8">Determination Method Class</title>
+<p id="_5e780930-1628-0c05-f6b8-b651edcade19">A Determination Method describes how a value (e.g., an emission quantity or temporal bound) was determined.</p>
+
+<table id="_882dd9cf-59fd-a256-07af-ef9f613b73d5" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_2a561412-91ff-e0f3-0201-3583d1b18739"><td id="_6d553e92-bf67-4af9-a855-5dce3e1d9745" valign="middle" align="left">Requirement 10: Determination Method Class </td>
+<td id="_20b0c0b1-1058-b76a-93d9-b56744b4c8b5" valign="middle" align="left">/req/datamodel/core/determination-method<br/> + Each Determination Method class shall have the mandatory attributes listed in  <xref target="determination-method-attributes"/>.</td>
+</tr></tbody>
+</table>
+
+<table id="_766c0466-da67-99e4-757d-c52db78896d7" anchor="determination-method-attributes" width="90%">
+<name id="_7f25af65-5f15-41e9-5434-45e13ab81dbb">Attributes of a Determination Method class</name>
+<thead><tr id="_a23bbd35-3240-f642-f856-64ba37dfdee5"><th id="_ef0f7426-769f-502e-948d-9f0b2562cb7d" valign="middle" align="left">Names</th>
+<th id="_03065718-08c6-1c58-04a4-57d95b6e19b0" valign="middle" align="left">Definition</th>
+<th id="_1fba0f66-505e-6310-9777-98fbfc86c99e" valign="middle" align="left">Data types and values</th>
+<th id="_fb3b7d52-e01b-d8c4-c8fc-8db799a2e989" valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr id="_5ca7a3c0-854d-6101-204d-7ccd28176b7c"><td id="_b50d0006-810b-6757-bf63-83a5c666772d" valign="middle" align="left">label</td>
+<td id="_b73f25ce-55fb-0878-6459-8ecec9f6b4a5" valign="middle" align="left">A human-readable label for the determination method.</td>
+<td id="_85e3c239-9342-ab57-35df-e8757cde1fc0" valign="middle" align="left">String</td>
+<td id="_d3ccaa68-2776-acf6-8e32-d6825ef323b4" valign="middle" align="left">1 (mandatory)</td>
+</tr><tr id="_bd4cb89a-078b-2fe2-6196-77950e6aaa8a"><td id="_f08e0086-aec6-dc44-ea30-f09b20dfce79" valign="middle" align="left">description</td>
+<td id="_648b0749-78f6-2081-ea87-deded4777bfc" valign="middle" align="left">A detailed description of the determination method.</td>
+<td id="_a13c2907-f97e-69fe-4f7a-5225a6639c49" valign="middle" align="left">String</td>
+<td id="_f15f8f21-ceed-cf93-4a30-249bb558243e" valign="middle" align="left">0..1 (optional)</td>
+</tr><tr id="_c0a9bc01-a98f-704d-c300-e3a1f87e1fa3"><td id="_56426494-44e2-dcf8-32fc-4713f9b616ec" valign="middle" align="left">definition</td>
+<td id="_3644c537-0abc-2165-0656-6ae8c73dcccb" valign="middle" align="left">The URI linking to an external definition of the determination method.</td>
+<td id="_b127cab5-0c3c-8391-6984-ab276d0adf1b" valign="middle" align="left">URI</td>
+<td id="_6e7cf26b-33d1-dbb9-f089-8f8944934541" valign="middle" align="left">0..1 (optional)</td>
+</tr></tbody>
+</table>
 </clause>
 </clause>
 

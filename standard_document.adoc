@@ -1,4 +1,4 @@
-= OGC Emission Event Modeling Language (EmissionML) Discussion Paper
+= OGC Emission Event Modeling Language (EmissionML) Part I: Data Model
 :comment: Change "standard" to "draft-standard" for draft standards
 :comment: The front page notice will update automatically to reflect the document type
 :doctype: draft-standard
@@ -43,7 +43,7 @@ include::sections/clause_4_terms_and_definitions.adoc[]
 
 include::sections/clause_6_informative_text.adoc[]
 
-//include::sections/clause_7_normative_text.adoc[]
+include::sections/clause_7_normative_text.adoc[]
 
 //include::sections/clause_8_media_types.adoc[]
 
