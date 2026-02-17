@@ -141,9 +141,10 @@ For the purposes of this document, the following additional terms and definition
 
 Emission Event::
 An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
-
-Note: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
-Note: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
++
+NOTE: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
++
+NOTE: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
 
 Feature::
 Abstraction of real world phenomena (Source: ISO 19101-1:2014)
@@ -159,8 +160,8 @@ Act carried out by an observer to determine the value of an observable property 
 
 Source::
 A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
-
-Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
++
+NOTE: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
 
 Unit of Measure::
 Reference quantity chosen from a unit equivalence group (Source: link:++https://docs.ogc.org/as/20-082r4/20-082r4.html++[ISO/OGC 19156:2023])
@@ -181,7 +182,19 @@ Paragraph
 === Clauses not containing normative material sub-clause 2
 
 == Emission Event Data Model
-The EmissionML conceptual model is described as a class diagram in Figure x. The schema is fully described in x.x.x.
+The EmissionML conceptual model is described as a class diagram in <<fig-emissionml-class-diagram>>. The schema is fully described in x.x.x.
+
+[[fig-emissionml-class-diagram]]
+.EmissionML Abstract Conceptual Model
+image::images/core-emissionml-class.png[]
+
+.UML relationship notation used in this standard
+|===
+|Symbol |Name |Meaning
+
+|*-- |Composition |The target is owned by and cannot exist without the source (e.g., EmissionEvent owns its EmissionQuantity and TemporalBound instances)
+|\--> |Association |A directional reference between independent classes (e.g., EmissionEvent refers to a Source)
+|===
 
 Use the following table for Requirements Classes.
 
@@ -192,25 +205,29 @@ Use the following table for Requirements Classes.
 |Target type |Data Model
 |Dependency |http://www.opengis.net/doc/as/om/3.0/req/obs-basic
 |*Requirement 1* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-event +
-This requirement defines the Emission Event as a time-bounded occurrence of pollutant release, linking source, mechanism, quantity, and temporal bounds. {set:cellbgcolor:#FFFFFF}
+This requirement defines the Emission Event. {set:cellbgcolor:#FFFFFF}
 |*Requirement 2* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/source +
-This requirement defines the Source as a persistent geospatial feature from which one or more emission events originate. {set:cellbgcolor:#FFFFFF}
-|*Requirement 3* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/mechanism +
-This requirement defines the Mechanism as the causal process or pathway by which an emission occurs, independent of source identity. {set:cellbgcolor:#FFFFFF}
-|*Requirement 4* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-quantity +
-This requirement defines the Emission Quantity as the asserted amount of pollutant released, including unit, determination method, and supporting evidence. {set:cellbgcolor:#FFFFFF}
-|*Requirement 5* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/start-time +
-This requirement defines the start time of an emission event as a determined temporal bound supported by a determination method and optional evidence. {set:cellbgcolor:#FFFFFF}
-|*Requirement 6* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/end-time +
-This requirement defines the end time of an emission event as an optional determined temporal bound indicating cessation or reporting boundary. {set:cellbgcolor:#FFFFFF}
-|*Requirement 7* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/unit-of-measure +
-This requirement defines the Unit of Measure used to express emission quantities through externally referenced, authoritative unit definitions. {set:cellbgcolor:#FFFFFF}
+This requirement defines the Source. {set:cellbgcolor:#FFFFFF}
+|*Requirement 3* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/source-type +
+This requirement defines the Source Type. {set:cellbgcolor:#FFFFFF}
+|*Requirement 4* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/mechanism +
+This requirement defines the Mechanism. {set:cellbgcolor:#FFFFFF}
+|*Requirement 5* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-quantity +
+This requirement defines the Emission Quantity. {set:cellbgcolor:#FFFFFF}
+|*Requirement 6* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/unit-of-measure +
+This requirement defines the Unit of Measure. {set:cellbgcolor:#FFFFFF}
+|*Requirement 7* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/temporal-bound +
+This requirement defines the Temporal Bound. {set:cellbgcolor:#FFFFFF}
 |*Requirement 8* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/observation +
-This requirement defines the Observation as evidence supporting emission quantity or temporal bound determinations, potentially referencing features of interest at varying spatial scales. {set:cellbgcolor:#FFFFFF}
-|*Requirement 9* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/temporal-bound +
-This requirement defines the Temporal Bound as a determined temporal instant associated with an emission event, optionally supported by quality metadata and evidence. {set:cellbgcolor:#FFFFFF}
-|*Requirement 10* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/determination-method +
-This requirement defines the Determination Method as the method used to derive emission quantities or temporal bounds. {set:cellbgcolor:#FFFFFF}
+This requirement defines the Observation. {set:cellbgcolor:#FFFFFF}
+|*Requirement 9* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-intent +
+This requirement defines the Emission Intent. {set:cellbgcolor:#FFFFFF}
+|*Requirement 10* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/determination-procedure +
+This requirement defines the Determination Procedure. {set:cellbgcolor:#FFFFFF}
+|*Requirement 11* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/feature +
+This requirement defines the Feature. {set:cellbgcolor:#FFFFFF}
+|*Requirement 12* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/procedure +
+This requirement defines the Procedure. {set:cellbgcolor:#FFFFFF}
 |===
 
 === Emission Event Class
@@ -245,11 +262,44 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |startTime | The start time of the emission event. | TemporalBound |1 (mandatory)
 |endTime | The end time of the emission event. | TemporalBound |0..1 (optional)
 |hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
+|hasStartTimeBasis | The procedure used to determine the start time. | DeterminationProcedure |1 (mandatory)
+|hasEndTimeBasis | The procedure used to determine the end time. | DeterminationProcedure |0..1 (optional)
+|hasQuantityBasis | The procedure used to determine the emission quantity. | DeterminationProcedure |1 (mandatory)
+|hasStartTimeEvidence | Observations providing evidence for the start time determination. | Observation |0..* (optional)
+|hasEndTimeEvidence | Observations providing evidence for the end time determination. | Observation |0..* (optional)
+|hasQuantityEvidence | Observations providing evidence for the quantity determination. | Observation |0..* (optional)
 |===
+
+=== Feature Class
+
+A Feature represents a real-world phenomenon with identity, properties, and spatial geometry, aligned with the ISO 19109 General Feature Model. In EmissionML, Feature serves as the base class for entities that can be the ultimate feature of interest of an Observation. A Feature's `geometry` attribute provides the geospatial reference for the phenomenon it represents.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 11: Feature Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/feature +
++
+Each Feature class shall have the mandatory attributes listed in <<feature-attributes>>.
+|===
+
+[#feature-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Feature class
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|geometry |The spatial geometry of the feature. |GM_Object |1 (mandatory)
+|===
+
+[#feature-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Direct relation between a Feature class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|- |No direct relations are defined for Feature in the core model (it is referenced by Source via inheritance and by Observation via ultimateFeatureOfInterest). |- |-
+|===
+
+'''
 
 === Source Class
 
-A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
+A Source represents the feature from which an emission originates. Source inherits from Feature (<<feature-attributes>>), gaining the mandatory `geometry` attribute. A Source is characterised by its own identity, inherited geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
 
 Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
 
@@ -257,16 +307,16 @@ Note: A Source is a continuant that may exist independently of any emission, whe
 |===
 |Requirement 2: Source Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/source +
 +
-Each Source class shall have the mandatory attributes listed in <<source-attributes>>.
+Each Source class shall inherit from Feature.
+Each Source class shall have the optional attributes listed in <<source-attributes>>.
 Each Source class shall have the direct relation between a Source class and other classes listed in <<source-relations>>.
 |===
 
 [#source-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
-.Attributes of a Source class
+.Attributes of a Source class (own attributes; geometry is inherited from Feature)
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|name |A human-readable name for the source. |String |0..1 (optional)
-|geometry |The spatial geometry of the source. |GM_Object |1 (mandatory)
+|name |A human-readable name for the source. |CharacterString |0..1 (optional)
 |===
 
 [#source-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
@@ -293,8 +343,8 @@ Each Source Type class shall have the mandatory attributes listed in <<source-ty
 .Attributes of a Source Type class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|name |A human-readable name for the source type. |String |1 (mandatory)
-|description |A detailed description of the source type. |String |1 (mandatory)
+|label |A human-readable label for the source type. |CharacterString |1 (mandatory)
+|description |A detailed description of the source type. |CharacterString |0..1 (optional)
 |definition |The URI linking to an external definition of the source type. |URI |1 (mandatory)
 |===
 
@@ -323,8 +373,8 @@ Each Mechanism class shall have the direct relation listed in <<mechanism-relati
 .Attributes of a Mechanism class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|label |A human-readable label for the mechanism. |String |1 (mandatory)
-|description |A detailed description of the mechanism. |String |0..1 (optional)
+|label |A human-readable label for the mechanism. |CharacterString |1 (mandatory)
+|description |A detailed description of the mechanism. |CharacterString |0..1 (optional)
 |===
 
 [#mechanism-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
@@ -352,7 +402,7 @@ Each Emission Quantity class shall have the direct relation between an Emission 
 .Attributes of an Emission Quantity class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|quantity |The numeric value of the emission quantity. |double |1 (mandatory)
+|value |The numeric value of the emission quantity. |Real |1 (mandatory)
 |quality |A data quality element describing the quality of the emission quantity value. |DQ_Element |0..* (optional)
 |===
 
@@ -361,8 +411,6 @@ Each Emission Quantity class shall have the direct relation between an Emission 
 |===
 |Role |Description |Target Class Type |Multiplicity and use
 |hasUnit |The unit of measure associated with the emission quantity. |UnitOfMeasure |1 (mandatory)
-|hasDeterminationMethod |The method used to determine or derive the emission quantity. |DeterminationMethod |1 (mandatory)
-|hasEvidence |Observations that provide evidence supporting the emission quantity assertion. |Observation |0..* (optional)
 |===
 
 '''
@@ -382,8 +430,8 @@ Each Unit of Measure class shall have the mandatory attributes listed in <<unit-
 .Attributes of a Unit of Measure class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|name |A human-readable name for the unit of measure. |String |1 (mandatory)
-|symbol |A short symbol representing the unit of measure. |String |1 (mandatory)
+|label |A human-readable label for the unit of measure. |CharacterString |1 (mandatory)
+|symbol |A short symbol representing the unit of measure. |CharacterString |1 (mandatory)
 |definition |The URI linking to an external definition of the unit of measure. |URI |1 (mandatory)
 |===
 
@@ -398,14 +446,13 @@ Each Unit of Measure class shall have the mandatory attributes listed in <<unit-
 
 === Temporal Bound Class
 
-A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) with optional data quality metadata. Temporal Bounds may be supported by evidence Observations and are associated with a Determination Method.
+A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) with optional data quality metadata. The determination procedure and supporting evidence for a Temporal Bound are tracked at the Emission Event level.
 
 [width="90%",cols="2,6"]
 |===
 |Requirement 7: Temporal Bound Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/temporal-bound +
 +
 Each Temporal Bound class shall have the mandatory attributes listed in <<temporal-bound-attributes>>.
-Each Temporal Bound class shall have the direct relation between a Temporal Bound class and other classes listed in <<temporal-bound-relations>>.
 |===
 
 [#temporal-bound-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
@@ -420,8 +467,7 @@ Each Temporal Bound class shall have the direct relation between a Temporal Boun
 .Direct relation between a Temporal Bound class and other class types
 |===
 |Role |Description |Target Class Type |Multiplicity and use
-|hasDeterminationMethod |The method used to determine or derive the temporal bound. |DeterminationMethod |1 (mandatory)
-|hasEvidence |Observations that provide evidence supporting the temporal bound assertion. |Observation |0..* (optional)
+|- |No direct relations are defined for TemporalBound in the core model (determination procedure and evidence are tracked at the EmissionEvent level). |- |-
 |===
 
 '''
@@ -430,13 +476,13 @@ Each Temporal Bound class shall have the direct relation between a Temporal Boun
 
 In EmissionML, an Observation is evidence that may support an Emission Quantity or Temporal Bound determination.
 
-Note: The Ultimate Feature of Interest of an Observation assists in identifying the Source of the associated Emission Event, without requiring the Feature of Interest to coincide exactly with the Source. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a site), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific component of an item of equipment from which pollutants are released.
+Note: The Ultimate Feature of Interest of an Observation identifies a Feature — which may be a Source or another feature at a different spatial scale — associated with the Emission Event. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a facility area or region), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific Source such as a component of an item of equipment from which pollutants are released.
 
 [width="90%",cols="2,6"]
 |===
 |Requirement 8: Observation Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/observation +
 +
-Each Observation class shall be a ISO/OGC 19156:2023 Observation.
+Each Observation class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Observation.
 |===
 
 '''
@@ -456,31 +502,59 @@ The Emission Intent enumeration shall support the enumeration values listed in <
 .Enumeration values of Emission Intent
 |===
 |Name |Definition
-|INTENTIONAL |The emission occurred intentionally.
-|UNINTENTIONAL |The emission occurred unintentionally.
-|UNKNOWN |The intent of the emission is unknown.
+|intentional |The emission occurred intentionally.
+|unintentional |The emission occurred unintentionally.
+|unknown |The intent of the emission is unknown.
 |===
 
 '''
 
-=== Determination Method Class
+=== Procedure Class
 
-A Determination Method describes how a value (e.g., an emission quantity or temporal bound) was determined.
+A Procedure is a description of steps performed, aligned with ISO/OGC 19156:2023 (OMS 3.0). In EmissionML, Procedure serves as the base class for process descriptions such as DeterminationProcedure.
 
 [width="90%",cols="2,6"]
 |===
-|Requirement 10: Determination Method Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/determination-method +
+|Requirement 12: Procedure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/procedure +
 +
-Each Determination Method class shall have the mandatory attributes listed in <<determination-method-attributes>>.
+Each Procedure class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Procedure.
 |===
 
-[#determination-method-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
-.Attributes of a Determination Method class
+[#procedure-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Procedure class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|label |A human-readable label for the determination method. |String |1 (mandatory)
-|description |A detailed description of the determination method. |String |0..1 (optional)
-|definition |The URI linking to an external definition of the determination method. |URI |0..1 (optional)
+|- |No own attributes are defined for Procedure in the core model (see the standard for complete specification). |- |-
+|===
+
+[#procedure-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Direct relation between a Procedure class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|- |No direct relations are defined for Procedure in the core model (it is referenced by DeterminationProcedure via inheritance). |- |-
+|===
+
+'''
+
+=== Determination Procedure Class
+
+A Determination Procedure describes the steps performed to determine a value (e.g., an emission quantity or temporal bound). DeterminationProcedure inherits from Procedure, aligning it with the OMS 3.0 process model.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 10: Determination Procedure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/determination-procedure +
++
+Each Determination Procedure class shall inherit from Procedure.
+Each Determination Procedure class shall have the mandatory attributes listed in <<determination-procedure-attributes>>.
+|===
+
+[#determination-procedure-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Determination Procedure class (own attributes)
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|label |A human-readable label for the determination procedure. |CharacterString |1 (mandatory)
+|description |A detailed description of the determination procedure. |CharacterString |0..1 (optional)
+|definition |The URI linking to an external definition of the determination procedure. |URI |0..1 (optional)
 |===
 
 
@@ -490,6 +564,73 @@ Each Determination Method class shall have the mandatory attributes listed in <<
 add or remove annexes after "A" as necessary
 ////
 //include::sections/annex-a.adoc[]
+
+[appendix,obligation=informative]
+:appendix-caption: Annex
+== Relationship with OGC Features and Observations
+
+EmissionML is a domain-specific conceptual model that builds on two foundational OGC concepts: *Features* (ISO 19109 General Feature Model) and *Observations* (ISO/OGC 19156:2023, OMS 3.0). This annex explains how EmissionML relates to each and why explicit domain modeling is preferred over generic usage.
+
+<<fig-annex-b-layering>> illustrates the conceptual layering of EmissionML on top of these foundational standards.
+
+[[fig-annex-b-layering]]
+.Conceptual layering of EmissionML on foundational ISO/OGC standards
+image::images/annex-b-layering.png[]
+
+=== EmissionML and OGC Features
+
+The OGC General Feature Model (ISO 19109) defines a _Feature_ as an abstraction of a real-world phenomenon — any entity with an identity, properties, and optionally a geometry. EmissionML makes this alignment explicit by introducing a concrete *Feature* class (stereotyped `<<ISO 19109>>`) into the conceptual model.
+
+The Feature class carries a mandatory `geometry` attribute of type `GM_Object` and serves as the base class for domain-specific feature types. *Source* inherits from Feature, gaining its geometry by inheritance. This structural inheritance — rather than a notional stereotype — makes the ISO 19109 alignment unambiguous and machine-verifiable.
+
+Because Feature is concrete, an Observation's `ultimateFeatureOfInterest` can reference any Feature — not only a Source. This enables observations whose feature of interest is defined at a different spatial scale (e.g., a facility area, a region, or a monitoring zone) to participate in the evidence chain without being forced into the Source class.
+
+*EmissionEvent* is also a real-world phenomenon — an occurrent that unfolds over time. In principle, an Emission Event _could_ be modeled as a generic Feature. However, EmissionML gives it explicit structure: temporal bounds (start time, end time), a quantity of emitted substance, a mechanism describing the physical or operational process, an intent classification, and an evidence chain linking the event to supporting Observations.
+
+Without this explicit modeling, a Source would be indistinguishable from any other Feature, and an emission event would be "just another Feature" with ad-hoc properties. The semantic relationships that give emission data its meaning — `hasSource`, `hasMechanism`, `hasQuantity`, `hasStartTimeEvidence` — would be lost or require convention-based interpretation.
+
+=== EmissionML and OMS 3.0 Observations
+
+OMS 3.0 (ISO/OGC 19156:2023) defines an Observation as an act of determining the value of an observable property. An Observation has a well-defined structure: a feature of interest, an observed property, a procedure, and a result.
+
+EmissionML incorporates OMS 3.0 Observation *by reference* (Requirement 8) — it does not redefine or extend the Observation class. In EmissionML, Observations serve as *evidence* supporting emission quantity and temporal bound determinations, linked through the `hasQuantityEvidence`, `hasStartTimeEvidence`, and `hasEndTimeEvidence` associations.
+
+One might ask: _Why not model the entire emission event as an Observation result?_ Because an Emission Event is richer than what a single Observation captures. An Emission Event has a source, a mechanism, an intent, multiple temporal bounds, and can be supported by _multiple_ Observations at different spatial and temporal scales. For example:
+
+* A satellite remote sensing Observation may detect a methane plume over a broad area.
+* An Optical Gas Imaging (OGI) camera Observation may pinpoint the leak to a specific component.
+* A continuous emissions monitoring system (CEMS) Observation may quantify the emission rate over time.
+
+All three Observations can serve as evidence for a single Emission Event, each contributing to the determination of quantity, start time, or end time. The Observation's `ultimateFeatureOfInterest` references a Feature — which may be a Source or any other Feature at a different spatial scale. The satellite Observation's feature of interest may be a Feature representing an entire facility, while the OGI Observation's feature of interest is a Source representing a single valve.
+
+=== EmissionML and OMS 3.0 Procedures
+
+OMS 3.0 defines a *Procedure* as "a description of steps performed" and introduces *ObservingProcedure* as a specialization that describes steps performed to determine the value of an observable property. EmissionML follows this same specialization pattern.
+
+The EmissionML conceptual model introduces a *Procedure* class (stereotyped `<<ISO 19156:2023>>`) as the base class for process descriptions. *DeterminationProcedure* inherits from Procedure and describes the steps performed to determine a value — such as an emission quantity or temporal bound. This structural inheritance mirrors how ObservingProcedure specializes Procedure in OMS 3.0.
+
+By making Procedure an explicit base class rather than a notional reference, EmissionML ensures that its process descriptions are structurally aligned with OMS 3.0 — not merely by naming convention, but by class hierarchy. This parallels the Feature/Source pattern: just as Source inherits from Feature to make ISO 19109 alignment concrete, DeterminationProcedure inherits from Procedure to make OMS 3.0 alignment concrete.
+
+=== Why Explicit Domain Modeling
+
+*The alternative.* One could model everything with generic Features and Observations — Sources as plain Features, emission data as Observation results, and relationships as ad-hoc properties. This approach uses only existing OGC standards without defining new classes.
+
+*The problem.* Generic modeling loses domain semantics. Without EmissionML's explicit classes, systems cannot:
+
+* distinguish a Source from any other Feature,
+* enforce that an emission has a Mechanism and an Intent,
+* trace the evidence chain from Observation to Emission Quantity to Emission Event,
+* validate that required relationships are present (e.g., every Emission Event must have a Source, a Mechanism, and a Determination Procedure).
+
+*What explicit modeling provides:*
+
+Interoperability:: Systems exchanging EmissionML data share a common vocabulary. EmissionEvent, Source, Mechanism, and EmissionQuantity are unambiguous — they mean the same thing in every implementation.
+
+Validation:: Requirements can be formally specified and enforced. For example, Requirement 1 mandates that every Emission Event has a Source, a Mechanism, start time, quantity, and their corresponding Determination Procedures.
+
+Usability:: Domain experts work with emission concepts directly — _emission events_, _sources_, _mechanisms_ — rather than mapping to and from generic abstractions. This reduces the cognitive burden and the risk of misinterpretation.
+
+*Analogy.* Just as CityGML defines explicit Building, Road, and Vegetation classes rather than using generic Features, EmissionML defines explicit emission domain classes. The General Feature Model provides the abstract foundation; EmissionML provides the domain-specific vocabulary that makes emission data interoperable and actionable.
 
 //include::sections/annex-n.adoc[]
 
