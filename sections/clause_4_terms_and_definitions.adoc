@@ -5,11 +5,21 @@ This document also uses terms defined in the OGC Standard for Modular specificat
 
 For the purposes of this document, the following additional terms and definitions apply.
 
+Determination Procedure::
+A Determination Procedure describes the steps performed to determine the quantity or temporal bounds of an Emission Event.
+
 Emission Event::
 An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
++
+NOTE: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
++
+NOTE: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
 
-Note: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
-Note: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
+Emission Quantity::
+An Emission Quantity is the physical quantity representing the total mass of substance released to the atmosphere during a defined Emission Event or over a specified time interval.
+
+Emission Intent::
+Emission Intent is a code list describing whether an emission is intentional, unintentional, or unknown.
 
 Feature::
 Abstraction of real world phenomena (Source: ISO 19101-1:2014)
@@ -23,10 +33,19 @@ A Mechanism is a classification of the specific physical, chemical, or operation
 Observation::
 Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
 
+Procedure::
+Description of steps performed (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
+
 Source::
 A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
++
+NOTE: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
 
-Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
+Source Type::
+A Source Type classifies a Source by its category.
+
+Temporal Bound::
+A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) that MAY have associated data quality metadata.
 
 Unit of Measure::
 Reference quantity chosen from a unit equivalence group (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
