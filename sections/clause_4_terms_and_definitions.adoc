@@ -44,5 +44,3 @@ A Temporal Bound is a value object representing a temporal determination (e.g., 
 Unit of Measure::
 Reference quantity chosen from a unit equivalence group (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
 
-term name::
-text of the definition
