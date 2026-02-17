@@ -1,0 +1,64 @@
+@startuml annex-b-layering
+' Annex B – Conceptual layering of EmissionML on ISO/OGC standards
+
+skinparam defaultFontSize 13
+skinparam packageStyle rectangle
+skinparam linetype ortho
+skinparam nodesep 40
+skinparam ranksep 60
+skinparam packagePadding 20
+
+skinparam package {
+  BackgroundColor<<domain>> #D4E6F1
+  BorderColor<<domain>> #2471A3
+  BackgroundColor<<foundation>> #FCF3CF
+  BorderColor<<foundation>> #B7950B
+  BackgroundColor<<base>> #FADBD8
+  BorderColor<<base>> #CB4335
+  FontSize 14
+}
+
+package "EmissionML Domain Model" <<domain>> {
+  rectangle "EmissionEvent" as EE
+  rectangle "Feature" as F
+  rectangle "Source" as S
+  rectangle "Mechanism" as M
+  rectangle "EmissionQuantity" as EQ
+  rectangle "TemporalBound" as TB
+  rectangle "DeterminationProcedure" as DP
+  rectangle "Procedure" as PR
+  rectangle "EmissionIntent" as EI
+}
+
+package "OGC / ISO Foundational Standards" <<foundation>> {
+  rectangle "ISO 19109\nGeneral Feature Model\n(Feature)" as GFM
+  rectangle "ISO/OGC 19156:2023\nOMS 3.0\n(Observation)" as OMS
+}
+
+package "ISO Base Types" <<base>> {
+  rectangle "ISO 19103\nConceptual Schema\n(CharacterString, Real, URI)" as ISO19103
+  rectangle "ISO 19107\nSpatial Schema\n(GM_Object)" as ISO19107
+  rectangle "ISO 19108\nTemporal Schema\n(TM_Instant)" as ISO19108
+  rectangle "ISO 19157\nData Quality\n(DQ_Element)" as ISO19157
+}
+
+' Domain builds on foundational standards
+F -[#2471A3,bold]-> GFM : " profiles"
+S -[#2471A3,bold]-> F : " inherits"
+EE -[#2471A3,bold]-> OMS : " uses as evidence"
+DP -[#2471A3,bold]-> PR : " inherits"
+PR -[#2471A3,bold]-> OMS : " profiles"
+
+' Foundational standards use base types
+GFM -[#B7950B]-> ISO19107
+GFM -[#B7950B]-> ISO19103
+OMS -[#B7950B]-> ISO19108
+OMS -[#B7950B]-> ISO19103
+OMS -[#B7950B]-> ISO19157
+
+' Domain classes also use base types directly
+F -[#999999,dashed]-> ISO19107 : " geometry"
+TB -[#999999,dashed]-> ISO19108 : " time"
+EQ -[#999999,dashed]-> ISO19157 : " quality"
+
+@enduml

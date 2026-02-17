@@ -49,17 +49,44 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |startTime | The start time of the emission event. | TemporalBound |1 (mandatory)
 |endTime | The end time of the emission event. | TemporalBound |0..1 (optional)
 |hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
-|hasStartTimeBasis | The method used to determine the start time. | DeterminationMethod |1 (mandatory)
-|hasEndTimeBasis | The method used to determine the end time. | DeterminationMethod |0..1 (optional)
-|hasQuantityBasis | The method used to determine the emission quantity. | DeterminationMethod |1 (mandatory)
+|hasStartTimeBasis | The procedure used to determine the start time. | DeterminationProcedure |1 (mandatory)
+|hasEndTimeBasis | The procedure used to determine the end time. | DeterminationProcedure |0..1 (optional)
+|hasQuantityBasis | The procedure used to determine the emission quantity. | DeterminationProcedure |1 (mandatory)
 |hasStartTimeEvidence | Observations providing evidence for the start time determination. | Observation |0..* (optional)
 |hasEndTimeEvidence | Observations providing evidence for the end time determination. | Observation |0..* (optional)
 |hasQuantityEvidence | Observations providing evidence for the quantity determination. | Observation |0..* (optional)
 |===
 
+=== Feature Class
+
+A Feature represents a real-world phenomenon with identity, properties, and spatial geometry, aligned with the ISO 19109 General Feature Model. In EmissionML, Feature serves as the base class for entities that can be the ultimate feature of interest of an Observation. A Feature's `geometry` attribute provides the geospatial reference for the phenomenon it represents.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 11: Feature Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/feature +
++
+Each Feature class shall have the mandatory attributes listed in <<feature-attributes>>.
+|===
+
+[#feature-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Feature class
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|geometry |The spatial geometry of the feature. |GM_Object |1 (mandatory)
+|===
+
+[#feature-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Direct relation between a Feature class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|- |No direct relations are defined for Feature in the core model (it is referenced by Source via inheritance and by Observation via ultimateFeatureOfInterest). |- |-
+|===
+
+'''
+
 === Source Class
 
-A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
+A Source represents the feature from which an emission originates. Source inherits from Feature (<<feature-attributes>>), gaining the mandatory `geometry` attribute. A Source is characterised by its own identity, inherited geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
 
 Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
 
@@ -67,16 +94,16 @@ Note: A Source is a continuant that may exist independently of any emission, whe
 |===
 |Requirement 2: Source Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/source +
 +
-Each Source class shall have the mandatory attributes listed in <<source-attributes>>.
+Each Source class shall inherit from Feature.
+Each Source class shall have the optional attributes listed in <<source-attributes>>.
 Each Source class shall have the direct relation between a Source class and other classes listed in <<source-relations>>.
 |===
 
 [#source-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
-.Attributes of a Source class
+.Attributes of a Source class (own attributes; geometry is inherited from Feature)
 |===
 |Names |Definition |Data types and values |Multiplicity and use
 |name |A human-readable name for the source. |CharacterString |0..1 (optional)
-|geometry |The spatial geometry of the source. |GM_Object |1 (mandatory)
 |===
 
 [#source-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
@@ -206,7 +233,7 @@ Each Unit of Measure class shall have the mandatory attributes listed in <<unit-
 
 === Temporal Bound Class
 
-A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) with optional data quality metadata. The determination method and supporting evidence for a Temporal Bound are tracked at the Emission Event level.
+A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) with optional data quality metadata. The determination procedure and supporting evidence for a Temporal Bound are tracked at the Emission Event level.
 
 [width="90%",cols="2,6"]
 |===
@@ -227,7 +254,7 @@ Each Temporal Bound class shall have the mandatory attributes listed in <<tempor
 .Direct relation between a Temporal Bound class and other class types
 |===
 |Role |Description |Target Class Type |Multiplicity and use
-|- |No direct relations are defined for TemporalBound in the core model (determination method and evidence are tracked at the EmissionEvent level). |- |-
+|- |No direct relations are defined for TemporalBound in the core model (determination procedure and evidence are tracked at the EmissionEvent level). |- |-
 |===
 
 '''
@@ -236,7 +263,7 @@ Each Temporal Bound class shall have the mandatory attributes listed in <<tempor
 
 In EmissionML, an Observation is evidence that may support an Emission Quantity or Temporal Bound determination.
 
-Note: The Ultimate Feature of Interest of an Observation assists in identifying the Source of the associated Emission Event, without requiring the Feature of Interest to coincide exactly with the Source. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a site), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific component of an item of equipment from which pollutants are released.
+Note: The Ultimate Feature of Interest of an Observation identifies a Feature — which may be a Source or another feature at a different spatial scale — associated with the Emission Event. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a facility area or region), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific Source such as a component of an item of equipment from which pollutants are released.
 
 [width="90%",cols="2,6"]
 |===
@@ -269,23 +296,51 @@ The Emission Intent enumeration shall support the enumeration values listed in <
 
 '''
 
-=== Determination Method Class
+=== Procedure Class
 
-A Determination Method describes how a value (e.g., an emission quantity or temporal bound) was determined. 
+A Procedure is a description of steps performed, aligned with ISO/OGC 19156:2023 (OMS 3.0). In EmissionML, Procedure serves as the base class for process descriptions such as DeterminationProcedure.
 
 [width="90%",cols="2,6"]
 |===
-|Requirement 10: Determination Method Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/determination-method +
+|Requirement 12: Procedure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/procedure +
 +
-Each Determination Method class shall have the mandatory attributes listed in <<determination-method-attributes>>.
+Each Procedure class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Procedure.
 |===
 
-[#determination-method-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
-.Attributes of a Determination Method class
+[#procedure-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Procedure class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|label |A human-readable label for the determination method. |CharacterString |1 (mandatory)
-|description |A detailed description of the determination method. |CharacterString |0..1 (optional)
-|definition |The URI linking to an external definition of the determination method. |URI |0..1 (optional)
+|- |No own attributes are defined for Procedure in the core model (see the standard for complete specification). |- |-
+|===
+
+[#procedure-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Direct relation between a Procedure class and other class types
+|===
+|Role |Description |Target Class Type |Multiplicity and use
+|- |No direct relations are defined for Procedure in the core model (it is referenced by DeterminationProcedure via inheritance). |- |-
+|===
+
+'''
+
+=== Determination Procedure Class
+
+A Determination Procedure describes the steps performed to determine a value (e.g., an emission quantity or temporal bound). DeterminationProcedure inherits from Procedure, aligning it with the OMS 3.0 process model.
+
+[width="90%",cols="2,6"]
+|===
+|Requirement 10: Determination Procedure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/determination-procedure +
++
+Each Determination Procedure class shall inherit from Procedure.
+Each Determination Procedure class shall have the mandatory attributes listed in <<determination-procedure-attributes>>.
+|===
+
+[#determination-procedure-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Attributes of a Determination Procedure class (own attributes)
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|label |A human-readable label for the determination procedure. |CharacterString |1 (mandatory)
+|description |A detailed description of the determination procedure. |CharacterString |0..1 (optional)
+|definition |The URI linking to an external definition of the determination procedure. |URI |0..1 (optional)
 |===
 

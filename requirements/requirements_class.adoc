@@ -22,6 +22,10 @@ This requirement defines the Temporal Bound. {set:cellbgcolor:#FFFFFF}
 This requirement defines the Observation. {set:cellbgcolor:#FFFFFF}
 |*Requirement 9* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/emission-intent +
 This requirement defines the Emission Intent. {set:cellbgcolor:#FFFFFF}
-|*Requirement 10* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/determination-method +
-This requirement defines the Determination Method. {set:cellbgcolor:#FFFFFF}
+|*Requirement 10* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/determination-procedure +
+This requirement defines the Determination Procedure. {set:cellbgcolor:#FFFFFF}
+|*Requirement 11* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/feature +
+This requirement defines the Feature. {set:cellbgcolor:#FFFFFF}
+|*Requirement 12* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core/procedure +
+This requirement defines the Procedure. {set:cellbgcolor:#FFFFFF}
 |===

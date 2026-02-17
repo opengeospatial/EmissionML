@@ -42,11 +42,15 @@ class Observation <<ISO 19156:2023>> {
 }
 note bottom of Observation : Observation per ISO/OGC 19156:2023 (OMS 3.0)\nSee standard for complete specification
 
-class Source {
-  +name : CharacterString [0..1]
+class Feature <<ISO 19109>> {
   +geometry : GM_Object
 }
-note bottom of Source : Stereotyped as GFI_Feature
+
+class Source {
+  +name : CharacterString [0..1]
+}
+
+Source --|> Feature
 
 class SourceType {
   +label : CharacterString
@@ -65,11 +69,16 @@ class EmissionIntent <<CodeList>> {
   unknown
 }
 
-class DeterminationMethod {
+class Procedure <<ISO 19156:2023>> {
+}
+
+class DeterminationProcedure {
   +label : CharacterString
   +description : CharacterString [0..1]
   +definition : URI [0..1]
 }
+
+DeterminationProcedure --|> Procedure
 
 ' --- Relationships ---
 
@@ -86,12 +95,12 @@ EmissionEvent "1" --> "*" Observation : endTimeEvidence
 EmissionEvent "1" --> "*" Observation : quantityEvidence
 
 ' Basis: How each value was determined
-EmissionEvent "1" --> "1" DeterminationMethod : startTimeBasis
-EmissionEvent "1" --> "0..1" DeterminationMethod : endTimeBasis
-EmissionEvent "1" --> "1" DeterminationMethod : quantityBasis
+EmissionEvent "1" --> "1" DeterminationProcedure : startTimeBasis
+EmissionEvent "1" --> "0..1" DeterminationProcedure : endTimeBasis
+EmissionEvent "1" --> "1" DeterminationProcedure : quantityBasis
 
 ' Observation target
-Observation "*" --> "1" Source : ultimateFeatureOfInterest
+Observation "*" --> "1" Feature : ultimateFeatureOfInterest
 
 ' Units
 EmissionQuantity "1" *-- "1" UnitOfMeasure : unit
