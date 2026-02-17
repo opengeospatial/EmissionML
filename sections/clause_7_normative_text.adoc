@@ -9,8 +9,8 @@ image::images/core-emissionml-class.png[]
 |===
 |Symbol |Name |Meaning
 
-|*-- |Composition |The target is owned by and cannot exist without the source (e.g., EmissionEvent owns its EmissionQuantity and TemporalBound instances)
-|\--> |Association |A directional reference between independent classes (e.g., EmissionEvent refers to a Source)
+|image:images/symbol-composition.png[Composition,60] |Composition |The target is owned by and cannot exist without the source (e.g., EmissionEvent owns its EmissionQuantity and TemporalBound instances)
+|image:images/symbol-association.png[Association,60] |Association |A directional reference between independent classes (e.g., EmissionEvent refers to a Source)
 |===
 
 Use the following table for Requirements Classes.
@@ -21,8 +21,9 @@ include::../requirements/requirements_class.adoc[]
 
 An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
 
-Note: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
-Note: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
+NOTE: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
+
+NOTE: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
 
 [width="90%",cols="2,6"]
 |===
@@ -88,7 +89,7 @@ Each Feature class shall have the mandatory attributes listed in <<feature-attri
 
 A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
 
-Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
+NOTE: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
 
 [width="90%",cols="2,6"]
 |===
@@ -263,7 +264,7 @@ Each Temporal Bound class shall have the mandatory attributes listed in <<tempor
 
 An Observation is an act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: ISO/OGC 19156:2023). In EmissionML, an Observation is evidence that may support an Emission Quantity or Temporal Bound determination.
 
-Note: The Ultimate Feature of Interest of an Observation identifies a Feature — which may be a Source or another feature at a different spatial scale — associated with the Emission Event. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a facility area or region), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific Source such as a component of an item of equipment from which pollutants are released.
+NOTE: The Ultimate Feature of Interest of an Observation identifies a Feature — which may be a Source or another feature at a different spatial scale — associated with the Emission Event. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a facility area or region), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific Source such as a component of an item of equipment from which pollutants are released.
 
 [width="90%",cols="2,6"]
 |===
