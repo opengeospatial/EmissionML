@@ -14,7 +14,7 @@ The intended audience includes environmental regulators, greenhouse gas reportin
 
 The following are keywords to be used by search engines and document catalogues.
 
-ogcdoc, OGC document, <tags separated by commas>
+ogcdoc, OGC document, EmissionML, emission event, atmospheric emissions, greenhouse gas, air quality, emission source, emission quantity, observation, data quality, uncertainty provenance, evidence chain, interoperability, net-zero, methane emissions, sensor web
 
 [big]*iii.   Preface*
 
