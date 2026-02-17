@@ -112,40 +112,48 @@ sourcecode .nt {
 <title id="_90caeb5c-287c-c15f-158b-305c5dde5c35">Keywords</title><fmt-title depth="1" id="_c2fc66fe-d479-5df5-0c6d-19c789b1c66c"><span class="fmt-caption-label"><semx element="autonum" source="_928dbe0a-14ce-b92f-c58a-c23700a08443">I</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_90caeb5c-287c-c15f-158b-305c5dde5c35">Keywords</semx></fmt-title><fmt-xref-label><semx element="title" source="_928dbe0a-14ce-b92f-c58a-c23700a08443">Keywords</semx></fmt-xref-label>
 <p>The following are keywords to be used by search engines and document catalogues.</p>
 <p>ogcdoc, OGC document, emissions, climate change</p></clause>
-<foreword id="_01532e71-c789-d889-d2de-08a7213a5680" obligation="informative" semx-id="_01532e71-c789-d889-d2de-08a7213a5680" displayorder="3">
-<title id="_de54e85f-0243-90b7-ea3c-ea6bb4ad47b8" semx-id="_67001cd2-f272-ceff-f849-7a43bc65e67d">Preface</title><fmt-title depth="1" id="_b7481eab-ebd5-8cb3-0b4d-ecd5b67591bd"><span class="fmt-caption-label"><semx element="autonum" source="_01532e71-c789-d889-d2de-08a7213a5680">II</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_de54e85f-0243-90b7-ea3c-ea6bb4ad47b8">Preface</semx></fmt-title><fmt-xref-label><semx element="title" source="_01532e71-c789-d889-d2de-08a7213a5680">Preface</semx></fmt-xref-label>
+<foreword id="_5ba5c254-a563-44e2-803b-2704421ac880" obligation="informative" semx-id="_5ba5c254-a563-44e2-803b-2704421ac880" displayorder="3">
+<title id="_de54e85f-0243-90b7-ea3c-ea6bb4ad47b8" semx-id="_67001cd2-f272-ceff-f849-7a43bc65e67d">Preface</title><fmt-title depth="1" id="_b7481eab-ebd5-8cb3-0b4d-ecd5b67591bd"><span class="fmt-caption-label"><semx element="autonum" source="_5ba5c254-a563-44e2-803b-2704421ac880">II</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_de54e85f-0243-90b7-ea3c-ea6bb4ad47b8">Preface</semx></fmt-title><fmt-xref-label><semx element="title" source="_5ba5c254-a563-44e2-803b-2704421ac880">Preface</semx></fmt-xref-label>
 <p id="_fdc7ade3-0338-9a2e-cbaa-52a1327ed7e2" semx-id="_fdc7ade3-0338-9a2e-cbaa-52a1327ed7e2"><strong>i.     Abstract</strong></p>
 
-<p id="_ac3e5f14-5b19-4c63-8998-7032d9295e76" semx-id="_ac3e5f14-5b19-4c63-8998-7032d9295e76">&#x3c;Insert Abstract Text here&#x3e;</p>
+<p id="_8587ca22-7ac4-741f-49c3-d4e4e27edaf7" semx-id="_8587ca22-7ac4-741f-49c3-d4e4e27edaf7">This OGC Standard defines EmissionML, a conceptual data model for representing atmospheric emission events. EmissionML provides a domain-specific ontology for describing the release of substances into the atmosphere, including the source from which an emission originates, the mechanism by which it occurs, the quantity of substance released, and the temporal bounds of the event.</p>
 
-<p id="_46b3c915-484a-4c02-021d-9988a4221f6e" semx-id="_46b3c915-484a-4c02-021d-9988a4221f6e"><strong>ii.    Keywords</strong></p>
+<p id="_82e3613f-1ce1-559c-5c89-126b86bdafd4" semx-id="_82e3613f-1ce1-559c-5c89-126b86bdafd4">EmissionML distinguishes itself through three key design principles. First, it incorporates an evidence chain linking emission determinations to supporting Observations, enabling traceability from reported values to underlying measurements. Second, it provides explicit uncertainty provenance by attaching data quality metadata to both emission quantities and temporal bounds, ensuring that the confidence and precision of each determination are recorded alongside the values themselves. Third, it offers clear spatial and temporal context — spatial through Feature (as the ultimate feature of interest) and Source (as the emission origin), temporal through start time, end time, and the phenomenon time of supporting Observations. By adopting the OMS 3.0 Observation model, EmissionML provides a common framework for reconciling heterogeneous sensor observations — from remote sensing satellites to ground-based continuous monitoring stations — within a single, unified evidence chain.</p>
 
-<p id="_312c8103-a7f5-4e80-748c-55bbea9d5ab2" semx-id="_312c8103-a7f5-4e80-748c-55bbea9d5ab2">The following are keywords to be used by search engines and document catalogues.</p>
+<p id="_5190a82f-edb1-0ed3-71ad-4e2469644207" semx-id="_5190a82f-edb1-0ed3-71ad-4e2469644207">The model builds on foundational OGC and ISO standards. Source inherits from Feature (ISO 19109), DeterminationProcedure inherits from Procedure (ISO/OGC 19156:2023), and Observations conform to the OMS 3.0 Observation model (ISO/OGC 19156:2023). The standard defines twelve requirements specifying the structure and constraints of the core data model.</p>
 
-<p id="_93128da1-d46c-ddd2-f760-c3af2fbd65f7" semx-id="_93128da1-d46c-ddd2-f760-c3af2fbd65f7">ogcdoc, OGC document, &#x3c;tags separated by commas&#x3e;</p>
+<p id="_27c5ed8a-6d1c-f673-c01f-c00ebb651aa3" semx-id="_27c5ed8a-6d1c-f673-c01f-c00ebb651aa3">By making emission semantics, evidence chains, and uncertainty provenance explicit and machine-verifiable, EmissionML enables credibility of reported emission values, traceability from determinations to their supporting observations and procedures, and reproducibility of emission assessments across organizations and jurisdictions.</p>
 
-<p id="_19822ada-e66c-171f-ab24-d5fc6d38dbf8" semx-id="_19822ada-e66c-171f-ab24-d5fc6d38dbf8"><strong>iii.   Preface</strong><note id="_69be0319-6d01-5f38-0502-5b64b88e0c45" semx-id="_69be0319-6d01-5f38-0502-5b64b88e0c45" autonum=""><fmt-name id="_0998f8e6-585d-a33f-7f92-737de7e4a9d0"><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim">:<tab/></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_01532e71-c789-d889-d2de-08a7213a5680"><span class="fmt-xref-container"><semx element="title" source="_01532e71-c789-d889-d2de-08a7213a5680">Preface</semx></span><span class="fmt-comma">,</span> <span class="fmt-element-name">Note</span></fmt-xref-label><p id="_a24502da-8c5a-9054-9bd2-c93cfae0773d" semx-id="_a24502da-8c5a-9054-9bd2-c93cfae0773d">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work. &#x3e; Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+<p id="_a4abdafd-09b2-fbc9-8676-11de2a8f1b9d" semx-id="_a4abdafd-09b2-fbc9-8676-11de2a8f1b9d">The intended audience includes environmental regulators, greenhouse gas reporting frameworks, emissions monitoring system developers, and geospatial data infrastructure implementers who require a standardized, interoperable representation of emission event data.</p>
 
-<p id="_f29431a4-5338-021a-7c6f-f1a7b21dae3e" semx-id="_f29431a4-5338-021a-7c6f-f1a7b21dae3e">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+<p id="_9f1d3834-75b2-31c6-9187-b24d3d9c18bf" semx-id="_9f1d3834-75b2-31c6-9187-b24d3d9c18bf"><strong>ii.    Keywords</strong></p>
+
+<p id="_06337df7-96a8-4924-ec47-09ec2629e147" semx-id="_06337df7-96a8-4924-ec47-09ec2629e147">The following are keywords to be used by search engines and document catalogues.</p>
+
+<p id="_8362070e-4990-7351-8cff-2686890d4771" semx-id="_8362070e-4990-7351-8cff-2686890d4771">ogcdoc, OGC document, &#x3c;tags separated by commas&#x3e;</p>
+
+<p id="_3362aacd-adc7-43ba-7b48-e6d408ce230b" semx-id="_3362aacd-adc7-43ba-7b48-e6d408ce230b"><strong>iii.   Preface</strong><note id="_5870f33b-a32d-0faf-98f7-639c08633d3f" semx-id="_5870f33b-a32d-0faf-98f7-639c08633d3f" autonum=""><fmt-name id="_f8b3141e-b31d-a61c-477c-c39c8a4e069d"><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim">:<tab/></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_5ba5c254-a563-44e2-803b-2704421ac880"><span class="fmt-xref-container"><semx element="title" source="_5ba5c254-a563-44e2-803b-2704421ac880">Preface</semx></span><span class="fmt-comma">,</span> <span class="fmt-element-name">Note</span></fmt-xref-label><p id="_9044f0b9-ae37-21c9-ba80-584a47ef99d2" semx-id="_9044f0b9-ae37-21c9-ba80-584a47ef99d2">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work. &#x3e; Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_2c158439-2da4-1638-138f-2a3d7f1a8c7d" semx-id="_2c158439-2da4-1638-138f-2a3d7f1a8c7d">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
 </note></p>
 
 
 
-<p id="_dcffd1e5-9596-d61f-cd73-4bcc5eb9b1b3" semx-id="_dcffd1e5-9596-d61f-cd73-4bcc5eb9b1b3"><strong>iv.    Security Considerations</strong></p>
+<p id="_ffc5bc76-8258-9636-0afb-f4a61fa66cb5" semx-id="_ffc5bc76-8258-9636-0afb-f4a61fa66cb5"><strong>iv.    Security Considerations</strong></p>
 
-<p id="_7e7d1ff2-49e1-7e12-e6ef-c6796944b364" semx-id="_7e7d1ff2-49e1-7e12-e6ef-c6796944b364">No security considerations have been made for this Standard.</p>
+<p id="_d37f4252-342e-23a6-5d33-20c13eeb9fb0" semx-id="_d37f4252-342e-23a6-5d33-20c13eeb9fb0">No security considerations have been made for this Standard.</p>
 
-<p id="_b4cea6e6-182d-e0b6-d61a-783135c8a72f" semx-id="_b4cea6e6-182d-e0b6-d61a-783135c8a72f"><strong>v.    Submitting organizations</strong></p>
+<p id="_1d31e639-f01b-02f4-a4f8-5bd070cb2861" semx-id="_1d31e639-f01b-02f4-a4f8-5bd070cb2861"><strong>v.    Submitting organizations</strong></p>
 
-<p id="_0c8a49dd-2a96-5481-dea2-c9d496a1d80b" semx-id="_0c8a49dd-2a96-5481-dea2-c9d496a1d80b">The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
+<p id="_4e6d4931-638d-2e48-3dd4-c97f61940f5f" semx-id="_4e6d4931-638d-2e48-3dd4-c97f61940f5f">The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
 
-<p id="_cb9daa58-a40b-070a-2409-e8a554b71b14" semx-id="_cb9daa58-a40b-070a-2409-e8a554b71b14">Organization name(s)</p>
+<p id="_3df20bb1-6249-d7ff-e348-55e422119b72" semx-id="_3df20bb1-6249-d7ff-e348-55e422119b72">Organization name(s)</p>
 
-<p id="_39176f89-cf8e-7440-921c-d67d5702fb67" semx-id="_39176f89-cf8e-7440-921c-d67d5702fb67"><strong>vi.     Submitters</strong></p>
+<p id="_18d1ee2d-71ec-9cc3-ede8-438d3a58c29d" semx-id="_18d1ee2d-71ec-9cc3-ede8-438d3a58c29d"><strong>vi.     Submitters</strong></p>
 
-<p id="_8dad9808-7197-d37f-d09c-70ba6a477c25" semx-id="_8dad9808-7197-d37f-d09c-70ba6a477c25">All questions regarding this submission should be directed to the editor or the submitters:</p>
+<p id="_0dc0a4d5-d136-106e-fe9b-954cc943c5ca" semx-id="_0dc0a4d5-d136-106e-fe9b-954cc943c5ca">All questions regarding this submission should be directed to the editor or the submitters:</p>
 
-<table id="_0ea632f2-53eb-4a2f-d427-59636d243d9a" semx-id="_0ea632f2-53eb-4a2f-d427-59636d243d9a" autonum="1"><fmt-name id="_d66e1f2b-9312-425e-8ca6-26d4a00f583d"><span class="fmt-caption-label"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_0ea632f2-53eb-4a2f-d427-59636d243d9a">1</semx></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_0ea632f2-53eb-4a2f-d427-59636d243d9a">1</semx></fmt-xref-label><tbody><tr id="_d25d79aa-f723-76d3-58e2-d5f8935ab0d0" semx-id="_d25d79aa-f723-76d3-58e2-d5f8935ab0d0"><td id="_3750c06a-388b-ec46-1392-62b0d6e9dacd" valign="middle" align="left" semx-id="_3750c06a-388b-ec46-1392-62b0d6e9dacd"><strong>Name</strong></td>
+<table id="_0ea632f2-53eb-4a2f-d427-59636d243d9a" semx-id="_0ea632f2-53eb-4a2f-d427-59636d243d9a" autonum="1"><fmt-name id="_ecae9a98-eb88-aa87-3acd-1bc643edcee5"><span class="fmt-caption-label"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_0ea632f2-53eb-4a2f-d427-59636d243d9a">1</semx></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_0ea632f2-53eb-4a2f-d427-59636d243d9a">1</semx></fmt-xref-label><tbody><tr id="_d25d79aa-f723-76d3-58e2-d5f8935ab0d0" semx-id="_d25d79aa-f723-76d3-58e2-d5f8935ab0d0"><td id="_3750c06a-388b-ec46-1392-62b0d6e9dacd" valign="middle" align="left" semx-id="_3750c06a-388b-ec46-1392-62b0d6e9dacd"><strong>Name</strong></td>
 <td id="_b90aa445-4a99-2b55-22c6-a6f93e22061f" valign="middle" align="left" semx-id="_b90aa445-4a99-2b55-22c6-a6f93e22061f"><strong>Affiliation</strong></td>
 </tr><tr id="_d74b21e3-7929-b484-86d8-4d1b61e61093" semx-id="_d74b21e3-7929-b484-86d8-4d1b61e61093"><td id="_f03ac08f-5375-a712-453b-0b7657c20db2" valign="middle" align="left" semx-id="_f03ac08f-5375-a712-453b-0b7657c20db2">Steve Liang</td>
 <td id="_a4f1ab72-3ff9-7138-2738-3579d91320b3" valign="middle" align="left" semx-id="_a4f1ab72-3ff9-7138-2738-3579d91320b3">University of Calgary / SensorUp</td>
@@ -172,8 +180,8 @@ sourcecode .nt {
 
 
 
-<terms id="_609902a9-b8df-2e43-12f1-b362417f2cb7" obligation="normative" semx-id="_609902a9-b8df-2e43-12f1-b362417f2cb7" displayorder="8">
-<title id="_3cc03800-13ea-42cb-8cdc-71eda2ecc439" semx-id="_dfb2eab2-f980-6365-3c47-81d0eb272962">Terms and definitions</title><fmt-title depth="1" id="_1151e20d-65de-5223-f652-99e400c94687"><span class="fmt-caption-label"><semx element="autonum" source="_609902a9-b8df-2e43-12f1-b362417f2cb7">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_3cc03800-13ea-42cb-8cdc-71eda2ecc439">Terms and definitions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_609902a9-b8df-2e43-12f1-b362417f2cb7">3</semx></fmt-xref-label><p id="_9608c37a-eaae-1098-3a4b-f705fd512d85" semx-id="_9608c37a-eaae-1098-3a4b-f705fd512d85">No terms and definitions are listed in this document.</p>
+<terms id="_89816945-de22-3a32-4531-afd4ccd4be30" obligation="normative" semx-id="_89816945-de22-3a32-4531-afd4ccd4be30" displayorder="8">
+<title id="_3cc03800-13ea-42cb-8cdc-71eda2ecc439" semx-id="_dfb2eab2-f980-6365-3c47-81d0eb272962">Terms and definitions</title><fmt-title depth="1" id="_1151e20d-65de-5223-f652-99e400c94687"><span class="fmt-caption-label"><semx element="autonum" source="_89816945-de22-3a32-4531-afd4ccd4be30">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_3cc03800-13ea-42cb-8cdc-71eda2ecc439">Terms and definitions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_89816945-de22-3a32-4531-afd4ccd4be30">3</semx></fmt-xref-label><p id="_9608c37a-eaae-1098-3a4b-f705fd512d85" semx-id="_9608c37a-eaae-1098-3a4b-f705fd512d85">No terms and definitions are listed in this document.</p>
 
 <p id="_6e5ba0bf-4830-2e53-f1c5-07c075342c8f" semx-id="_6e5ba0bf-4830-2e53-f1c5-07c075342c8f">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php" id="_14990f00-22d6-0cc6-5485-884baaa9f8d7">OGC Policy Directive 49</link><semx element="link" source="_14990f00-22d6-0cc6-5485-884baaa9f8d7"><fmt-link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</fmt-link></semx>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
 
@@ -181,7 +189,7 @@ sourcecode .nt {
 
 <p id="_3a4cc38f-6614-34f0-6e5b-8831934c33d4" semx-id="_3a4cc38f-6614-34f0-6e5b-8831934c33d4">For the purposes of this document, the following additional terms and definitions apply.</p>
 
-<dl id="_30737246-5420-5261-f383-5f845f6cf0aa" semx-id="_30737246-5420-5261-f383-5f845f6cf0aa"><dt>Determination Procedure</dt>
+<dl id="_3ac1ea54-808f-7790-f660-2a0c3f64de0a" semx-id="_3ac1ea54-808f-7790-f660-2a0c3f64de0a"><dt>Determination Procedure</dt>
 <dd id="_51dc0344-9ed0-84fa-59a5-863563b99691" semx-id="_51dc0344-9ed0-84fa-59a5-863563b99691"><p id="_3b3bd09f-e4b6-9cc0-3c43-2bb6be63f139" semx-id="_3b3bd09f-e4b6-9cc0-3c43-2bb6be63f139">A Determination Procedure describes the steps performed to determine the quantity or temporal bounds of an Emission Event.</p>
 </dd>
 <dt>Emission Event</dt>
@@ -219,9 +227,6 @@ sourcecode .nt {
 </dd>
 <dt>Unit of Measure</dt>
 <dd id="_e64aaa5f-fa64-f977-3e9c-f137b21d2f6a" semx-id="_e64aaa5f-fa64-f977-3e9c-f137b21d2f6a"><p id="_d22b3e19-5db0-299a-d066-a35ed9982f30" semx-id="_d22b3e19-5db0-299a-d066-a35ed9982f30">Reference quantity chosen from a unit equivalence group (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html" id="_950740a4-3051-3c5b-e2d2-7c989fe3b531">ISO/OGC 19156:2023</link><semx element="link" source="_950740a4-3051-3c5b-e2d2-7c989fe3b531"><fmt-link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</fmt-link></semx>)</p>
-</dd>
-<dt>term name</dt>
-<dd id="_8d4b528e-94e6-05aa-ef9a-7f2af9b2d184" semx-id="_8d4b528e-94e6-05aa-ef9a-7f2af9b2d184"><p id="_7df92601-efb9-2992-ea69-7413add8cf67" semx-id="_7df92601-efb9-2992-ea69-7413add8cf67">text of the definition</p>
 </dd>
 </dl>
 </terms>
