@@ -1,5 +1,17 @@
 == Emission Event Data Model
-The EmissionML conceptual model is described as a class diagram in Figure x. The schema is fully described in x.x.x.
+The EmissionML conceptual model is described as a class diagram in <<fig-emissionml-class-diagram>>. The schema is fully described in x.x.x.
+
+[[fig-emissionml-class-diagram]]
+.EmissionML Abstract Conceptual Model
+image::images/core-emissionml-class.png[]
+
+.UML relationship notation used in this standard
+|===
+|Symbol |Name |Meaning
+
+|*-- |Composition |The target is owned by and cannot exist without the source (e.g., EmissionEvent owns its EmissionQuantity and TemporalBound instances)
+|\--> |Association |A directional reference between independent classes (e.g., EmissionEvent refers to a Source)
+|===
 
 Use the following table for Requirements Classes.
 
@@ -37,6 +49,12 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |startTime | The start time of the emission event. | TemporalBound |1 (mandatory)
 |endTime | The end time of the emission event. | TemporalBound |0..1 (optional)
 |hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
+|hasStartTimeBasis | The method used to determine the start time. | DeterminationMethod |1 (mandatory)
+|hasEndTimeBasis | The method used to determine the end time. | DeterminationMethod |0..1 (optional)
+|hasQuantityBasis | The method used to determine the emission quantity. | DeterminationMethod |1 (mandatory)
+|hasStartTimeEvidence | Observations providing evidence for the start time determination. | Observation |0..* (optional)
+|hasEndTimeEvidence | Observations providing evidence for the end time determination. | Observation |0..* (optional)
+|hasQuantityEvidence | Observations providing evidence for the quantity determination. | Observation |0..* (optional)
 |===
 
 === Source Class
@@ -57,7 +75,7 @@ Each Source class shall have the direct relation between a Source class and othe
 .Attributes of a Source class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|name |A human-readable name for the source. |String |0..1 (optional)
+|name |A human-readable name for the source. |CharacterString |0..1 (optional)
 |geometry |The spatial geometry of the source. |GM_Object |1 (mandatory)
 |===
 
@@ -85,8 +103,8 @@ Each Source Type class shall have the mandatory attributes listed in <<source-ty
 .Attributes of a Source Type class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|name |A human-readable name for the source type. |String |1 (mandatory)
-|description |A detailed description of the source type. |String |1 (mandatory)
+|label |A human-readable label for the source type. |CharacterString |1 (mandatory)
+|description |A detailed description of the source type. |CharacterString |0..1 (optional)
 |definition |The URI linking to an external definition of the source type. |URI |1 (mandatory)
 |===
 
@@ -115,8 +133,8 @@ Each Mechanism class shall have the direct relation listed in <<mechanism-relati
 .Attributes of a Mechanism class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|label |A human-readable label for the mechanism. |String |1 (mandatory)
-|description |A detailed description of the mechanism. |String |0..1 (optional)
+|label |A human-readable label for the mechanism. |CharacterString |1 (mandatory)
+|description |A detailed description of the mechanism. |CharacterString |0..1 (optional)
 |===
 
 [#mechanism-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
@@ -144,7 +162,7 @@ Each Emission Quantity class shall have the direct relation between an Emission 
 .Attributes of an Emission Quantity class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|quantity |The numeric value of the emission quantity. |double |1 (mandatory)
+|value |The numeric value of the emission quantity. |Real |1 (mandatory)
 |quality |A data quality element describing the quality of the emission quantity value. |DQ_Element |0..* (optional)
 |===
 
@@ -153,8 +171,6 @@ Each Emission Quantity class shall have the direct relation between an Emission 
 |===
 |Role |Description |Target Class Type |Multiplicity and use
 |hasUnit |The unit of measure associated with the emission quantity. |UnitOfMeasure |1 (mandatory)
-|hasDeterminationMethod |The method used to determine or derive the emission quantity. |DeterminationMethod |1 (mandatory)
-|hasEvidence |Observations that provide evidence supporting the emission quantity assertion. |Observation |0..* (optional)
 |===
 
 '''
@@ -174,8 +190,8 @@ Each Unit of Measure class shall have the mandatory attributes listed in <<unit-
 .Attributes of a Unit of Measure class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|name |A human-readable name for the unit of measure. |String |1 (mandatory)
-|symbol |A short symbol representing the unit of measure. |String |1 (mandatory)
+|label |A human-readable label for the unit of measure. |CharacterString |1 (mandatory)
+|symbol |A short symbol representing the unit of measure. |CharacterString |1 (mandatory)
 |definition |The URI linking to an external definition of the unit of measure. |URI |1 (mandatory)
 |===
 
@@ -190,14 +206,13 @@ Each Unit of Measure class shall have the mandatory attributes listed in <<unit-
 
 === Temporal Bound Class
 
-A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) with optional data quality metadata. Temporal Bounds may be supported by evidence Observations and are associated with a Determination Method.
+A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) with optional data quality metadata. The determination method and supporting evidence for a Temporal Bound are tracked at the Emission Event level.
 
 [width="90%",cols="2,6"]
 |===
 |Requirement 7: Temporal Bound Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/temporal-bound +
 +
 Each Temporal Bound class shall have the mandatory attributes listed in <<temporal-bound-attributes>>.
-Each Temporal Bound class shall have the direct relation between a Temporal Bound class and other classes listed in <<temporal-bound-relations>>.
 |===
 
 [#temporal-bound-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
@@ -212,8 +227,7 @@ Each Temporal Bound class shall have the direct relation between a Temporal Boun
 .Direct relation between a Temporal Bound class and other class types
 |===
 |Role |Description |Target Class Type |Multiplicity and use
-|hasDeterminationMethod |The method used to determine or derive the temporal bound. |DeterminationMethod |1 (mandatory)
-|hasEvidence |Observations that provide evidence supporting the temporal bound assertion. |Observation |0..* (optional)
+|- |No direct relations are defined for TemporalBound in the core model (determination method and evidence are tracked at the EmissionEvent level). |- |-
 |===
 
 '''
@@ -228,7 +242,7 @@ Note: The Ultimate Feature of Interest of an Observation assists in identifying 
 |===
 |Requirement 8: Observation Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/observation +
 +
-Each Observation class shall be a ISO/OGC 19156:2023 Observation.
+Each Observation class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Observation.
 |===
 
 '''
@@ -248,9 +262,9 @@ The Emission Intent enumeration shall support the enumeration values listed in <
 .Enumeration values of Emission Intent
 |===
 |Name |Definition
-|INTENTIONAL |The emission occurred intentionally.
-|UNINTENTIONAL |The emission occurred unintentionally.
-|UNKNOWN |The intent of the emission is unknown.
+|intentional |The emission occurred intentionally.
+|unintentional |The emission occurred unintentionally.
+|unknown |The intent of the emission is unknown.
 |===
 
 '''
@@ -270,8 +284,8 @@ Each Determination Method class shall have the mandatory attributes listed in <<
 .Attributes of a Determination Method class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|label |A human-readable label for the determination method. |String |1 (mandatory)
-|description |A detailed description of the determination method. |String |0..1 (optional)
+|label |A human-readable label for the determination method. |CharacterString |1 (mandatory)
+|description |A detailed description of the determination method. |CharacterString |0..1 (optional)
 |definition |The URI linking to an external definition of the determination method. |URI |0..1 (optional)
 |===
 
