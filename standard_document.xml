@@ -106,7 +106,7 @@
 
 
 
-<terms id="_3904efe2-18f5-db61-e3d2-b27af668a055" obligation="normative">
+<terms id="_609902a9-b8df-2e43-12f1-b362417f2cb7" obligation="normative">
 <title id="_dfb2eab2-f980-6365-3c47-81d0eb272962">Terms and definitions</title><p id="_9608c37a-eaae-1098-3a4b-f705fd512d85">No terms and definitions are listed in this document.</p>
 
 <p id="_6e5ba0bf-4830-2e53-f1c5-07c075342c8f">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
@@ -115,36 +115,47 @@
 
 <p id="_3a4cc38f-6614-34f0-6e5b-8831934c33d4">For the purposes of this document, the following additional terms and definitions apply.</p>
 
-<dl id="_75784d86-5ba1-e0a6-1e45-66cfd129477f"><dt>Emission Event</dt>
-<dd id="_b2aba2d1-440b-bf13-e42f-17f3980e3ade"><p id="_0f880c02-21ca-3bf5-12e8-ef0881200142">An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.</p>
-<note id="_05ec6759-efa5-c789-b230-4558080a61a4"><p id="_8b4d80ec-a26d-78b4-6e0b-229495162638">Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.</p>
-</note>
-
-<note id="_7c5c2f54-6c7b-8493-dfb8-d39612f79282"><p id="_eb21894f-fc87-08f5-83a8-09770902766a">For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.</p>
-</note>
+<dl id="_30737246-5420-5261-f383-5f845f6cf0aa"><dt>Determination Procedure</dt>
+<dd id="_51dc0344-9ed0-84fa-59a5-863563b99691"><p id="_3b3bd09f-e4b6-9cc0-3c43-2bb6be63f139">A Determination Procedure describes the steps performed to determine the quantity or temporal bounds of an Emission Event.</p>
+</dd>
+<dt>Emission Event</dt>
+<dd id="_234e381d-8dc4-209e-e2a5-950a0d05bf43"><p id="_145f0d93-c12f-2b74-9dc4-e8cab24a88cc">An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.</p>
+</dd>
+<dt>Emission Quantity</dt>
+<dd id="_304de3f8-b0f0-b467-7245-062b7ee4d87c"><p id="_f2792530-c7a8-85a6-fdeb-8f3d3e4f3895">An Emission Quantity is the physical quantity representing the total mass of substance released to the atmosphere during a defined Emission Event or over a specified time interval.</p>
+</dd>
+<dt>Emission Intent</dt>
+<dd id="_85132a9c-bf5f-97aa-6b18-efddf116c76d"><p id="_34b85bee-0de0-6abc-4ea2-64b70abb1a5f">Emission Intent is a code list describing whether an emission is intentional, unintentional, or unknown.</p>
 </dd>
 <dt>Feature</dt>
-<dd id="_2b2615cf-e98b-4c81-01b1-88539161f705"><p id="_13e93281-ed01-21c9-aacb-32ed92b1d4d6">Abstraction of real world phenomena (Source: ISO 19101-1:2014)</p>
+<dd id="_2031be84-46a5-78ce-647c-9265f852479b"><p id="_508ce536-d3c4-1e5f-e5f2-7d568fe9843c">Abstraction of real world phenomena (Source: ISO 19101-1:2014)</p>
 </dd>
 <dt>Measurement</dt>
-<dd id="_3c48efe6-6cb9-a7e6-f19b-147ac8d4799c"><p id="_e180facf-97bf-abba-0aa7-10fe1a56f68c">Set of operations having the object of determining the value of a quantity (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
+<dd id="_6f9c6cfd-5e88-7c22-9bef-e0afba78d0fb"><p id="_b793214b-1fed-e01e-9ff3-058348fb03ca">Set of operations having the object of determining the value of a quantity (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
 </dd>
 <dt>Mechanism</dt>
-<dd id="_fba7266b-386c-d12b-7461-b8c42a313600"><p id="_5cb2d409-7412-f73c-6ab9-a11ffe3bdfca">A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is defined independently of the Source—including its identity, structure, or purpose—allowing Mechanisms to be consistently reused across different types of Source.</p>
+<dd id="_a7c60a66-2a41-112b-93a9-71eb04e1cd57"><p id="_6f355a09-9773-1d39-87ff-b64abf51d395">A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is defined independently of the Source—including its identity, structure, or purpose—allowing Mechanisms to be consistently reused across different types of Source.</p>
 </dd>
 <dt>Observation</dt>
-<dd id="_3f0e4213-f91e-62b9-8a7f-3807f757ff64"><p id="_4e502ae4-b0a9-0b5f-3b24-3b461b51628a">Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
+<dd id="_5e295349-2d72-772e-9df5-812783bd4181"><p id="_bc50a8a1-e6fb-4a60-5f64-9f5b543d90e0">Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
+</dd>
+<dt>Procedure</dt>
+<dd id="_caec275b-d651-dcd0-954d-ae374ec464b3"><p id="_107031e7-a437-afe5-c555-cbfb89f9789b">Description of steps performed (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
 </dd>
 <dt>Source</dt>
-<dd id="_e687198c-2edb-8cf7-da37-18d70db5e4f1"><p id="_8d4ead68-8875-49e0-dd11-f9ec6e11fbf8">A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.</p>
-<note id="_8a5e3638-5cb6-feb1-82de-170cef02fde2"><p id="_9716ac55-afd2-5b3b-8139-77c56ff653ea">A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.</p>
-</note>
+<dd id="_d2ff2958-caec-874d-defd-eca016b7845e"><p id="_45aa269b-d112-d03f-7629-6f2ba55768a2">A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.</p>
+</dd>
+<dt>Source Type</dt>
+<dd id="_31054494-8d5e-9c64-dae4-5c7bd1ffdebf"><p id="_e1b4dbe9-1d30-8423-36c9-0e94ab85948a">A Source Type classifies a Source by its category.</p>
+</dd>
+<dt>Temporal Bound</dt>
+<dd id="_b28a364b-0c7f-aee2-96dc-cbfd341f65bc"><p id="_31913e52-3df5-2047-a1ab-023da3120d08">A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) that MAY have associated data quality metadata.</p>
 </dd>
 <dt>Unit of Measure</dt>
-<dd id="_29ae9399-9a9e-9a6d-ad2d-724614e5b8f2"><p id="_dc5775c8-b281-09b1-2b57-ad42b3340b07">Reference quantity chosen from a unit equivalence group (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
+<dd id="_e64aaa5f-fa64-f977-3e9c-f137b21d2f6a"><p id="_d22b3e19-5db0-299a-d066-a35ed9982f30">Reference quantity chosen from a unit equivalence group (Source: <link target="https://docs.ogc.org/as/20-082r4/20-082r4.html">ISO/OGC 19156:2023</link>)</p>
 </dd>
 <dt>term name</dt>
-<dd id="_c270e50e-21b4-d8d5-a4be-c92a688f4d60"><p id="_f236a91a-f350-2049-11ea-e38b33c60f6e">text of the definition</p>
+<dd id="_8d4b528e-94e6-05aa-ef9a-7f2af9b2d184"><p id="_7df92601-efb9-2992-ea69-7413add8cf67">text of the definition</p>
 </dd>
 </dl>
 </terms>
@@ -163,7 +174,7 @@
 </clause>
 </clause>
 
-<clause id="_9bf20588-49a4-e039-9e8c-b899e1afa865" obligation="normative">
+<clause id="_23b7f3d6-5983-7905-7f26-619f82afdfef" obligation="normative">
 <title id="_6d8471a4-4cec-51ea-e51f-b5324f21b5b3">Emission Event Data Model</title>
 <p id="_b1b5b7d8-698f-86a1-892a-5d3016ae6de0">The EmissionML conceptual model is described as a class diagram in <xref target="fig-emissionml-class-diagram"/>. The schema is fully described in x.x.x.</p>
 
@@ -301,9 +312,9 @@
 </table>
 </clause>
 
-<clause id="_eccf97c5-37a2-4071-6f9c-618b6558a0d8" obligation="normative">
+<clause id="_0a3ec1e9-1583-ace3-df11-06875c37ee1d" obligation="normative">
 <title id="_498e881b-8020-a55d-2035-82162e156413">Feature Class</title>
-<p id="_ccc3277c-5251-e51b-3f79-326a4daa18ac">A Feature represents a real-world phenomenon with identity, properties, and spatial geometry, aligned with the ISO 19109 General Feature Model. In EmissionML, Feature serves as the base class for entities that can be the ultimate feature of interest of an Observation. A Feature’s <tt>geometry</tt> attribute provides the geospatial reference for the phenomenon it represents.</p>
+<p id="_75df6556-3c34-9d81-3f35-95cd7a9f57cd">A Feature is an abstraction of real world phenomena (Source: ISO 19101-1:2014). In EmissionML, Feature serves as the base class for entities that can be the ultimate feature of interest of an Observation. A Feature’s <tt>geometry</tt> attribute provides the geospatial reference for the phenomenon it represents.</p>
 
 <table id="_ab148f70-0ec5-de49-369c-3c3489652bf5" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_660522ca-efd4-8835-857f-01516ebbc784"><td id="_d3b06b85-c236-acfa-4c08-99dfbdff7428" valign="middle" align="left">Requirement 11: Feature Class </td>
 <td id="_5d108750-abb1-62d7-9dea-e4fed1348149" valign="middle" align="left">/req/datamodel/core/feature<br/> + Each Feature class shall have the mandatory attributes listed in  <xref target="feature-attributes"/>.</td>
@@ -340,9 +351,9 @@
 
 <hr/></clause>
 
-<clause id="_79c045a0-422c-4a06-4f27-0a3185b50b48" obligation="normative">
+<clause id="_10198fd2-6636-dfa5-d5de-786c4e8fb126" obligation="normative">
 <title id="_c1d4be8a-f34c-36bd-1477-ce38265d45eb">Source Class</title>
-<p id="_37783eb8-670c-7853-bdd5-550a41cbe4c7">A Source represents the feature from which an emission originates. Source inherits from Feature (<xref target="feature-attributes"/>), gaining the mandatory <tt>geometry</tt> attribute. A Source is characterised by its own identity, inherited geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.</p>
+<p id="_60d643b3-d652-0d8c-5981-6ebd3cdc9fcd">A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.</p>
 
 <p id="_3db9bc00-fa68-e6a4-65fb-8367007fcaa7">Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.</p>
 
@@ -381,9 +392,9 @@
 
 <hr/></clause>
 
-<clause id="_5e0eb979-f0ad-4dab-ea3d-5ab7781d4c80" obligation="normative">
+<clause id="_39ee8b10-38a3-2541-382e-d8be470185b1" obligation="normative">
 <title id="_38f1164a-d542-8992-6923-64cebb79e469">Source Type Class</title>
-<p id="_6b597d8e-ba97-ba32-d579-62990b4010a3">A Source Type provides a classification for Sources, describing the type or category of the Source.</p>
+<p id="_accd309e-4595-78b9-6a90-9fc07fb38f4c">A Source Type classifies a Source by its category.</p>
 
 <table id="_8c3f315d-caeb-a131-fa70-3325cdfb45d5" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_ef90a68f-ed0b-dde6-1097-58d1b2b70a36"><td id="_09338cba-42f7-b9c5-f566-16cb068500d4" valign="middle" align="left">Requirement 3: Source Type Class </td>
 <td id="_84319a28-a2c3-c7f5-8b47-96e7592c6ba1" valign="middle" align="left">/req/datamodel/core/source-type<br/> + Each Source Type class shall have the mandatory attributes listed in  <xref target="source-type-attributes"/>.</td>
@@ -471,9 +482,9 @@
 
 <hr/></clause>
 
-<clause id="_1362272e-c127-ad1e-8e6c-46a53c093f1e" obligation="normative">
+<clause id="_b2014be7-725c-1c16-8f1d-7920f3190ed8" obligation="normative">
 <title id="_be42bba7-8ce0-4cc8-28a1-e299b85b7f4a">Emission Quantity Class</title>
-<p id="_cc62545b-35e9-d7d8-5b2b-bee5a4ecadff">An Emission Quantity represents the asserted quantity of pollutant released as part of an Emission Event.</p>
+<p id="_82b84320-c228-3ae1-3cbd-5bd140c641e4">An Emission Quantity is the physical quantity representing the total mass of substance released to the atmosphere during a defined Emission Event or over a specified time interval.</p>
 
 <table id="_1b920c57-9d9d-f241-3414-28babe5fbd3a" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_fb699e74-a140-aefd-8a41-511396dfcc36"><td id="_ba5848be-0fc0-1392-faf7-6f0981fe515e" valign="middle" align="left">Requirement 5: Emission Quantity Class </td>
 <td id="_baefff57-045e-cb40-5c47-7f684dfcbfa6" valign="middle" align="left">/req/datamodel/core/emission-quantity<br/> + Each Emission Quantity class shall have the mandatory attributes listed in  <xref target="emission-quantity-attributes"/>. Each Emission Quantity class shall have the direct relation between an Emission Quantity class and other classes listed in  <xref target="emission-quantity-relations"/>.</td>
@@ -561,9 +572,9 @@
 
 <hr/></clause>
 
-<clause id="_040b0835-8edd-b13a-fe7a-97d38bd18dd7" obligation="normative">
+<clause id="_5d5e116d-0714-dc30-2dac-59b677418375" obligation="normative">
 <title id="_a29db58a-0993-a816-3cf9-77c68b4d0125">Temporal Bound Class</title>
-<p id="_1d4c87d1-b78d-3988-094e-a6c39435fe2a">A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) with optional data quality metadata. The determination procedure and supporting evidence for a Temporal Bound are tracked at the Emission Event level.</p>
+<p id="_f323439f-bb34-9242-b0dd-3751fc374d46">A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) that MAY have associated data quality metadata. The determination procedure and supporting evidence for a Temporal Bound are tracked at the Emission Event level.</p>
 
 <table id="_f6366795-a67f-5a03-7269-ae9cdf051f6d" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_14e7dc34-bcc6-b280-68b1-26136443de0c"><td id="_ff54cf0a-55d5-01dd-a96a-81b153ea1786" valign="middle" align="left">Requirement 7: Temporal Bound Class </td>
 <td id="_363092a6-8dd9-6b4a-32cd-6d6bdf59180b" valign="middle" align="left">/req/datamodel/core/temporal-bound<br/> + Each Temporal Bound class shall have the mandatory attributes listed in  <xref target="temporal-bound-attributes"/>.</td>
@@ -604,9 +615,9 @@
 
 <hr/></clause>
 
-<clause id="_9f54544c-91ff-d787-8367-adfc879f044b" obligation="normative">
+<clause id="_c31d781d-832c-89a7-1a9c-657b338911f3" obligation="normative">
 <title id="_e3cbb63d-8928-3586-6e18-3240cb5cabc1">Observation Class</title>
-<p id="_75764a18-87f7-de01-cf34-20e17ac5c95f">In EmissionML, an Observation is evidence that may support an Emission Quantity or Temporal Bound determination.</p>
+<p id="_ef24de49-1ddd-f38e-b734-482eaac017f7">An Observation is an act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: ISO/OGC 19156:2023). In EmissionML, an Observation is evidence that may support an Emission Quantity or Temporal Bound determination.</p>
 
 <p id="_53a02690-2683-66ff-9403-2e577d098623">Note: The Ultimate Feature of Interest of an Observation identifies a Feature — which may be a Source or another feature at a different spatial scale — associated with the Emission Event. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a facility area or region), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific Source such as a component of an item of equipment from which pollutants are released.</p>
 
@@ -617,9 +628,9 @@
 
 <hr/></clause>
 
-<clause id="_728ce68b-d398-0f88-2cf0-954f1b168aed" obligation="normative">
+<clause id="_9b613fd4-8666-442b-d951-ed28eb125fd4" obligation="normative">
 <title id="_f404b483-fd1d-0515-3054-a0c6c76d859b">Emission Intent Enumeration</title>
-<p id="_0255ad18-81d4-ce18-bc69-cab91fa43e40">Emission Intent is an enumeration describing whether an emission is intentional, unintentional, or unknown.</p>
+<p id="_9af9fcce-4cb4-4177-0933-e6ec6188febd">Emission Intent is a code list describing whether an emission is intentional, unintentional, or unknown.</p>
 
 <table id="_e487cc3c-a32d-a0a1-7df6-87a840c17268" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_51465fce-7bc4-3e50-d72d-f3741f7d1b49"><td id="_ae804343-cca2-c3f7-afc0-de0b01591d71" valign="middle" align="left">Requirement 9: Emission Intent Enumeration </td>
 <td id="_a48b1392-50b8-91b7-95ce-9d2bdbbec504" valign="middle" align="left">/req/datamodel/core/emission-intent<br/> + The Emission Intent enumeration shall support the enumeration values listed in  <xref target="emission-intent-values"/>.</td>
@@ -642,9 +653,9 @@
 
 <hr/></clause>
 
-<clause id="_3a75b664-3dfd-a516-5014-7fa1e5ef0a42" obligation="normative">
+<clause id="_df659348-d2a1-a806-c167-5a9dc5dc0e53" obligation="normative">
 <title id="_40bea142-b0b0-6638-81a4-dadde947d6e6">Procedure Class</title>
-<p id="_f0e1c6e0-2540-82db-41fe-3980a7709e57">A Procedure is a description of steps performed, aligned with ISO/OGC 19156:2023 (OMS 3.0). In EmissionML, Procedure serves as the base class for process descriptions such as DeterminationProcedure.</p>
+<p id="_52396c09-5518-dc57-77f6-393989e94d30">A Procedure is a description of steps performed (Source: ISO/OGC 19156:2023). In EmissionML, Procedure serves as the base class for process descriptions such as DeterminationProcedure.</p>
 
 <table id="_ef6ed78e-39cd-be87-8d86-0e54579a63e4" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_df4756cc-a63b-5cc7-86a0-db4f57edf3f8"><td id="_e8558d22-a42c-6751-04f9-1e0c1805c869" valign="middle" align="left">Requirement 12: Procedure Class </td>
 <td id="_44adcc34-01d8-59c5-becb-92cd84191032" valign="middle" align="left">/req/datamodel/core/procedure<br/> + Each Procedure class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Procedure.</td>
@@ -681,9 +692,9 @@
 
 <hr/></clause>
 
-<clause id="_a84f6ee2-ccad-f177-516c-a7859b7d12ed" obligation="normative">
+<clause id="_c5ffb57a-9815-74b3-d08f-f2139aad071c" obligation="normative">
 <title id="_15e59ce4-6c58-db99-415b-980f6d60018f">Determination Procedure Class</title>
-<p id="_479255d4-e088-cc3e-b36a-f264e5c22a42">A Determination Procedure describes the steps performed to determine a value (e.g., an emission quantity or temporal bound). DeterminationProcedure inherits from Procedure, aligning it with the OMS 3.0 process model.</p>
+<p id="_4ba4ecd5-4069-afdc-7727-41b112982b93">A Determination Procedure describes the steps performed to determine the quantity or temporal bounds of an Emission Event. DeterminationProcedure inherits from Procedure, aligning it with the OMS 3.0 process model.</p>
 
 <table id="_f0f7f5be-6b71-9651-bf71-80a9327ab5ea" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_dbbeaa22-889d-6da0-5e69-a07fa37831c3"><td id="_5518627a-b195-76af-4a15-1e093f66e768" valign="middle" align="left">Requirement 10: Determination Procedure Class </td>
 <td id="_bfc9f6a6-fa25-c141-8566-8d1e93ca2be4" valign="middle" align="left">/req/datamodel/core/determination-procedure<br/> + Each Determination Procedure class shall inherit from Procedure. Each Determination Procedure class shall have the mandatory attributes listed in  <xref target="determination-procedure-attributes"/>.</td>

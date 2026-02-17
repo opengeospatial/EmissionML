@@ -139,12 +139,17 @@ This document also uses terms defined in the OGC Standard for Modular specificat
 
 For the purposes of this document, the following additional terms and definitions apply.
 
+Determination Procedure::
+A Determination Procedure describes the steps performed to determine the quantity or temporal bounds of an Emission Event.
+
 Emission Event::
 An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
-+
-NOTE: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
-+
-NOTE: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
+
+Emission Quantity::
+An Emission Quantity is the physical quantity representing the total mass of substance released to the atmosphere during a defined Emission Event or over a specified time interval.
+
+Emission Intent::
+Emission Intent is a code list describing whether an emission is intentional, unintentional, or unknown.
 
 Feature::
 Abstraction of real world phenomena (Source: ISO 19101-1:2014)
@@ -158,10 +163,17 @@ A Mechanism is a classification of the specific physical, chemical, or operation
 Observation::
 Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: link:++https://docs.ogc.org/as/20-082r4/20-082r4.html++[ISO/OGC 19156:2023])
 
+Procedure::
+Description of steps performed (Source: link:++https://docs.ogc.org/as/20-082r4/20-082r4.html++[ISO/OGC 19156:2023])
+
 Source::
 A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
-+
-NOTE: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
+
+Source Type::
+A Source Type classifies a Source by its category.
+
+Temporal Bound::
+A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) that MAY have associated data quality metadata.
 
 Unit of Measure::
 Reference quantity chosen from a unit equivalence group (Source: link:++https://docs.ogc.org/as/20-082r4/20-082r4.html++[ISO/OGC 19156:2023])
@@ -272,7 +284,7 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 
 === Feature Class
 
-A Feature represents a real-world phenomenon with identity, properties, and spatial geometry, aligned with the ISO 19109 General Feature Model. In EmissionML, Feature serves as the base class for entities that can be the ultimate feature of interest of an Observation. A Feature's `geometry` attribute provides the geospatial reference for the phenomenon it represents.
+A Feature is an abstraction of real world phenomena (Source: ISO 19101-1:2014). In EmissionML, Feature serves as the base class for entities that can be the ultimate feature of interest of an Observation. A Feature's `geometry` attribute provides the geospatial reference for the phenomenon it represents.
 
 [width="90%",cols="2,6"]
 |===
@@ -299,7 +311,7 @@ Each Feature class shall have the mandatory attributes listed in <<feature-attri
 
 === Source Class
 
-A Source represents the feature from which an emission originates. Source inherits from Feature (<<feature-attributes>>), gaining the mandatory `geometry` attribute. A Source is characterised by its own identity, inherited geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
+A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
 
 Note: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
 
@@ -330,7 +342,7 @@ Each Source class shall have the direct relation between a Source class and othe
 
 === Source Type Class
 
-A Source Type provides a classification for Sources, describing the type or category of the Source.
+A Source Type classifies a Source by its category.
 
 [width="90%",cols="2,6"]
 |===
@@ -388,7 +400,7 @@ Each Mechanism class shall have the direct relation listed in <<mechanism-relati
 
 === Emission Quantity Class
 
-An Emission Quantity represents the asserted quantity of pollutant released as part of an Emission Event.
+An Emission Quantity is the physical quantity representing the total mass of substance released to the atmosphere during a defined Emission Event or over a specified time interval.
 
 [width="90%",cols="2,6"]
 |===
@@ -446,7 +458,7 @@ Each Unit of Measure class shall have the mandatory attributes listed in <<unit-
 
 === Temporal Bound Class
 
-A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) with optional data quality metadata. The determination procedure and supporting evidence for a Temporal Bound are tracked at the Emission Event level.
+A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) that MAY have associated data quality metadata. The determination procedure and supporting evidence for a Temporal Bound are tracked at the Emission Event level.
 
 [width="90%",cols="2,6"]
 |===
@@ -474,7 +486,7 @@ Each Temporal Bound class shall have the mandatory attributes listed in <<tempor
 
 === Observation Class
 
-In EmissionML, an Observation is evidence that may support an Emission Quantity or Temporal Bound determination.
+An Observation is an act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: ISO/OGC 19156:2023). In EmissionML, an Observation is evidence that may support an Emission Quantity or Temporal Bound determination.
 
 Note: The Ultimate Feature of Interest of an Observation identifies a Feature — which may be a Source or another feature at a different spatial scale — associated with the Emission Event. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a facility area or region), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific Source such as a component of an item of equipment from which pollutants are released.
 
@@ -489,7 +501,7 @@ Each Observation class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Observation.
 
 === Emission Intent Enumeration
 
-Emission Intent is an enumeration describing whether an emission is intentional, unintentional, or unknown.
+Emission Intent is a code list describing whether an emission is intentional, unintentional, or unknown.
 
 [width="90%",cols="2,6"]
 |===
@@ -511,7 +523,7 @@ The Emission Intent enumeration shall support the enumeration values listed in <
 
 === Procedure Class
 
-A Procedure is a description of steps performed, aligned with ISO/OGC 19156:2023 (OMS 3.0). In EmissionML, Procedure serves as the base class for process descriptions such as DeterminationProcedure.
+A Procedure is a description of steps performed (Source: ISO/OGC 19156:2023). In EmissionML, Procedure serves as the base class for process descriptions such as DeterminationProcedure.
 
 [width="90%",cols="2,6"]
 |===
@@ -538,7 +550,7 @@ Each Procedure class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Procedure.
 
 === Determination Procedure Class
 
-A Determination Procedure describes the steps performed to determine a value (e.g., an emission quantity or temporal bound). DeterminationProcedure inherits from Procedure, aligning it with the OMS 3.0 process model.
+A Determination Procedure describes the steps performed to determine the quantity or temporal bounds of an Emission Event. DeterminationProcedure inherits from Procedure, aligning it with the OMS 3.0 process model.
 
 [width="90%",cols="2,6"]
 |===
