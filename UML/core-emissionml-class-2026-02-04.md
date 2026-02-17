@@ -129,12 +129,3 @@ classDiagram
 3. **Attribute naming**: `quantity` → `value` in EmissionQuantity (more generic)
 
 4. **Observation by reference**: Class shown without attributes; full specification per ISO/OGC 19156:2023 (OMS 3.0)
-
-### Encoding Profiles (to be developed)
-
-| Encoding | Maps ISO types to |
-|----------|-------------------|
-| JSON | `string`, `number`, GeoJSON geometry, ISO 8601 datetime |
-| CSV | String columns, WKT for geometry |
-| RDF/TTL | `xsd:string`, `xsd:double`, GeoSPARQL geometry |
-| GML | Native ISO/GML types |
