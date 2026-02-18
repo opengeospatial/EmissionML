@@ -25,5 +25,8 @@ UML/emissionml-json-encoding-*
 # Metanorma cache
 relaton/
 
+# Reference documents (local context only)
+context/
+
 # Local notes (optional - remove if you want to track)
 Todo.md

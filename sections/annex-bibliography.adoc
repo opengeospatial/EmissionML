@@ -4,3 +4,5 @@
 == Bibliography
 
 * [[[OGC_OMS,OGC 20-082r4]]] OGC: OGC Abstract Specification Topic 20 — Observations, Measurements, and Samples. Version 3.0 (2023).
+
+* [[[OGC_EmissionML_DP,OGC 25-023]]] OGC: Introduction to OGC EmissionML: Why the World Needs a Standard Ontology for Emissions. OGC Discussion Paper (2025).
