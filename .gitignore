@@ -22,5 +22,8 @@ UML/*.ttl
 UML/*.puml
 UML/emissionml-json-encoding-*
 
+# Metanorma cache
+relaton/
+
 # Local notes (optional - remove if you want to track)
 Todo.md
