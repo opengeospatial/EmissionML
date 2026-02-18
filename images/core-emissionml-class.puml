@@ -1,35 +1,22 @@
 @startuml core-emissionml-class
 ' EmissionML Abstract Conceptual Model (2026-02-04)
-' ISO 19103/19107/19108/19156/19157 aligned
-'
-' Type conventions (ISO 19103):
-'   CharacterString – text values
-'   Real – decimal numbers
-'   URI – resource identifiers
-'   Any – unconstrained type
-'
-' Geometry (ISO 19107): GM_Object
-' Temporal (ISO 19108): TM_Instant
-' Quality (ISO 19157): DQ_Element
-' Observation pattern: ISO/OGC 19156:2023 (OMS 3.0)
+' EmissionEvent centered, relationships radiate outward
 
 skinparam classAttributeIconSize 0
-skinparam linetype polyline
-skinparam nodesep 100
-skinparam ranksep 80
+skinparam nodesep 40
+skinparam ranksep 50
+skinparam padding 3
+skinparam classFontSize 13
+skinparam classAttributeFontSize 11
 
-class EmissionEvent {
-  +pollutantType : URI
+' ── Top row: Source, SourceType, TemporalBound, EmissionQuantity, Mechanism ──
+class Source {
+  +name : CharacterString [0..1]
 }
 
-class EmissionQuantity {
-  +value : Real
-  +quality : DQ_Element [0..*]
-}
-
-class UnitOfMeasure {
+class SourceType {
   +label : CharacterString
-  +symbol : CharacterString
+  +description : CharacterString [0..1]
   +definition : URI
 }
 
@@ -38,29 +25,48 @@ class TemporalBound {
   +quality : DQ_Element [0..*]
 }
 
-class Observation <<ISO 19156:2023>> {
-}
-note bottom of Observation : Observation per ISO/OGC 19156:2023 (OMS 3.0)\nSee standard for complete specification
-
-class Feature <<ISO 19109>> {
-  +geometry : GM_Object
-}
-
-class Source {
-  +name : CharacterString [0..1]
-}
-
-Source --|> Feature
-
-class SourceType {
-  +label : CharacterString
-  +description : CharacterString [0..1]
-  +definition : URI
+class EmissionQuantity {
+  +value : Real
+  +quality : DQ_Element [0..*]
 }
 
 class Mechanism {
   +label : CharacterString
   +description : CharacterString [0..1]
+}
+
+Source -[hidden]right- SourceType
+SourceType -[hidden]right- TemporalBound
+TemporalBound -[hidden]right- EmissionQuantity
+EmissionQuantity -[hidden]right- UnitOfMeasure
+UnitOfMeasure -[hidden]right- Mechanism
+
+' ── Middle row: EmissionEvent ──
+class EmissionEvent {
+  +pollutantType : URI
+}
+
+' ── Bottom row: Observation, DeterminationProcedure ──
+class Observation <<ISO 19156:2023>> {
+}
+
+class DeterminationProcedure {
+  +label : CharacterString
+  +description : CharacterString [0..1]
+  +definition : URI [0..1]
+}
+
+Observation -[hidden]right- DeterminationProcedure
+
+' ── Outer: leaf classes ──
+class UnitOfMeasure {
+  +label : CharacterString
+  +symbol : CharacterString
+  +definition : URI
+}
+
+class Feature <<ISO 19109>> {
+  +geometry : GM_Object
 }
 
 class EmissionIntent <<CodeList>> {
@@ -72,43 +78,50 @@ class EmissionIntent <<CodeList>> {
 class Procedure <<ISO 19156:2023>> {
 }
 
-class DeterminationProcedure {
-  +label : CharacterString
-  +description : CharacterString [0..1]
-  +definition : URI [0..1]
-}
+note bottom of Observation : Observation per\nISO/OGC 19156:2023\n(OMS 3.0)
 
-DeterminationProcedure --|> Procedure
+' ── Inheritance ──
+Source -down-|> Feature
+DeterminationProcedure -down-|> Procedure
 
-' --- Relationships ---
+' ── Layout: vertical alignment ──
+TemporalBound -[hidden]down- EmissionEvent
+EmissionQuantity -[hidden]down- EmissionEvent
+Mechanism -[hidden]down- DeterminationProcedure
+EmissionEvent -[hidden]down- Observation
 
-' EmissionEvent composition
-EmissionEvent "1" *-- "1" EmissionQuantity : quantity
-EmissionEvent "1" *-- "1" TemporalBound : startTime
-EmissionEvent "1" *-- "0..1" TemporalBound : endTime
-EmissionEvent "*" --> "1" Source : source
-EmissionEvent "*" --> "1" Mechanism : mechanism
+' ── Layout: leaf positioning ──
+Mechanism -[hidden]down- EmissionIntent
 
-' Evidence: Observations supporting derived values
-EmissionEvent "1" --> "*" Observation : startTimeEvidence
-EmissionEvent "1" --> "*" Observation : endTimeEvidence
-EmissionEvent "1" --> "*" Observation : quantityEvidence
+' ── Composition: up to TemporalBound ──
+EmissionEvent "1" *-up- "1" TemporalBound : startTime
+EmissionEvent "1" *-up- "0..1" TemporalBound : endTime
 
-' Basis: How each value was determined
-EmissionEvent "1" --> "1" DeterminationProcedure : startTimeBasis
-EmissionEvent "1" --> "0..1" DeterminationProcedure : endTimeBasis
-EmissionEvent "1" --> "1" DeterminationProcedure : quantityBasis
+' ── Composition: up to EmissionQuantity (unit follows) ──
+EmissionEvent "1" *-up- "1" EmissionQuantity : quantity
+EmissionQuantity "1" *-down- "1" UnitOfMeasure : unit
 
-' Observation target
-Observation "*" --> "1" Feature : ultimateFeatureOfInterest
+' ── Association: up to Source ──
+EmissionEvent "*" -up-> "1" Source : source
 
-' Units
-EmissionQuantity "1" *-- "1" UnitOfMeasure : unit
+' ── Association: up-right to Mechanism ──
+EmissionEvent "*" -up-> "1" Mechanism : mechanism
 
-' Source classification
-Source "*" --> "0..1" SourceType : type
+' ── Evidence: down to Observation ──
+EmissionEvent "1" -down-> "*" Observation : quantityEvidence
+EmissionEvent "1" -down-> "*" Observation : startTimeEvidence
+EmissionEvent "1" -down-> "*" Observation : endTimeEvidence
 
-' Mechanism intent
-Mechanism "*" --> "1" EmissionIntent : intent
+' ── Basis: down to DeterminationProcedure ──
+EmissionEvent "1" -down-> "1" DeterminationProcedure : startTimeBasis
+EmissionEvent "1" -down-> "0..1" DeterminationProcedure : endTimeBasis
+EmissionEvent "1" -down-> "1" DeterminationProcedure : quantityBasis
+
+' ── Observation target ──
+Observation "*" -left-> "1" Feature : ultimateFeatureOfInterest
+
+' ── Leaf relationships ──
+Source "*" -right-> "0..1" SourceType : type
+Mechanism "*" -down-> "1" EmissionIntent : intent
 
 @enduml
