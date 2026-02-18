@@ -60,11 +60,12 @@ All questions regarding this submission should be directed to the editor or the 
 .Submitters
 |===
 |*Name* |*Affiliation*
-|Steve Liang |University of Calgary / SensorUp
+|Steve Liang |University of Calgary / SensorUp Inc.
 |Ryan Ahola |Natural Resources Canada
 |===
 
 .Contributors
+[cols="1,2"]
 |===
 |*Name* |*Affiliation*
 |Joshua Anhalt |Mbrace Energy
