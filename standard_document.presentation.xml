@@ -146,18 +146,35 @@ sourcecode .nt {
 <li id="_892cc9e6-a378-ae5f-c151-bd31cd4c4bc7"><fmt-name id="_0a7cda49-da4e-f9b4-993c-cdb8182f4ac3"><semx element="autonum" source="_892cc9e6-a378-ae5f-c151-bd31cd4c4bc7">•</semx></fmt-name>Natural Resources Canada</li>
 <li id="_e3464e0d-41c7-1fb8-d305-1da52a02e67f"><fmt-name id="_fd6ff9e7-ede4-e6e4-7990-d30138315e26"><semx element="autonum" source="_e3464e0d-41c7-1fb8-d305-1da52a02e67f">•</semx></fmt-name>University of Calgary</li></ul>
  </clause>
-<clause id="_b9b7521c-b2e3-7764-d410-ae4494400cf2" type="submitters" obligation="informative" semx-id="_b9b7521c-b2e3-7764-d410-ae4494400cf2" displayorder="7">
-<title id="_c5eeeb69-8bbd-3cc2-688c-bb1fb1ce814e" semx-id="_454e8fd9-fbfc-9c82-30fc-9121a2f52315">Submitters</title><fmt-title depth="1" id="_c3348013-9395-6185-7ad9-3462e4e2a58d"><span class="fmt-caption-label"><semx element="autonum" source="_b9b7521c-b2e3-7764-d410-ae4494400cf2">VI</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c5eeeb69-8bbd-3cc2-688c-bb1fb1ce814e">Submitters</semx></fmt-title><fmt-xref-label><semx element="title" source="_b9b7521c-b2e3-7764-d410-ae4494400cf2">Submitters</semx></fmt-xref-label>
+<clause id="_53414acd-5870-fd00-3e0e-2b5322d702c2" type="submitters" obligation="informative" semx-id="_53414acd-5870-fd00-3e0e-2b5322d702c2" displayorder="7">
+<title id="_c5eeeb69-8bbd-3cc2-688c-bb1fb1ce814e" semx-id="_454e8fd9-fbfc-9c82-30fc-9121a2f52315">Submitters</title><fmt-title depth="1" id="_c3348013-9395-6185-7ad9-3462e4e2a58d"><span class="fmt-caption-label"><semx element="autonum" source="_53414acd-5870-fd00-3e0e-2b5322d702c2">VI</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c5eeeb69-8bbd-3cc2-688c-bb1fb1ce814e">Submitters</semx></fmt-title><fmt-xref-label><semx element="title" source="_53414acd-5870-fd00-3e0e-2b5322d702c2">Submitters</semx></fmt-xref-label>
 <p id="_6e1b734b-e32c-864b-59a1-81792b76695c" semx-id="_6e1b734b-e32c-864b-59a1-81792b76695c">All questions regarding this submission should be directed to the editor or the submitters:</p>
 
-<table id="_271dcaec-fbfa-1848-5c62-cb94dc01b25f" unnumbered="true" semx-id="_271dcaec-fbfa-1848-5c62-cb94dc01b25f">
-<name id="_e9d36cdd-b7b7-4755-9499-7696c17afb54" semx-id="_5cb9fefd-dd45-fa17-92fa-4f20618d519d">Submitters</name><fmt-name id="_eb82d551-4097-1b01-3a01-dbd13ae6bfc9"><span class="fmt-caption-label"><span class="fmt-element-name">Table</span></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_e9d36cdd-b7b7-4755-9499-7696c17afb54">Submitters</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_271dcaec-fbfa-1848-5c62-cb94dc01b25f">(??)</semx></fmt-xref-label>
-<tbody><tr id="_c4fc1fb2-75c0-7d0a-b52e-111e87f4a829" semx-id="_c4fc1fb2-75c0-7d0a-b52e-111e87f4a829"><td id="_a7738332-a145-8faa-723b-af71e1ccccf6" valign="middle" align="left" semx-id="_a7738332-a145-8faa-723b-af71e1ccccf6"><strong>Name</strong></td>
-<td id="_88d632c9-1ff3-7cf1-d412-a86674180463" valign="middle" align="left" semx-id="_88d632c9-1ff3-7cf1-d412-a86674180463"><strong>Affiliation</strong></td>
-</tr><tr id="_235c47b1-5ee7-631b-b755-0abb3134789f" semx-id="_235c47b1-5ee7-631b-b755-0abb3134789f"><td id="_38719aad-68e7-f69b-7a8d-eeee9e9bd986" valign="middle" align="left" semx-id="_38719aad-68e7-f69b-7a8d-eeee9e9bd986">Steve Liang</td>
-<td id="_80a4ad22-8b4d-2138-3671-acae4ff827a9" valign="middle" align="left" semx-id="_80a4ad22-8b4d-2138-3671-acae4ff827a9">University of Calgary / SensorUp</td>
-</tr><tr id="_431739c8-aaad-7858-d9ea-72997833d527" semx-id="_431739c8-aaad-7858-d9ea-72997833d527"><td id="_9ce93e41-289e-b4a2-113b-775e7a5ae21c" valign="middle" align="left" semx-id="_9ce93e41-289e-b4a2-113b-775e7a5ae21c">Ryan Ahola</td>
-<td id="_7085e2b5-3688-a63c-4dc1-401c5dd9600d" valign="middle" align="left" semx-id="_7085e2b5-3688-a63c-4dc1-401c5dd9600d">Natural Resources Canada</td>
+<table id="_693bfb6a-f470-db79-196f-988449c5af3d" unnumbered="true" semx-id="_693bfb6a-f470-db79-196f-988449c5af3d">
+<name id="_e9d36cdd-b7b7-4755-9499-7696c17afb54" semx-id="_5f06684a-aa0f-4b21-891a-e339a7914a5f">Submitters</name><fmt-name id="_eb82d551-4097-1b01-3a01-dbd13ae6bfc9"><span class="fmt-caption-label"><span class="fmt-element-name">Table</span></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_e9d36cdd-b7b7-4755-9499-7696c17afb54">Submitters</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_693bfb6a-f470-db79-196f-988449c5af3d">(??)</semx></fmt-xref-label>
+<tbody><tr id="_7dc8c043-6318-de56-1da2-b5ec72877168" semx-id="_7dc8c043-6318-de56-1da2-b5ec72877168"><td id="_67332432-fbba-307e-7f32-b96f47da9166" valign="middle" align="left" semx-id="_67332432-fbba-307e-7f32-b96f47da9166"><strong>Name</strong></td>
+<td id="_b87e2fd0-2a7d-ab8a-fcec-b3076217ed6a" valign="middle" align="left" semx-id="_b87e2fd0-2a7d-ab8a-fcec-b3076217ed6a"><strong>Affiliation</strong></td>
+</tr><tr id="_f2a90a6f-5083-d560-4b2c-b741a1dec8d4" semx-id="_f2a90a6f-5083-d560-4b2c-b741a1dec8d4"><td id="_a08a7719-2c43-6e10-3ed6-86cb0a01d0e0" valign="middle" align="left" semx-id="_a08a7719-2c43-6e10-3ed6-86cb0a01d0e0">Steve Liang</td>
+<td id="_7a97a81b-0625-7783-e0c3-5e5fb74a643b" valign="middle" align="left" semx-id="_7a97a81b-0625-7783-e0c3-5e5fb74a643b">University of Calgary / SensorUp</td>
+</tr><tr id="_bb6d765c-32b4-d3be-95b0-9bc62df9c8cf" semx-id="_bb6d765c-32b4-d3be-95b0-9bc62df9c8cf"><td id="_a9170c0a-a52c-ca45-4033-0355f17b24db" valign="middle" align="left" semx-id="_a9170c0a-a52c-ca45-4033-0355f17b24db">Ryan Ahola</td>
+<td id="_3c34ff88-d6c7-43e1-9098-468f0b334a66" valign="middle" align="left" semx-id="_3c34ff88-d6c7-43e1-9098-468f0b334a66">Natural Resources Canada</td>
+</tr></tbody>
+</table>
+
+<table id="_a43a1fb7-df05-8fc2-d4ab-08ac6ccfd69b" unnumbered="true" semx-id="_a43a1fb7-df05-8fc2-d4ab-08ac6ccfd69b">
+<name id="_13200587-3cd1-43a7-50a5-3f32ade1aea3" semx-id="_98b37579-c818-fc53-2b0b-c97439de4b16">Contributors</name><fmt-name id="_d71e9e8a-98d8-e752-005c-9763e5883364"><span class="fmt-caption-label"><span class="fmt-element-name">Table</span></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_13200587-3cd1-43a7-50a5-3f32ade1aea3">Contributors</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_a43a1fb7-df05-8fc2-d4ab-08ac6ccfd69b">(??)</semx></fmt-xref-label>
+<tbody><tr id="_d778628c-d704-3a4b-d7e1-5ef4402a9b16" semx-id="_d778628c-d704-3a4b-d7e1-5ef4402a9b16"><td id="_cdaad976-dd01-f54d-1654-954e2add4c11" valign="middle" align="left" semx-id="_cdaad976-dd01-f54d-1654-954e2add4c11"><strong>Name</strong></td>
+<td id="_94e16391-78ac-03c2-3322-bd360bfbd686" valign="middle" align="left" semx-id="_94e16391-78ac-03c2-3322-bd360bfbd686"><strong>Affiliation</strong></td>
+</tr><tr id="_b0a40b3c-af93-54f6-b97a-5b881afab57f" semx-id="_b0a40b3c-af93-54f6-b97a-5b881afab57f"><td id="_b32da2b5-3629-ec8c-3176-46b4997e498a" valign="middle" align="left" semx-id="_b32da2b5-3629-ec8c-3176-46b4997e498a">Joshua Anhalt, Mbrace Energy</td>
+<td id="_526a9f30-02e3-9224-bf46-b9470baa8216" valign="middle" align="left" semx-id="_526a9f30-02e3-9224-bf46-b9470baa8216">Zahra Ashena, University of Calgary/SensorUp Inc.</td>
+</tr><tr id="_90962235-e703-3c94-3f35-42d98a73f8d4" semx-id="_90962235-e703-3c94-3f35-42d98a73f8d4"><td id="_aa15b653-1a0b-77fa-830b-b6030bd17cca" valign="middle" align="left" semx-id="_aa15b653-1a0b-77fa-830b-b6030bd17cca">Mozhou Gao, University of Calgary/SensorUp Inc.</td>
+<td id="_d4524cf2-d088-8c22-e97f-eaab985f1a07" valign="middle" align="left" semx-id="_d4524cf2-d088-8c22-e97f-eaab985f1a07">Jinya Wang, University of Calgary</td>
+</tr><tr id="_b8157527-7eb9-ae4a-6613-38168caa0757" semx-id="_b8157527-7eb9-ae4a-6613-38168caa0757"><td id="_cd0380c1-1a04-3d35-9569-4b02b7eee597" valign="middle" align="left" semx-id="_cd0380c1-1a04-3d35-9569-4b02b7eee597">Erin Li, University of Calgary</td>
+<td id="_067cd78f-a635-1620-df7e-89c9271bd42e" valign="middle" align="left" semx-id="_067cd78f-a635-1620-df7e-89c9271bd42e">Kan Luo, University of Calgary</td>
+</tr><tr id="_9af514b2-12f3-488a-b61f-7f4f5c381f33" semx-id="_9af514b2-12f3-488a-b61f-7f4f5c381f33"><td id="_5ab325ee-4f6b-d9d7-3c8d-1b8aa70733a3" valign="middle" align="left" semx-id="_5ab325ee-4f6b-d9d7-3c8d-1b8aa70733a3">Hylke van der Schaaf, Fraunhofer</td>
+<td id="_9d020a87-cde5-dbe8-c1d5-941e6cb0b583" valign="middle" align="left" semx-id="_9d020a87-cde5-dbe8-c1d5-941e6cb0b583">Katharina Schleidt, DataCove e.U.</td>
+</tr><tr id="_3dd3caf5-82b6-44a5-3789-1bfcbf8e0c16" semx-id="_3dd3caf5-82b6-44a5-3789-1bfcbf8e0c16"><td id="_68969bcc-3a0d-038e-a799-5692e5bb8ed6" valign="middle" align="left" semx-id="_68969bcc-3a0d-038e-a799-5692e5bb8ed6">Zachary Weller, GTI Energy</td>
+<td id="_0dfc356c-9edb-b2c1-45d4-bd087ccfe024" valign="middle" align="left" semx-id="_0dfc356c-9edb-b2c1-45d4-bd087ccfe024">Julie Doan-Prévost, Alberta Energy Regulator</td>
 </tr></tbody>
 </table>
 </clause></preface><sections>
@@ -171,15 +188,25 @@ sourcecode .nt {
 
 
 
-<clause id="_d02b5c44-c799-bfa6-3358-d1f5f0a4f020" obligation="normative" semx-id="_d02b5c44-c799-bfa6-3358-d1f5f0a4f020" displayorder="13">
-<title id="_4870a1d0-ded8-b13b-f3c7-38d37ea480bf" semx-id="_5c8e2b57-8527-33f9-23bb-a9775298755d">Submitting organizations</title><fmt-title depth="1" id="_02cee6f6-8112-c8c3-f1ef-22eb34730d64"><span class="fmt-caption-label"><semx element="autonum" source="_d02b5c44-c799-bfa6-3358-d1f5f0a4f020">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_4870a1d0-ded8-b13b-f3c7-38d37ea480bf">Submitting organizations</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_d02b5c44-c799-bfa6-3358-d1f5f0a4f020">6</semx></fmt-xref-label>
+<clause id="_2046fa55-acac-0e57-84f7-64a20a4f193d" obligation="normative" semx-id="_2046fa55-acac-0e57-84f7-64a20a4f193d" displayorder="13">
+<title id="_4870a1d0-ded8-b13b-f3c7-38d37ea480bf" semx-id="_5c8e2b57-8527-33f9-23bb-a9775298755d">Submitting organizations</title><fmt-title depth="1" id="_02cee6f6-8112-c8c3-f1ef-22eb34730d64"><span class="fmt-caption-label"><semx element="autonum" source="_2046fa55-acac-0e57-84f7-64a20a4f193d">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_4870a1d0-ded8-b13b-f3c7-38d37ea480bf">Submitting organizations</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_2046fa55-acac-0e57-84f7-64a20a4f193d">6</semx></fmt-xref-label>
 <p id="_fd8bbdfb-3e79-72b0-40e5-51f0e567eae0" semx-id="_fd8bbdfb-3e79-72b0-40e5-51f0e567eae0">The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
 
-<ul id="_5873677b-d5e2-bcc5-9539-ae6a4c5498a4" semx-id="_5873677b-d5e2-bcc5-9539-ae6a4c5498a4"><li id="_af96efe9-f759-25b5-9aa9-bf5d14bcd43a"><fmt-name id="_1952f052-368b-4029-4c9b-fcbd1c07fbd0"><semx element="autonum" source="_af96efe9-f759-25b5-9aa9-bf5d14bcd43a">•</semx></fmt-name><p id="_34e664c4-153a-e69f-d673-292874295158" semx-id="_34e664c4-153a-e69f-d673-292874295158">SensorUp Inc.</p>
+<ul id="_adbad3da-9a97-ca65-34a0-41296b0db785" semx-id="_adbad3da-9a97-ca65-34a0-41296b0db785"><li id="_02e7c23a-8f42-5493-be4d-6024f6a216c6"><fmt-name id="_1952f052-368b-4029-4c9b-fcbd1c07fbd0"><semx element="autonum" source="_02e7c23a-8f42-5493-be4d-6024f6a216c6">•</semx></fmt-name><p id="_65611129-f630-b753-ae35-7ad4876513ee" semx-id="_65611129-f630-b753-ae35-7ad4876513ee">SensorUp Inc., Canada</p>
 </li>
-<li id="_a9ca2a6f-dc0f-648b-91ba-1edf6be9d870"><fmt-name id="_15f15d67-ba1d-77bc-2a44-f9de675b85d4"><semx element="autonum" source="_a9ca2a6f-dc0f-648b-91ba-1edf6be9d870">•</semx></fmt-name><p id="_c32864c4-f431-1744-355f-c0900421dd01" semx-id="_c32864c4-f431-1744-355f-c0900421dd01">Natural Resources Canada</p>
+<li id="_b5465abd-db3c-4f66-498e-24349076398c"><fmt-name id="_15f15d67-ba1d-77bc-2a44-f9de675b85d4"><semx element="autonum" source="_b5465abd-db3c-4f66-498e-24349076398c">•</semx></fmt-name><p id="_45da4510-4043-8874-2e54-d08592a90657" semx-id="_45da4510-4043-8874-2e54-d08592a90657">Natural Resources Canada, Canada</p>
 </li>
-<li id="_859221c7-976c-c863-f905-e9b771534dac"><fmt-name id="_cf6619ff-9f06-4a9e-f976-f0e68c5ab13f"><semx element="autonum" source="_859221c7-976c-c863-f905-e9b771534dac">•</semx></fmt-name><p id="_83784081-8387-6b43-c934-e0f4759c9fec" semx-id="_83784081-8387-6b43-c934-e0f4759c9fec">University of Calgary</p>
+<li id="_c8445be9-a1ca-c96c-2b3e-3219ebb477f0"><fmt-name id="_cf6619ff-9f06-4a9e-f976-f0e68c5ab13f"><semx element="autonum" source="_c8445be9-a1ca-c96c-2b3e-3219ebb477f0">•</semx></fmt-name><p id="_e9c6afb3-48be-6b58-c709-8271b3a20405" semx-id="_e9c6afb3-48be-6b58-c709-8271b3a20405">University of Calgary, Canada</p>
+</li>
+<li id="_d932dafb-9e4c-3155-0c0d-a1ee504ca83c"><fmt-name id="_6b865653-0d4c-9fca-ec2a-23698d188760"><semx element="autonum" source="_d932dafb-9e4c-3155-0c0d-a1ee504ca83c">•</semx></fmt-name><p id="_c35f4969-d5dc-0061-2657-2f6d07227b3a" semx-id="_c35f4969-d5dc-0061-2657-2f6d07227b3a">Fraunhofer, Germany</p>
+</li>
+<li id="_380785f3-f79b-fb2a-8d43-a1f4a472330a"><fmt-name id="_da65a527-371d-4592-403c-a4868b797488"><semx element="autonum" source="_380785f3-f79b-fb2a-8d43-a1f4a472330a">•</semx></fmt-name><p id="_afb6cf2a-83c4-55aa-0e5b-fe95d65bd0b1" semx-id="_afb6cf2a-83c4-55aa-0e5b-fe95d65bd0b1">DataCove e.U., Austria</p>
+</li>
+<li id="_febcb270-75bb-74e5-945b-3205f4bc4508"><fmt-name id="_a35964bc-27f6-7008-cc6b-b808112ef429"><semx element="autonum" source="_febcb270-75bb-74e5-945b-3205f4bc4508">•</semx></fmt-name><p id="_d35b536f-5d4d-60b4-4abd-9f80214d6924" semx-id="_d35b536f-5d4d-60b4-4abd-9f80214d6924">GTI Energy, USA</p>
+</li>
+<li id="_ce57baa4-bfb8-fcf9-5b13-62030cbcd745"><fmt-name id="_82d4afa4-4399-c9c6-9c0b-39c86c82a0c4"><semx element="autonum" source="_ce57baa4-bfb8-fcf9-5b13-62030cbcd745">•</semx></fmt-name><p id="_9febab81-ae0b-8306-1aa5-4f0b11b6692f" semx-id="_9febab81-ae0b-8306-1aa5-4f0b11b6692f">Mbrace Energy, Canada</p>
+</li>
+<li id="_21b4a9e3-bf47-7de2-9b92-0e8cb82173da"><fmt-name id="_fe9329f8-112d-cd7c-8481-8d548960f52a"><semx element="autonum" source="_21b4a9e3-bf47-7de2-9b92-0e8cb82173da">•</semx></fmt-name><p id="_e202d92c-3120-1eb9-1660-13d7108a1f20" semx-id="_e202d92c-3120-1eb9-1660-13d7108a1f20">Alberta Engery Regulator, Canada</p>
 </li>
 </ul>
 </clause>

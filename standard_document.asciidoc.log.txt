@@ -75,9 +75,14 @@ NOTE: The security measures discussed in the following sections only provide var
 
 The following organizations submitted this Document to the Open Geospatial Consortium (OGC):
 
-* SensorUp Inc.
-* Natural Resources Canada
-* University of Calgary
+* SensorUp Inc., Canada
+* Natural Resources Canada, Canada
+* University of Calgary, Canada
+* Fraunhofer, Germany
+* DataCove e.U., Austria
+* GTI Energy, USA
+* Mbrace Energy, Canada
+* Alberta Engery Regulator, Canada
 
 == Submitters
 
@@ -88,6 +93,21 @@ All questions regarding this submission should be directed to the editor or the 
 |*Name* |*Affiliation*
 |Steve Liang |University of Calgary / SensorUp
 |Ryan Ahola |Natural Resources Canada
+|===
+
+.Contributors
+|===
+|*Name* |*Affiliation*
+|Joshua Anhalt, Mbrace Energy
+|Zahra Ashena, University of Calgary/SensorUp Inc.
+|Mozhou Gao, University of Calgary/SensorUp Inc.
+|Jinya Wang, University of Calgary
+|Erin Li, University of Calgary
+|Kan Luo, University of Calgary
+|Hylke van der Schaaf, Fraunhofer
+|Katharina Schleidt, DataCove e.U.
+|Zachary Weller, GTI Energy
+|Julie Doan-Prévost, Alberta Energy Regulator
 |===
 
 == Scope
