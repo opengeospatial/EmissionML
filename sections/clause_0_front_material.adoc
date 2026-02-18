@@ -67,14 +67,14 @@ All questions regarding this submission should be directed to the editor or the 
 .Contributors
 |===
 |*Name* |*Affiliation*
-|Joshua Anhalt, Mbrace Energy
-|Zahra Ashena, University of Calgary/SensorUp Inc.
-|Mozhou Gao, University of Calgary/SensorUp Inc.
-|Jinya Wang, University of Calgary
-|Erin Li, University of Calgary
-|Kan Luo, University of Calgary
-|Hylke van der Schaaf, Fraunhofer
-|Katharina Schleidt, DataCove e.U.
-|Zachary Weller, GTI Energy
-|Julie Doan-Prévost, Alberta Energy Regulator
+|Joshua Anhalt |Mbrace Energy
+|Zahra Ashena |University of Calgary / SensorUp Inc.
+|Mozhou Gao |University of Calgary / SensorUp Inc.
+|Jinya Wang |University of Calgary
+|Erin Li |University of Calgary
+|Kan Luo |University of Calgary
+|Hylke van der Schaaf |Fraunhofer
+|Katharina Schleidt |DataCove e.U.
+|Zachary Weller |GTI Energy
+|Julie Doan-Prévost |Alberta Energy Regulator
 |===
