@@ -8,6 +8,16 @@
 <name>Natural Resources Canada</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>University of Calgary</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Fraunhofer</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>DataCove e.U.</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>GTI Energy</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Mbrace Energy</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Alberta Energy Regulator</name>
 </organization></contributor><contributor><role type="editor"/><person>
 <name><completename>Steve Liang</completename></name>
 </person></contributor><contributor><role type="editor"/><person>
@@ -122,11 +132,11 @@
 
 
 
-<clause id="_2046fa55-acac-0e57-84f7-64a20a4f193d" obligation="normative">
+<clause id="_d85ac246-10a3-7009-fd6d-a8dc23150161" obligation="normative">
 <title id="_5c8e2b57-8527-33f9-23bb-a9775298755d">Submitting organizations</title>
 <p id="_fd8bbdfb-3e79-72b0-40e5-51f0e567eae0">The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
 
-<ul id="_adbad3da-9a97-ca65-34a0-41296b0db785"><li><p id="_65611129-f630-b753-ae35-7ad4876513ee">SensorUp Inc., Canada</p>
+<ul id="_c85eb72a-005b-bd0f-89c3-13f44d73c5a1"><li><p id="_65611129-f630-b753-ae35-7ad4876513ee">SensorUp Inc., Canada</p>
 </li>
 <li><p id="_45da4510-4043-8874-2e54-d08592a90657">Natural Resources Canada, Canada</p>
 </li>
@@ -140,7 +150,7 @@
 </li>
 <li><p id="_9febab81-ae0b-8306-1aa5-4f0b11b6692f">Mbrace Energy, Canada</p>
 </li>
-<li><p id="_e202d92c-3120-1eb9-1660-13d7108a1f20">Alberta Engery Regulator, Canada</p>
+<li><p id="_41035f9b-f720-e3b6-53fb-0955a4fa4b94">Alberta Energy Regulator, Canada</p>
 </li>
 </ul>
 </clause>

@@ -51,7 +51,7 @@ The following organizations submitted this Document to the Open Geospatial Conso
 * DataCove e.U., Austria
 * GTI Energy, USA
 * Mbrace Energy, Canada
-* Alberta Engery Regulator, Canada
+* Alberta Energy Regulator, Canada
 
 == Submitters
 

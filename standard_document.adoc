@@ -16,7 +16,7 @@
 :fullname_2: Ryan Ahola
 :docsubtype: Interface
 :keywords: ogcdoc, OGC document, EmissionML, emission event, atmospheric emissions, greenhouse gas, air quality, emission source, emission quantity, observation, data quality, uncertainty provenance, evidence chain, interoperability, net-zero, methane emissions, sensor web
-:submitting-organizations: SensorUp Inc.; Natural Resources Canada; University of Calgary
+:submitting-organizations: SensorUp Inc.; Natural Resources Canada; University of Calgary; Fraunhofer; DataCove e.U.; GTI Energy; Mbrace Energy; Alberta Energy Regulator
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf
 :local-cache-only:

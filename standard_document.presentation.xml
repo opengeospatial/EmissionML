@@ -8,6 +8,16 @@
 <name>Natural Resources Canada</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>University of Calgary</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Fraunhofer</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>DataCove e.U.</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>GTI Energy</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Mbrace Energy</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Alberta Energy Regulator</name>
 </organization></contributor><contributor><role type="editor"/><person>
 <name><completename>Steve Liang</completename></name>
 </person></contributor><contributor><role type="editor"/><person>
@@ -139,12 +149,17 @@ sourcecode .nt {
 </foreword><clause id="_b99a2bd6-1a97-8f41-0bc0-600ae6df3c97" type="security" obligation="informative" semx-id="_b99a2bd6-1a97-8f41-0bc0-600ae6df3c97" displayorder="5">
 <title id="_c116db57-9927-1c2c-176d-ef18bbc079c8" semx-id="_5dcde964-6a03-436c-5204-bca752130682">Security Considerations</title><fmt-title depth="1" id="_91946ae4-e541-3c7a-9123-0ac92d13f019"><span class="fmt-caption-label"><semx element="autonum" source="_b99a2bd6-1a97-8f41-0bc0-600ae6df3c97">IV</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c116db57-9927-1c2c-176d-ef18bbc079c8">Security Considerations</semx></fmt-title><fmt-xref-label><semx element="title" source="_b99a2bd6-1a97-8f41-0bc0-600ae6df3c97">Security Considerations</semx></fmt-xref-label>
 <p id="_b2512eeb-995a-eabe-4ee2-ae30853fc76e" semx-id="_b2512eeb-995a-eabe-4ee2-ae30853fc76e">No security considerations have been made for this Standard.</p>
-</clause><clause id="_40a5ccef-53b2-af45-4e4b-1f6aef9e07d3" type="submitting_orgs" displayorder="6">
-<title id="_fbdc40e2-2e8f-be1e-ecc8-ea3c9d8a2855">Submitting Organizations</title><fmt-title depth="1" id="_2998e12d-ea78-b6ca-36be-d1c0365826f8"><span class="fmt-caption-label"><semx element="autonum" source="_40a5ccef-53b2-af45-4e4b-1f6aef9e07d3">V</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_fbdc40e2-2e8f-be1e-ecc8-ea3c9d8a2855">Submitting Organizations</semx></fmt-title><fmt-xref-label><semx element="title" source="_40a5ccef-53b2-af45-4e4b-1f6aef9e07d3">Submitting Organizations</semx></fmt-xref-label>
+</clause><clause id="_b0fcfe00-c4bb-2a9a-dfe0-fc591d66886b" type="submitting_orgs" displayorder="6">
+<title id="_fbdc40e2-2e8f-be1e-ecc8-ea3c9d8a2855">Submitting Organizations</title><fmt-title depth="1" id="_2998e12d-ea78-b6ca-36be-d1c0365826f8"><span class="fmt-caption-label"><semx element="autonum" source="_b0fcfe00-c4bb-2a9a-dfe0-fc591d66886b">V</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_fbdc40e2-2e8f-be1e-ecc8-ea3c9d8a2855">Submitting Organizations</semx></fmt-title><fmt-xref-label><semx element="title" source="_b0fcfe00-c4bb-2a9a-dfe0-fc591d66886b">Submitting Organizations</semx></fmt-xref-label>
 <p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
- <ul id="_782337ba-3563-7909-5f1f-7d5d58b69a2a"><li id="_b4e36d79-9313-a8e0-7b17-a69836220a87"><fmt-name id="_ffe23623-094c-b5d9-5172-ced3d4718f13"><semx element="autonum" source="_b4e36d79-9313-a8e0-7b17-a69836220a87">•</semx></fmt-name>SensorUp Inc.</li>
+ <ul id="_17eeef59-f889-ba65-d306-6a832e7742e3"><li id="_b4e36d79-9313-a8e0-7b17-a69836220a87"><fmt-name id="_ffe23623-094c-b5d9-5172-ced3d4718f13"><semx element="autonum" source="_b4e36d79-9313-a8e0-7b17-a69836220a87">•</semx></fmt-name>SensorUp Inc.</li>
 <li id="_892cc9e6-a378-ae5f-c151-bd31cd4c4bc7"><fmt-name id="_0a7cda49-da4e-f9b4-993c-cdb8182f4ac3"><semx element="autonum" source="_892cc9e6-a378-ae5f-c151-bd31cd4c4bc7">•</semx></fmt-name>Natural Resources Canada</li>
-<li id="_e3464e0d-41c7-1fb8-d305-1da52a02e67f"><fmt-name id="_fd6ff9e7-ede4-e6e4-7990-d30138315e26"><semx element="autonum" source="_e3464e0d-41c7-1fb8-d305-1da52a02e67f">•</semx></fmt-name>University of Calgary</li></ul>
+<li id="_e3464e0d-41c7-1fb8-d305-1da52a02e67f"><fmt-name id="_fd6ff9e7-ede4-e6e4-7990-d30138315e26"><semx element="autonum" source="_e3464e0d-41c7-1fb8-d305-1da52a02e67f">•</semx></fmt-name>University of Calgary</li>
+<li id="_6bd8ac32-6b3f-6304-6852-dc201c64d1d1"><fmt-name id="_78abdcdb-7909-d590-24bd-3cc54f0d61a3"><semx element="autonum" source="_6bd8ac32-6b3f-6304-6852-dc201c64d1d1">•</semx></fmt-name>Fraunhofer</li>
+<li id="_8f1a819d-e542-308a-c05c-48d13c0d14e3"><fmt-name id="_0261448d-d348-bbf4-6fda-283ac385fa1d"><semx element="autonum" source="_8f1a819d-e542-308a-c05c-48d13c0d14e3">•</semx></fmt-name>DataCove e.U.</li>
+<li id="_135d7e3d-64f7-ded1-a3ff-4bb11d7021f0"><fmt-name id="_0a35465b-ffef-3e80-10cb-16ab34ba003f"><semx element="autonum" source="_135d7e3d-64f7-ded1-a3ff-4bb11d7021f0">•</semx></fmt-name>GTI Energy</li>
+<li id="_331f7542-79a2-1f96-8b57-37969a7535d6"><fmt-name id="_06dc94b7-3292-51d3-8fd8-e2df725c32bd"><semx element="autonum" source="_331f7542-79a2-1f96-8b57-37969a7535d6">•</semx></fmt-name>Mbrace Energy</li>
+<li id="_ec4e54c3-e5e5-fa21-9df2-ccb09f359e02"><fmt-name id="_b9da095d-cf99-0a43-09fc-c99344816639"><semx element="autonum" source="_ec4e54c3-e5e5-fa21-9df2-ccb09f359e02">•</semx></fmt-name>Alberta Energy Regulator</li></ul>
  </clause>
 <clause id="_53414acd-5870-fd00-3e0e-2b5322d702c2" type="submitters" obligation="informative" semx-id="_53414acd-5870-fd00-3e0e-2b5322d702c2" displayorder="7">
 <title id="_c5eeeb69-8bbd-3cc2-688c-bb1fb1ce814e" semx-id="_454e8fd9-fbfc-9c82-30fc-9121a2f52315">Submitters</title><fmt-title depth="1" id="_c3348013-9395-6185-7ad9-3462e4e2a58d"><span class="fmt-caption-label"><semx element="autonum" source="_53414acd-5870-fd00-3e0e-2b5322d702c2">VI</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c5eeeb69-8bbd-3cc2-688c-bb1fb1ce814e">Submitters</semx></fmt-title><fmt-xref-label><semx element="title" source="_53414acd-5870-fd00-3e0e-2b5322d702c2">Submitters</semx></fmt-xref-label>
@@ -188,11 +203,11 @@ sourcecode .nt {
 
 
 
-<clause id="_2046fa55-acac-0e57-84f7-64a20a4f193d" obligation="normative" semx-id="_2046fa55-acac-0e57-84f7-64a20a4f193d" displayorder="13">
-<title id="_4870a1d0-ded8-b13b-f3c7-38d37ea480bf" semx-id="_5c8e2b57-8527-33f9-23bb-a9775298755d">Submitting organizations</title><fmt-title depth="1" id="_02cee6f6-8112-c8c3-f1ef-22eb34730d64"><span class="fmt-caption-label"><semx element="autonum" source="_2046fa55-acac-0e57-84f7-64a20a4f193d">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_4870a1d0-ded8-b13b-f3c7-38d37ea480bf">Submitting organizations</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_2046fa55-acac-0e57-84f7-64a20a4f193d">6</semx></fmt-xref-label>
+<clause id="_d85ac246-10a3-7009-fd6d-a8dc23150161" obligation="normative" semx-id="_d85ac246-10a3-7009-fd6d-a8dc23150161" displayorder="13">
+<title id="_4870a1d0-ded8-b13b-f3c7-38d37ea480bf" semx-id="_5c8e2b57-8527-33f9-23bb-a9775298755d">Submitting organizations</title><fmt-title depth="1" id="_02cee6f6-8112-c8c3-f1ef-22eb34730d64"><span class="fmt-caption-label"><semx element="autonum" source="_d85ac246-10a3-7009-fd6d-a8dc23150161">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_4870a1d0-ded8-b13b-f3c7-38d37ea480bf">Submitting organizations</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_d85ac246-10a3-7009-fd6d-a8dc23150161">6</semx></fmt-xref-label>
 <p id="_fd8bbdfb-3e79-72b0-40e5-51f0e567eae0" semx-id="_fd8bbdfb-3e79-72b0-40e5-51f0e567eae0">The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
 
-<ul id="_adbad3da-9a97-ca65-34a0-41296b0db785" semx-id="_adbad3da-9a97-ca65-34a0-41296b0db785"><li id="_02e7c23a-8f42-5493-be4d-6024f6a216c6"><fmt-name id="_1952f052-368b-4029-4c9b-fcbd1c07fbd0"><semx element="autonum" source="_02e7c23a-8f42-5493-be4d-6024f6a216c6">•</semx></fmt-name><p id="_65611129-f630-b753-ae35-7ad4876513ee" semx-id="_65611129-f630-b753-ae35-7ad4876513ee">SensorUp Inc., Canada</p>
+<ul id="_c85eb72a-005b-bd0f-89c3-13f44d73c5a1" semx-id="_c85eb72a-005b-bd0f-89c3-13f44d73c5a1"><li id="_02e7c23a-8f42-5493-be4d-6024f6a216c6"><fmt-name id="_1952f052-368b-4029-4c9b-fcbd1c07fbd0"><semx element="autonum" source="_02e7c23a-8f42-5493-be4d-6024f6a216c6">•</semx></fmt-name><p id="_65611129-f630-b753-ae35-7ad4876513ee" semx-id="_65611129-f630-b753-ae35-7ad4876513ee">SensorUp Inc., Canada</p>
 </li>
 <li id="_b5465abd-db3c-4f66-498e-24349076398c"><fmt-name id="_15f15d67-ba1d-77bc-2a44-f9de675b85d4"><semx element="autonum" source="_b5465abd-db3c-4f66-498e-24349076398c">•</semx></fmt-name><p id="_45da4510-4043-8874-2e54-d08592a90657" semx-id="_45da4510-4043-8874-2e54-d08592a90657">Natural Resources Canada, Canada</p>
 </li>
@@ -206,7 +221,7 @@ sourcecode .nt {
 </li>
 <li id="_ce57baa4-bfb8-fcf9-5b13-62030cbcd745"><fmt-name id="_82d4afa4-4399-c9c6-9c0b-39c86c82a0c4"><semx element="autonum" source="_ce57baa4-bfb8-fcf9-5b13-62030cbcd745">•</semx></fmt-name><p id="_9febab81-ae0b-8306-1aa5-4f0b11b6692f" semx-id="_9febab81-ae0b-8306-1aa5-4f0b11b6692f">Mbrace Energy, Canada</p>
 </li>
-<li id="_21b4a9e3-bf47-7de2-9b92-0e8cb82173da"><fmt-name id="_fe9329f8-112d-cd7c-8481-8d548960f52a"><semx element="autonum" source="_21b4a9e3-bf47-7de2-9b92-0e8cb82173da">•</semx></fmt-name><p id="_e202d92c-3120-1eb9-1660-13d7108a1f20" semx-id="_e202d92c-3120-1eb9-1660-13d7108a1f20">Alberta Engery Regulator, Canada</p>
+<li id="_4d249097-f0af-2f5e-8bb6-9b94a8ffad5f"><fmt-name id="_fe9329f8-112d-cd7c-8481-8d548960f52a"><semx element="autonum" source="_4d249097-f0af-2f5e-8bb6-9b94a8ffad5f">•</semx></fmt-name><p id="_41035f9b-f720-e3b6-53fb-0955a4fa4b94" semx-id="_41035f9b-f720-e3b6-53fb-0955a4fa4b94">Alberta Energy Regulator, Canada</p>
 </li>
 </ul>
 </clause>
