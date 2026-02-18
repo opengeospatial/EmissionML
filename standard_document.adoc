@@ -4,7 +4,7 @@
 :doctype: draft-standard
 :encoding: utf-8
 :lang: en
-:status: draft
+:status: swg-draft
 :committee: technical
 :draft: 3.0
 :external-id: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}

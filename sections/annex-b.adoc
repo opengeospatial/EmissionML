@@ -2,6 +2,8 @@
 :appendix-caption: Annex
 == Relationship with OGC Features and Observations
 
+=== Overview
+
 EmissionML is a domain-specific conceptual model that builds on two foundational OGC concepts: *Features* (ISO 19109 General Feature Model) and *Observations* (ISO/OGC 19156:2023, OMS 3.0). This annex explains how EmissionML relates to each and why explicit domain modeling is preferred over generic usage.
 
 <<fig-annex-b-layering>> illustrates the conceptual layering of EmissionML on top of these foundational standards.

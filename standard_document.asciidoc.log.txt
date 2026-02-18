@@ -4,7 +4,7 @@
 :doctype: draft-standard
 :encoding: utf-8
 :lang: en
-:status: draft
+:status: swg-draft
 :committee: technical
 :draft: 3.0
 :external-id: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
@@ -15,7 +15,7 @@
 :fullname: Steve Liang
 :fullname_2: Ryan Ahola
 :docsubtype: Interface
-:keywords: ogcdoc, OGC document, emissions, climate change
+:keywords: ogcdoc, OGC document, EmissionML, emission event, atmospheric emissions, greenhouse gas, air quality, emission source, emission quantity, observation, data quality, uncertainty provenance, evidence chain, interoperability, net-zero, methane emissions, sensor web
 :submitting-organizations: SensorUp Inc.; Natural Resources Canada; University of Calgary
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf
@@ -29,9 +29,10 @@
 ////
 Make sure to complete each included document
 ////
-[big]*i.     Abstract*
+[abstract]
+== Abstract
 
-This OGC Standard defines EmissionML, a conceptual data model for representing atmospheric emission events. EmissionML provides a domain-specific ontology for describing the release of substances into the atmosphere, including the source from which an emission originates, the mechanism by which it occurs, the quantity of substance released, and the temporal bounds of the event.
+This OGC Standard defines EmissionML, a conceptual data model for representing emission events. EmissionML provides a domain-specific ontology for describing the release of substances into the atmosphere, including the source from which an emission originates, the mechanism by which it occurs, the quantity of substance released, and the temporal bounds of the event.
 
 EmissionML distinguishes itself through three key design principles. First, it incorporates an evidence chain linking emission determinations to supporting Observations, enabling traceability from reported values to underlying measurements. Second, it provides explicit uncertainty provenance by attaching data quality metadata to both emission quantities and temporal bounds, ensuring that the confidence and precision of each determination are recorded alongside the values themselves. Third, it offers clear spatial and temporal context — spatial through Feature (as the ultimate feature of interest) and Source (as the emission origin), temporal through start time, end time, and the phenomenon time of supporting Observations. By adopting the OMS 3.0 Observation model, EmissionML provides a common framework for reconciling heterogeneous sensor observations — from remote sensing satellites to ground-based continuous monitoring stations — within a single, unified evidence chain.
 
@@ -41,13 +42,13 @@ By making emission semantics, evidence chains, and uncertainty provenance explic
 
 The intended audience includes environmental regulators, greenhouse gas reporting frameworks, emissions monitoring system developers, and geospatial data infrastructure implementers who require a standardized, interoperable representation of emission event data.
 
-[big]*ii.    Keywords*
+== Keywords
 
 The following are keywords to be used by search engines and document catalogues.
 
-ogcdoc, OGC document, <tags separated by commas>
+ogcdoc, OGC document, EmissionML, emission event, atmospheric emissions, greenhouse gas, air quality, emission source, emission quantity, observation, data quality, uncertainty provenance, evidence chain, interoperability, net-zero, methane emissions, sensor web
 
-[big]*iii.   Preface*
+== Preface
 
 [NOTE]
 ====
@@ -57,7 +58,7 @@ Attention is drawn to the possibility that some of the elements of this document
 Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
 ====
 
-[big]*iv.    Security Considerations*
+== Security Considerations
 
 //If no security considerations have been made for this Standard, use the following text.
 
@@ -65,21 +66,24 @@ No security considerations have been made for this Standard.
 
 ////
 If security considerations have been made for this Standard, follow the examples found in IANA or IETF documents. Please see the following example.
-“VRRP is designed for a range of internetworking environments that may employ different security policies. The protocol includes several authentication methods ranging from no authentication, simple clear text passwords, and strong authentication using IP Authentication with MD5 HMAC. The details on each approach including possible attacks and recommended environments follows.
+"VRRP is designed for a range of internetworking environments that may employ different security policies. The protocol includes several authentication methods ranging from no authentication, simple clear text passwords, and strong authentication using IP Authentication with MD5 HMAC. The details on each approach including possible attacks and recommended environments follows.
 Independent of any authentication type VRRP includes a mechanism (setting TTL=255, checking on receipt) that protects against VRRP packets being injected from another remote network. This limits most vulnerabilities to local attacks.
-NOTE: The security measures discussed in the following sections only provide various kinds of authentication. No confidentiality is provided at all. This should be explicitly described as outside the scope....”
+NOTE: The security measures discussed in the following sections only provide various kinds of authentication. No confidentiality is provided at all. This should be explicitly described as outside the scope...."
 ////
 
-[big]*v.    Submitting organizations*
+== Submitting organizations
 
 The following organizations submitted this Document to the Open Geospatial Consortium (OGC):
 
-Organization name(s)
+* SensorUp Inc.
+* Natural Resources Canada
+* University of Calgary
 
-[big]*vi.     Submitters*
+== Submitters
 
 All questions regarding this submission should be directed to the editor or the submitters:
 
+.Submitters
 |===
 |*Name* |*Affiliation*
 |Steve Liang |University of Calgary / SensorUp
@@ -87,58 +91,43 @@ All questions regarding this submission should be directed to the editor or the 
 |===
 
 == Scope
-[NOTE]
-====
-Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.
-====
 
-//include::sections/clause_2_conformance.adoc[]
+This document defines a conceptual data model for emission events, for features from which emissions originate and mechanisms by which they occur, and for observations and procedures that provide evidence for emission determinations. These provide models for the exchange of information describing emission events and their associated quantities, temporal bounds, sources, and mechanisms, both within and between different regulatory, scientific, and technical communities.
 
+Emission events commonly involve observations of an ultimate feature-of-interest at varying spatial scales. This document defines a common set of classes for describing emission sources, mechanisms, quantities, temporal bounds, determination procedures, and supporting observations. The schema includes relationships between emission events and their evidence chains, linking reported values to underlying observations and procedures, and attaches data quality metadata to emission quantities and temporal bounds.
+
+This document concerns only externally visible interfaces and places no restriction on the underlying implementations other than what is needed to satisfy the interface specifications in the actual situation.
+
+== Conformance
+This Standard defines a conceptual data model for emission events.
+
+Requirements for one standardization target type are considered:
+
+* Data Model
+
+Conformance with this Standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.
+
+In order to conform to this OGC(R) Standard, a software implementation shall choose to implement:
+
+* The Emission Event Conceptual Data Model Core conformance class specified in Annex A (normative).
+
+All requirements-classes and conformance-classes described in this document are owned by the Standard(s) identified.
+
+[bibliography]
 == References
 The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
 
-[NOTE]
-====
-Insert References here. If there are no references, state “There are no normative references”.
+* [[[ISO19101-1,ISO 19101-1:2014]]], _Geographic information — Reference model — Part 1: Fundamentals_
 
-References are to follow the Springer LNCS style, with the exception that optional information may be appended to references: DOIs are added after the date and web resource references may include an access date at the end of the reference in parentheses. See examples from Springer and OGC below.
+* [[[ISO19107,ISO 19107:2019]]], _Geographic information — Spatial schema_
 
-Smith, T.F., Waterman, M.S.: Identification of Common Molecular Subsequences.
-J. Mol. Biol. 147, 195–197 (1981)
+* [[[ISO19108,ISO 19108:2002]]], _Geographic information — Temporal schema_
 
-May, P., Ehrlich, H.C., Steinke, T.: ZIB Structure Prediction Pipeline: Composing
-a Complex Biological Workflow through Web Services. In: Nagel, W.E., Walter,
-W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148–1158. Springer,
-Heidelberg (2006)
+* [[[ISO19109,ISO 19109:2015]]], _Geographic information — Rules for application schema_
 
-Foster, I., Kesselman, C.: The Grid: Blueprint for a New Computing Infrastructure.
-Morgan Kaufmann, San Francisco (1999)
+* [[[ISO19157,ISO 19157:2013]]], _Geographic information — Data quality_
 
-Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C.: Grid Information Services
-for Distributed Resource Sharing. In: 10th IEEE International Symposium on High
-Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)
-
-Foster, I., Kesselman, C., Nick, J., Tuecke, S.: The Physiology of the Grid: an Open
-Grid Services Architecture for Distributed Systems Integration. Technical report,
-Global Grid Forum (2002)
-
-National Center for Biotechnology Information, link:++http://www.ncbi.nlm.nih.gov++[]
-
-
-ISO / TC 211: ISO 19115-1:2014 Geographic information -- Metadata -- Part 1: Fundamentals (2014)
-
-ISO / TC 211: ISO 19157:2013 Geographic information -- Data quality (2013)
-
-ISO / TC 211: ISO 19139:2007 Geographic information -- Metadata -- XML schema implementation (2007)
-
-ISO / TC 211: ISO 19115-3: Geographic information -- Metadata -- Part 3: XML schemas (2016)
-
-OGC: OGC 15-097 OGC Geospatial User Feedback Standard. Conceptual Model (2016)
-
-OGC: OGC 12-019, OGC City Geography Markup Language (CityGML) Encoding Standard (2012)
-
-OGC: OGC 14-005r3, OGC IndoorGML (2014)
-====
+* [[[ISO19156,ISO 19156:2023]]], _Geographic information — Observations, measurements and samples (OMS 3.0)_
 
 == Terms and Definitions
 This document uses the terms defined in link:++https://portal.ogc.org/public_ogc/directives/directives.php++[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
@@ -187,11 +176,19 @@ Unit of Measure::
 Reference quantity chosen from a unit equivalence group (Source: link:++https://docs.ogc.org/as/20-082r4/20-082r4.html++[ISO/OGC 19156:2023])
 
 
-//include::sections/clause_5_conventions.adoc[]
+== Conventions
+
+=== Overview
+This section provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
+
+=== Identifiers
+The normative provisions in this Standard are denoted by the URI
+
+link:++http://www.opengis.net/spec/emissionml/1.0++[]
+
+All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.
 
 == Clauses not Containing Normative Material
-
-Paragraph
 
 === Clauses not containing normative material sub-clause 1
 
@@ -200,6 +197,9 @@ Paragraph
 === Clauses not containing normative material sub-clause 2
 
 == Emission Event Data Model
+
+=== Overview
+
 The EmissionML conceptual model is described as a class diagram in <<fig-emissionml-class-diagram>>. The schema is fully described in x.x.x.
 
 [[fig-emissionml-class-diagram]]
@@ -216,6 +216,7 @@ image::images/core-emissionml-class.png[]
 
 Use the following table for Requirements Classes.
 
+.Requirements class — Emission Event Conceptual Data Model Core
 [cols="1,4",width="90%"]
 |===
 2+|*Emission Event Conceptual Data Model Core* {set:cellbgcolor:#CACCCE}
@@ -256,6 +257,7 @@ NOTE: Conceptually, an Emission Event corresponds to an occurrent in upper-ontol
 
 NOTE: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
 
+.Requirement 1 — Emission Event Class
 [width="90%",cols="2,6"]
 |===
 |*Requirement 1: Emission Event Class* {set:cellbgcolor:#CACCCE}|/req/datamodel/core/emission-event +
@@ -293,6 +295,7 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 
 A Feature is an abstraction of real world phenomena (Source: ISO 19101-1:2014). In EmissionML, Feature serves as the base class for entities that can be the ultimate feature of interest of an Observation. A Feature's `geometry` attribute provides the geospatial reference for the phenomenon it represents.
 
+.Requirement 11 — Feature Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 11: Feature Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/feature +
@@ -322,6 +325,7 @@ A Source represents the feature from which an emission originates. A Source is a
 
 NOTE: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
 
+.Requirement 2 — Source Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 2: Source Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/source +
@@ -351,6 +355,7 @@ Each Source class shall have the direct relation between a Source class and othe
 
 A Source Type classifies a Source by its category.
 
+.Requirement 3 — Source Type Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 3: Source Type Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/source-type +
@@ -380,6 +385,7 @@ Each Source Type class shall have the mandatory attributes listed in <<source-ty
 
 A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is defined independently of the Source—including its identity, structure, or purpose—allowing Mechanisms to be consistently reused across different types of Source.
 
+.Requirement 4 — Mechanism Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 4: Mechanism Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/mechanism +
@@ -409,6 +415,7 @@ Each Mechanism class shall have the direct relation listed in <<mechanism-relati
 
 An Emission Quantity is the physical quantity representing the total mass of substance released to the atmosphere during a defined Emission Event or over a specified time interval.
 
+.Requirement 5 — Emission Quantity Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 5: Emission Quantity Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/emission-quantity +
@@ -438,6 +445,7 @@ Each Emission Quantity class shall have the direct relation between an Emission 
 
 A Unit of Measure is a reference quantity chosen from a unit equivalence group (Source: ISO/OGC 19156:2023)
 
+.Requirement 6 — Unit of Measure Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 6: Unit of Measure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/unit-of-measure +
@@ -467,6 +475,7 @@ Each Unit of Measure class shall have the mandatory attributes listed in <<unit-
 
 A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) that MAY have associated data quality metadata. The determination procedure and supporting evidence for a Temporal Bound are tracked at the Emission Event level.
 
+.Requirement 7 — Temporal Bound Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 7: Temporal Bound Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/temporal-bound +
@@ -497,6 +506,7 @@ An Observation is an act carried out by an observer to determine the value of an
 
 NOTE: The Ultimate Feature of Interest of an Observation identifies a Feature — which may be a Source or another feature at a different spatial scale — associated with the Emission Event. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a facility area or region), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific Source such as a component of an item of equipment from which pollutants are released.
 
+.Requirement 8 — Observation Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 8: Observation Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/observation +
@@ -510,6 +520,7 @@ Each Observation class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Observation.
 
 Emission Intent is a code list describing whether an emission is intentional, unintentional, or unknown.
 
+.Requirement 9 — Emission Intent Enumeration
 [width="90%",cols="2,6"]
 |===
 |Requirement 9: Emission Intent Enumeration {set:cellbgcolor:#CACCCE}|/req/datamodel/core/emission-intent +
@@ -532,6 +543,7 @@ The Emission Intent enumeration shall support the enumeration values listed in <
 
 A Procedure is a description of steps performed (Source: ISO/OGC 19156:2023). In EmissionML, Procedure serves as the base class for process descriptions such as DeterminationProcedure.
 
+.Requirement 12 — Procedure Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 12: Procedure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/procedure +
@@ -559,6 +571,7 @@ Each Procedure class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Procedure.
 
 A Determination Procedure describes the steps performed to determine the quantity or temporal bounds of an Emission Event. DeterminationProcedure inherits from Procedure, aligning it with the OMS 3.0 process model.
 
+.Requirement 10 — Determination Procedure Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 10: Determination Procedure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/determination-procedure +
@@ -582,11 +595,173 @@ Each Determination Procedure class shall have the mandatory attributes listed in
 ////
 add or remove annexes after "A" as necessary
 ////
-//include::sections/annex-a.adoc[]
+[appendix]
+:appendix-caption: Annex
+== Conformance Class Abstract Test Suite (Normative)
+
+=== Abstract tests for Emission Event Conceptual Data Model Core
+
+==== Emission Event Conceptual Data Model Core
+
+.Conformance test — Emission Event Conceptual Data Model Core
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core
+|Requirements |/req/datamodel/core
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Emission Event
+
+.Conformance test — Emission Event
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/emission-event
+|Requirements |/req/datamodel/core/emission-event
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Source
+
+.Conformance test — Source
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/source
+|Requirements |/req/datamodel/core/source
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Source Type
+
+.Conformance test — Source Type
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/source-type
+|Requirements |/req/datamodel/core/source-type
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Mechanism
+
+.Conformance test — Mechanism
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/mechanism
+|Requirements |/req/datamodel/core/mechanism
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Emission Quantity
+
+.Conformance test — Emission Quantity
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/emission-quantity
+|Requirements |/req/datamodel/core/emission-quantity
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Unit of Measure
+
+.Conformance test — Unit of Measure
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/unit-of-measure
+|Requirements |/req/datamodel/core/unit-of-measure
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Temporal Bound
+
+.Conformance test — Temporal Bound
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/temporal-bound
+|Requirements |/req/datamodel/core/temporal-bound
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Observation
+
+.Conformance test — Observation
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/observation
+|Requirements |/req/datamodel/core/observation
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Emission Intent
+
+.Conformance test — Emission Intent
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/emission-intent
+|Requirements |/req/datamodel/core/emission-intent
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Determination Procedure
+
+.Conformance test — Determination Procedure
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/determination-procedure
+|Requirements |/req/datamodel/core/determination-procedure
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Feature
+
+.Conformance test — Feature
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/feature
+|Requirements |/req/datamodel/core/feature
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Procedure
+
+.Conformance test — Procedure
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/procedure
+|Requirements |/req/datamodel/core/procedure
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
 
 [appendix,obligation=informative]
 :appendix-caption: Annex
 == Relationship with OGC Features and Observations
+
+=== Overview
 
 EmissionML is a domain-specific conceptual model that builds on two foundational OGC concepts: *Features* (ISO 19109 General Feature Model) and *Observations* (ISO/OGC 19156:2023, OMS 3.0). This annex explains how EmissionML relates to each and why explicit domain modeling is preferred over generic usage.
 
@@ -598,7 +773,7 @@ image::images/annex-b-layering.png[]
 
 === EmissionML and OGC Features
 
-The OGC General Feature Model (ISO 19109) defines a _Feature_ as an abstraction of a real-world phenomenon — any entity with an identity, properties, and optionally a geometry. EmissionML makes this alignment explicit by introducing a concrete *Feature* class (stereotyped `<<ISO 19109>>`) into the conceptual model.
+The OGC General Feature Model (ISO 19109) defines a _Feature_ as an abstraction of a real-world phenomenon — any entity with an identity, properties, and optionally a geometry. EmissionML makes this alignment explicit by introducing a concrete *Feature* class (stereotyped `\<<ISO 19109>>`) into the conceptual model.
 
 The Feature class carries a mandatory `geometry` attribute of type `GM_Object` and serves as the base class for domain-specific feature types. *Source* inherits from Feature, gaining its geometry by inheritance. This structural inheritance — rather than a notional stereotype — makes the ISO 19109 alignment unambiguous and machine-verifiable.
 
@@ -626,7 +801,7 @@ All three Observations can serve as evidence for a single Emission Event, each c
 
 OMS 3.0 defines a *Procedure* as "a description of steps performed" and introduces *ObservingProcedure* as a specialization that describes steps performed to determine the value of an observable property. EmissionML follows this same specialization pattern.
 
-The EmissionML conceptual model introduces a *Procedure* class (stereotyped `<<ISO 19156:2023>>`) as the base class for process descriptions. *DeterminationProcedure* inherits from Procedure and describes the steps performed to determine a value — such as an emission quantity or temporal bound. This structural inheritance mirrors how ObservingProcedure specializes Procedure in OMS 3.0.
+The EmissionML conceptual model introduces a *Procedure* class (stereotyped `\<<ISO 19156:2023>>`) as the base class for process descriptions. *DeterminationProcedure* inherits from Procedure and describes the steps performed to determine a value — such as an emission quantity or temporal bound. This structural inheritance mirrors how ObservingProcedure specializes Procedure in OMS 3.0.
 
 By making Procedure an explicit base class rather than a notional reference, EmissionML ensures that its process descriptions are structurally aligned with OMS 3.0 — not merely by naming convention, but by class hierarchy. This parallels the Feature/Source pattern: just as Source inherits from Feature to make ISO 19109 alignment concrete, DeterminationProcedure inherits from Procedure to make OMS 3.0 alignment concrete.
 
@@ -661,26 +836,7 @@ Bibliography should be the last annex
 
 [appendix]
 :appendix-caption: Annex
-[[Bibliography]]
-= Bibliography
+[bibliography]
+== Bibliography
 
-[NOTE]
-.Example Bibliography (Delete this note).
-===============================================
-The TC has approved Springer LNCS as the official document citation type.
-
-Springer LNCS is widely used in technical and computer science journals and other publications
-
-* For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]
-
-– Actual References:
-
-[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)
-
-[n] Web: Author Surname, A.: Title, link:++http://Website-Url++[]
-
-===============================================
-
-((( Example )))
-[[OGC2015]]
-[1] OGC: OGC Testbed 12 Annex B: Architecture. (2015).
+* [[[OGC_OMS,OGC 20-082r4]]] OGC: OGC Abstract Specification Topic 20 — Observations, Measurements, and Samples. Version 3.0 (2023).

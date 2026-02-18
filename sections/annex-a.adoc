@@ -6,6 +6,7 @@
 
 ==== Emission Event Conceptual Data Model Core
 
+.Conformance test — Emission Event Conceptual Data Model Core
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core
@@ -17,6 +18,7 @@
 
 ==== Emission Event
 
+.Conformance test — Emission Event
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/emission-event
@@ -28,6 +30,7 @@
 
 ==== Source
 
+.Conformance test — Source
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/source
@@ -39,6 +42,7 @@
 
 ==== Source Type
 
+.Conformance test — Source Type
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/source-type
@@ -50,6 +54,7 @@
 
 ==== Mechanism
 
+.Conformance test — Mechanism
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/mechanism
@@ -61,6 +66,7 @@
 
 ==== Emission Quantity
 
+.Conformance test — Emission Quantity
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/emission-quantity
@@ -72,6 +78,7 @@
 
 ==== Unit of Measure
 
+.Conformance test — Unit of Measure
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/unit-of-measure
@@ -83,6 +90,7 @@
 
 ==== Temporal Bound
 
+.Conformance test — Temporal Bound
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/temporal-bound
@@ -94,6 +102,7 @@
 
 ==== Observation
 
+.Conformance test — Observation
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/observation
@@ -105,6 +114,7 @@
 
 ==== Emission Intent
 
+.Conformance test — Emission Intent
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/emission-intent
@@ -116,6 +126,7 @@
 
 ==== Determination Procedure
 
+.Conformance test — Determination Procedure
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/determination-procedure
@@ -127,6 +138,7 @@
 
 ==== Feature
 
+.Conformance test — Feature
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/feature
@@ -138,6 +150,7 @@
 
 ==== Procedure
 
+.Conformance test — Procedure
 [cols="1,4",width="90%"]
 |===
 |Conformance class |/conf/datamodel/core/procedure

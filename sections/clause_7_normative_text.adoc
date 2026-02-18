@@ -1,4 +1,7 @@
 == Emission Event Data Model
+
+=== Overview
+
 The EmissionML conceptual model is described as a class diagram in <<fig-emissionml-class-diagram>>. The schema is fully described in x.x.x.
 
 [[fig-emissionml-class-diagram]]
@@ -25,6 +28,7 @@ NOTE: Conceptually, an Emission Event corresponds to an occurrent in upper-ontol
 
 NOTE: For reporting or accounting purposes, a long-running emission event is often segmented into multiple time-bounded emission events (e.g., annual records). This segmentation reflects reporting conventions and does not imply physical cessation or re-initiation of the emission.
 
+.Requirement 1 — Emission Event Class
 [width="90%",cols="2,6"]
 |===
 |*Requirement 1: Emission Event Class* {set:cellbgcolor:#CACCCE}|/req/datamodel/core/emission-event +
@@ -62,6 +66,7 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 
 A Feature is an abstraction of real world phenomena (Source: ISO 19101-1:2014). In EmissionML, Feature serves as the base class for entities that can be the ultimate feature of interest of an Observation. A Feature's `geometry` attribute provides the geospatial reference for the phenomenon it represents.
 
+.Requirement 11 — Feature Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 11: Feature Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/feature +
@@ -91,6 +96,7 @@ A Source represents the feature from which an emission originates. A Source is a
 
 NOTE: A Source is a continuant that may exist independently of any emission, whereas an Emission Event is an occurrent. The identity and lifecycle of a Source are independent of the existence, absence, or frequency of Emission Events.
 
+.Requirement 2 — Source Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 2: Source Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/source +
@@ -120,6 +126,7 @@ Each Source class shall have the direct relation between a Source class and othe
 
 A Source Type classifies a Source by its category.
 
+.Requirement 3 — Source Type Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 3: Source Type Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/source-type +
@@ -149,6 +156,7 @@ Each Source Type class shall have the mandatory attributes listed in <<source-ty
 
 A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is defined independently of the Source—including its identity, structure, or purpose—allowing Mechanisms to be consistently reused across different types of Source.
 
+.Requirement 4 — Mechanism Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 4: Mechanism Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/mechanism +
@@ -178,6 +186,7 @@ Each Mechanism class shall have the direct relation listed in <<mechanism-relati
 
 An Emission Quantity is the physical quantity representing the total mass of substance released to the atmosphere during a defined Emission Event or over a specified time interval.
 
+.Requirement 5 — Emission Quantity Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 5: Emission Quantity Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/emission-quantity +
@@ -207,6 +216,7 @@ Each Emission Quantity class shall have the direct relation between an Emission 
 
 A Unit of Measure is a reference quantity chosen from a unit equivalence group (Source: ISO/OGC 19156:2023)
 
+.Requirement 6 — Unit of Measure Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 6: Unit of Measure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/unit-of-measure +
@@ -236,6 +246,7 @@ Each Unit of Measure class shall have the mandatory attributes listed in <<unit-
 
 A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) that MAY have associated data quality metadata. The determination procedure and supporting evidence for a Temporal Bound are tracked at the Emission Event level.
 
+.Requirement 7 — Temporal Bound Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 7: Temporal Bound Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/temporal-bound +
@@ -266,6 +277,7 @@ An Observation is an act carried out by an observer to determine the value of an
 
 NOTE: The Ultimate Feature of Interest of an Observation identifies a Feature — which may be a Source or another feature at a different spatial scale — associated with the Emission Event. It is common for a single Emission Event to be observed by multiple Observations whose Ultimate Features of Interest are defined at different spatial scales. For example, a satellite remote sensing image Observation typically has an area-based Ultimate Feature of Interest (e.g., a facility area or region), whereas the same Emission Event may also be observed by a person carrying an Optical Gas Imaging camera, for which the Ultimate Feature of Interest is a specific Source such as a component of an item of equipment from which pollutants are released.
 
+.Requirement 8 — Observation Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 8: Observation Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/observation +
@@ -279,6 +291,7 @@ Each Observation class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Observation.
 
 Emission Intent is a code list describing whether an emission is intentional, unintentional, or unknown.
 
+.Requirement 9 — Emission Intent Enumeration
 [width="90%",cols="2,6"]
 |===
 |Requirement 9: Emission Intent Enumeration {set:cellbgcolor:#CACCCE}|/req/datamodel/core/emission-intent +
@@ -301,6 +314,7 @@ The Emission Intent enumeration shall support the enumeration values listed in <
 
 A Procedure is a description of steps performed (Source: ISO/OGC 19156:2023). In EmissionML, Procedure serves as the base class for process descriptions such as DeterminationProcedure.
 
+.Requirement 12 — Procedure Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 12: Procedure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/procedure +
@@ -328,6 +342,7 @@ Each Procedure class shall be an ISO/OGC 19156:2023 (OGC OMS 3.0) Procedure.
 
 A Determination Procedure describes the steps performed to determine the quantity or temporal bounds of an Emission Event. DeterminationProcedure inherits from Procedure, aligning it with the OMS 3.0 process model.
 
+.Requirement 10 — Determination Procedure Class
 [width="90%",cols="2,6"]
 |===
 |Requirement 10: Determination Procedure Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/determination-procedure +

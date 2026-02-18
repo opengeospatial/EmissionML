@@ -1,3 +1,4 @@
+.Requirements class — Emission Event Conceptual Data Model Core
 [cols="1,4",width="90%"]
 |===
 2+|*Emission Event Conceptual Data Model Core* {set:cellbgcolor:#CACCCE}
