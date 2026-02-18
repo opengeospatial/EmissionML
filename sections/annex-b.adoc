@@ -12,7 +12,7 @@ image::images/annex-b-layering.png[]
 
 === EmissionML and OGC Features
 
-The OGC General Feature Model (ISO 19109) defines a _Feature_ as an abstraction of a real-world phenomenon — any entity with an identity, properties, and optionally a geometry. EmissionML makes this alignment explicit by introducing a concrete *Feature* class (stereotyped `<<ISO 19109>>`) into the conceptual model.
+The OGC General Feature Model (ISO 19109) defines a _Feature_ as an abstraction of a real-world phenomenon — any entity with an identity, properties, and optionally a geometry. EmissionML makes this alignment explicit by introducing a concrete *Feature* class (stereotyped `\<<ISO 19109>>`) into the conceptual model.
 
 The Feature class carries a mandatory `geometry` attribute of type `GM_Object` and serves as the base class for domain-specific feature types. *Source* inherits from Feature, gaining its geometry by inheritance. This structural inheritance — rather than a notional stereotype — makes the ISO 19109 alignment unambiguous and machine-verifiable.
 
@@ -40,7 +40,7 @@ All three Observations can serve as evidence for a single Emission Event, each c
 
 OMS 3.0 defines a *Procedure* as "a description of steps performed" and introduces *ObservingProcedure* as a specialization that describes steps performed to determine the value of an observable property. EmissionML follows this same specialization pattern.
 
-The EmissionML conceptual model introduces a *Procedure* class (stereotyped `<<ISO 19156:2023>>`) as the base class for process descriptions. *DeterminationProcedure* inherits from Procedure and describes the steps performed to determine a value — such as an emission quantity or temporal bound. This structural inheritance mirrors how ObservingProcedure specializes Procedure in OMS 3.0.
+The EmissionML conceptual model introduces a *Procedure* class (stereotyped `\<<ISO 19156:2023>>`) as the base class for process descriptions. *DeterminationProcedure* inherits from Procedure and describes the steps performed to determine a value — such as an emission quantity or temporal bound. This structural inheritance mirrors how ObservingProcedure specializes Procedure in OMS 3.0.
 
 By making Procedure an explicit base class rather than a notional reference, EmissionML ensures that its process descriptions are structurally aligned with OMS 3.0 — not merely by naming convention, but by class hierarchy. This parallels the Feature/Source pattern: just as Source inherits from Feature to make ISO 19109 alignment concrete, DeterminationProcedure inherits from Procedure to make OMS 3.0 alignment concrete.
 

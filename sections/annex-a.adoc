@@ -2,18 +2,147 @@
 :appendix-caption: Annex
 == Conformance Class Abstract Test Suite (Normative)
 
-[NOTE]
-Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
+=== Abstract tests for Emission Event Conceptual Data Model Core
 
-=== Conformance Class A
+==== Emission Event Conceptual Data Model Core
 
-==== Requirement 1
-[cols=">20h,<80d",width="100%"]
+[cols="1,4",width="90%"]
 |===
-|Test id: |/conf/conf-class-a/req-name-1
-|Requirement: |/req/req-class-a/req-name-1
-|Test purpose: | Verify that...
-|Test method: | Inspect...
+|Conformance class |/conf/datamodel/core
+|Requirements |/req/datamodel/core
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
 |===
 
-==== Requirement 2
+==== Emission Event
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/emission-event
+|Requirements |/req/datamodel/core/emission-event
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Source
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/source
+|Requirements |/req/datamodel/core/source
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Source Type
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/source-type
+|Requirements |/req/datamodel/core/source-type
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Mechanism
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/mechanism
+|Requirements |/req/datamodel/core/mechanism
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Emission Quantity
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/emission-quantity
+|Requirements |/req/datamodel/core/emission-quantity
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Unit of Measure
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/unit-of-measure
+|Requirements |/req/datamodel/core/unit-of-measure
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Temporal Bound
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/temporal-bound
+|Requirements |/req/datamodel/core/temporal-bound
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Observation
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/observation
+|Requirements |/req/datamodel/core/observation
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Emission Intent
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/emission-intent
+|Requirements |/req/datamodel/core/emission-intent
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Determination Procedure
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/determination-procedure
+|Requirements |/req/datamodel/core/determination-procedure
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Feature
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/feature
+|Requirements |/req/datamodel/core/feature
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
+
+==== Procedure
+
+[cols="1,4",width="90%"]
+|===
+|Conformance class |/conf/datamodel/core/procedure
+|Requirements |/req/datamodel/core/procedure
+|Test purpose |Verify that all requirements from the requirements class have been fulfilled.
+|Test method |Inspect the documentation of the application, schema or profile.
+|Test type |Capability
+|===
