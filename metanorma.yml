@@ -1,4 +1,7 @@
 ---
 metanorma:
+  source:
+    files:
+      - document.adoc
   deploy:
     email: "ci@metanorma.org"
