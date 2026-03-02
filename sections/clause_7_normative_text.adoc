@@ -12,8 +12,8 @@ image::images/core-emissionml-class.png[]
 |===
 |Symbol |Name |Meaning
 
-|image:images/symbol-composition.png[Composition,60] |Composition |The target is owned by and cannot exist without the source (e.g., EmissionEvent owns its EmissionQuantity and TemporalBound instances)
-|image:images/symbol-association.png[Association,60] |Association |A directional reference between independent classes (e.g., EmissionEvent refers to a Source)
+|image:images/symbol-composition.png[Composition,20,62] |Composition |The target is owned by and cannot exist without the source (e.g., EmissionEvent owns its EmissionQuantity and TemporalBound instances)
+|image:images/symbol-association.png[Association,20,62] |Association |A directional reference between independent classes (e.g., EmissionEvent refers to a Source)
 |===
 
 Use the following table for Requirements Classes.

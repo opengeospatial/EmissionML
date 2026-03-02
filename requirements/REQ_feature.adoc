@@ -1,0 +1,7 @@
+[[req_feature]]
+[requirement]
+====
+[%metadata]
+identifier:: /req/datamodel/core/feature
+part:: This requirement defines the Feature.
+====

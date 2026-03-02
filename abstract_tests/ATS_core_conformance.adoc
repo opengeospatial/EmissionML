@@ -1,0 +1,20 @@
+[[ats_core_conformance]]
+[conformance_class]
+====
+[%metadata]
+identifier:: /conf/datamodel/core
+subject:: Data Model
+target:: http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core
+abstract-test:: /conf/datamodel/core/emission-event
+abstract-test:: /conf/datamodel/core/source
+abstract-test:: /conf/datamodel/core/source-type
+abstract-test:: /conf/datamodel/core/mechanism
+abstract-test:: /conf/datamodel/core/emission-quantity
+abstract-test:: /conf/datamodel/core/unit-of-measure
+abstract-test:: /conf/datamodel/core/temporal-bound
+abstract-test:: /conf/datamodel/core/observation
+abstract-test:: /conf/datamodel/core/emission-intent
+abstract-test:: /conf/datamodel/core/determination-procedure
+abstract-test:: /conf/datamodel/core/feature
+abstract-test:: /conf/datamodel/core/procedure
+====

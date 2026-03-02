@@ -1,0 +1,9 @@
+[[ats_temporal_bound]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/datamodel/core/temporal-bound
+target:: /req/datamodel/core/temporal-bound
+test-purpose:: Verify that all requirements from the requirements class have been fulfilled.
+test-method:: Inspect the documentation of the application, schema or profile.
+====
