@@ -1,7 +1,0 @@
-[[req_determination_procedure]]
-[requirement]
-====
-[%metadata]
-identifier:: /req/datamodel/core/determination-procedure
-part:: This requirement defines the Determination Procedure.
-====

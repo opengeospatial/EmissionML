@@ -1,9 +1,0 @@
-[[ats_observation]]
-[abstract_test]
-====
-[%metadata]
-identifier:: /conf/datamodel/core/observation
-target:: /req/datamodel/core/observation
-test-purpose:: Verify that all requirements from the requirements class have been fulfilled.
-test-method:: Inspect the documentation of the application, schema or profile.
-====

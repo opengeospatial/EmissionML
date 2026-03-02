@@ -1,7 +1,0 @@
-[[req_emission_event]]
-[requirement]
-====
-[%metadata]
-identifier:: /req/datamodel/core/emission-event
-part:: This requirement defines the Emission Event.
-====

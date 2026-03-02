@@ -1,9 +1,0 @@
-[[ats_emission_intent]]
-[abstract_test]
-====
-[%metadata]
-identifier:: /conf/datamodel/core/emission-intent
-target:: /req/datamodel/core/emission-intent
-test-purpose:: Verify that all requirements from the requirements class have been fulfilled.
-test-method:: Inspect the documentation of the application, schema or profile.
-====

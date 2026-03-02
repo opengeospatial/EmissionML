@@ -1,7 +1,0 @@
-[[req_source]]
-[requirement]
-====
-[%metadata]
-identifier:: /req/datamodel/core/source
-part:: This requirement defines the Source.
-====

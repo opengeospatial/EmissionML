@@ -1,9 +1,0 @@
-[[ats_unit_of_measure]]
-[abstract_test]
-====
-[%metadata]
-identifier:: /conf/datamodel/core/unit-of-measure
-target:: /req/datamodel/core/unit-of-measure
-test-purpose:: Verify that all requirements from the requirements class have been fulfilled.
-test-method:: Inspect the documentation of the application, schema or profile.
-====

@@ -1,7 +1,0 @@
-[[req_temporal_bound]]
-[requirement]
-====
-[%metadata]
-identifier:: /req/datamodel/core/temporal-bound
-part:: This requirement defines the Temporal Bound.
-====

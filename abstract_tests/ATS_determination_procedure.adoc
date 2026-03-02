@@ -1,9 +1,0 @@
-[[ats_determination_procedure]]
-[abstract_test]
-====
-[%metadata]
-identifier:: /conf/datamodel/core/determination-procedure
-target:: /req/datamodel/core/determination-procedure
-test-purpose:: Verify that all requirements from the requirements class have been fulfilled.
-test-method:: Inspect the documentation of the application, schema or profile.
-====

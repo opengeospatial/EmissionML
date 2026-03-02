@@ -1,7 +1,0 @@
-[[req_emission_intent]]
-[requirement]
-====
-[%metadata]
-identifier:: /req/datamodel/core/emission-intent
-part:: This requirement defines the Emission Intent.
-====

@@ -1,7 +1,0 @@
-[[req_source_type]]
-[requirement]
-====
-[%metadata]
-identifier:: /req/datamodel/core/source-type
-part:: This requirement defines the Source Type.
-====
