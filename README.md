@@ -2,25 +2,219 @@
 
 OGC doc number 25-019
 
-# Standard template
+Click here to visit the [25-019 branch](https://github.com/opengeospatial/EmissionML/tree/25-019/) where you can find the latest development of the EmissionML.
+
+---
 
 ## Content
 
 This folder contains the text for the standard
 
-* standard_document.adoc - the main standard document with references to all sections
-* remaining adocs - each section of the standard document is in a separate document: follow directions in each document to populate
-* figures - figures go here
-* images - Image files for graphics go here. Image files for figures go in the "figures" directory. Only place in here images not used in figures (e.g., as parts of tables, as logos, etc.)
-* requirements - directory for requirements and requirement classes to be referenced in clause_7_normative_text.adoc
-* code - sample code to accompany the standard, if desired
-* abstract_tests - the Abstract Test Suite comprising one test for every requirement, optional
-* UML - UML diagrams, if applicable
+* `document.adoc` - the main standard document with references to all sections
+* `sections/` - each section of the standard document is in a separate document
+* `figures/` - figures go here
+* `images/` - image files for graphics go here
+* `requirements/` - requirements and requirement classes referenced in `clause_7_normative_text.adoc`
+* `abstract_tests/` - the Abstract Test Suite comprising one test for every requirement
+* `UML/` - UML diagrams
 
 ## Building
 
-To produce the HTML of the standard run `asciidoctor --safe -a data-uri -o
-standard_document.html standard_document.adoc`.
+This standard is built with [Metanorma](https://www.metanorma.org/).
 
-To produce the PDF of the standard run `asciidoctor-pdf --safe -o
-standard_document.pdf standard_document.adoc`
+### Prerequisites
+
+Install Metanorma CLI: https://www.metanorma.org/install/
+
+### Build commands
+
+```sh
+# Build all output formats (HTML, PDF, DOC, XML)
+make all
+
+# Or compile directly
+metanorma compile document.adoc
+```
+
+Output files are generated as `document.{html,pdf,doc,xml}`.
+
+---
+
+## Key References
+
+- [ISO/OGC 19156 Observation, Measurement, and Sampling (OMS)](https://docs.ogc.org/as/20-082r4/20-082r4.html)
+- [W3C/OGC Semantic Sensor Networks](https://www.w3.org/TR/vocab-ssn/)
+- [ISO 19157-1:2023 Geographic information — Data Quality](https://www.iso.org/standard/78900.html)
+- [Unified Code for Units of Measure (UCUM)](https://ucum.org/ucum)
+- [OGC Abstract Specifications](https://www.ogc.org/standards/abstract-specification/)
+
+---
+
+## Latest UML Diagram
+
+UML diagrams are available in the [25-019 branch](https://github.com/opengeospatial/EmissionML/tree/25-019/UML). Below is the latest version.
+
+v2025-10-29
+```mermaid
+classDiagram
+ %% title "EmissionML Refined Model (Updated)"
+
+  class EmissionEvent {
+    +pollutantType: URI
+  }
+  class EmissionQuantity {
+    +quantity: double
+    +quality: DQ_Element
+  }
+  class UnitOfMeasure {
+    +name: String
+    +symbol: String
+    +definition: URI
+  }
+  class TemporalBound {
+    <<ValueObject>>
+    +time: TM_Instant
+    +quality: DQ_Element
+  }
+
+  class Observation {
+    <<ISO 19156:2023>>
+  }
+
+  class SourceFeature {
+    +name: String
+    +geometry: GM_Object
+  }
+  class SourceFeatureType {
+    +name: String
+    +description: String
+  }
+
+  class Mechanism {
+    <<CodeList>>
+  }
+  class EmissionIntent {
+    <<CodeList>>
+    +intentional
+    +unintentional
+    +unknown
+  }
+  class AbstractDeterminationMethod {
+    <<abstract>>
+    +label: String
+    +definition: URI
+  }
+  class TemporalDeterminationMethod
+  class QuantityDeterminationMethod
+
+  %% --- Relationships (Updated) ---
+
+  %% --- EmissionEvent is the central assertion ---
+  EmissionEvent "1" *-- "1" EmissionQuantity : hasQuantity
+  EmissionEvent "1" o-- "1" TemporalBound : startTime
+  EmissionEvent "1" o-- "0..1" TemporalBound : endTime
+  EmissionEvent "1" --> "1" SourceFeature : hasSource
+  EmissionEvent "1" --> "1" Mechanism : hasMechanism
+
+  %% --- Provenance: Assertions are based on Evidence (Observations) ---
+  EmissionQuantity "1" --> "0..*" Observation : hasEvidence
+  TemporalBound "1" --> "0..*" Observation : hasEvidence
+
+  %% --- Observation is of a SourceFeature ---
+  Observation "1" --> "1" SourceFeature : featureOfInterest
+
+  %% --- Quantities and Times have their own methods ---
+  EmissionQuantity "1" *-- "1" UnitOfMeasure : hasUnit
+  EmissionQuantity "1" --> "1" QuantityDeterminationMethod : hasDeterminationMethod
+  TemporalBound "1" --> "1" TemporalDeterminationMethod : hasDeterminationMethod
+
+  %% --- Determination Methods Inheritance ---
+  TemporalDeterminationMethod --|> AbstractDeterminationMethod
+  QuantityDeterminationMethod --|> AbstractDeterminationMethod
+
+  %% --- SourceFeatures and their Types ---
+  SourceFeature "1" --> "1" SourceFeatureType : hasType
+
+  %% --- "Honor System" Constraint ---
+  SourceFeatureType "1" --> "0..*" Mechanism : allowedMechanism
+
+  %% --- Mechanism defines Intent ---
+  Mechanism ..> EmissionIntent : hasIntent
+```
+
+---
+
+## Functional Requirements
+
+- **Standardized data sharing** across emission systems and stakeholders
+-  **Aggregation** of emission data from heterogeneous sources
+-  **Reconciliation** of emissions with built-in support for:
+	- Uncertainty modeling
+	- Machine readability
+	- Provenance
+	- Reproducibility
+	- Explainability
+-  **Georeferencing** with explicit location, geometry, and spatial resolution
+-  **Visualization** support with native compatibility for GIS overlays and spatial tools
+-  **Flexible reporting** formats that support internal analytics and regulatory adaptation
+-  **Built-in provenance** for:
+	- Start and end event determination methods
+	- Emission quantity estimation method
+	- Source feature attribution
+-  **Uncertainty modeling** following [ISO 19157](https://www.iso.org/standard/78900.html) for:
+	- Event start and end time
+	- Quantity of emissions
+	- Observation results
+
+---
+
+## Who Should Use EmissionML?
+
+- **Emission Source Operators**
+  Entities responsible for emission-generating facilities or activities. EmissionML enables consistent monitoring, reporting, and compliance workflows.
+
+- **Regulators**
+  Authorities and agencies using EmissionML to analyze and verify emissions across geographies and sectors with full transparency and auditability.
+
+- **Standards and Certification Bodies**
+  Organizations defining frameworks for GHG measurement and verification. EmissionML provides a consistent, extensible data model for reliable certification.
+
+- **Emission Observation Providers**
+  Systems or organizations producing observational or inferred emission data. EmissionML ensures that observational inputs are interoperable with emission records.
+
+- **Emergency Responders**
+  Teams responding to accidental or hazardous emission events. EmissionML enhances situational awareness through spatially and temporally accurate event data.
+
+---
+
+## Events
+We attened and promoted EmissionML at the following events:
+- [the 132rd OGC Technical Committee meeting](https://www.ogc.org/event/132nd-ogc-member-meeting/), June 11 2025, Merida, Mexico
+- the CSA Scoping Workshop on Evaluating and Selecting Methane Detection, Measurement, and Quantification Technologies, June 20, Calgary, AB, Canada
+- [Expert Group Meeting on Towards A Big Data Revolution for the Planet: From Uncertainty to Opportunity](https://eo4society.esa.int/event/third-high-level-expert-group-meeting-on-big-data-2025/), July 8~10 2025, Frascati, Italy
+- [The Statistics, Analytics, and GIS for Energy (SAGE) conference](https://www.gti.energy/training-events/events-overview/sage/), August 13~14, 2025, Des Plaines, IL, USA
+- [CH4 Connections 2025](https://www.gti.energy/training-events/ch4-connections/), October 8~9 2025, Fort Collions, CO, USA
+- The 133rd OGC Technical Committee Meeting, Oct 2025, Boulder, CO, USA
+
+We presented EmissionML at the following events:
+- Methane Leadership Summit 2026, April 14~15, 2026, Banff, Canada
+
+
+---
+
+## Contributing
+
+For technical discussions, issue tracking, and schema definitions, please refer to the [GitHub Issues.](https://github.com/opengeospatial/EmissionML).
+
+The Part 1 of the EmissionML is in the [branch of 25-019](https://github.com/opengeospatial/EmissionML/tree/25-019).
+
+We hold bi-weekly online meetings to advance the development of the standard and meet in person three times a year at the [OGC Technical Committee meetings](https://www.ogc.org/events/). If you're interested in participating, please feel free to contact the SWG Chair, [Dr. Steve Liang](https://profiles.ucalgary.ca/hung-ling-steve-liang).
+
+The contributor understands that any accepted contributions may be incorporated into OGC EmissionML standards documents and that all associated copyright and intellectual property rights shall be assigned to the Open Geospatial Consortium (OGC).
+
+The EmissionML Standards Working Group (SWG) at OGC is responsible for the stewardship of the standard. While it maintains formal oversight, the group strives to conduct as much of its work as possible in public.
+
+- [EmissionML Standards Working Group Charter](https://portal.ogc.org/files/108683)
+- [Open issues](https://github.com/opengeospatial/EmissionML/issues)
+
+We welcome Pull Requests from contributors. By submitting a Pull Request or commit to this GitHub repository, you agree to the terms outlined in the [Observer Agreement](https://portal.ogc.org/files/?artifact_id=92169).

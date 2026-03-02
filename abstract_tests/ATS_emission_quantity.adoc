@@ -1,0 +1,9 @@
+[[ats_emission_quantity]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/datamodel/core/emission-quantity
+target:: /req/datamodel/core/emission-quantity
+test-purpose:: Verify that all requirements from the requirements class have been fulfilled.
+test-method:: Inspect the documentation of the application, schema or profile.
+====

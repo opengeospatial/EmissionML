@@ -1,0 +1,9 @@
+[[ats_emission_event]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/datamodel/core/emission-event
+target:: /req/datamodel/core/emission-event
+test-purpose:: Verify that all requirements from the requirements class have been fulfilled.
+test-method:: Inspect the documentation of the application, schema or profile.
+====

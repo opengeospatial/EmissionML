@@ -1,0 +1,7 @@
+[[req_unit_of_measure]]
+[requirement]
+====
+[%metadata]
+identifier:: /req/datamodel/core/unit-of-measure
+part:: This requirement defines the Unit of Measure.
+====
