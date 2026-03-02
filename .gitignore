@@ -28,6 +28,7 @@ document.xml
 document.presentation.xml
 document.err.html
 ~$*.doc
+_site/
 
 # Experimental code (not for OGC standard)
 code/
