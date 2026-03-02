@@ -9,9 +9,10 @@
 :draft: 3.0
 :external-id: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
 :docnumber: 25-019
-:received-date: 2026-00-00
-:issued-date: 2026-00-00
-:published-date: 2026-00-00
+:comment: Dates are placeholders; uncomment with valid ISO dates when submitted
+//:received-date: 2026-01-01
+//:issued-date: 2026-01-01
+//:published-date: 2026-01-01
 :fullname: Steve Liang
 :fullname_2: Ryan Ahola
 :docsubtype: conceptual-model
