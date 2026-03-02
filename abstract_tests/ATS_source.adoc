@@ -1,0 +1,9 @@
+[[ats_source]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/datamodel/core/source
+target:: /req/datamodel/core/source
+test-purpose:: Verify that all requirements from the requirements class have been fulfilled.
+test-method:: Inspect the documentation of the application, schema or profile.
+====

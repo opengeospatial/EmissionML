@@ -1,23 +1,46 @@
-# EmissionML
+# EmissionML Part 1: Data Model
 
-**EmissionML** is a free and open [Open Geospatial Consortium](https://ogc.org/) standard ontology and data model for representing and exchanging emission events in a machine-readable, interoperable, and extensible way. It supports multiple emission types, including methane, and aligns with international standards for spatial, temporal, and observational data. EmissionML adheres to the principles of [Findability, Accessibility, Interoperability, and Reusability (FAIR)](https://www.ogc.org/blog-article/how-ogc-contributes-to-fair-geospatial-data/) to ensure long-term utility across scientific, regulatory, and industrial contexts.
+OGC doc number 25-019
 
 Click here to visit the [25-019 branch](https://github.com/opengeospatial/EmissionML/tree/25-019/) where you can find the latest development of the EmissionML.
 
 ---
 
-## About
+## Content
 
-The purpose of the **OGC Emission Event Modeling Language (EmissionML) Standard Working Group** is to:
+This folder contains the text for the standard
 
-- Develop **EmissionML**, an abstract standard for modeling emission events with interoperability and extensibility in mind.
-- Build on the EmissionML model to define a **portfolio of open standards** for spatiotemporal emission data sharing and analysis.
-  - Example: **MethaneML**, a specialized extension of EmissionML for methane emissions and related observational data.
-- Publish new **OGC Best Practices** describing how existing OGC standards can be applied to:
-  - Estimate the quantity of emission events following existing protocols in accordance with established protocols such as [OGMP 2.0](https://www.ogmpartnership.org/), [MiQ](https://miq.org/), and [GTI Veritas](https://veritas.gti.energy/).
-  - Determine the occurance and duration of the emission events
+* `document.adoc` - the main standard document with references to all sections
+* `sections/` - each section of the standard document is in a separate document
+* `figures/` - figures go here
+* `images/` - image files for graphics go here
+* `requirements/` - requirements and requirement classes referenced in `clause_7_normative_text.adoc`
+* `abstract_tests/` - the Abstract Test Suite comprising one test for every requirement
+* `UML/` - UML diagrams
 
-EmissionML is built on existing OGC and ISO standards, including:
+## Building
+
+This standard is built with [Metanorma](https://www.metanorma.org/).
+
+### Prerequisites
+
+Install Metanorma CLI: https://www.metanorma.org/install/
+
+### Build commands
+
+```sh
+# Build all output formats (HTML, PDF, DOC, XML)
+make all
+
+# Or compile directly
+metanorma compile document.adoc
+```
+
+Output files are generated as `document.{html,pdf,doc,xml}`.
+
+---
+
+## Key References
 
 - [ISO/OGC 19156 Observation, Measurement, and Sampling (OMS)](https://docs.ogc.org/as/20-082r4/20-082r4.html)
 - [W3C/OGC Semantic Sensor Networks](https://www.w3.org/TR/vocab-ssn/)
@@ -123,8 +146,6 @@ classDiagram
 
 ## Functional Requirements
 
-EmissionML enables:
-
 - **Standardized data sharing** across emission systems and stakeholders
 -  **Aggregation** of emission data from heterogeneous sources
 -  **Reconciliation** of emissions with built-in support for:
@@ -149,19 +170,19 @@ EmissionML enables:
 
 ## Who Should Use EmissionML?
 
-- **Emission Source Operators**  
+- **Emission Source Operators**
   Entities responsible for emission-generating facilities or activities. EmissionML enables consistent monitoring, reporting, and compliance workflows.
 
-- **Regulators**  
+- **Regulators**
   Authorities and agencies using EmissionML to analyze and verify emissions across geographies and sectors with full transparency and auditability.
 
-- **Standards and Certification Bodies**  
+- **Standards and Certification Bodies**
   Organizations defining frameworks for GHG measurement and verification. EmissionML provides a consistent, extensible data model for reliable certification.
 
-- **Emission Observation Providers**  
+- **Emission Observation Providers**
   Systems or organizations producing observational or inferred emission data. EmissionML ensures that observational inputs are interoperable with emission records.
 
-- **Emergency Responders**  
+- **Emergency Responders**
   Teams responding to accidental or hazardous emission events. EmissionML enhances situational awareness through spatially and temporally accurate event data.
 
 ---
@@ -187,7 +208,7 @@ For technical discussions, issue tracking, and schema definitions, please refer 
 
 The Part 1 of the EmissionML is in the [branch of 25-019](https://github.com/opengeospatial/EmissionML/tree/25-019).
 
-We hold bi-weekly online meetings to advance the development of the standard and meet in person three times a year at the [OGC Technical Committee meetings](https://www.ogc.org/events/). If you’re interested in participating, please feel free to contact the SWG Chair, [Dr. Steve Liang](https://profiles.ucalgary.ca/hung-ling-steve-liang).
+We hold bi-weekly online meetings to advance the development of the standard and meet in person three times a year at the [OGC Technical Committee meetings](https://www.ogc.org/events/). If you're interested in participating, please feel free to contact the SWG Chair, [Dr. Steve Liang](https://profiles.ucalgary.ca/hung-ling-steve-liang).
 
 The contributor understands that any accepted contributions may be incorporated into OGC EmissionML standards documents and that all associated copyright and intellectual property rights shall be assigned to the Open Geospatial Consortium (OGC).
 
@@ -196,6 +217,4 @@ The EmissionML Standards Working Group (SWG) at OGC is responsible for the stewa
 - [EmissionML Standards Working Group Charter](https://portal.ogc.org/files/108683)
 - [Open issues](https://github.com/opengeospatial/EmissionML/issues)
 
-We welcome Pull Requests from contributors. By submitting a Pull Request or commit to this GitHub repository, you agree to the terms outlined in the [Observer Agreement](https://portal.ogc.org/files/?artifact_id=92169). 
-
-
+We welcome Pull Requests from contributors. By submitting a Pull Request or commit to this GitHub repository, you agree to the terms outlined in the [Observer Agreement](https://portal.ogc.org/files/?artifact_id=92169).

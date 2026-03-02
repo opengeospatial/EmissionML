@@ -1,0 +1,9 @@
+[[ats_feature]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/datamodel/core/feature
+target:: /req/datamodel/core/feature
+test-purpose:: Verify that all requirements from the requirements class have been fulfilled.
+test-method:: Inspect the documentation of the application, schema or profile.
+====

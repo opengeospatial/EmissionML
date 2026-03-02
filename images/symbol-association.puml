@@ -1,0 +1,15 @@
+@startuml symbol-association
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam monochrome true
+skinparam defaultFontSize 14
+
+hide class members
+hide class circle
+
+class A
+class B
+
+A "1" --> "1" B
+
+@enduml

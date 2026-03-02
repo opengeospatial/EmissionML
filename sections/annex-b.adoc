@@ -1,0 +1,68 @@
+[appendix,obligation=informative]
+:appendix-caption: Annex
+== Relationship with OGC Features and Observations
+
+=== Overview
+
+EmissionML is a domain-specific conceptual model that builds on two foundational OGC concepts: *Features* (ISO 19109 General Feature Model) and *Observations* (ISO/OGC 19156:2023, OMS 3.0). This annex explains how EmissionML relates to each and why explicit domain modeling is preferred over generic usage.
+
+<<fig-annex-b-layering>> illustrates the conceptual layering of EmissionML on top of these foundational standards.
+
+[[fig-annex-b-layering]]
+.Conceptual layering of EmissionML on foundational ISO/OGC standards
+image::images/annex-b-layering.png[]
+
+=== EmissionML and OGC Features
+
+The OGC General Feature Model (ISO 19109) defines a _Feature_ as an abstraction of a real-world phenomenon — any entity with an identity, properties, and optionally a geometry. EmissionML makes this alignment explicit by introducing a concrete *Feature* class (stereotyped `\<<ISO 19109>>`) into the conceptual model.
+
+The Feature class carries a mandatory `geometry` attribute of type `GM_Object` and serves as the base class for domain-specific feature types. *Source* inherits from Feature, gaining its geometry by inheritance. This structural inheritance — rather than a notional stereotype — makes the ISO 19109 alignment unambiguous and machine-verifiable.
+
+Because Feature is concrete, an Observation's `ultimateFeatureOfInterest` can reference any Feature — not only a Source. This enables observations whose feature of interest is defined at a different spatial scale (e.g., a facility area, a region, or a monitoring zone) to participate in the evidence chain without being forced into the Source class.
+
+*EmissionEvent* is also a real-world phenomenon — an occurrent that unfolds over time. In principle, an Emission Event _could_ be modeled as a generic Feature. However, EmissionML gives it explicit structure: temporal bounds (start time, end time), a quantity of emitted substance, a mechanism describing the physical or operational process, an intent classification, and an evidence chain linking the event to supporting Observations.
+
+Without this explicit modeling, a Source would be indistinguishable from any other Feature, and an emission event would be "just another Feature" with ad-hoc properties. The semantic relationships that give emission data its meaning — `hasSource`, `hasMechanism`, `hasQuantity`, `hasStartTimeEvidence` — would be lost or require convention-based interpretation.
+
+=== EmissionML and OMS 3.0 Observations
+
+OMS 3.0 (ISO/OGC 19156:2023) defines an Observation as an act of determining the value of an observable property. An Observation has a well-defined structure: a feature of interest, an observed property, a procedure, and a result.
+
+EmissionML incorporates OMS 3.0 Observation *by reference* (Requirement 8) — it does not redefine or extend the Observation class. In EmissionML, Observations serve as *evidence* supporting emission quantity and temporal bound determinations, linked through the `hasQuantityEvidence`, `hasStartTimeEvidence`, and `hasEndTimeEvidence` associations.
+
+One might ask: _Why not model the entire emission event as an Observation result?_ Because an Emission Event is richer than what a single Observation captures. An Emission Event has a source, a mechanism, an intent, multiple temporal bounds, and can be supported by _multiple_ Observations at different spatial and temporal scales. For example:
+
+* A satellite remote sensing Observation may detect a methane plume over a broad area.
+* An Optical Gas Imaging (OGI) camera Observation may pinpoint the leak to a specific component.
+* A continuous emissions monitoring system (CEMS) Observation may quantify the emission rate over time.
+
+All three Observations can serve as evidence for a single Emission Event, each contributing to the determination of quantity, start time, or end time. The Observation's `ultimateFeatureOfInterest` references a Feature — which may be a Source or any other Feature at a different spatial scale. The satellite Observation's feature of interest may be a Feature representing an entire facility, while the OGI Observation's feature of interest is a Source representing a single valve.
+
+=== EmissionML and OMS 3.0 Procedures
+
+OMS 3.0 defines a *Procedure* as "a description of steps performed" and introduces *ObservingProcedure* as a specialization that describes steps performed to determine the value of an observable property. EmissionML follows this same specialization pattern.
+
+The EmissionML conceptual model introduces a *Procedure* class (stereotyped `\<<ISO 19156:2023>>`) as the base class for process descriptions. *DeterminationProcedure* inherits from Procedure and describes the steps performed to determine a value — such as an emission quantity or temporal bound. This structural inheritance mirrors how ObservingProcedure specializes Procedure in OMS 3.0.
+
+By making Procedure an explicit base class rather than a notional reference, EmissionML ensures that its process descriptions are structurally aligned with OMS 3.0 — not merely by naming convention, but by class hierarchy. This parallels the Feature/Source pattern: just as Source inherits from Feature to make ISO 19109 alignment concrete, DeterminationProcedure inherits from Procedure to make OMS 3.0 alignment concrete.
+
+=== Why Explicit Domain Modeling
+
+*The alternative.* One could model everything with generic Features and Observations — Sources as plain Features, emission data as Observation results, and relationships as ad-hoc properties. This approach uses only existing OGC standards without defining new classes.
+
+*The problem.* Generic modeling loses domain semantics. Without EmissionML's explicit classes, systems cannot:
+
+* distinguish a Source from any other Feature,
+* enforce that an emission has a Mechanism and an Intent,
+* trace the evidence chain from Observation to Emission Quantity to Emission Event,
+* validate that required relationships are present (e.g., every Emission Event must have a Source, a Mechanism, and a Determination Procedure).
+
+*What explicit modeling provides:*
+
+Interoperability:: Systems exchanging EmissionML data share a common vocabulary. EmissionEvent, Source, Mechanism, and EmissionQuantity are unambiguous — they mean the same thing in every implementation.
+
+Validation:: Requirements can be formally specified and enforced. For example, Requirement 1 mandates that every Emission Event has a Source, a Mechanism, start time, quantity, and their corresponding Determination Procedures.
+
+Usability:: Domain experts work with emission concepts directly — _emission events_, _sources_, _mechanisms_ — rather than mapping to and from generic abstractions. This reduces the cognitive burden and the risk of misinterpretation.
+
+*Analogy.* Just as CityGML defines explicit Building, Road, and Vegetation classes rather than using generic Features, EmissionML defines explicit emission domain classes. The General Feature Model provides the abstract foundation; EmissionML provides the domain-specific vocabulary that makes emission data interoperable and actionable.

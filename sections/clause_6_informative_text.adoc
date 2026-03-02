@@ -1,0 +1,91 @@
+== Background and Motivation
+
+=== Overview
+
+Emissions measurement, monitoring, reporting, and verification (MMRV) now spans satellite remote sensing, aerial surveys, continuous in-situ monitoring, and handheld inspection instruments. Each modality generates data at different spatial and temporal scales, yet regulators, operators, and verifiers must reconcile these heterogeneous observations into coherent, auditable emission assessments. The absence of a common ontology and data model for emission events is the primary structural barrier to achieving this reconciliation at scale.
+
+EmissionML addresses this gap. It defines a standards-grounded conceptual model that provides a consistent semantic foundation for describing emission sources, events, quantities, and supporting observations — independent of the sensing technology, reporting framework, or enterprise system that produces or consumes the data.
+
+=== Structural Gaps in Current Approaches
+
+The emissions data ecosystem lacks a shared ontology. Each technology vendor, facility operator, and reporting program defines its own vocabulary, formats, and assumptions. This fragmentation produces systemic inefficiencies across the entire data lifecycle:
+
+* *Costly, manual, and siloed workflows.* Operators must build bespoke integrations to reconcile proprietary vendor outputs with internal enterprise systems, duplicating effort for each new sensor or data source.
+* *Inability to link heterogeneous measurements.* A satellite-detected concentration anomaly and a ground-level inspection of the same source cannot be programmatically correlated when source features, event semantics, and observation metadata are defined inconsistently.
+* *Incompatible reporting requirements.* The same emission data must be restated in multiple incompatible templates to satisfy different regulatory and voluntary frameworks (e.g., EPA, EU Methane Regulation, OGMP 2.0, MiQ), increasing administrative burden and undermining cross-framework comparability.
+* *Lack of transparency and auditability.* Without a standard evidence chain linking reported quantities to their supporting observations and determination procedures, stakeholders cannot independently verify the credibility of emission assessments.
+
+These are not incidental inefficiencies. They are consequences of a missing data foundation: no common model exists for the emission event itself — the central entity that connects a source, a mechanism, a quantity, a time interval, and the observations that support the determination.
+
+=== How EmissionML Addresses These Gaps
+
+EmissionML operationalizes open standards to provide a sensor-agnostic, interoperable data model for emission events. It establishes:
+
+* *A shared ontology for emission events and their constituent parts* — Source, Mechanism, Emission Quantity, Temporal Bound, Emission Intent, and Determination Procedure — each with well-defined semantics and relationships.
+* *An explicit evidence chain* linking every emission determination to its supporting Observations (ISO/OGC 19156:2023, OMS 3.0) and procedures, enabling end-to-end traceability from reported values to underlying measurements.
+* *Embedded uncertainty provenance* through data quality metadata attached to emission quantities and temporal bounds, so that the confidence and precision of each determination are recorded alongside the values themselves.
+* *A "write once, use many times" intermediary model* that decouples data production from reporting consumption, enabling a single standards-conformant emission event record to be transformed into outputs for multiple regulatory and voluntary frameworks.
+
+<<fig-data-value-chain>> illustrates this architecture. Heterogeneous inputs — emission inventories, sensor observations, operational data, geospatial data, and field inspection and repair data — are normalized through EmissionML into a single standards-conformant representation. From that representation, outputs are generated for multiple downstream consumers without requiring source-specific reformatting.
+
+[[fig-data-value-chain]]
+.EmissionML as an intermediary data model: write once, use many times
+image::images/EmissionML-data-value-chain.png[]
+
+EmissionML does not replace existing sensing technologies, estimation methods, or reporting tools. It provides the standards-grounded data foundation that enables them to interoperate.
+
+=== Applicability Across Emission Domains
+
+Although early development of EmissionML has been informed by oil and gas methane monitoring — where regulatory pressure and sensing technology are most advanced — the conceptual model is domain-neutral. The core abstraction of an emission event (a source releasing a substance through a mechanism, over a time interval, with a determined quantity) applies wherever substances are released into the atmosphere. Examples include:
+
+* *Emergency management.* Wildfires, industrial accidents, and volcanic events produce large, episodic emissions whose source geometry, temporal bounds, and quantities must be characterized rapidly from heterogeneous observations (satellite imagery, ground sensors, dispersion models) and communicated across jurisdictions.
+* *Landfill gas emissions.* Landfills emit methane and other gases through diffuse and point sources that vary with waste composition, cover integrity, and weather conditions. Standardized emission event records enable consistent monitoring and reporting across sites and regulatory regimes.
+* *Permafrost thaw.* Thawing permafrost releases methane and carbon dioxide through mechanisms that are spatially diffuse and temporally variable. Reconciling field measurements, remote sensing, and biogeochemical models requires a common event model with explicit uncertainty provenance.
+* *Agriculture.* Livestock, rice cultivation, and fertilizer application produce emissions through distinct mechanisms at varying spatial scales. A shared ontology enables aggregation from field-level observations to regional inventories.
+* *Wastewater treatment.* Treatment processes emit methane, nitrous oxide, and other gases through identifiable mechanisms at known facilities, requiring the same source–event–observation linkage that EmissionML provides.
+* *Public safety and hazardous releases.* Chemical spills, industrial gas leaks, and radiological dispersal events (e.g., dirty bombs) require rapid characterization of what substance was released, from where, in what quantity, and over what time interval — the same source–mechanism–quantity–temporal structure that EmissionML defines. A standardized event model enables interoperable data exchange across first responders, environmental agencies, and public health authorities.
+
+The EmissionML conceptual model accommodates these domains without modification to the core classes or relationships. Domain-specific extensions — such as specialized Source Type or Mechanism vocabularies — can be defined as profiles of the core model.
+
+=== Use Cases
+
+<<tab-use-cases>> summarizes the key use cases that motivate the design of EmissionML.
+
+[[tab-use-cases]]
+.EmissionML use cases
+[cols="2,3,3",options="header"]
+|===
+|Use Case |Problem |EmissionML Solution
+
+|Cross-vendor sensor integration
+|Proprietary payloads and inconsistent data models require bespoke integrations for each sensor system, increasing cost and preventing plug-and-play deployment.
+|Normalizes observation payloads to a consistent ontology, eliminating vendor-specific integration overhead.
+
+|Emission event attribution and validation
+|Satellite-detected concentration anomalies cannot be programmatically linked to specific sources (e.g., facilities, landfill cells, wildfire perimeters) when source feature definitions are inconsistent across systems.
+|Links Observations to Source Features and Emission Events with an auditable validation chain, reducing attribution uncertainty.
+
+|Regulatory and voluntary reporting
+|Operators reformat the same emission data for each reporting framework (EPA, EU Methane Regulation, OGMP 2.0, MiQ), duplicating effort and introducing transcription errors.
+|Provides a single standards-conformant emission event record that can be automatically transformed into multiple reporting formats.
+
+|Real-time operational response
+|Control rooms and emergency response centres receive fragmented event feeds from multiple systems, delaying root-cause diagnosis and coordinated action.
+|Delivers a normalized, brokerable event stream with consistent source and quantity semantics across platforms.
+
+|Carbon-market quantification and verification
+|Emission reduction calculations are opaque, with no standard mechanism to encode uncertainties or link quantities to their determination procedures.
+|Encodes emission quantities with uncertainties and provenance metadata, increasing credit integrity and reducing verification cost.
+
+|Emissions simulation interoperability
+|Simulation tools use incompatible models, limiting cross-study comparability and reuse of inputs and outputs.
+|Represents simulation inputs and outputs as standardized Emission Events, enabling benchmarking and reproducibility.
+
+|Financial risk and ESG analysis
+|ESG risk assessments depend on inconsistent, non-comparable emissions disclosures that cannot be reliably ingested into financial risk models.
+|Structures emissions data with standardized semantics and uncertainty metadata for direct ingestion into risk and ESG scoring models.
+|===
+
+=== Further Reading
+
+The rationale, use cases, and design principles summarized in this clause are discussed in detail in the OGC EmissionML Discussion Paper <<OGC_EmissionML_DP>>.

@@ -1,0 +1,44 @@
+[[req_class_core]]
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/emissionml/1.0/req/datamodel/core
+subject:: Data Model
+inherit:: http://www.opengis.net/doc/as/om/3.0/req/obs-basic
+requirement:: /req/datamodel/core/emission-event
+requirement:: /req/datamodel/core/source
+requirement:: /req/datamodel/core/source-type
+requirement:: /req/datamodel/core/mechanism
+requirement:: /req/datamodel/core/emission-quantity
+requirement:: /req/datamodel/core/unit-of-measure
+requirement:: /req/datamodel/core/temporal-bound
+requirement:: /req/datamodel/core/observation
+requirement:: /req/datamodel/core/emission-intent
+requirement:: /req/datamodel/core/determination-procedure
+requirement:: /req/datamodel/core/feature
+requirement:: /req/datamodel/core/procedure
+====
+
+include::REQ_emission_event.adoc[]
+
+include::REQ_source.adoc[]
+
+include::REQ_source_type.adoc[]
+
+include::REQ_mechanism.adoc[]
+
+include::REQ_emission_quantity.adoc[]
+
+include::REQ_unit_of_measure.adoc[]
+
+include::REQ_temporal_bound.adoc[]
+
+include::REQ_observation.adoc[]
+
+include::REQ_emission_intent.adoc[]
+
+include::REQ_determination_procedure.adoc[]
+
+include::REQ_feature.adoc[]
+
+include::REQ_procedure.adoc[]

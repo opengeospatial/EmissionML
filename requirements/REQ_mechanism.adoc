@@ -1,0 +1,7 @@
+[[req_mechanism]]
+[requirement]
+====
+[%metadata]
+identifier:: /req/datamodel/core/mechanism
+part:: This requirement defines the Mechanism.
+====

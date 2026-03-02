@@ -1,0 +1,46 @@
+== Terms and Definitions
+This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
+
+This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
+
+For the purposes of this document, the following additional terms and definitions apply.
+
+Determination Procedure::
+A Determination Procedure describes the steps performed to determine the quantity or temporal bounds of an Emission Event.
+
+Emission Event::
+An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
+
+Emission Quantity::
+An Emission Quantity is the physical quantity representing the total mass of substance released to the atmosphere during a defined Emission Event or over a specified time interval.
+
+Emission Intent::
+Emission Intent is a code list describing whether an emission is intentional, unintentional, or unknown.
+
+Feature::
+Abstraction of real world phenomena (Source: ISO 19101-1:2014)
+
+Measurement::
+Set of operations having the object of determining the value of a quantity (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
+
+Mechanism::
+A Mechanism is a classification of the specific physical, chemical, or operational process that constitutes the direct cause or pathway for an emission. It is defined independently of the Source—including its identity, structure, or purpose—allowing Mechanisms to be consistently reused across different types of Source.
+
+Observation::
+Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
+
+Procedure::
+Description of steps performed (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
+
+Source::
+A Source represents the feature from which an emission originates. A Source is an ISO 191xx feature whose geometry provides the geospatial reference for one or more Emission Events. A Source is characterised by its own identity, geometry, intended function, and lifecycle, and is explicitly agnostic to the Mechanism by which any associated Emission Event occurs.
+
+Source Type::
+A Source Type classifies a Source by its category.
+
+Temporal Bound::
+A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) that MAY have associated data quality metadata.
+
+Unit of Measure::
+Reference quantity chosen from a unit equivalence group (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
+

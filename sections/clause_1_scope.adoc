@@ -1,0 +1,7 @@
+== Scope
+
+This document defines a conceptual data model for emission events, for features from which emissions originate and mechanisms by which they occur, and for observations and procedures that provide evidence for emission determinations. These provide models for the exchange of information describing emission events and their associated quantities, temporal bounds, sources, and mechanisms, both within and between different regulatory, scientific, and technical communities.
+
+Emission events commonly involve observations of an ultimate feature-of-interest at varying spatial scales. This document defines a common set of classes for describing emission sources, mechanisms, quantities, temporal bounds, determination procedures, and supporting observations. The schema includes relationships between emission events and their evidence chains, linking reported values to underlying observations and procedures, and attaches data quality metadata to emission quantities and temporal bounds.
+
+This document concerns only externally visible interfaces and places no restriction on the underlying implementations other than what is needed to satisfy the interface specifications in the actual situation.
