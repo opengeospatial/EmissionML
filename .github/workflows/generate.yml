@@ -10,8 +10,12 @@ on:
       - .github/workflows/docker.yml
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
 jobs:
-  test-linux:
+  site-generate:
     name: Test on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
@@ -21,32 +25,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.METANORMA_CI_PAT_TOKEN || github.token }}
           submodules: true
-
-      - uses: actions/cache@v4
-        with:
-          path: ~/.cache/xml2rfc
-          key: xml2rfc
-          restore-keys: xml2rfc
-
-      - uses: actions/cache@v4
-        with:
-          path: ~/.fontist
-          key: fontist-${{ runner.os }}
-          restore-keys: fontist-${{ runner.os }}
-
-      - uses: actions/cache@v4
-        with:
-          path: ~/.metanorma-ietf-workgroup-cache.json
-          key: metanorma-ietf-workgroup-cache
-          restore-keys: metanorma-ietf-workgroup-cache
-
-      - if: matrix.os == 'windows-latest'
-        run: rm Gemfile
 
       - uses: actions-mn/setup@main
 
-      - uses: actions-mn/cli/site-gen@main
+      - uses: actions-mn/build-and-publish@v1
         with:
           agree-to-terms: true
+          destination: artifact
+          artifact-name: ${{ github.repository_owner }}-${{ github.event.repository.name }}-${{ matrix.os }}

@@ -11,6 +11,10 @@ on:
   repository_dispatch:
     types: [ metanorma/metanorma-docker ]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
 jobs:
   test-docker:
     runs-on: ubuntu-latest
@@ -18,33 +22,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.METANORMA_CI_PAT_TOKEN || github.token }}
           submodules: true
 
-      - uses: actions/cache@v4
-        with:
-          path: /config/fonts
-          key: fontist-docker
-          restore-keys: fontist-docker
-
-      - uses: actions/cache@v4
-        with:
-          path: ~/.metanorma-ietf-workgroup-cache.json
-          key: metanorma-ietf-workgroup-cache
-          restore-keys: metanorma-ietf-workgroup-cache
-
-      - uses: metanorma/metanorma-build-scripts/gh-rubygems-setup-action@main
-        with:
-          token: ${{ secrets.METANORMA_CI_PAT_TOKEN }}
-
-      - run: |
-          curl -L --retry 3 https://raw.githubusercontent.com/metanorma/metanorma-build-scripts/main/gemfile-to-bundle-add.sh | bash
-
-      - uses: actions-mn/cli/site-gen@main
+      - uses: actions-mn/build-and-publish@v1
         with:
           agree-to-terms: true
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: site
+          destination: artifact
+          artifact-name: ${{ github.repository_owner }}-${{ github.event.repository.name }}-docker
