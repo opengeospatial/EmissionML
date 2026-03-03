@@ -22,7 +22,7 @@ include::../requirements/requirements_class.adoc[]
 
 === Emission Event Class
 
-An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its temporal bounds (start time and end time), the Source Feature from which the substance originated, and the identity and quantity of the emitted substance. Both start time and end time are mandatory; each carries a Temporal Status that explicitly indicates whether the time instant is known, unknown, or ongoing.
+An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance. Both start time and end time are mandatory. The end time carries a Temporal Status that indicates whether the time instant is known, unknown, or ongoing; the start time's status is always known.
 
 NOTE: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
 
@@ -49,20 +49,20 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 .Direct relation between an Emission Event class and other class types
 |===
 |Role |Description |Target Class Type |Multiplicity and use
-|hasMechanism | The mechanism by which the emission occurred. | Mechanism |1 (mandatory)
-|hasSource | The source from which the emission originated. | Source |1 (mandatory)
+|mechanism | The mechanism by which the emission occurred. | Mechanism |1 (mandatory)
+|source | The source from which the emission originated. | Source |1 (mandatory)
 |startTime | The start time of the emission event. `startTime.status` SHALL be `known`. | TemporalBound |1 (mandatory)
 |endTime | The end time of the emission event. The `status` attribute of the TemporalBound indicates whether the end time is known, unknown, or ongoing. | TemporalBound |1 (mandatory)
-|hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
-|hasStartTimeBasis | The procedure used to determine the start time. | DeterminationProcedure |1 (mandatory)
-|hasEndTimeBasis | The procedure used to determine the end time. SHALL be present when `endTime.status = known`; SHALL be absent when `endTime.status` is `unknown` or `ongoing` (no determination was made). | DeterminationProcedure |0..1 (conditional)
-|hasQuantityBasis | The procedure used to determine the emission quantity. | DeterminationProcedure |1 (mandatory)
-|hasStartTimeEvidence | Observations providing evidence for the start time determination. | Observation |0..* (optional)
-|hasEndTimeEvidence | Observations providing evidence for the end time determination. Not applicable when `endTime.status` is `unknown` or `ongoing`. | Observation |0..* (optional)
-|hasQuantityEvidence | Observations providing evidence for the quantity determination. | Observation |0..* (optional)
+|quantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
+|startTimeBasis | The procedure used to determine the start time. | DeterminationProcedure |1 (mandatory)
+|endTimeBasis | The procedure used to determine the end time. SHALL be present when `endTime.status = known`; SHALL be absent when `endTime.status` is `unknown` or `ongoing` (no determination was made). | DeterminationProcedure |0..1 (conditional)
+|quantityBasis | The procedure used to determine the emission quantity. | DeterminationProcedure |1 (mandatory)
+|startTimeEvidence | Observations providing evidence for the start time determination. | Observation |0..* (optional)
+|endTimeEvidence | Observations providing evidence for the end time determination. Not applicable when `endTime.status` is `unknown` or `ongoing`. | Observation |0..* (optional)
+|quantityEvidence | Observations providing evidence for the quantity determination. | Observation |0..* (optional)
 |===
 
-NOTE: Even when the exact emission onset is uncertain (e.g., inventory-based back-calculations or legacy data), a start time SHALL be provided. Uncertainty is expressed through the `quality` attribute on the TemporalBound and documented via `hasStartTimeBasis`.
+NOTE: Even when the exact emission onset is uncertain (e.g., inventory-based back-calculations or legacy data), a start time SHALL be provided. Uncertainty is expressed through the `quality` attribute on the TemporalBound and documented via `startTimeBasis`.
 
 === Feature Class
 
@@ -119,7 +119,7 @@ Each Source class shall have the direct relation between a Source class and othe
 .Direct relation between a Source class and other class types
 |===
 |Role |Description |Target Class Type |Multiplicity and use
-|hasType |The type classification of the source. |SourceType |0..1 (optional)
+|type |The type classification of the source. |SourceType |0..1 (optional)
 |===
 
 '''
@@ -179,7 +179,7 @@ Each Mechanism class shall have the direct relation listed in <<mechanism-relati
 .Direct relation between a Mechanism class and other class types
 |===
 |Role |Description |Target Class Type |Multiplicity and use
-|hasIntent |The emission intent associated with the mechanism. |EmissionIntent |1 (mandatory)
+|intent |The emission intent associated with the mechanism. |EmissionIntent |1 (mandatory)
 |===
 
 '''
@@ -209,7 +209,7 @@ Each Emission Quantity class shall have the direct relation between an Emission 
 .Direct relation between an Emission Quantity class and other class types
 |===
 |Role |Description |Target Class Type |Multiplicity and use
-|hasUnit |The unit of measure associated with the emission quantity. |UnitOfMeasure |1 (mandatory)
+|unit |The unit of measure associated with the emission quantity. |UnitOfMeasure |1 (mandatory)
 |===
 
 '''
@@ -262,18 +262,17 @@ Each Temporal Bound class shall have the direct relation listed in <<temporal-bo
 |===
 |Names |Definition |Data types and values |Multiplicity and use
 |time |The time instant value of this Temporal Bound. SHALL be provided when `status = known`. SHALL NOT be provided (i.e., the attribute is omitted, not null) when `status` is `unknown` or `ongoing`. |TM_Instant |0..1 (conditional)
-|status |Indicates whether the time instant is known, unknown, or ongoing. `startTime.status` SHALL be `known`. `ongoing` and `unknown` apply to `endTime` only. |TemporalStatus |1 (mandatory)
 |quality |A data quality element describing the quality of the temporal bound. |DQ_Element |0..* (optional)
 |===
-
-NOTE: `startTime.status` SHALL always be `known`. When the exact onset is uncertain, express the uncertainty through the `quality` attribute and `hasStartTimeBasis`.
 
 [#temporal-bound-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
 .Direct relation between a Temporal Bound class and other class types
 |===
 |Role |Description |Target Class Type |Multiplicity and use
-|hasStatus |The temporal status of this bound. |TemporalStatus |1 (mandatory)
+|status |Indicates whether the time instant is known, unknown, or ongoing. `startTime.status` SHALL be `known`; `ongoing` and `unknown` apply to `endTime` only. |TemporalStatus |1 (mandatory)
 |===
+
+NOTE: `startTime.status` SHALL always be `known`. When the exact onset is uncertain, express the uncertainty through the `quality` attribute and `startTimeBasis`.
 
 '''
 

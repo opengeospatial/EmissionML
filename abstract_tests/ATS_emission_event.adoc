@@ -4,6 +4,6 @@
 [%metadata]
 identifier:: /conf/datamodel/core/emission-event
 target:: /req/datamodel/core/emission-event
-test-purpose:: Verify that each Emission Event has a mandatory `endTime` of type TemporalBound. Verify that `hasEndTimeBasis` is present when `endTime.status = known` and absent otherwise. Verify that `hasEndTimeEvidence` is not applicable when `endTime.status` is `unknown` or `ongoing`.
+test-purpose:: Verify that each Emission Event has a mandatory `endTime` of type TemporalBound. Verify that `endTimeBasis` is present when `endTime.status = known` and absent otherwise. Verify that `endTimeEvidence` is not applicable when `endTime.status` is `unknown` or `ongoing`.
 test-method:: Inspect the documentation of the application, schema or profile.
 ====
