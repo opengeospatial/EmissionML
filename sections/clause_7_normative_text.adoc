@@ -51,7 +51,7 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |Role |Description |Target Class Type |Multiplicity and use
 |hasMechanism | The mechanism by which the emission occurred. | Mechanism |1 (mandatory)
 |hasSource | The source from which the emission originated. | Source |1 (mandatory)
-|startTime | The start time of the emission event. The `status` attribute of the TemporalBound indicates whether the start time is known or unknown. | TemporalBound |1 (mandatory)
+|startTime | The start time of the emission event. `startTime.status` SHALL be `known`; uncertainty about the start time is expressed through the `quality` attribute and `hasStartTimeBasis`. | TemporalBound |1 (mandatory)
 |endTime | The end time of the emission event. The `status` attribute of the TemporalBound indicates whether the end time is known, unknown, or ongoing. | TemporalBound |1 (mandatory)
 |hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
 |hasStartTimeBasis | The procedure used to determine the start time. | DeterminationProcedure |1 (mandatory)
@@ -62,7 +62,7 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |hasQuantityEvidence | Observations providing evidence for the quantity determination. | Observation |0..* (optional)
 |===
 
-NOTE: `startTime.status = unknown` arises when the actual emission onset is undetermined — for example, in inventory-based emissions where annual totals are back-calculated from fuel consumption or production records, or in legacy data where the start time was never recorded. In most operational contexts, `startTime.status = known` is expected.
+NOTE: Even when the exact emission onset is uncertain (e.g., inventory-based back-calculations or legacy data), a start time SHALL be provided. Uncertainty about the start time is expressed through the `quality` attribute on the TemporalBound and documented via `hasStartTimeBasis` — not by omitting the time value.
 
 === Feature Class
 
@@ -262,11 +262,11 @@ Each Temporal Bound class shall have the direct relation listed in <<temporal-bo
 |===
 |Names |Definition |Data types and values |Multiplicity and use
 |time |The time instant value of this Temporal Bound. SHALL be provided when `status = known`. SHALL NOT be provided (i.e., the attribute is omitted, not null) when `status` is `unknown` or `ongoing`. |TM_Instant |0..1 (conditional)
-|status |Indicates whether the time instant is known, unknown, or ongoing. `ongoing` applies to `endTime` only — a `startTime` SHALL have `status = known` or `status = unknown`. |TemporalStatus |1 (mandatory)
+|status |Indicates whether the time instant is known, unknown, or ongoing. `startTime.status` SHALL be `known`. `ongoing` and `unknown` apply to `endTime` only. |TemporalStatus |1 (mandatory)
 |quality |A data quality element describing the quality of the temporal bound. |DQ_Element |0..* (optional)
 |===
 
-NOTE: In most cases, `startTime.status = known` is expected.
+NOTE: `startTime.status` SHALL always be `known`. When the exact onset is uncertain, use the `quality` attribute and `hasStartTimeBasis` to document the uncertainty.
 
 [#temporal-bound-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
 .Direct relation between a Temporal Bound class and other class types
@@ -293,8 +293,8 @@ The Temporal Status enumeration shall support the enumeration values listed in <
 .Enumeration values of Temporal Status
 |===
 |Name |Definition |Applicability
-|known |The time instant is determined and provided. |startTime, endTime
-|unknown |A specific time exists but has not been determined. For startTime, this arises when the actual emission onset is undetermined (e.g., inventory-based back-calculations or legacy data). For endTime, this indicates a concluded event whose end time was not recorded. |startTime, endTime
+|known |The time instant is determined and provided. |startTime (mandatory), endTime
+|unknown |A specific time exists but has not been determined — e.g., a concluded event whose end time was not recorded. |endTime only
 |ongoing |The event boundary is still advancing; the emission has not yet ceased. |endTime only
 |===
 
