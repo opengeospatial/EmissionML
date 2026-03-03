@@ -39,7 +39,10 @@ Source Type::
 A Source Type classifies a Source by its category.
 
 Temporal Bound::
-A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) that MAY have associated data quality metadata.
+A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) whose status indicates whether the time instant is known, unknown, or ongoing, and that MAY have associated data quality metadata.
+
+Temporal Status::
+Temporal Status is a code list describing whether a temporal bound's time instant is known, unknown, or ongoing.
 
 Unit of Measure::
 Reference quantity chosen from a unit equivalence group (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])

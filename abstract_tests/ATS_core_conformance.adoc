@@ -12,6 +12,7 @@ abstract-test:: /conf/datamodel/core/mechanism
 abstract-test:: /conf/datamodel/core/emission-quantity
 abstract-test:: /conf/datamodel/core/unit-of-measure
 abstract-test:: /conf/datamodel/core/temporal-bound
+abstract-test:: /conf/datamodel/core/temporal-status
 abstract-test:: /conf/datamodel/core/observation
 abstract-test:: /conf/datamodel/core/emission-intent
 abstract-test:: /conf/datamodel/core/determination-procedure

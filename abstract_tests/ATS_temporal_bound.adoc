@@ -4,6 +4,6 @@
 [%metadata]
 identifier:: /conf/datamodel/core/temporal-bound
 target:: /req/datamodel/core/temporal-bound
-test-purpose:: Verify that all requirements from the requirements class have been fulfilled.
-test-method:: Inspect the documentation of the application, schema or profile.
+test-purpose:: Verify that each Temporal Bound has a mandatory `status` attribute of type TemporalStatus and a conditional `time` attribute. Verify Constraint C1 (`time` present iff `status = known`) and Constraint C2 (`ongoing` applies to endTime only).
+test-method:: Inspect the documentation of the application, schema or profile. Verify that implementations enforce C1 and C2 constraints.
 ====

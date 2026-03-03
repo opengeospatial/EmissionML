@@ -22,7 +22,7 @@ include::../requirements/requirements_class.adoc[]
 
 === Emission Event Class
 
-An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its start time and end time, the Source Feature from which the substance originated, and the identity and quantity of the emitted substance.
+An Emission Event represents the release of a substance into the atmosphere over a non-zero duration. It is characterized by its temporal bounds (start time and end time), the Source Feature from which the substance originated, and the identity and quantity of the emitted substance. Both start time and end time are mandatory; each carries a Temporal Status that explicitly indicates whether the time instant is known, unknown, or ongoing.
 
 NOTE: Conceptually, an Emission Event corresponds to an occurrent in upper-ontology terms, as it unfolds over time and has temporal parts.
 
@@ -52,15 +52,19 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |hasMechanism | The mechanism by which the emission occurred. | Mechanism |1 (mandatory)
 |hasSource | The source from which the emission originated. | Source |1 (mandatory)
 |startTime | The start time of the emission event. | TemporalBound |1 (mandatory)
-|endTime | The end time of the emission event. | TemporalBound |0..1 (optional)
+|endTime | The end time of the emission event. The `status` attribute of the TemporalBound indicates whether the end time is known, unknown, or ongoing. | TemporalBound |1 (mandatory)
 |hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
 |hasStartTimeBasis | The procedure used to determine the start time. | DeterminationProcedure |1 (mandatory)
-|hasEndTimeBasis | The procedure used to determine the end time. | DeterminationProcedure |0..1 (optional)
+|hasEndTimeBasis | The procedure used to determine the end time. SHALL be present when `endTime.status = known` (Constraint C4). | DeterminationProcedure |1 (mandatory)
 |hasQuantityBasis | The procedure used to determine the emission quantity. | DeterminationProcedure |1 (mandatory)
 |hasStartTimeEvidence | Observations providing evidence for the start time determination. | Observation |0..* (optional)
 |hasEndTimeEvidence | Observations providing evidence for the end time determination. | Observation |0..* (optional)
 |hasQuantityEvidence | Observations providing evidence for the quantity determination. | Observation |0..* (optional)
 |===
+
+*Constraint C4*: If `endTime.status = known`, `hasEndTimeBasis` SHALL be present. The value MAY be "unknown" or "legacy" when the method is not documented.
+
+*Constraint C5*: If `endTime.status != known` (i.e., `unknown` or `ongoing`), `hasEndTimeBasis` and `hasEndTimeEvidence` are not applicable and SHOULD be omitted.
 
 === Feature Class
 
@@ -244,7 +248,7 @@ Each Unit of Measure class shall have the mandatory attributes listed in <<unit-
 
 === Temporal Bound Class
 
-A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) that MAY have associated data quality metadata. The determination procedure and supporting evidence for a Temporal Bound are tracked at the Emission Event level.
+A Temporal Bound is a value object representing a temporal determination (e.g., start time or end time) whose `status` attribute explicitly indicates whether the time instant is known, unknown, or ongoing. This eliminates ambiguity that arises when absence of a value is used to signal multiple distinct states. A Temporal Bound MAY have associated data quality metadata. The determination procedure and supporting evidence for a Temporal Bound are tracked at the Emission Event level.
 
 .Requirement 7 — Temporal Bound Class
 [width="90%",cols="2,6"]
@@ -252,21 +256,53 @@ A Temporal Bound is a value object representing a temporal determination (e.g., 
 |Requirement 7: Temporal Bound Class {set:cellbgcolor:#CACCCE}|/req/datamodel/core/temporal-bound +
 +
 Each Temporal Bound class shall have the mandatory attributes listed in <<temporal-bound-attributes>>.
+Each Temporal Bound class shall have the direct relation listed in <<temporal-bound-relations>>.
+Each Temporal Bound class shall satisfy Constraints C1 and C2.
 |===
 
 [#temporal-bound-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
 .Attributes of a Temporal Bound class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|time |The time instant value of this Temporal Bound. |TM_Instant |1 (mandatory)
+|time |The time instant value of this Temporal Bound. Present if and only if `status = known` (Constraint C1). |TM_Instant |0..1 (conditional)
+|status |Indicates whether the time instant is known, unknown, or ongoing. |TemporalStatus |1 (mandatory)
 |quality |A data quality element describing the quality of the temporal bound. |DQ_Element |0..* (optional)
 |===
+
+*Constraint C1*: `time` SHALL be present if and only if `status = known`.
+
+*Constraint C2*: `ongoing` applies to `endTime` only. A `startTime` SHALL have `status = known` or `status = unknown`.
+
+NOTE: In most cases, `startTime.status = known` is expected (Constraint C3, informative).
 
 [#temporal-bound-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
 .Direct relation between a Temporal Bound class and other class types
 |===
 |Role |Description |Target Class Type |Multiplicity and use
-|- |No direct relations are defined for TemporalBound in the core model (determination procedure and evidence are tracked at the EmissionEvent level). |- |-
+|hasStatus |The temporal status of this bound. |TemporalStatus |1 (mandatory)
+|===
+
+'''
+
+=== Temporal Status Enumeration
+
+Temporal Status is a code list describing whether a temporal bound's time instant is known, unknown, or ongoing.
+
+.Requirement 13 — Temporal Status Enumeration
+[width="90%",cols="2,6"]
+|===
+|Requirement 13: Temporal Status Enumeration {set:cellbgcolor:#CACCCE}|/req/datamodel/core/temporal-status +
++
+The Temporal Status enumeration shall support the enumeration values listed in <<temporal-status-values>>.
+|===
+
+[#temporal-status-values,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
+.Enumeration values of Temporal Status
+|===
+|Name |Definition
+|known |The time instant is determined and provided.
+|unknown |A specific time exists but has not been determined.
+|ongoing |The event boundary is still advancing (applies to endTime only).
 |===
 
 '''

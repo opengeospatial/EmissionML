@@ -1,0 +1,9 @@
+[[ats_temporal_status]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/datamodel/core/temporal-status
+target:: /req/datamodel/core/temporal-status
+test-purpose:: Verify that the Temporal Status code list supports the values `known`, `unknown`, and `ongoing`, and that each value is used according to its definition.
+test-method:: Inspect the documentation of the application, schema or profile.
+====

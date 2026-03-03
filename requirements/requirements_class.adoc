@@ -12,6 +12,7 @@ requirement:: /req/datamodel/core/mechanism
 requirement:: /req/datamodel/core/emission-quantity
 requirement:: /req/datamodel/core/unit-of-measure
 requirement:: /req/datamodel/core/temporal-bound
+requirement:: /req/datamodel/core/temporal-status
 requirement:: /req/datamodel/core/observation
 requirement:: /req/datamodel/core/emission-intent
 requirement:: /req/datamodel/core/determination-procedure
@@ -32,6 +33,8 @@ include::REQ_emission_quantity.adoc[]
 include::REQ_unit_of_measure.adoc[]
 
 include::REQ_temporal_bound.adoc[]
+
+include::REQ_temporal_status.adoc[]
 
 include::REQ_observation.adoc[]
 

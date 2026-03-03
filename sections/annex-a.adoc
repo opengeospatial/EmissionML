@@ -36,6 +36,10 @@ include::../abstract_tests/ATS_unit_of_measure.adoc[]
 
 include::../abstract_tests/ATS_temporal_bound.adoc[]
 
+==== Temporal Status
+
+include::../abstract_tests/ATS_temporal_status.adoc[]
+
 ==== Observation
 
 include::../abstract_tests/ATS_observation.adoc[]

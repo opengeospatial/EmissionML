@@ -29,8 +29,16 @@ classDiagram
   }
 
   class TemporalBound {
-    +time: TM_Instant
+    +time: TM_Instant [0..1]
+    +status: TemporalStatus [1]
     +quality: DQ_Element [0..*]
+  }
+
+  class TemporalStatus {
+    <<CodeList>>
+    known
+    unknown
+    ongoing
   }
 
   class Observation {
@@ -84,7 +92,7 @@ classDiagram
   %% EmissionEvent composition
   EmissionEvent "1" *-- "1" EmissionQuantity : quantity
   EmissionEvent "1" *-- "1" TemporalBound : startTime
-  EmissionEvent "1" *-- "0..1" TemporalBound : endTime
+  EmissionEvent "1" *-- "1" TemporalBound : endTime
   EmissionEvent "*" --> "1" Source : source
   EmissionEvent "*" --> "1" Mechanism : mechanism
 
@@ -95,7 +103,7 @@ classDiagram
 
   %% Basis: How each value was determined
   EmissionEvent "1" --> "1" DeterminationProcedure : startTimeBasis
-  EmissionEvent "1" --> "0..1" DeterminationProcedure : endTimeBasis
+  EmissionEvent "1" --> "1" DeterminationProcedure : endTimeBasis
   EmissionEvent "1" --> "1" DeterminationProcedure : quantityBasis
 
   %% Observation target
@@ -106,6 +114,9 @@ classDiagram
 
   %% Source classification
   Source "*" --> "0..1" SourceType : type
+
+  %% Temporal status
+  TemporalBound "*" --> "1" TemporalStatus : status
 
   %% Mechanism intent
   Mechanism "*" --> "1" EmissionIntent : intent

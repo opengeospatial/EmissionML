@@ -1,0 +1,10 @@
+[[req_temporal_status]]
+[requirement]
+====
+[%metadata]
+identifier:: /req/datamodel/core/temporal-status
+part:: The Temporal Status code list shall support the values `known`, `unknown`, and `ongoing`.
+part:: `known` indicates the time instant is determined and provided.
+part:: `unknown` indicates a specific time exists but has not been determined.
+part:: `ongoing` indicates the event boundary is still advancing (applies to endTime only).
+====

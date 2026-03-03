@@ -20,7 +20,7 @@ The Feature class carries a mandatory `geometry` attribute of type `GM_Object` a
 
 Because Feature is concrete, an Observation's `ultimateFeatureOfInterest` can reference any Feature — not only a Source. This enables observations whose feature of interest is defined at a different spatial scale (e.g., a facility area, a region, or a monitoring zone) to participate in the evidence chain without being forced into the Source class.
 
-*EmissionEvent* is also a real-world phenomenon — an occurrent that unfolds over time. In principle, an Emission Event _could_ be modeled as a generic Feature. However, EmissionML gives it explicit structure: temporal bounds (start time, end time), a quantity of emitted substance, a mechanism describing the physical or operational process, an intent classification, and an evidence chain linking the event to supporting Observations.
+*EmissionEvent* is also a real-world phenomenon — an occurrent that unfolds over time. In principle, an Emission Event _could_ be modeled as a generic Feature. However, EmissionML gives it explicit structure: temporal bounds (start time, end time) each carrying a *TemporalStatus* (`known`, `unknown`, `ongoing`) that eliminates ambiguity about whether a time instant is determined, a quantity of emitted substance, a mechanism describing the physical or operational process, an intent classification, and an evidence chain linking the event to supporting Observations.
 
 Without this explicit modeling, a Source would be indistinguishable from any other Feature, and an emission event would be "just another Feature" with ad-hoc properties. The semantic relationships that give emission data its meaning — `hasSource`, `hasMechanism`, `hasQuantity`, `hasStartTimeEvidence` — would be lost or require convention-based interpretation.
 
@@ -28,7 +28,7 @@ Without this explicit modeling, a Source would be indistinguishable from any oth
 
 OMS 3.0 (ISO/OGC 19156:2023) defines an Observation as an act of determining the value of an observable property. An Observation has a well-defined structure: a feature of interest, an observed property, a procedure, and a result.
 
-EmissionML incorporates OMS 3.0 Observation *by reference* (Requirement 8) — it does not redefine or extend the Observation class. In EmissionML, Observations serve as *evidence* supporting emission quantity and temporal bound determinations, linked through the `hasQuantityEvidence`, `hasStartTimeEvidence`, and `hasEndTimeEvidence` associations.
+EmissionML incorporates OMS 3.0 Observation *by reference* (Requirement 8) — it does not redefine or extend the Observation class. In EmissionML, Observations serve as *evidence* supporting emission quantity and temporal bound determinations, linked through the `hasQuantityEvidence`, `hasStartTimeEvidence`, and `hasEndTimeEvidence` associations. Each temporal bound carries a `status` attribute (via the TemporalStatus code list) that makes temporal semantics explicit — distinguishing "known," "unknown," and "ongoing" states rather than relying on absence to signal ambiguity.
 
 One might ask: _Why not model the entire emission event as an Observation result?_ Because an Emission Event is richer than what a single Observation captures. An Emission Event has a source, a mechanism, an intent, multiple temporal bounds, and can be supported by _multiple_ Observations at different spatial and temporal scales. For example:
 

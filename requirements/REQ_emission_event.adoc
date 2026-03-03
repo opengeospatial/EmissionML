@@ -4,4 +4,7 @@
 [%metadata]
 identifier:: /req/datamodel/core/emission-event
 part:: This requirement defines the Emission Event.
+part:: Each Emission Event shall have a mandatory `endTime` of type TemporalBound.
+part:: Constraint C4: If `endTime.status = known`, `hasEndTimeBasis` SHALL be present.
+part:: Constraint C5: If `endTime.status != known`, `hasEndTimeBasis` and `hasEndTimeEvidence` are not applicable.
 ====
