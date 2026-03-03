@@ -55,16 +55,12 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |endTime | The end time of the emission event. The `status` attribute of the TemporalBound indicates whether the end time is known, unknown, or ongoing. | TemporalBound |1 (mandatory)
 |hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
 |hasStartTimeBasis | The procedure used to determine the start time. | DeterminationProcedure |1 (mandatory)
-|hasEndTimeBasis | The procedure used to determine the end time. SHALL be present when `endTime.status = known` (Constraint C4). | DeterminationProcedure |1 (mandatory)
+|hasEndTimeBasis | The procedure used to determine the end time. If `endTime.status = known`, `hasEndTimeBasis` SHALL be present; the value MAY be "unknown" or "legacy" when the method is not documented (Constraint C4). If `endTime.status != known` (i.e., `unknown` or `ongoing`), `hasEndTimeBasis` is not applicable and SHOULD be omitted (Constraint C5). | DeterminationProcedure |1 (mandatory)
 |hasQuantityBasis | The procedure used to determine the emission quantity. | DeterminationProcedure |1 (mandatory)
 |hasStartTimeEvidence | Observations providing evidence for the start time determination. | Observation |0..* (optional)
-|hasEndTimeEvidence | Observations providing evidence for the end time determination. | Observation |0..* (optional)
+|hasEndTimeEvidence | Observations providing evidence for the end time determination. If `endTime.status != known`, `hasEndTimeEvidence` is not applicable and SHOULD be omitted (Constraint C5). | Observation |0..* (optional)
 |hasQuantityEvidence | Observations providing evidence for the quantity determination. | Observation |0..* (optional)
 |===
-
-*Constraint C4*: If `endTime.status = known`, `hasEndTimeBasis` SHALL be present. The value MAY be "unknown" or "legacy" when the method is not documented.
-
-*Constraint C5*: If `endTime.status != known` (i.e., `unknown` or `ongoing`), `hasEndTimeBasis` and `hasEndTimeEvidence` are not applicable and SHOULD be omitted.
 
 NOTE: `startTime.status = unknown` arises when the actual emission onset is undetermined — for example, in inventory-based emissions where annual totals are back-calculated from fuel consumption or production records, or in legacy data where the start time was never recorded. In most operational contexts, `startTime.status = known` is expected (see Constraint C3).
 
