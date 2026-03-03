@@ -21,8 +21,14 @@ class SourceType {
 }
 
 class TemporalBound {
-  +time : TM_Instant
+  +time : TM_Instant [0..1]
   +quality : DQ_Element [0..*]
+}
+
+class TemporalStatus <<CodeList>> {
+  known
+  unknown
+  ongoing
 }
 
 class EmissionQuantity {
@@ -95,7 +101,7 @@ Mechanism -[hidden]down- EmissionIntent
 
 ' ── Composition: up to TemporalBound ──
 EmissionEvent "1" *-up- "1" TemporalBound : startTime
-EmissionEvent "1" *-up- "0..1" TemporalBound : endTime
+EmissionEvent "1" *-up- "1" TemporalBound : endTime
 
 ' ── Composition: up to EmissionQuantity (unit follows) ──
 EmissionEvent "1" *-up- "1" EmissionQuantity : quantity
@@ -123,5 +129,6 @@ Observation "*" -left-> "1" Feature : ultimateFeatureOfInterest
 ' ── Leaf relationships ──
 Source "*" -right-> "0..1" SourceType : type
 Mechanism "*" -down-> "1" EmissionIntent : intent
+TemporalBound "*" -right-> "1" TemporalStatus : status
 
 @enduml
