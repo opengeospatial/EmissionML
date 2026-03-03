@@ -51,7 +51,7 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |Role |Description |Target Class Type |Multiplicity and use
 |hasMechanism | The mechanism by which the emission occurred. | Mechanism |1 (mandatory)
 |hasSource | The source from which the emission originated. | Source |1 (mandatory)
-|startTime | The start time of the emission event. `startTime.status` SHALL be `known`; uncertainty about the start time is expressed through the `quality` attribute and `hasStartTimeBasis`. | TemporalBound |1 (mandatory)
+|startTime | The start time of the emission event. `startTime.status` SHALL be `known`. | TemporalBound |1 (mandatory)
 |endTime | The end time of the emission event. The `status` attribute of the TemporalBound indicates whether the end time is known, unknown, or ongoing. | TemporalBound |1 (mandatory)
 |hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
 |hasStartTimeBasis | The procedure used to determine the start time. | DeterminationProcedure |1 (mandatory)
@@ -62,7 +62,7 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |hasQuantityEvidence | Observations providing evidence for the quantity determination. | Observation |0..* (optional)
 |===
 
-NOTE: Even when the exact emission onset is uncertain (e.g., inventory-based back-calculations or legacy data), a start time SHALL be provided. Uncertainty about the start time is expressed through the `quality` attribute on the TemporalBound and documented via `hasStartTimeBasis` — not by omitting the time value.
+NOTE: Even when the exact emission onset is uncertain (e.g., inventory-based back-calculations or legacy data), a start time SHALL be provided. Uncertainty is expressed through the `quality` attribute on the TemporalBound and documented via `hasStartTimeBasis`.
 
 === Feature Class
 
@@ -266,7 +266,7 @@ Each Temporal Bound class shall have the direct relation listed in <<temporal-bo
 |quality |A data quality element describing the quality of the temporal bound. |DQ_Element |0..* (optional)
 |===
 
-NOTE: `startTime.status` SHALL always be `known`. When the exact onset is uncertain, use the `quality` attribute and `hasStartTimeBasis` to document the uncertainty.
+NOTE: `startTime.status` SHALL always be `known`. When the exact onset is uncertain, express the uncertainty through the `quality` attribute and `hasStartTimeBasis`.
 
 [#temporal-bound-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
 .Direct relation between a Temporal Bound class and other class types
