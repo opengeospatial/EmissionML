@@ -51,7 +51,7 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |Role |Description |Target Class Type |Multiplicity and use
 |hasMechanism | The mechanism by which the emission occurred. | Mechanism |1 (mandatory)
 |hasSource | The source from which the emission originated. | Source |1 (mandatory)
-|startTime | The start time of the emission event. | TemporalBound |1 (mandatory)
+|startTime | The start time of the emission event. The `status` attribute of the TemporalBound indicates whether the start time is known or unknown (Constraint C2). | TemporalBound |1 (mandatory)
 |endTime | The end time of the emission event. The `status` attribute of the TemporalBound indicates whether the end time is known, unknown, or ongoing. | TemporalBound |1 (mandatory)
 |hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
 |hasStartTimeBasis | The procedure used to determine the start time. | DeterminationProcedure |1 (mandatory)
@@ -65,6 +65,8 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 *Constraint C4*: If `endTime.status = known`, `hasEndTimeBasis` SHALL be present. The value MAY be "unknown" or "legacy" when the method is not documented.
 
 *Constraint C5*: If `endTime.status != known` (i.e., `unknown` or `ongoing`), `hasEndTimeBasis` and `hasEndTimeEvidence` are not applicable and SHOULD be omitted.
+
+NOTE: `startTime.status = unknown` arises when the actual emission onset is undetermined — for example, in inventory-based emissions where annual totals are back-calculated from fuel consumption or production records, or in legacy data where the start time was never recorded. In most operational contexts, `startTime.status = known` is expected (see Constraint C3).
 
 === Feature Class
 
@@ -299,10 +301,10 @@ The Temporal Status enumeration shall support the enumeration values listed in <
 [#temporal-status-values,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
 .Enumeration values of Temporal Status
 |===
-|Name |Definition
-|known |The time instant is determined and provided.
-|unknown |A specific time exists but has not been determined.
-|ongoing |The event boundary is still advancing (applies to endTime only).
+|Name |Definition |Applicability
+|known |The time instant is determined and provided. |startTime, endTime
+|unknown |A specific time exists but has not been determined. For startTime, this arises when the actual emission onset is undetermined (e.g., inventory-based back-calculations or legacy data). For endTime, this indicates a concluded event whose end time was not recorded. |startTime, endTime
+|ongoing |The event boundary is still advancing; the emission has not yet ceased. |endTime only
 |===
 
 '''
