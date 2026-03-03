@@ -93,7 +93,7 @@ classDiagram
 
   %% Basis: How each value was determined
   EmissionEvent "1" --> "1" DeterminationMethod : startTimeBasis
-  EmissionEvent "1" --> "1" DeterminationMethod : endTimeBasis
+  EmissionEvent "1" --> "0..1" DeterminationMethod : endTimeBasis
   EmissionEvent "1" --> "1" DeterminationMethod : quantityBasis
 
   %% Observation target
@@ -138,7 +138,7 @@ classDiagram
 
 4. **EmissionIntent moved from attribute to relationship**: `Mechanism.hasIntent: EmissionIntent` (inline attribute) changed to `Mechanism --> EmissionIntent : intent` (association). This treats the CodeList as a first-class referenced entity rather than an embedded value.
 
-5. **TemporalStatus added to TemporalBound**: A new `status: TemporalStatus` mandatory attribute replaces the implicit "absent means unknown or ongoing" convention. `time` becomes conditional (`0..1`), present only when `status = known`. The `TemporalStatus` CodeList defines three values: `known`, `unknown`, `ongoing`. `endTime` multiplicity changed from `0..1` to `1` (mandatory) — temporal semantics are now explicit via `status` rather than inferred from absence. `endTimeBasis` multiplicity changed from `0..1` to `1` (conditional per Constraint C4).
+5. **TemporalStatus added to TemporalBound**: A new `status: TemporalStatus` mandatory attribute replaces the implicit "absent means unknown or ongoing" convention. `time` becomes conditional (`0..1`), present only when `status = known`. The `TemporalStatus` CodeList defines three values: `known`, `unknown`, `ongoing`. `endTime` multiplicity changed from `0..1` to `1` (mandatory) — temporal semantics are now explicit via `status` rather than inferred from absence. `endTimeBasis` remains `0..1`: present when `endTime.status = known`, absent otherwise.
 
 ### ISO Alignment
 

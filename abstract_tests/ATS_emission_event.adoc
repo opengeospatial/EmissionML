@@ -4,6 +4,6 @@
 [%metadata]
 identifier:: /conf/datamodel/core/emission-event
 target:: /req/datamodel/core/emission-event
-test-purpose:: Verify that each Emission Event has a mandatory `endTime` of type TemporalBound. Verify Constraint C4 (`hasEndTimeBasis` present when `endTime.status = known`) and Constraint C5 (`hasEndTimeBasis` and `hasEndTimeEvidence` not applicable when `endTime.status != known`).
-test-method:: Inspect the documentation of the application, schema or profile. Verify that implementations enforce C4 and C5 constraints.
+test-purpose:: Verify that each Emission Event has a mandatory `endTime` of type TemporalBound. Verify that `hasEndTimeBasis` is present when `endTime.status = known` and absent otherwise. Verify that `hasEndTimeEvidence` is not applicable when `endTime.status` is `unknown` or `ongoing`.
+test-method:: Inspect the documentation of the application, schema or profile.
 ====

@@ -4,6 +4,6 @@
 [%metadata]
 identifier:: /req/datamodel/core/temporal-bound
 part:: Each Temporal Bound shall have a mandatory `status` attribute of type TemporalStatus and a conditional `time` attribute of type TM_Instant.
-part:: Constraint C1: `time` SHALL be present if and only if `status = known`.
-part:: Constraint C2: `ongoing` applies to `endTime` only. A `startTime` SHALL have `status = known` or `status = unknown`.
+part:: `time` SHALL be present if and only if `status = known`.
+part:: `ongoing` applies to `endTime` only. A `startTime` SHALL have `status = known` or `status = unknown`.
 ====

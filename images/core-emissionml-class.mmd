@@ -103,7 +103,7 @@ classDiagram
 
   %% Basis: How each value was determined
   EmissionEvent "1" --> "1" DeterminationProcedure : startTimeBasis
-  EmissionEvent "1" --> "1" DeterminationProcedure : endTimeBasis
+  EmissionEvent "1" --> "0..1" DeterminationProcedure : endTimeBasis
   EmissionEvent "1" --> "1" DeterminationProcedure : quantityBasis
 
   %% Observation target

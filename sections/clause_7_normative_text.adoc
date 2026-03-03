@@ -51,18 +51,18 @@ Each Emission Event class shall have the direct relation between an Emission Eve
 |Role |Description |Target Class Type |Multiplicity and use
 |hasMechanism | The mechanism by which the emission occurred. | Mechanism |1 (mandatory)
 |hasSource | The source from which the emission originated. | Source |1 (mandatory)
-|startTime | The start time of the emission event. The `status` attribute of the TemporalBound indicates whether the start time is known or unknown (Constraint C2). | TemporalBound |1 (mandatory)
+|startTime | The start time of the emission event. The `status` attribute of the TemporalBound indicates whether the start time is known or unknown. | TemporalBound |1 (mandatory)
 |endTime | The end time of the emission event. The `status` attribute of the TemporalBound indicates whether the end time is known, unknown, or ongoing. | TemporalBound |1 (mandatory)
 |hasQuantity | The quantity of the substance emitted. | EmissionQuantity |1 (mandatory)
 |hasStartTimeBasis | The procedure used to determine the start time. | DeterminationProcedure |1 (mandatory)
-|hasEndTimeBasis | The procedure used to determine the end time. If `endTime.status = known`, `hasEndTimeBasis` SHALL be present; the value MAY be "unknown" or "legacy" when the method is not documented (Constraint C4). If `endTime.status != known` (i.e., `unknown` or `ongoing`), `hasEndTimeBasis` is not applicable and SHOULD be omitted (Constraint C5). | DeterminationProcedure |1 (mandatory)
+|hasEndTimeBasis | The procedure used to determine the end time. SHALL be present when `endTime.status = known`; SHALL be absent when `endTime.status` is `unknown` or `ongoing` (no determination was made). | DeterminationProcedure |0..1 (conditional)
 |hasQuantityBasis | The procedure used to determine the emission quantity. | DeterminationProcedure |1 (mandatory)
 |hasStartTimeEvidence | Observations providing evidence for the start time determination. | Observation |0..* (optional)
-|hasEndTimeEvidence | Observations providing evidence for the end time determination. If `endTime.status != known`, `hasEndTimeEvidence` is not applicable and SHOULD be omitted (Constraint C5). | Observation |0..* (optional)
+|hasEndTimeEvidence | Observations providing evidence for the end time determination. Not applicable when `endTime.status` is `unknown` or `ongoing`. | Observation |0..* (optional)
 |hasQuantityEvidence | Observations providing evidence for the quantity determination. | Observation |0..* (optional)
 |===
 
-NOTE: `startTime.status = unknown` arises when the actual emission onset is undetermined — for example, in inventory-based emissions where annual totals are back-calculated from fuel consumption or production records, or in legacy data where the start time was never recorded. In most operational contexts, `startTime.status = known` is expected (see Constraint C3).
+NOTE: `startTime.status = unknown` arises when the actual emission onset is undetermined — for example, in inventory-based emissions where annual totals are back-calculated from fuel consumption or production records, or in legacy data where the start time was never recorded. In most operational contexts, `startTime.status = known` is expected.
 
 === Feature Class
 
@@ -255,23 +255,18 @@ A Temporal Bound is a value object representing a temporal determination (e.g., 
 +
 Each Temporal Bound class shall have the mandatory attributes listed in <<temporal-bound-attributes>>.
 Each Temporal Bound class shall have the direct relation listed in <<temporal-bound-relations>>.
-Each Temporal Bound class shall satisfy Constraints C1 and C2.
 |===
 
 [#temporal-bound-attributes,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
 .Attributes of a Temporal Bound class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|time |The time instant value of this Temporal Bound. Present if and only if `status = known` (Constraint C1). |TM_Instant |0..1 (conditional)
-|status |Indicates whether the time instant is known, unknown, or ongoing. |TemporalStatus |1 (mandatory)
+|time |The time instant value of this Temporal Bound. SHALL be present if and only if `status = known`; SHALL be absent when `status` is `unknown` or `ongoing`. |TM_Instant |0..1 (conditional)
+|status |Indicates whether the time instant is known, unknown, or ongoing. `ongoing` applies to `endTime` only — a `startTime` SHALL have `status = known` or `status = unknown`. |TemporalStatus |1 (mandatory)
 |quality |A data quality element describing the quality of the temporal bound. |DQ_Element |0..* (optional)
 |===
 
-*Constraint C1*: `time` SHALL be present if and only if `status = known`.
-
-*Constraint C2*: `ongoing` applies to `endTime` only. A `startTime` SHALL have `status = known` or `status = unknown`.
-
-NOTE: In most cases, `startTime.status = known` is expected (Constraint C3, informative).
+NOTE: In most cases, `startTime.status = known` is expected.
 
 [#temporal-bound-relations,reftext='{table-caption} {counter:table-num}',width="90%",options="header"]
 .Direct relation between a Temporal Bound class and other class types
