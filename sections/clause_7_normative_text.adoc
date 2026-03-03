@@ -261,7 +261,7 @@ Each Temporal Bound class shall have the direct relation listed in <<temporal-bo
 .Attributes of a Temporal Bound class
 |===
 |Names |Definition |Data types and values |Multiplicity and use
-|time |The time instant value of this Temporal Bound. SHALL be present if and only if `status = known`; SHALL be absent when `status` is `unknown` or `ongoing`. |TM_Instant |0..1 (conditional)
+|time |The time instant value of this Temporal Bound. SHALL be provided when `status = known`. SHALL NOT be provided (i.e., the attribute is omitted, not null) when `status` is `unknown` or `ongoing`. |TM_Instant |0..1 (conditional)
 |status |Indicates whether the time instant is known, unknown, or ongoing. `ongoing` applies to `endTime` only — a `startTime` SHALL have `status = known` or `status = unknown`. |TemporalStatus |1 (mandatory)
 |quality |A data quality element describing the quality of the temporal bound. |DQ_Element |0..* (optional)
 |===
