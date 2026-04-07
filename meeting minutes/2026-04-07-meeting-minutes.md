@@ -1,0 +1,22 @@
+- OGC TC June: meeting requested.
+  - Observation Summit (joint) - Tuesday
+    - how do we get observable properties + procedures + unit/quantity kind   (Feature of Interest)
+    - can we host vocab?
+      - what would be the good user experiences for vocabs?
+      - maybe too complex? https://defs-hosted.opengis.net/prez-hosted/catalogs/hosted:glosis/collections/codelists:physioChemicalPropertyCode/items/codelists:physioChemicalPropertyCode-Aluexc
+      - what would be the right level of complexity for users? what level of search across different vocabs needed?
+      - the faster we create, the more difficult to verify.
+      - what would be the bite size?  (methane?)
+      - what are the active communities? methane/ghg? soil? https://soilwise-he.github.io/soil-vocabs/ https://github.com/soilwise-he/soil-observation-data-encodings/tree/main/COMMON#special-relationship-between-observed-property-observing-procedure-and-uom marine?
+      - Sensor web use cases
+      - UN Tom Kralidis (Ryan will invite Tom)
+      - ISO 28258 (https://www.iso.org/standard/44595.html based on O&M)
+
+      
+      - CELEBRATION!!  What's been done? amazing progresses and use cases. State of the Observations
+      - WHAT WE LEARNED?  WHAT'S NEW - new technology, new sensors, new AI (LLM), starlink?  Risks?  the drift is faster than ever!
+      - FUTURE 
+- May Ottawa
+- Progress: RFC
+- ISO 14224
+- Data Model
