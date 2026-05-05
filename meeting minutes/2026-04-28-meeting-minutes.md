@@ -27,7 +27,6 @@ Observation Summit
     - WMO (Tom - observational metadata - confirmed)
     - Defence (Connected Systems) - Steve will invite Mike/Alex/Chris
     - Simulation (Sina/Steve)
-    
     - Call for demos/presentations 
 - What's new (come here to learn the past 2.5 years progress)
   - EmissionML
