@@ -10,7 +10,7 @@ This Discussion Paper addresses the urgent need for interoperability in emission
 
 The purpose of this document is to engage the broader community of regulators, operators, technology providers, researchers, and investors in a discussion on the feasibility and value of harmonizing emissions data. Like many successful OGC efforts, the goal is not to prescribe specific technologies, but to provide a neutral, extensible foundation that enables interoperability across existing and emerging systems.
 
-This work builds on the history of OGC standards, including the Sensor Web Enablement suite, the OGC/ISO Observations and Measurements (O&M) model, and the SOSA/SSN ontology developed in collaboration with W3C. These efforts demonstrated the power of shared information models for environmental and geospatial data. EmissionML extends this lineage by applying the same principles to emissions information, leveraging lessons from geospatial interoperability to address urgent climate and ESG challenges.
+This work builds on the history of OGC standards, including the Sensor Web Enablement suite, the OGC/ISO Observations and Measurements (O&M) model, and the SOSA/SSN ontology developed in collaboration with the World Wide Web Consortium (W3C). These efforts demonstrated the power of shared information models for environmental and geospatial data. EmissionML extends this lineage by applying the same principles to emissions information, leveraging lessons from geospatial interoperability to address urgent climate and ESG challenges.
 
 Future work will include refinement of the EmissionML conceptual model through open-source software implementations, closer alignment with related OGC and ISO standards, and exploration of applicability beyond emissions to other ESG domains such as wastewater, carbon capture and storage, and nitrogen-use efficiency. Community feedback on this Discussion Paper will guide next steps toward a candidate OGC standard and potential joint standardization with ISO.
 
@@ -49,6 +49,7 @@ This Discussion Paper highlights the interoperability challenge and outlines how
 
 While focused on emissions, the principles extend across ESG domains such as wastewater management, carbon capture and storage, and nitrogen-use efficiency.
 
+////
 [.preface]
 == Security Considerations
 
@@ -56,7 +57,6 @@ While focused on emissions, the principles extend across ESG domains such as was
 
 No security considerations have been made for this Standard.
 
-////
 If security considerations have been made for this Standard, follow the examples found in IANA or IETF documents. Please see the following example.
 
 “VRRP is designed for a range of internetworking environments that may employ different security policies. The protocol includes several authentication methods ranging from no authentication, simple clear text passwords, and strong authentication using IP Authentication with MD5 HMAC. The details on each approach including possible attacks and recommended environments follows.
@@ -73,8 +73,7 @@ Submitting organisations added automatically by Metanorma from document attribut
 
 [.preface]
 == Submitters
-All questions regarding this submission should be directed to the editor or the submitters:
-
+All questions regarding this submission should be directed to the editor or the submitters.
 
 |===
 |Name |Affiliation |OGC member
@@ -89,7 +88,7 @@ All questions regarding this submission should be directed to the editor or the 
 
 //This clause is optional.
 
-Additional contributors to this Standard include the following:
+Additional contributors to this Standard include the following.
 
 * Josh Anhalt, Mbrace Energy
 * Zahra Ashena, SensorUp Inc.

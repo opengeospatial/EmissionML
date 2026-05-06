@@ -1,20 +1,18 @@
 = Introduction to OGC EmissionML: Why the World Needs a Standard Ontology for Emissions
-:comment: Change "standard" to "draft-standard" for draft standards
-:comment: The front page notice will update automatically to reflect the document type
 :doctype: discussion-paper
 :encoding: utf-8
 :lang: en
-:status: draft
+:status: approved
 :committee: technical
 :draft: 3.0
 :external-id: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
 :docnumber: 25-023
-:received-date: 2025-xx-xx
-:issued-date: 2025-xx-xx
-:published-date: 2025-xx-xx
+:received-date: 2025-10-31
+:issued-date: 2025-10-31
+:published-date: 2026-xx-xx
 :fullname: Steve Liang
 :fullname_2: Ryan Ahola
-:docsubtype: Interface
+:docsubtype: 
 :keywords: ogcdoc, OGC document, emissions, climate change
 :submitting-organizations: SensorUp Inc.; Natural Resources Canada; University of Calgary
 :mn-document-class: ogc
@@ -35,7 +33,7 @@ include::sections/clause_1_scope.adoc[]
 
 //include::sections/clause_2_conformance.adoc[]
 
-include::sections/clause_3_references.adoc[]
+//include::sections/clause_3_references.adoc[]
 
 include::sections/clause_4_terms_and_definitions.adoc[]
 

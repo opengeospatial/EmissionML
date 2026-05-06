@@ -27,4 +27,5 @@ Set of operations having the object of determining the value of a quantity (Sour
 Act carried out by an observer to determine the value of an observable property of an object (feature-of-interest) by using a procedure, with the value provided as the result (Source: https://docs.ogc.org/as/20-082r4/20-082r4.html[ISO/OGC 19156:2023])
 
 === Source Feature
+
 A Source Feature is an https://www.iso.org/standard/59164.html[ISO 19101] feature whose geometry provides the geospatial reference for one or more Emission Events. A Source Feature is characterised solely by its own identity, geometry, intended function, and lifecycle; it is explicitly agnostic to the Mechanism by which any associated Emission Event occur.

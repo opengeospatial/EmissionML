@@ -1,4 +1,5 @@
 == The Problem: Lacking Consistent Ontology and Fragmentation in Emissions Data
+
 The advancement of sensing technologies, digital communications, cloud computing, and artificial intelligence now enables the measurement, monitoring, reporting, and verification (MMRV) of emissions at unprecedented scale and resolution. Satellites can quantify atmospheric pollutants from orbit, aircraft and drones provide high-resolution overflights, continuous monitoring systems deliver real-time data streams, and handheld instruments remain essential for targeted inspections. These innovations have raised expectations for transparency and rigor in emissions reporting across regulatory and voluntary programs. Yet the data ecosystem has not kept pace: without common models and standards, the value of these new technologies is often constrained by fragmentation, duplication, and costly integrations.
 
 This fragmentation is evident across the entire emissions data lifecycle. Each technology vendor, operator, and reporting program tends to define its own vocabulary, formats, and assumptions. Data that should be straightforward to collect becomes difficult to integrate, trace, and compare. A remote sensing detection may not align with ground-level observations — for example, bottom-up inventories — when source features are described inconsistently. Regulators often require the same data to be restated in multiple incompatible templates. Operators face the added challenge of reconciling proprietary vendor outputs with internal enterprise systems, which further drives up cost and complexity. The consequence is predictable: high costs, duplicated effort, and delays in turning detection into actionable emissions reductions.
@@ -10,8 +11,8 @@ Emissions data now stands at a similar crossroads to the early days of digital m
 
 Summary — key challenges at a glance:
 
-* High costs and duplicated effort from bespoke integrations across vendors and systems.
-* Difficulties linking diverse measurements, such as remote sensing, ground in-situ observations, and inventories, due to inconsistent definitions.
+* High costs and duplicated effort from bespoke integrations across vendors and systems;
+* Difficulties linking diverse measurements, such as remote sensing, ground in-situ observations, and inventories, due to inconsistent definitions; and
 * Incompatible reporting requirements across regulatory and voluntary programs, creating administrative burden and undermining comparability.
 
 == What EmissionML Is — and What It’s Not
@@ -22,10 +23,10 @@ If new sensing technologies are expanding what is technically measurable, Emissi
 
 Specifically, EmissionML provides:
 
-	* A semantic foundation for interoperable reporting across multiple frameworks.
-	* A bridge between observations (sensor or estimate), source features (the equipment or site where emissions occur), and emission events (the occurrences themselves).
-	* A flexible modeling language that can serve as an intermediary data model, enabling a “write once, use many times” approach for outputs across multiple reporting frameworks.
-	* Data structures that are AI-ready, ensuring that automated reasoning and validation can be applied.
+	* A semantic foundation for interoperable reporting across multiple frameworks;
+	* A bridge between observations (sensor or estimate), source features (the equipment or site where emissions occur), and emission events (the occurrences themselves);
+	* A flexible modeling language that can serve as an intermediary data model, enabling a “write once, use many times” approach for outputs across multiple reporting frameworks;
+	* Data structures that are AI-ready, ensuring that automated reasoning and validation can be applied; and
 	* Alignment with OGC, ISO, and W3C standards, including Observations and Measurements (ISO 19156:2023) and the SOSA/SSN ontology.
 
 .Illustration of EmissionML in the emissions data value chain, demonstrating the principle of “write once, use many times” for interoperability and reuse.
@@ -33,7 +34,7 @@ image::figures/figure_emissionml_value_chain.png[]
 
 === What EmissionML Is Not
 
-Equally important is clarifying what EmissionML does not attempt to be:
+Equally important is clarifying what EmissionML does not attempt to be.
 
 	* It is not a methane MMRV protocol such as OGMP 2.0, Veritas, or MiQ. Instead, it can represent the data that those frameworks require.
 	* It is not a fixed reporting format like a CSV schema or PDF template. EmissionML underlies such formats but does not replace them.
@@ -47,6 +48,7 @@ In short: EmissionML’s strength lies in being a neutral, extensible foundation
 == Use Cases: Real-world EmissionML Applications
 
 === EmissionML Use Cases
+
 To illustrate EmissionML’s potential, we present real-world applications where the lack of a common ontology creates friction today — and where a shared data model can deliver clear benefits for stakeholders, such as regulators, operators, vendors, researchers and investors.
 
 .EmissionML use case table
@@ -98,6 +100,7 @@ To illustrate EmissionML’s potential, we present real-world applications where
 |===
 
 === What the world looks like with EmissionML
+
 Imagine a world where emissions data flows as seamlessly as financial information or digital maps. A plume detected by satellite is automatically linked to a site, verified against ground-based monitors, and cross-checked with operational data — all within minutes. Regulators receive reports in a consistent, auditable format without manual re-entry. Operators diagnose and repair leaks in hours instead of weeks. Investors and insurers compare emissions performance across companies with the same confidence they place in audited financial statements. Researchers build upon shared datasets instead of recreating them. In such a future, EmissionML is invisible but indispensable: the common foundation that makes emissions information trustworthy, interoperable, and actionable at global scale.
 
 == Adoption Pathways & Call to Action
@@ -115,7 +118,7 @@ Many OGC standards, from web mapping to the Sensor Web and the Internet of Thing
 
 How to Get Involved:
 
-* Explore the https://github.com/opengeospatial/EmissionML[OGC EmissionML GitHub].
-* Contribute use cases, implementations, or vocabulary feedback.
-* Join the https://www.ogc.org/membership/[OGC EmissionML Standards Working Group] and shape the future of emissions interoperability.
+* Explore the https://github.com/opengeospatial/EmissionML[OGC EmissionML GitHub]
+* Contribute use cases, implementations, or vocabulary feedback
+* Join the https://www.ogc.org/membership/[OGC EmissionML Standards Working Group] and shape the future of emissions interoperability
 * Develop open-source reference implementations and tutorials to facilitate adoption and community contribution
