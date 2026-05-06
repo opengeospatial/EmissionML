@@ -5,23 +5,23 @@
 :status: approved
 :committee: technical
 :draft: 3.0
-:external-id: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
+:doc-type: dp
+:standard: emissionml
+:external-id: http://www.opengis.net/doc/{doc-type}/{standard}
 :docnumber: 25-023
 :received-date: 2025-10-31
 :issued-date: 2025-10-31
-:published-date: 2026-xx-xx
+:published-date: 2026-05-06
 :fullname: Steve Liang
 :fullname_2: Ryan Ahola
 :docsubtype: 
 :keywords: ogcdoc, OGC document, emissions, climate change
 :submitting-organizations: SensorUp Inc.; Natural Resources Canada; University of Calgary
 :mn-document-class: ogc
-:mn-output-extensions: xml,html,doc,pdf
+:mn-output-extensions: xml,html,pdf
 :local-cache-only:
 :data-uri-image:
-:pdf-uri: ./document.pdf
-:xml-uri: ./document.xml
-:doc-uri: ./document.doc
+:pdf-uri: ./25-023.pdf
 :edition: 1.0
 
 ////
